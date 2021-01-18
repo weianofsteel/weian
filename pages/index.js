@@ -1,31 +1,35 @@
-import react from 'react'
+import React from 'react'
 import Test from '../component/Test'
-import { i18n, Link, withTranslation } from '../i18n'
+import Header from '../component/Header'
+import { i18n, withTranslation } from '../i18n'
 import PropTypes from 'prop-types'
+import photo from '../public/image/design-header.png'
 
 const Homepage = ({ t }) =>{
     return (
-        <div>
+        <React.Fragment>
             <Test/>
             <div>Welcome to Next.js! Weian!</div>
-            <button
-          type='button'
-          onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'zhHant' : 'en')}
-        >
-          {t('change-locale')}
-        </button>
-        <p>{t('title')}</p>
-        </div>
+            <Header/>
+            {/* <button
+              type='button'
+              onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'zhHant' : 'en')}
+            >
+              {t('change-locale')}
+            </button> */}
+            <p>{t('title')}</p>
+            {/* <img src={photo}/> */}
+        </React.Fragment>
     )
     
 }
 
 Homepage.getInitialProps = async () => ({
-    namespacesRequired: ['common'],
+    namespacesRequired: ['article'],
   })
   
   Homepage.propTypes = {
     t: PropTypes.func.isRequired,
   }
   
-  export default withTranslation('common')(Homepage) 
+  export default withTranslation('article')(Homepage) 

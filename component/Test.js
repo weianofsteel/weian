@@ -1,18 +1,17 @@
 
-import react from 'react'
-import { i18n, Link, withTranslation } from '../i18n'
+import React from 'react'
+import { i18n, withTranslation } from '../i18n'
 
 
 const Test = ({ t }) => {
 
     return(
-      
-             <footer>
-                <p>
-            
-                </p>
-            </footer>
-
+        <React.Fragment>
+             
+             <p>{t('title2')}</p>
+             <button onClick={()=>{console.log(888, t('content'), i18n.language)}}>try</button>
+             
+        </React.Fragment>
     )
 }
 

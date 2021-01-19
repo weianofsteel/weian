@@ -3,7 +3,7 @@ import { i18n, withTranslation } from '../i18n'
 import { makeStyles } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
-import { TransitionGroup } from 'react-transition-group'
+import PropTypes from 'prop-types'
 import styles from '../css/Public/Header.module.css'
 
 const useStyles = makeStyles({
@@ -45,15 +45,13 @@ const Header = () => {
             </Button>
 
             <p className={styles.ball}>Learn More</p>
-
-            <TransitionGroup
-              transitionName="styles.bounce"
-            >
-              <p>Learn More</p>
-            </TransitionGroup>
              
         </React.Fragment>
     )
+}
+
+Header.propTypes = {
+  t: PropTypes.func.isRequired,
 }
 
 

@@ -2,5 +2,9 @@
     "change-locale":"切換語言",
     "title":"王偉安",
     "content":"開始吧",
-    "title2":"啥"
+    "title2":"啥",
+    "h1": "A simple example",
+    "to-second-page": "To second page",
+    "error-with-status": "A error occurred on server",
+    "error-without-status": "An error occurred on the server"
 }

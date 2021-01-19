@@ -2,5 +2,9 @@
     "change-locale":"change language",
     "title":"WeianWang",
     "content":"let's do this",
-    "title2":"what"
+    "title2":"what",
+    "h1": "A simple example",
+    "to-second-page": "To second page",
+    "error-with-status": "A error occurred on server",
+    "error-without-status": "An error occurred on the server"
 }

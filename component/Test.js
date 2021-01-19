@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { i18n, withTranslation } from '../i18n'
+import PropTypes from 'prop-types'
 
 
 const Test = ({ t }) => {
@@ -15,5 +16,8 @@ const Test = ({ t }) => {
     )
 }
 
+Test.propTypes = {
+    t: PropTypes.func.isRequired,
+  }
 
 export default withTranslation('common')(Test)

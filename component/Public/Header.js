@@ -39,15 +39,16 @@ const useStyles = makeStyles({
   }
 })
 
-const Header = ({t}) => {
+const Header = ({t,...props}) => {
 
     const classes = useStyles();
 
     const router = useRouter();
 
-    // const {
-    //   handleDrawerOpen
-    // } = props;
+    const {
+      handleDrawerOpen,
+      drawer2
+    } = props;
 
     return(
         <React.Fragment>
@@ -116,8 +117,8 @@ const Header = ({t}) => {
                 <Grid item xs={1}></Grid>
                 <Grid item xs={1}>
                   <IconButton
-                    // onClick={handleDrawerOpen}
-                    onClick={()=>{console.log(444, i18n.t('title'), i18n.t('resume'))}}
+                    onClick={handleDrawerOpen}
+                    // onClick={()=>{console.log(444, props, drawer2)}}
                   >
                     <MenuIcon/>
                   </IconButton>

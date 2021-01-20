@@ -23,6 +23,7 @@ export const Work = () => {
                     <div>
                         <Header
                             handleDrawerOpen={handleDrawerOpen}
+                            drawer2={drawer2}
                         />
                     </div>
                     

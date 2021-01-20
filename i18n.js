@@ -8,3 +8,9 @@ module.exports = new NextI18Next({
   localeSubpaths,
   localePath: path.resolve('./public/static/locales')
 })
+export const nextI18Next = new NextI18Next({
+  otherLanguages: ['zhHant'],
+  localeSubpaths,
+  localePath: path.resolve('./public/static/locales')
+})
+export const useTranslation = nextI18Next.useTranslation;

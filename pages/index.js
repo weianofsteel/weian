@@ -1,16 +1,16 @@
 import React from 'react'
 import Test from '../component/Test'
-import Header from '../component/Header'
+import Header from '../component/Public/Header'
 import { i18n, withTranslation } from '../i18n'
 import PropTypes from 'prop-types'
 import photo from '../public/image/design-header.png'
 
-const Homepage = ({ t }) =>{
+const HomePage = ({ t }) =>{
     return (
         <React.Fragment>
+            <Header/>
             <Test/>
             <div>Welcome to Next.js! Weian!</div>
-            <Header/>
             {/* <button
               type='button'
               onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'zhHant' : 'en')}
@@ -24,12 +24,12 @@ const Homepage = ({ t }) =>{
     
 }
 
-Homepage.getInitialProps = async () => ({
+HomePage.getInitialProps = async () => ({
     namespacesRequired: ['article', 'common'],
   })
   
-  Homepage.propTypes = {
-    t: PropTypes.func.isRequired,
-  }
+HomePage.propTypes = {
+  t: PropTypes.func.isRequired,
+}
   
-  export default withTranslation('article')(Homepage) 
+  export default withTranslation('article')(HomePage) 

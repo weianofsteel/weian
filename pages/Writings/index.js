@@ -1,20 +1,14 @@
 import React from 'react'
-import { withTranslation } from '../../i18n'
-import PropTypes from 'prop-types'
 import { Writings } from '../../component/Writings/Writings'
 
-const WritingsPage = ({ t }) => {
+const WritingsPage = () => {
     return(
         <Writings/>
     )
 }
 
 WritingsPage.getInitialProps = async () => ({
-    namespacesRequired: ['article', 'common'],
-  })
-  
-WritingsPage.propTypes = {
-    t: PropTypes.func.isRequired,
-}
+    namespacesRequired: ['header', 'banner'],
+})
 
-export default withTranslation('article')(WritingsPage)
+export default WritingsPage

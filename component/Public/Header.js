@@ -10,13 +10,6 @@ import { useRouter } from 'next/router'
 import TranslateIcon from '@material-ui/icons/Translate'
 
 const useStyles = makeStyles({
-  button: {
-      fontFamily:'Rosario'
-  },
-  button2: {
-    fontFamily:'Rosario',
-    color:'blue'
-  },
   title: {
     fontFamily:'Roboto',
     fontWeight:400,
@@ -108,23 +101,8 @@ const Header = ({ t }) => {
               </Grid>
 
             </Grid>
-             
-            
-            <Button
-              type='button'
-              className={classes.button2}
-              onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'zhHant' : 'en')}
-            >
-              language
-            </Button>
-            <Button
-              type='button'
-              onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'zhHant' : 'en')}
-            >
-              language
-            </Button>
 
-            <p className={styles.ball}>Learn More</p>
+            {/* <p className={styles.ball}>Learn More</p> */}
              
         </React.Fragment>
     )

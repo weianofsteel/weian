@@ -1,21 +1,14 @@
 import React from 'react'
-import { withTranslation } from '../../i18n'
-import PropTypes from 'prop-types'
+import { Resume } from '../../component/Resume/Resume'
 
-const Resume = ({ t }) => {
+const ResumePage = () => {
     return(
-        <React.Fragment>
-            <span>Resume</span>
-        </React.Fragment>    
+        <Resume/>
     )
 }
 
-Resume.getInitialProps = async () => ({
-    namespacesRequired: ['article', 'common'],
-  })
-  
-Resume.propTypes = {
-    t: PropTypes.func.isRequired,
-}
+ResumePage.getInitialProps = async () => ({
+    namespacesRequired: ['header', 'banner'],
+})
 
-export default withTranslation('article')(Resume)
+export default ResumePage

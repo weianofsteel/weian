@@ -1,20 +1,20 @@
 import React from 'react'
+import { Work } from '../../component/Work/Work'
 import { withTranslation } from '../../i18n'
 import PropTypes from 'prop-types'
-import { Work } from '../../component/Work/Work'
 
-const WorkPage = ({ t }) => {
+const WorkPage = () => {
     return(
       <Work/>   
     )
 }
 
 WorkPage.getInitialProps = async () => ({
-    namespacesRequired: ['article', 'common'],
-  })
-  
-WorkPage.propTypes = {
-  t: PropTypes.func.isRequired,
-}
+  namespacesRequired: ['header', 'banner'],
+})
 
-export default withTranslation('article')(WorkPage)
+// HomePage.propTypes = {
+// t: PropTypes.func.isRequired,
+// }
+
+export default WorkPage

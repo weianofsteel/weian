@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../Public/Header'
 import Banner from '../Public/Banner'
 import Drawer from '../Public/Drawer'
@@ -23,7 +23,6 @@ export const Work = () => {
                     <div>
                         <Header
                             handleDrawerOpen={handleDrawerOpen}
-                            drawer2={drawer2}
                         />
                     </div>
                     

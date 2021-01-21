@@ -46,8 +46,7 @@ const Header = ({t,...props}) => {
     const router = useRouter();
 
     const {
-      handleDrawerOpen,
-      drawer2
+      handleDrawerOpen
     } = props;
 
     return(

@@ -10,6 +10,7 @@ import PropTypes from 'prop-types'
 const useStyles = makeStyles({
     main: {
         height:'100vh',
+        overflowY:'hidden',
         backgroundColor:'#1f1f1f'
     },
     title: {

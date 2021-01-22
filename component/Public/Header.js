@@ -36,6 +36,13 @@ const useStyles = makeStyles({
     marginLeft: '32px',
     color:'black',
     fontSize:'1rem'
+  },
+  icon: {
+    fontSize:'1.5rem',
+    color:'#8F8F8F',
+    "&:hover":{
+        color:'#1F1F1F'
+    }
   }
 })
 
@@ -116,10 +123,11 @@ const Header = ({t,...props}) => {
                 <Grid item xs={1}></Grid>
                 <Grid item xs={1}>
                   <IconButton
+                    style={{backgroundColor: 'transparent'}}
+                    disableRipple={true}
                     onClick={handleDrawerOpen}
-                    // onClick={()=>{console.log(444, props, drawer2)}}
                   >
-                    <MenuIcon/>
+                    <MenuIcon className={classes.icon}/>
                   </IconButton>
                 </Grid>
               </Hidden>

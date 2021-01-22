@@ -9,12 +9,14 @@ import PropTypes from 'prop-types'
 
 const useStyles = makeStyles({
     main: {
-        height:'100vh'
+        height:'100vh',
+        backgroundColor:'#1f1f1f'
     },
     title: {
         fontFamily:'Roboto',
         fontWeight:400,
-        paddingTop:'1rem'
+        paddingTop:'1rem',
+        color:'#8F8F8F'
     },
     drawerLink: {
         fontFamily:'Roboto',
@@ -24,12 +26,19 @@ const useStyles = makeStyles({
         color:'#8F8F8F',
         fontSize:'22px',
         "&:hover":{
-            color:'black'
+            color:'white'
+        }
+    },
+    icon: {
+        fontSize:'1.5rem',
+        color:'#8F8F8F',
+        "&:hover":{
+            color:'white'
         }
     }
 })
 
-const Drawer = (props) => {
+const Drawer = ({t,...props}) => {
 
     const classes = useStyles();
 
@@ -44,7 +53,7 @@ const Drawer = (props) => {
                 
                 <Grid container>
                     <Grid item xs={2} style={{marginTop:'0.5rem'}}>
-                        <span className={classes.title}>{i18n.t('title')}</span>
+                        <span className={classes.title}>{t('title')}</span>
                     </Grid>
                     <Grid item xs={2}></Grid>
                     <Grid item xs={2}></Grid>
@@ -53,50 +62,45 @@ const Drawer = (props) => {
                     <Grid item xs={1}></Grid>
                     <Grid item xs={1}>
                         <IconButton
+                            style={{backgroundColor: 'transparent'}}
+                            disableRipple={true}
                             onClick={handleDrawerClose}
                         >
-                            <CloseIcon/>
+                            <CloseIcon className={classes.icon}/>
                         </IconButton>
                     </Grid>
                 </Grid>
 
                 <Grid container className={classes.drawerHeader} style={{marginTop:'4rem'}}>
                     <Grid item xs={4}>
-                        {/* <span className={styles.link}> */}
-                            <Link href="/Work" underline='none' className={classes.drawerLink}>
-                                {i18n.t('work')}
-                            </Link>
-                        {/* </span> */}
+                        <Link href="/Work" underline='none' className={classes.drawerLink}>
+                            {t('work')}
+                        </Link>
                     </Grid>
                 </Grid>    
 
                 <Grid container className={classes.drawerHeader}>
                     <Grid item xs={4}>
-                        {/* <span className={styles.link}> */}
-                            <Link href="/Writings" underline='none' className={classes.drawerLink}>
-                                {i18n.t('writings')}
-                            </Link>
-                        {/* </span> */}
+                        <Link href="/Writings" underline='none' className={classes.drawerLink}>
+                            {t('writings')}
+                        </Link>
+                      
                     </Grid>
                 </Grid>
 
                 <Grid container className={classes.drawerHeader}>
                     <Grid item xs={4}>
-                        {/* <span className={styles.link}> */}
-                            <Link href="/About" underline='none' className={classes.drawerLink}>
-                                {i18n.t('about')}
-                            </Link>
-                        {/* </span> */}
+                        <Link href="/About" underline='none' className={classes.drawerLink}>
+                            {t('about')}
+                        </Link>
                     </Grid>
                 </Grid>
 
                 <Grid container className={classes.drawerHeader}>
                     <Grid item xs={4}>
-                        {/* <span className={styles.link}> */}
-                            <Link href='./SalieChien_Resume.pdf' target='_blank' rel='noopener' underline='none' className={classes.drawerLink}>
-                                {i18n.t('resume')}
-                            </Link>
-                        {/* </span> */}
+                        <Link href='./SalieChien_Resume.pdf' target='_blank' rel='noopener' underline='none' className={classes.drawerLink}>
+                            {t('resume')}
+                        </Link>
                     </Grid>
                 </Grid>    
 

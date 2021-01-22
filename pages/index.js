@@ -1,22 +1,11 @@
 import React from 'react'
-import Header from '../component/Public/Header'
 import { withTranslation } from '../i18n'
 import PropTypes from 'prop-types'
-import Banner from '../component/Public/Banner'
+import {Home} from '../component/Home/Home'
 
 const HomePage = ({ t }) =>{
     return (
-        <React.Fragment>
-            
-            <div>
-              <Header/>
-            </div>
-            
-            <div>
-              <Banner/>
-            </div>
-            
-        </React.Fragment>
+        <Home/>
     )
     
 }

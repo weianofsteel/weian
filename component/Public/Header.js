@@ -14,9 +14,11 @@ import IconButton from '@material-ui/core/IconButton';
 
 const useStyles = makeStyles({
   title: {
-    fontFamily:'Roboto',
+    fontFamily:'Bebas Neue ',
     fontWeight:400,
-    paddingTop:'1rem'
+    letterSpacing:'1px',
+    color:'black',
+    fontSize:'2rem'
   },
   link: {
     fontFamily:'Roboto',
@@ -61,11 +63,17 @@ const Header = ({t,...props}) => {
              
             <Grid container>
 
-              <Grid item xs={2} style={{marginTop:'0.5rem'}}>
-                <span className={classes.title}>{t('title')}</span>
+              <Grid item xs={4} md={2} style={{marginTop:'0.5rem'}}>
+                <Link 
+                    href="."
+                    underline='none'
+                    className={classes.title}
+                  >
+                    {t('title')}
+                  </Link>
               </Grid>
-              <Grid item xs={2}></Grid>
-              <Grid item xs={2}></Grid>
+              <Grid item xs={1} md={2}></Grid>
+              <Grid item xs={1} md={2}></Grid>
               <Hidden mdDown>
                 <Grid item xs={2}>
                   <Button
@@ -120,7 +128,16 @@ const Header = ({t,...props}) => {
                 <Grid item xs={2}></Grid>
                 <Grid item xs={1}></Grid>
                 <Grid item xs={1}></Grid>
-                <Grid item xs={1}></Grid>
+                <Grid item xs={1}>
+                  <IconButton
+                    type='button'
+                    style={{backgroundColor: 'transparent'}}
+                    disableRipple={true}
+                    onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'zhHant' : 'en')}
+                  >
+                    <TranslateIcon/>
+                  </IconButton>
+                </Grid>
                 <Grid item xs={1}>
                   <IconButton
                     style={{backgroundColor: 'transparent'}}

@@ -10,13 +10,18 @@ import PropTypes from 'prop-types'
 const useStyles = makeStyles({
     main: {
         height:'100vh',
+        // overflowY:'hidden',
         backgroundColor:'#1f1f1f'
     },
     title: {
-        fontFamily:'Roboto',
+        fontFamily:'Bebas Neue ',
         fontWeight:400,
-        paddingTop:'1rem',
-        color:'#8F8F8F'
+        letterSpacing:'1px',
+        color:'#8F8F8F',
+        fontSize:'2rem',
+        "&:hover":{
+            color:'white'
+        }
     },
     drawerLink: {
         fontFamily:'Roboto',
@@ -28,6 +33,9 @@ const useStyles = makeStyles({
         "&:hover":{
             color:'white'
         }
+    },
+    drawerHeader: {
+        marginTop:'3rem'
     },
     icon: {
         fontSize:'1.5rem',
@@ -52,11 +60,17 @@ const Drawer = ({t,...props}) => {
             <div className={classes.main}>
                 
                 <Grid container>
-                    <Grid item xs={2} style={{marginTop:'0.5rem'}}>
-                        <span className={classes.title}>{t('title')}</span>
+                    <Grid item xs={4} md={2} style={{marginTop:'0.5rem'}}>
+                    <Link 
+                        href="."
+                        underline='none'
+                        className={classes.title}
+                    >
+                        {t('title')}
+                    </Link>
                     </Grid>
-                    <Grid item xs={2}></Grid>
-                    <Grid item xs={2}></Grid>
+                    <Grid item xs={1} md={2}></Grid>
+                    <Grid item xs={1} md={2}></Grid>
                     <Grid item xs={2}></Grid>
                     <Grid item xs={2}></Grid>
                     <Grid item xs={1}></Grid>

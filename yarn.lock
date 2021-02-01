@@ -4376,10 +4376,10 @@ react-transition-group@^4.4.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react-typewriting-animation@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/react-typewriting-animation/-/react-typewriting-animation-1.0.5.tgz#046dc4fb3de7a8ac0c8b1d89cd5ed5ffaa82358d"
-  integrity sha512-prEZ2y/6QgR9pAE6v9x5nNH7ZAsihz4xifkAOJjZcwFH9G8XDxAXdkz7ElJ47kAHDjiDzWdctNAp2TEjQiIxug==
+react-typewriting-animation@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/react-typewriting-animation/-/react-typewriting-animation-1.0.6.tgz#923338a9a3d5d3df1ecb35405fe3284d3a85ac91"
+  integrity sha512-E7OgGq5qMjdz0FbyKyggVLYz22venBguoiAJGphVfzY493s0i4Fb/ZGQqh14zMyKb4n20ujc7GQC/XL4OYM5UA==
   dependencies:
     babel-core "^6.26.3"
     babel-preset-env "^1.7.0"

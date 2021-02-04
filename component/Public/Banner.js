@@ -37,4 +37,4 @@ Banner.propTypes = {
     t: PropTypes.func.isRequired,
 }
 
-export default withTranslation('banner')(Banner)
+export default withTranslation('banner')(Banner)       

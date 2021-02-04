@@ -1,6 +1,7 @@
 import React from 'react';
 import { ServerStyleSheets } from '@material-ui/styles';
 import Document, {Html, Head, Main, NextScript} from 'next/document';
+import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 
 class MyDocument extends Document {
     
@@ -8,31 +9,58 @@ class MyDocument extends Document {
         return(
             <Html>
                 <Head>
+                    
+                    <link rel="shortcut icon" href="/man.png"/>
+
+                    {/* Google analytics */}
+                    {/* <script
+                        async
+                        src="https://www.googletagmanager.com/gtag/js?id=UA-80550814-1" >
+                    </script>
+                    <script dangerouslySetInnerHTML={
+                        { __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+        
+                            gtag('config', 'UA-80550814-1');
+                        `}
+                    }>
+                    </script> */}
+                    {/* Google analytics */}
+                    
                     <link 
                         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
                         rel="stylesheet">
                     </link>
+
                     <link 
                         href="https://fonts.googleapis.com/css2?family=Anton&display=swap" 
                         rel="stylesheet">
                     </link>
+
                     <link 
                         href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" 
                         rel="stylesheet">
                     </link>
+
                     <link 
                         href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" 
                         rel="stylesheet">
                     </link>
+
                     <link 
                         href="https://fonts.googleapis.com/css2?family=Rosario&display=swap" 
                         rel="stylesheet">
                     </link>
+
                 </Head>
+
                 <body>
                     <Main />
                     <NextScript />
                 </body>
+
             </Html>
         )
     }

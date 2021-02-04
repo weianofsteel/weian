@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Header from '../Public/Header'
 import Banner from '../Public/Banner'
 import Drawer from '../Public/Drawer'
+import Footer from '../Public/Footer'
 
 export const Work = () => {
 
@@ -29,6 +30,11 @@ export const Work = () => {
                     <div>
                         <Banner/>
                     </div>
+
+                    <div>
+                        <Footer/>
+                    </div>
+                    
                 </React.Fragment>
             }
 

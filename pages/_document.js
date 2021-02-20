@@ -1,7 +1,6 @@
 import React from 'react';
 import { ServerStyleSheets } from '@material-ui/styles';
 import Document, {Html, Head, Main, NextScript} from 'next/document';
-import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 
 class MyDocument extends Document {
     

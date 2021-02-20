@@ -54,6 +54,10 @@ const Header = ({t,...props}) => {
 
     const router = useRouter();
 
+    const handleLanguage = () => {
+      i18n.changeLanguage(i18n.language === 'en' ? 'zhHant' : 'en')
+    }
+
     const {
       handleDrawerOpen
     } = props;
@@ -81,7 +85,7 @@ const Header = ({t,...props}) => {
                     className={classes.link}
                     style={{backgroundColor: 'transparent'}}
                     disableRipple={true}
-                    onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'zhHant' : 'en')}
+                    onClick={handleLanguage}
                   >
                     <TranslateIcon/>language/語言
                   </Button>
@@ -133,9 +137,9 @@ const Header = ({t,...props}) => {
                     type='button'
                     style={{backgroundColor: 'transparent'}}
                     disableRipple={true}
-                    onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'zhHant' : 'en')}
+                    onClick={handleLanguage}
                   >
-                    <TranslateIcon/>
+                    <TranslateIcon className={classes.icon}/>
                   </IconButton>
                 </Grid>
                 <Grid item xs={1}>

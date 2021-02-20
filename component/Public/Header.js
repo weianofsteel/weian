@@ -118,12 +118,19 @@ const Header = ({t,...props}) => {
                   </Link>
                 </Grid>
                 <Grid item xs={1} style={{marginTop:'0.5rem'}}>
-                  <Link 
+                  {/* <Link 
                     href="./Resume"
                     underline='none'
                     className={router.pathname == '/Resume'?classes.linkAnchor:classes.link}
                   >
                     {t('resume')}
+                  </Link> */}
+                  <Link 
+                    href="./Sample"
+                    underline='none'
+                    className={router.pathname == '/Sample'?classes.linkAnchor:classes.link}
+                  >
+                    Sample
                   </Link>
                 </Grid>
               </Hidden>

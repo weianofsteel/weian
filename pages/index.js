@@ -7,7 +7,7 @@ const HomePage = ({ t }) =>{
     return (
         <Home/>
     )
-    
+
 }
 
 HomePage.getInitialProps = async () => ({

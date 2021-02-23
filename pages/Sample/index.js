@@ -15,6 +15,6 @@ SamplePage.getInitialProps = async () => ({
 
 SamplePage.propTypes = {
     t: PropTypes.func.isRequired,
-  }
+}
 
 export default withTranslation('sample')(SamplePage)

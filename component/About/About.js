@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../Public/Header'
 import Banner from '../Public/Banner'
 import Drawer from '../Public/Drawer'
+import Footer from '../Public/Footer'
 
 export const About = () => {
 
@@ -29,6 +30,11 @@ export const About = () => {
                     <div>
                         <Banner/>
                     </div>
+
+                    <div>
+                        <Footer/>
+                    </div>
+                    
                 </React.Fragment>
             }
 

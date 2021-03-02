@@ -19,6 +19,14 @@ const useStyles = makeStyles({
         width:'100%',
         overflow:'hidden',
         transition: '.4s ease-in-out'
+    },
+    title:{
+        fontFamily:'Roboto',
+        color:'black'
+    },
+    titleOnHover:{
+        fontFamily:'Roboto',
+        color:'white'
     }
 })
 
@@ -55,7 +63,7 @@ const Showcase = ({t}) => {
 
                     </Grid>
                     <Grid item xs={7}>
-                        <p>Exploring Next.js : multi-lingual support with next-i18next</p>
+                        <p className={box1===true?classes.title:classes.titleOnHover}>Exploring Next.js : multi-lingual support with next-i18next</p>
                     </Grid>
                 </Grid>
                 </div>

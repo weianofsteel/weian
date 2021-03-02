@@ -3,6 +3,7 @@ import Header from '../Public/Header'
 import Banner from '../Public/Banner'
 import Drawer from '../Public/Drawer'
 import Footer from '../Public/Footer'
+import Showcase from './component/Showcase'
 
 export const Writings = () => {
 
@@ -29,6 +30,10 @@ export const Writings = () => {
                     
                     <div>
                         <Banner/>
+                    </div>
+
+                    <div>
+                        <Showcase/>
                     </div>
 
                     <div>

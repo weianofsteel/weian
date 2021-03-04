@@ -119,14 +119,14 @@ const Showcase = ({t}) => {
                 </div>
             </Link>
 
-            <Grid container>
+            {/* <Grid container>
                 <Grid item xs={5}>
 
                 </Grid>
                 <Grid item xs={7}>
                     
                 </Grid>
-            </Grid>
+            </Grid> */}
             
         </React.Fragment>
     )

@@ -1,16 +1,16 @@
-import React from 'react'
-import { i18n, withTranslation } from '../../i18n'
-import { makeStyles } from '@material-ui/core/styles'
-import Button from '@material-ui/core/Button'
-import Grid from '@material-ui/core/Grid'
-import PropTypes from 'prop-types'
-import styles from '../../css/Public/Header.module.css'
-import Link from '@material-ui/core/Link'
-import { useRouter } from 'next/router'
-import TranslateIcon from '@material-ui/icons/Translate'
-import MenuIcon from '@material-ui/icons/Menu'
+import React from 'react';
+import { i18n, withTranslation } from '../../i18n';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import PropTypes from 'prop-types';
+import styles from '../../css/Public/Header.module.css';
+import Link from '@material-ui/core/Link';
+import { useRouter } from 'next/router';
+import TranslateIcon from '@material-ui/icons/Translate';
+import MenuIcon from '@material-ui/icons/Menu';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
+import {Select} from './Component';
 
 const useStyles = makeStyles({
   title: {
@@ -18,7 +18,7 @@ const useStyles = makeStyles({
     fontWeight:400,
     letterSpacing:'1px',
     color:'black',
-    fontSize:'2rem'
+    fontSize:'2rem',
   },
   link: {
     fontFamily:'Roboto',
@@ -45,6 +45,16 @@ const useStyles = makeStyles({
     "&:hover":{
         color:'#1F1F1F'
     }
+  },
+  formControl: {
+    margin: '0.5rem',
+    width:'10rem',
+  },
+  inputLabel: {
+    fontSize:"17px",
+    fontFamily:"微軟正黑體",
+    display: "flex",
+    flexDirection: "row-Reverse"
   }
 })
 
@@ -54,9 +64,12 @@ const Header = ({t,...props}) => {
 
     const router = useRouter();
 
-    const handleLanguage = () => {
-      i18n.changeLanguage(i18n.language === 'en' ? 'zhHant' : 'en')
-    }
+    const [ language, setLanguage ] = React.useState('en');
+
+    const handleChange = (event) => {
+      setLanguage(event.target.value);
+      i18n.changeLanguage(event.target.value);
+    };
 
     const {
       handleDrawerOpen
@@ -79,18 +92,19 @@ const Header = ({t,...props}) => {
               <Grid item xs={1} md={2}></Grid>
               <Grid item xs={1} md={2}></Grid>
               <Hidden mdDown>
-                <Grid item xs={2}>
-                  <Button
-                    type='button'
-                    className={classes.link}
-                    style={{backgroundColor: 'transparent'}}
-                    disableRipple={true}
-                    onClick={handleLanguage}
-                  >
-                    <TranslateIcon/>language/語言
-                  </Button>
+                <Grid item xs={2} style={{marginTop:'1rem'}}>
+                  <Select
+                      label={<TranslateIcon/>}
+                      name="language"
+                      value={language}
+                      onChange={handleChange}
+                      items={[
+                          {value:'en',label:"English"},
+                          {value:'zhHant',label:"中文"},
+                      ]}
+                  />
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'0.5rem'}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem'}}>
                   <Link 
                     href="./Work"
                     underline='none'
@@ -99,7 +113,7 @@ const Header = ({t,...props}) => {
                     {t('work')}
                   </Link>
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'0.5rem'}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem'}}>
                   <Link 
                     href="./Writings"
                     underline='none'
@@ -108,7 +122,7 @@ const Header = ({t,...props}) => {
                     {t('writings')}
                   </Link>
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'0.5rem'}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem'}}>
                   <Link 
                     href="./About"
                     underline='none'
@@ -117,7 +131,7 @@ const Header = ({t,...props}) => {
                     {t('about')}
                   </Link>
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'0.5rem'}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem'}}>
                   {/* <Link 
                     href="./Resume"
                     underline='none'
@@ -136,19 +150,21 @@ const Header = ({t,...props}) => {
               </Hidden>
 
               <Hidden lgUp>
-                <Grid item xs={2}></Grid>
                 <Grid item xs={1}></Grid>
-                <Grid item xs={1}></Grid>
-                <Grid item xs={1}>
-                  <IconButton
-                    type='button'
-                    style={{backgroundColor: 'transparent'}}
-                    disableRipple={true}
-                    onClick={handleLanguage}
-                  >
-                    <TranslateIcon className={classes.icon}/>
-                  </IconButton>
+                {/* <Grid item xs={1}></Grid> */}
+                <Grid item xs={3} style={{marginTop:'0.5rem'}}>
+                  <Select
+                      label={<TranslateIcon/>}
+                      name="language"
+                      value={language}
+                      onChange={handleChange}
+                      items={[
+                          {value:'en',label:"English"},
+                          {value:'zhHant',label:"中文"},
+                      ]}
+                  />
                 </Grid>
+                <Grid item xs={1}></Grid>
                 <Grid item xs={1}>
                   <IconButton
                     style={{backgroundColor: 'transparent'}}

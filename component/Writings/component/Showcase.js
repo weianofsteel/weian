@@ -14,6 +14,7 @@ const useStyles = makeStyles({
         height: '100%',
         width:'100%',
         overflow:'hidden',
+        marginTop:'1rem'
     },
     linkOnHover: {
         backgroundColor:'#1F1F1F',
@@ -21,7 +22,8 @@ const useStyles = makeStyles({
         height: '100%',
         width:'100%',
         overflow:'hidden',
-        transition: '.4s ease-in-out'
+        transition: '.4s ease-in-out',
+        marginTop:'1rem'
     },
     title:{
         fontFamily:'Roboto',
@@ -39,12 +41,26 @@ const Showcase = ({t}) => {
 
     const [ box1, setBox1] = React.useState(true);
 
+    const [ box2, setBox2] = React.useState(true);
+
+    const [ box3, setBox3] = React.useState(true);
+
     const handleBox1On = () => {
         setBox1(false);
     }
 
+    const handleBox2On = () => {
+        setBox2(false);
+    }
+
+    const handleBox3On = () => {
+        setBox3(false);
+    }
+
     const handleMouseLeave = () => {
         setBox1(true);
+        setBox2(true);
+        setBox3(true);
     }
     
     return(
@@ -55,21 +71,20 @@ const Showcase = ({t}) => {
                 underline='none'
                 target='_blank' 
                 rel='noopener'
-                className={classes.showcase}
             >
                 <div 
                     className={box1===true?classes.link:classes.linkOnHover}
                     onMouseEnter={handleBox1On}
                     onMouseLeave={handleMouseLeave}
                 >
-                <Grid container>
-                    <Grid item xs={5}>
+                    <Grid container>
+                        <Grid item xs={5}>
 
+                        </Grid>
+                        <Grid item xs={7}>
+                            <p className={box1===true?classes.title:classes.titleOnHover}>Exploring Next.js : multi-lingual support with next-i18next</p>
+                        </Grid>
                     </Grid>
-                    <Grid item xs={7}>
-                        <p className={box1===true?classes.title:classes.titleOnHover}>Exploring Next.js : multi-lingual support with next-i18next</p>
-                    </Grid>
-                </Grid>
                 </div>
             </Link>
 
@@ -81,18 +96,18 @@ const Showcase = ({t}) => {
                 className={classes.showcase}
             >
                 <div 
-                    className={box1===true?classes.link:classes.linkOnHover}
-                    onMouseEnter={handleBox1On}
+                    className={box2===true?classes.link:classes.linkOnHover}
+                    onMouseEnter={handleBox2On}
                     onMouseLeave={handleMouseLeave}
                 >
-                <Grid container>
-                    <Grid item xs={5}>
+                    <Grid container>
+                        <Grid item xs={5}>
 
+                        </Grid>
+                        <Grid item xs={7}>
+                            <p className={box2===true?classes.title:classes.titleOnHover}>Exploring Next.js : multi-lingual support with next-i18next</p>
+                        </Grid>
                     </Grid>
-                    <Grid item xs={7}>
-                        <p className={box1===true?classes.title:classes.titleOnHover}>Exploring Next.js : multi-lingual support with next-i18next</p>
-                    </Grid>
-                </Grid>
                 </div>
             </Link>
 
@@ -104,29 +119,21 @@ const Showcase = ({t}) => {
                 className={classes.showcase}
             >
                 <div 
-                    className={box1===true?classes.link:classes.linkOnHover}
-                    onMouseEnter={handleBox1On}
+                    className={box3===true?classes.link:classes.linkOnHover}
+                    onMouseEnter={handleBox3On}
                     onMouseLeave={handleMouseLeave}
                 >
-                <Grid container>
-                    <Grid item xs={5}>
+                    <Grid container>
+                        <Grid item xs={5}>
 
+                        </Grid>
+                        <Grid item xs={7}>
+                            <p className={box3===true?classes.title:classes.titleOnHover}>Exploring Next.js : multi-lingual support with next-i18next</p>
+                        </Grid>
                     </Grid>
-                    <Grid item xs={7}>
-                        <p className={box1===true?classes.title:classes.titleOnHover}>Exploring Next.js : multi-lingual support with next-i18next</p>
-                    </Grid>
-                </Grid>
                 </div>
             </Link>
 
-            {/* <Grid container>
-                <Grid item xs={5}>
-
-                </Grid>
-                <Grid item xs={7}>
-                    
-                </Grid>
-            </Grid> */}
             
         </React.Fragment>
     )

@@ -25,7 +25,8 @@ export function Select(props) {
         selectProps,
         required,
         disabled =false,
-        tabIndex=0
+        tabIndex=0,
+        mode
     } = props;
 
     let newProps = {
@@ -40,6 +41,7 @@ export function Select(props) {
             fullWidth
             variant="outlined"
             disabled={disabled}
+            style={{borderColor:'blue'}}
         >
             <InputLabel
                 required={required}
@@ -48,6 +50,7 @@ export function Select(props) {
                     root:classes.inputLabel,
                     required:classes.selectRequired
                 }}
+                style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
             >
                 {label}
             </InputLabel>
@@ -55,10 +58,10 @@ export function Select(props) {
                 {...selectProps}
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
+                style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                 inputProps={{
                     name: name,
                     classes: {select: classes.input},
-
                 }}
                 SelectDisplayProps={{
                     tabIndex:tabIndex

@@ -10,14 +10,15 @@ import TranslateIcon from '@material-ui/icons/Translate';
 import MenuIcon from '@material-ui/icons/Menu';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import {Select} from './Component';
+import {Select} from './PublicComponent';
+import Brightness2OutlinedIcon from '@material-ui/icons/Brightness2Outlined';
+import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
 
 const useStyles = makeStyles({
   title: {
     fontFamily:'Bebas Neue ',
     fontWeight:400,
     letterSpacing:'1px',
-    color:'black',
     fontSize:'2rem',
   },
   link: {
@@ -72,7 +73,9 @@ const Header = ({t,...props}) => {
     };
 
     const {
-      handleDrawerOpen
+      handleDrawerOpen,
+      handleMode,
+      mode
     } = props;
 
     return(
@@ -85,13 +88,27 @@ const Header = ({t,...props}) => {
                     href="."
                     underline='none'
                     className={classes.title}
+                    style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                   >
                     {t('title')}
                   </Link>
               </Grid>
               <Grid item xs={1} md={2}></Grid>
-              <Grid item xs={1} md={2}></Grid>
+              <Grid item xs={1}></Grid>
               <Hidden mdDown>
+                <Grid item xs={1} style={{marginTop:'0.5rem', textAlign:'center'}}>
+                  <IconButton
+                    style={{backgroundColor: 'transparent'}}
+                    disableRipple={true}
+                    onClick={handleMode}
+                    style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
+                  >
+                    {mode === 'day'?
+                      <Brightness2OutlinedIcon fontSize='large'/>
+                      :<WbSunnyOutlinedIcon fontSize='large'/>
+                    }
+                  </IconButton>
+                </Grid>
                 <Grid item xs={2} style={{marginTop:'1rem'}}>
                   <Select
                       label={<TranslateIcon/>}
@@ -102,6 +119,8 @@ const Header = ({t,...props}) => {
                           {value:'en',label:"English"},
                           {value:'zhHant',label:"中文"},
                       ]}
+                      mode={mode}
+                      // style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                   />
                 </Grid>
                 <Grid item xs={1} style={{marginTop:'1.5rem'}}>

@@ -10,7 +10,7 @@ import TranslateIcon from '@material-ui/icons/Translate';
 import MenuIcon from '@material-ui/icons/Menu';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import {Select2} from './PublicComponent';
+import {Select, Select2} from './PublicComponent';
 import Brightness2OutlinedIcon from '@material-ui/icons/Brightness2Outlined';
 import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
 
@@ -67,9 +67,19 @@ const Header = ({t,...props}) => {
 
     const [ language, setLanguage ] = React.useState('en');
 
+    const [open, setOpen] = React.useState(false);
+
     const handleChange = (event) => {
       setLanguage(event.target.value);
       i18n.changeLanguage(event.target.value);
+    };
+
+    const handleClose = () => {
+      setOpen(false);
+    };
+  
+    const handleOpen = () => {
+      setOpen(true);
     };
 
     const {
@@ -98,10 +108,9 @@ const Header = ({t,...props}) => {
               <Hidden mdDown>
                 <Grid item xs={1} style={{marginTop:'0.3rem', textAlign:'center'}}>
                   <IconButton
-                    style={{backgroundColor: 'transparent'}}
+                    style={{backgroundColor: 'transparent',color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                     disableRipple={true}
                     onClick={handleMode}
-                    style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                   >
                     {mode === 'day'?
                       <Brightness2OutlinedIcon fontSize='large'/>
@@ -111,7 +120,6 @@ const Header = ({t,...props}) => {
                 </Grid>
                 <Grid item xs={1} style={{marginTop:'0.3rem'}}>
                   <Select2
-                      // label={<TranslateIcon/>}
                       name="language"
                       value={language}
                       onChange={handleChange}
@@ -169,11 +177,21 @@ const Header = ({t,...props}) => {
               </Hidden>
 
               <Hidden lgUp>
-                <Grid item xs={1}></Grid>
-                {/* <Grid item xs={1}></Grid> */}
-                <Grid item xs={3} style={{marginTop:'0.5rem'}}>
-                  <Select2
-                      // label={<TranslateIcon/>}
+                <Grid item xs={2}></Grid>
+                <Grid item xs={1}>
+                  <IconButton
+                    style={{backgroundColor: 'transparent',color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
+                    disableRipple={true}
+                    onClick={handleMode}
+                  >
+                    {mode === 'day'?
+                      <Brightness2OutlinedIcon fontSize='medium'/>
+                      :<WbSunnyOutlinedIcon fontSize='medium'/>
+                    }
+                  </IconButton>
+                </Grid>
+                <Grid item xs={1} style={{marginTop:'0.5rem'}}>
+                  {/* <Select2
                       name="language"
                       value={language}
                       onChange={handleChange}
@@ -181,6 +199,21 @@ const Header = ({t,...props}) => {
                           {value:'en',label:"English"},
                           {value:'zhHant',label:"中文"},
                       ]}
+                      mode={mode}
+                  /> */}
+                    <Select
+                      name="language"
+                      value={language}
+                      onChange={handleChange}
+                      open={open}
+                      onClose={handleClose}
+                      onOpen={handleOpen}
+                      items={[
+                          {value:'en',label:"English"},
+                          {value:'zhHant',label:"中文"},
+                      ]}
+                      mode={mode}
+                      // style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                   />
                 </Grid>
                 <Grid item xs={1}></Grid>

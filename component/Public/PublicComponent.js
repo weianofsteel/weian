@@ -14,90 +14,37 @@ const useStyles = makeStyles({
     selectRequired:{
         // marginLeft:"-7px"
     },
+
 })
 
 export function Select(props) {
     const classes = useStyles();
     const {
-        label,
-        value,
-        name,
+        onOpen,
+        onClose,
+        onChange,
         items,
-        formControlProps,
-        selectProps,
-        required,
-        disabled =false,
-        tabIndex=0,
+        open,
+        value,
         mode
     } = props;
 
-    let newProps = {
-        ...props
-    };
-    delete newProps["helperText"];
-
     return (
-        <FormControl
-            {...formControlProps}
-            size="small"
-            fullWidth
-            variant="outlined"
-            disabled={disabled}
-            style={{borderColor:'blue'}}
-        >
-            <InputLabel
-                required={required}
-                id="demo-simple-select-label"
-                classes={{
-                    root:classes.inputLabel,
-                    required:classes.selectRequired
-                }}
-                style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
-            >
-                {label}
-            </InputLabel>
+        <FormControl>
             <MaterialSelect
-                {...selectProps}
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
-                inputProps={{
-                    name: name,
-                    classes: {select: classes.input},
+                labelId="demo-controlled-open-select-label"
+                id="demo-controlled-open-select"
+                open={open}
+                onClose={onClose}
+                onOpen={onOpen}
+                value={value}
+                onChange={onChange}
+                disableUnderline
+                autoFocus={false}
+                renderValue={()=>{
+                    return <TranslateIcon/>
                 }}
-                SelectDisplayProps={{
-                    tabIndex:tabIndex
-                }}
-
-                value={value===null?"":value}
-                label={label}
-                displayEmpty={true}
-                renderValue={selected => {
-                    function checkEqual(a,b){
-                        if (a === null || a===undefined){
-                            a = "";
-                        }
-
-                        if (b === null || b ===undefined){
-                            b = "";
-                        }
-
-                        if (typeof a === "number"){
-                            a = a.toString();
-                        }
-
-                        if (typeof b === "number"){
-                            b = b.toString();
-                        }
-
-                        return a == b;
-                    }
-
-                    let filters= items.filter(item=> checkEqual(item.value,selected)  )
-
-                    return filters[0]?filters[0]["label"]:"";
-                }}
-                {...newProps}
+                style={{backgroundColor: 'transparent'}}
             >
                 {items.map(function(item,index) {
                     return (
@@ -112,7 +59,7 @@ export function Select(props) {
                     )
                 })}
             </MaterialSelect>
-        </FormControl>
+        </FormControl>            
     );
 }
 
@@ -138,11 +85,11 @@ export function Select2(props) {
 
     return (
         <Grid container>
-            <Grid item xs={3} style={{marginTop:'1rem'}}>
+            <Grid item xs={2} style={{marginTop:'1rem'}}>
                 <TranslateIcon/>
             </Grid>
             <Grid item xs={1}></Grid>
-            <Grid item xs={8}>
+            <Grid item xs={9}>
             <FormControl
                 {...formControlProps}
                 size="small"
@@ -164,9 +111,8 @@ export function Select2(props) {
                     {...selectProps}
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
-                    style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
+                    style={{backgroundColor: 'transparent',color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                     disableUnderline
-                    disableRipple={true}
                     inputProps={{
                         name: name,
                         classes: {select: classes.input},
@@ -174,7 +120,6 @@ export function Select2(props) {
                     SelectDisplayProps={{
                         tabIndex:tabIndex
                     }}
-
                     value={value===null?"":value}
                     label={label}
                     displayEmpty={true}

@@ -8,3 +8,7 @@ body {
     overflow-x:hidden;
     max-width: 100%;
 }
+
+.MuiSelect-select:focus {
+    background-color: transparent !important;
+}

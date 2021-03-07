@@ -10,7 +10,7 @@ import TranslateIcon from '@material-ui/icons/Translate';
 import MenuIcon from '@material-ui/icons/Menu';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import {Select} from './PublicComponent';
+import {Select2} from './PublicComponent';
 import Brightness2OutlinedIcon from '@material-ui/icons/Brightness2Outlined';
 import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
 
@@ -49,7 +49,7 @@ const useStyles = makeStyles({
   },
   formControl: {
     margin: '0.5rem',
-    width:'10rem',
+    width:'6rem',
   },
   inputLabel: {
     fontSize:"17px",
@@ -94,9 +94,9 @@ const Header = ({t,...props}) => {
                   </Link>
               </Grid>
               <Grid item xs={1} md={2}></Grid>
-              <Grid item xs={1}></Grid>
+              <Grid item xs={1} md={2}></Grid>
               <Hidden mdDown>
-                <Grid item xs={1} style={{marginTop:'0.5rem', textAlign:'center'}}>
+                <Grid item xs={1} style={{marginTop:'0.3rem', textAlign:'center'}}>
                   <IconButton
                     style={{backgroundColor: 'transparent'}}
                     disableRipple={true}
@@ -109,9 +109,9 @@ const Header = ({t,...props}) => {
                     }
                   </IconButton>
                 </Grid>
-                <Grid item xs={2} style={{marginTop:'1rem'}}>
-                  <Select
-                      label={<TranslateIcon/>}
+                <Grid item xs={1} style={{marginTop:'0.3rem'}}>
+                  <Select2
+                      // label={<TranslateIcon/>}
                       name="language"
                       value={language}
                       onChange={handleChange}
@@ -172,8 +172,8 @@ const Header = ({t,...props}) => {
                 <Grid item xs={1}></Grid>
                 {/* <Grid item xs={1}></Grid> */}
                 <Grid item xs={3} style={{marginTop:'0.5rem'}}>
-                  <Select
-                      label={<TranslateIcon/>}
+                  <Select2
+                      // label={<TranslateIcon/>}
                       name="language"
                       value={language}
                       onChange={handleChange}

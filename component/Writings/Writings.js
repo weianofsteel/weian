@@ -8,12 +8,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     dayBackground:{
-        backgroundColor:'#F2F2F2',
+        backgroundColor:'#FFFFFF',
         color:'#1F1F1F'
     },
     nightBackground:{
-        backgroundColor:'#ADADAD',
+        backgroundColor:'#9B9B9B',
         color:'#FFFFFF'
+    },
+    body:{
+        paddingLeft:'8%', 
+        paddingRight:'8%'
     }
 })
 
@@ -47,25 +51,25 @@ export const Writings = () => {
             {drawer == false &&
                 <React.Fragment>
                     <div className={mode==='day'?classes.dayBackground:classes.nightBackground}>
-                    <div>
-                        <Header
-                            handleDrawerOpen={handleDrawerOpen}
-                            handleMode={handleMode}
-                            mode={mode}
-                        />
-                    </div>
-                    
-                    <div>
-                        <Banner/>
-                    </div>
+                        <div className={classes.body}>
+                            <Header
+                                handleDrawerOpen={handleDrawerOpen}
+                                handleMode={handleMode}
+                                mode={mode}
+                            />
+                        </div>
+                        
+                        <div className={classes.body}>
+                            <Banner/>
+                        </div>
 
-                    <div>
-                        <Showcase/>
-                    </div>
+                        <div className={classes.body}>
+                            <Showcase/>
+                        </div>
 
-                    <div>
-                        <Footer/>
-                    </div>
+                        <div className={classes.body}>
+                            <Footer/>
+                        </div>
                     </div>
                 </React.Fragment>
             }

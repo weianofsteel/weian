@@ -1,6 +1,7 @@
 import React from 'react'
 import { Writings } from '../../component/Writings/Writings'
 import PropTypes from 'prop-types'
+import { withTranslation } from '../../i18n'
 
 const WritingsPage = ({t}) => {
     return(
@@ -9,11 +10,11 @@ const WritingsPage = ({t}) => {
 }
 
 WritingsPage.getInitialProps = async () => ({
-    namespacesRequired: ['header', 'banner', 'article'],
+    namespacesRequired: ['header', 'banner', 'article', 'footer'],
 })
 
 WritingsPage.propTypes = {
     t: PropTypes.func.isRequired,
   }
 
-export default WritingsPage
+export default withTranslation('header')(WritingsPage)

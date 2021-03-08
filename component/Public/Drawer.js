@@ -11,13 +11,15 @@ const useStyles = makeStyles({
     main: {
         height:'100vh',
         // overflowY:'hidden',
-        backgroundColor:'#1f1f1f'
+        backgroundColor:'#1f1f1f',
+        paddingLeft:'8%', 
+        paddingRight:'8%'
     },
     title: {
         fontFamily:'Bebas Neue ',
         fontWeight:400,
         letterSpacing:'1px',
-        color:'#8F8F8F',
+        color:'#CACACA',
         fontSize:'2rem',
         "&:hover":{
             color:'white'
@@ -28,7 +30,7 @@ const useStyles = makeStyles({
         textAlign:'left',
         fontWeight:400,
         letterSpacing:'1px',
-        color:'#8F8F8F',
+        color:'#CACACA',
         fontSize:'22px',
         "&:hover":{
             color:'white'
@@ -74,7 +76,7 @@ const Drawer = ({t,...props}) => {
                     <Grid item xs={2}></Grid>
                     <Grid item xs={2}></Grid>
                     <Grid item xs={1}></Grid>
-                    <Grid item xs={1}>
+                    <Grid item xs={1} style={{textAlign:'right'}}>
                         <IconButton
                             style={{backgroundColor: 'transparent'}}
                             disableRipple={true}

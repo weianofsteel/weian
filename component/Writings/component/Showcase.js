@@ -32,6 +32,14 @@ const useStyles = makeStyles({
     titleOnHover:{
         fontFamily:'Roboto',
         color:'white'
+    },
+    description:{
+        fontFamily:'Roboto',
+        color:'black'
+    },
+    descriptionOnHover:{
+        fontFamily:'Roboto',
+        color:'white'
     }
 })
 
@@ -105,7 +113,12 @@ const Showcase = ({t}) => {
 
                         </Grid>
                         <Grid item xs={7}>
-                            <p className={box2===true?classes.title:classes.titleOnHover}>Exploring Next.js : multi-lingual support with next-i18next</p>
+                            <p className={box2===true?classes.title:classes.titleOnHover}>
+                                Exploring Next.js : dynamic import
+                            </p>
+                            <p className={box2===true?classes.description:classes.descriptionOnHover}>
+                                Nowadays multi-lingual support is getting more and more important. Here is an example using next-i18next to implement multi-lingual support to a next.js project...
+                            </p>
                         </Grid>
                     </Grid>
                 </div>

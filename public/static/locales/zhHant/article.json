@@ -1,4 +1,8 @@
 {
     "title":"文章分享",
-    "readMore":"更多分享"
+    "readMore":"更多分享",
+    "title1":"探索 Next.js : 用next-i18next實現多語系切換功能",
+    "description1":"網路無國界，用next-i18next實現多語系切換功能，才能讓更多人看到...",
+    "title2":"探索 Next.js : 動態導入",
+    "description2":"Next.js提供了動態導入的解決方法，強大又容易上手..."
 }

@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/core/styles'
 import { i18n, withTranslation } from '../../../i18n'
 import PropTypes from 'prop-types'
+import ArticleBlock from './ArticleBlock'
 
 const useStyles = makeStyles({
     showcase: {
@@ -90,7 +91,12 @@ const Showcase = ({t}) => {
 
                         </Grid>
                         <Grid item xs={7}>
-                            <p className={box1===true?classes.title:classes.titleOnHover}>Exploring Next.js : multi-lingual support with next-i18next</p>
+                            <p className={box1===true?classes.title:classes.titleOnHover}>
+                                Exploring Next.js : multi-lingual support with next-i18next
+                            </p>
+                            <p className={box1===true?classes.description:classes.descriptionOnHover}>
+                                Dynamic import help us cut down loading time when website first render. Next.js provides us a strong feature 'next/dynamic' to do this. Let's check it! 
+                            </p>
                         </Grid>
                     </Grid>
                 </div>
@@ -146,6 +152,8 @@ const Showcase = ({t}) => {
                     </Grid>
                 </div>
             </Link>
+
+            <ArticleBlock title={t('title1')}/>
 
             
         </React.Fragment>

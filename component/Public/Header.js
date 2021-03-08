@@ -274,7 +274,9 @@ const Header = ({t,...props}) => {
 
             </Grid>
 
-            <p className={styles.ball}></p>
+            <Grid container>
+                <p className={styles.ball}></p>
+            </Grid>
              
         </React.Fragment>
     )

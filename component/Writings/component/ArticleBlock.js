@@ -14,7 +14,8 @@ const ArticleBlock = ({t,...props}) => {
     const classes = useStyles();
 
     const {
-        title
+        title,
+        description
     } = props;
 
     return(

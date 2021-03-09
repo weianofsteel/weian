@@ -39,7 +39,7 @@ const useStyles = makeStyles({
     color:'#FFFFFF',
     fontSize:'1rem',
     "&:hover":{
-        color:'black'
+        color:'#BDBDBD'
     }
   },
   linkAnchor: {
@@ -55,7 +55,7 @@ const useStyles = makeStyles({
     fontWeight:400,
     letterSpacing:'1px',
     marginLeft: '32px',
-    color:'black',
+    color:'#BDBDBD',
     fontSize:'1rem'
   },
   icon: {

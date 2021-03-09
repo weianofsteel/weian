@@ -124,7 +124,7 @@ const Header = ({t,...props}) => {
               <Grid item xs={1} md={2}></Grid>
               <Grid item xs={1} md={2}></Grid>
               <Hidden mdDown>
-                <Grid item xs={1} style={{marginTop:'0.3rem', textAlign:'center'}}>
+                <Grid item xs={1} style={{marginTop:'0.3rem'}}>
                   <IconButton
                     style={{backgroundColor: 'transparent',color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                     disableRipple={true}
@@ -168,7 +168,7 @@ const Header = ({t,...props}) => {
                     </Link>
                   }
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'1.5rem'}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem', paddingLeft:'-1rem'}}>
                   {mode==='day'&&
                     <Link 
                       href="./Writings"
@@ -188,7 +188,7 @@ const Header = ({t,...props}) => {
                     </Link>
                   }
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'1.5rem'}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem', paddingLeft:'1rem'}}>
                   {mode==='day'&&
                     <Link 
                       href="./About"

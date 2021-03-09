@@ -12,7 +12,7 @@ const useStyles = makeStyles({
         color:'#1F1F1F'
     },
     nightBackground:{
-        backgroundColor:'#9E9E9E',
+        backgroundColor:'black',
         color:'#FFFFFF'
     },
     body:{

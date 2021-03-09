@@ -5,6 +5,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import { i18n, withTranslation } from '../../../i18n'
 import PropTypes from 'prop-types'
 import ArticleBlock from './ArticleBlock'
+import img01 from '../../../public/image/writings/dynamic-import.png'
+import img02 from '../../../public/image/writings/globe.png'
 
 const useStyles = makeStyles({
     showcase: {
@@ -153,7 +155,19 @@ const Showcase = ({t}) => {
                 </div>
             </Link>
 
-            <ArticleBlock title={t('title1')}/>
+            <ArticleBlock 
+                title={t('title1')}
+                description={t('description1')}
+                image={img01}
+                url={'./'}
+            />
+
+            <ArticleBlock 
+                title={t('title2')}
+                description={t('description2')}
+                image={img02}
+                url={'./'}
+            />
 
             
         </React.Fragment>

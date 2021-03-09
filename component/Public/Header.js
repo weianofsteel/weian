@@ -146,7 +146,6 @@ const Header = ({t,...props}) => {
                           {value:'zhHant',label:"中文"},
                       ]}
                       mode={mode}
-                      // style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                   />
                 </Grid>
                 <Grid item xs={1} style={{marginTop:'1.5rem'}}>

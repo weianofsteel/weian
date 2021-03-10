@@ -8,9 +8,13 @@ const useStyles = makeStyles({
 
 })
 
-const Banner = ({t}) => {
+const Banner = ({t,...props}) => {
     
     const classes = useStyles();
+
+    const {
+        mode
+    } = props;
 
     return(
         <React.Fragment>

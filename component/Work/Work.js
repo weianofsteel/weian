@@ -13,6 +13,10 @@ const useStyles = makeStyles({
     nightBackground:{
         backgroundColor:'#9B9B9B',
         color:'#FFFFFF'
+    },
+    body:{
+        paddingLeft:'8%', 
+        paddingRight:'8%'
     }
 })
 
@@ -46,7 +50,7 @@ export const Work = () => {
             {drawer == false &&
                 <React.Fragment>
                     <div className={mode==='day'?classes.dayBackground:classes.nightBackground}>
-                        <div>
+                        <div className={classes.body}>
                             <Header
                                 handleDrawerOpen={handleDrawerOpen}
                                 handleMode={handleMode}
@@ -54,11 +58,11 @@ export const Work = () => {
                             />
                         </div>
                         
-                        <div>
+                        <div className={classes.body}>
                             <Banner/>
                         </div>
 
-                        <div>
+                        <div className={classes.body}>
                             <Footer/>
                         </div>
 

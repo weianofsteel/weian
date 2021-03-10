@@ -42,7 +42,7 @@ export function Select(props) {
                 disableUnderline
                 autoFocus={false}
                 renderValue={()=>{
-                    return <TranslateIcon/>
+                    return <TranslateIcon style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}/>
                 }}
                 style={{backgroundColor: 'transparent'}}
             >

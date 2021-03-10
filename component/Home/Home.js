@@ -60,7 +60,9 @@ export const Home = () => {
                         </div>
                         
                         <div className={classes.body}>
-                            <Banner/>
+                            <Banner
+                                mode={mode}
+                            />
                         </div>
 
                         <div className={classes.body}>

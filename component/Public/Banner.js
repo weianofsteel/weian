@@ -26,7 +26,7 @@ const Banner = ({t,...props}) => {
                     typeSpeed={80}
                     fontSize={'24px'}
                     fontFamily={'Roboto'}
-                    color={'#6f6f6f'}
+                    color={mode=='day'?'black':'white'}
                     heading={'Typewriter'}
                     dataText={[ t('context1'), t('context2')]}
                 />  

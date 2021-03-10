@@ -46,7 +46,7 @@ const useStyles = makeStyles({
     }
 })
 
-const Showcase = ({t}) => {
+const Showcase = ({t,...props}) => {
     
     const classes = useStyles();
 
@@ -73,6 +73,10 @@ const Showcase = ({t}) => {
         setBox2(true);
         setBox3(true);
     }
+
+    const {
+        mode
+    } = props;
     
     return(
         <React.Fragment>
@@ -160,6 +164,7 @@ const Showcase = ({t}) => {
                 description={t('description1')}
                 image={img01}
                 url={'./'}
+                mode={mode}
             />
 
             <ArticleBlock 
@@ -167,6 +172,7 @@ const Showcase = ({t}) => {
                 description={t('description2')}
                 image={img02}
                 url={'./'}
+                mode={mode}
             />
 
             

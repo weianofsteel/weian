@@ -29,7 +29,8 @@ const ArticleBlock = ({t,...props}) => {
         title,
         description,
         image,
-        url
+        url,
+        mode
     } = props;
 
     return(
@@ -48,10 +49,10 @@ const ArticleBlock = ({t,...props}) => {
                         />
                     </Grid>
                     <Grid item xs={12} md={8}>
-                        <p className={classes.title}>
+                        <p className={classes.title} style={{color:(mode=='day'?'black':'white')}}>
                             {title}
                         </p>
-                        <p className={classes.description}>
+                        <p className={classes.description} style={{color:(mode=='day'?'black':'white')}}>
                             {description}
                         </p>
                     </Grid>

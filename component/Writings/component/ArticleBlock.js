@@ -30,7 +30,8 @@ const ArticleBlock = ({t,...props}) => {
         description,
         image,
         url,
-        mode
+        mode,
+        box
     } = props;
 
     return(
@@ -49,12 +50,26 @@ const ArticleBlock = ({t,...props}) => {
                         />
                     </Grid>
                     <Grid item xs={12} md={8}>
-                        <p className={classes.title} style={{color:(mode=='day'?'black':'white')}}>
-                            {title}
-                        </p>
-                        <p className={classes.description} style={{color:(mode=='day'?'black':'white')}}>
-                            {description}
-                        </p>
+                        {box==true&&
+                            <React.Fragment>
+                                <p className={classes.title} style={{color:(mode=='day'?'black':'white')}}>
+                                    {title}
+                                </p>
+                                <p className={classes.description} style={{color:(mode=='day'?'black':'white')}}>
+                                    {description}
+                                </p>
+                            </React.Fragment>
+                        }
+                        {box==false&&
+                            <React.Fragment>
+                                <p className={classes.title} style={{color:(mode=='day'?'white':'black')}}>
+                                    {title}
+                                </p>
+                                <p className={classes.description} style={{color:(mode=='day'?'white':'black')}}>
+                                    {description}
+                                </p>
+                            </React.Fragment>
+                        }
                     </Grid>
                 </Grid>
             </Link>

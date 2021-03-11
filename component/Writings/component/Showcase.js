@@ -28,6 +28,22 @@ const useStyles = makeStyles({
         transition: '.4s ease-in-out',
         marginTop:'1rem'
     },
+    nightLink:{
+        backgroundColor: '#5c5c5c',
+        height: '100%',
+        width:'100%',
+        overflow:'hidden',
+        marginTop:'1rem'
+    },
+    nightLinkOnHover: {
+        backgroundColor:'#FFFFFF',
+        opacity:'100%',
+        height: '100%',
+        width:'100%',
+        overflow:'hidden',
+        transition: '.4s ease-in-out',
+        marginTop:'1rem'
+    },
     title:{
         fontFamily:'Roboto',
         color:'black'
@@ -81,7 +97,7 @@ const Showcase = ({t,...props}) => {
     return(
         <React.Fragment>
 
-            <Link 
+            {/* <Link 
                 href='./'
                 underline='none'
                 target='_blank' 
@@ -157,23 +173,73 @@ const Showcase = ({t,...props}) => {
                         </Grid>
                     </Grid>
                 </div>
-            </Link>
+            </Link> */}
 
+            {mode=='day'&&
+            <React.Fragment>
+            <div 
+                className={box1===true?classes.link:classes.linkOnHover}
+                onMouseEnter={handleBox1On}
+                onMouseLeave={handleMouseLeave}
+            >
             <ArticleBlock 
                 title={t('title1')}
                 description={t('description1')}
                 image={img01}
                 url={'./'}
                 mode={mode}
+                box={box1}
             />
-
+            </div>
+            <div 
+                className={box2===true?classes.link:classes.linkOnHover}
+                onMouseEnter={handleBox2On}
+                onMouseLeave={handleMouseLeave}
+            >
             <ArticleBlock 
                 title={t('title2')}
                 description={t('description2')}
                 image={img02}
                 url={'./'}
                 mode={mode}
+                box={box2}
             />
+            </div>
+            </React.Fragment>
+            }
+
+            {mode=='night'&&
+            <React.Fragment>
+            <div 
+                className={box1===true?classes.nightLink:classes.nightLinkOnHover}
+                onMouseEnter={handleBox1On}
+                onMouseLeave={handleMouseLeave}
+            >
+            <ArticleBlock 
+                title={t('title1')}
+                description={t('description1')}
+                image={img01}
+                url={'./'}
+                mode={mode}
+                box={box1}
+            />
+            </div>
+            <div 
+                className={box2===true?classes.nightLink:classes.nightLinkOnHover}
+                onMouseEnter={handleBox2On}
+                onMouseLeave={handleMouseLeave}
+            >
+            <ArticleBlock 
+                title={t('title2')}
+                description={t('description2')}
+                image={img02}
+                url={'./'}
+                mode={mode}
+                box={box2}
+            />
+            </div>
+            </React.Fragment>
+            }
 
             
         </React.Fragment>

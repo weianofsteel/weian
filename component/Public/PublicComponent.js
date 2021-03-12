@@ -12,7 +12,7 @@ const useStyles = makeStyles({
         flexDirection: "row-Reverse"
     },
     selectRequired:{
-        // marginLeft:"-7px"
+        
     },
 
 })

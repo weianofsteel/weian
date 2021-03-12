@@ -4,12 +4,16 @@ import { withTranslation } from '../../i18n'
 import PropTypes from 'prop-types'
 import styles from '../../css/public.module.css'
 
-const Footer = ({t}) => {
+const Footer = ({t, ...props}) => {
+
+    const {
+        mode
+    }  = props;
 
     return(
         <React.Fragment>
             
-            <Grid container className={styles.footerBlock}>
+            <Grid container className={mode=='day'?styles.footerBlock:styles.footerBlockNight}>
                 <Grid item xs={4}>
                     <span>{t('contactTitle')}</span>
                 </Grid>

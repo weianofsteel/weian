@@ -6,5 +6,11 @@
     font-family:'Roboto'
 }
 
+.footerBlockNight {
+    border-top: 1px solid white;
+    padding-top: 5%;
+    font-family:'Roboto'
+}
+
 
 /* footer.js */

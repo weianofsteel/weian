@@ -8,12 +8,22 @@ export const About = () => {
 
     const [drawer, setDrawer] = React.useState(false);
 
+    const [ mode, setMode ] = React.useState('day');
+
     const handleDrawerOpen = () => {
         setDrawer(true);
     }
 
     const handleDrawerClose = () => {
         setDrawer(false);
+    }
+
+    const handleMode = () => {
+        if(mode === 'day') {
+          setMode('night')
+        }else{
+          setMode('day')
+        }
     }
 
     return(
@@ -28,11 +38,15 @@ export const About = () => {
                     </div>
                     
                     <div>
-                        <Banner/>
+                        <Banner
+                            mode={mode}
+                        />
                     </div>
 
                     <div>
-                        <Footer/>
+                        <Footer
+                            mode={mode}
+                        />
                     </div>
                     
                 </React.Fragment>

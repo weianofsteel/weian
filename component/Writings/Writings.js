@@ -72,7 +72,9 @@ export const Writings = () => {
                         </div>
 
                         <div className={classes.body}>
-                            <Footer/>
+                            <Footer
+                                mode={mode}
+                            />
                         </div>
                     </div>
                 </React.Fragment>

@@ -7,11 +7,11 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     dayBackground:{
-        backgroundColor:'#F2F2F2',
+        backgroundColor:'white',
         color:'#1F1F1F'
     },
     nightBackground:{
-        backgroundColor:'#9B9B9B',
+        backgroundColor:'black',
         color:'#FFFFFF'
     },
     body:{

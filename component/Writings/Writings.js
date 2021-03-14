@@ -82,9 +82,11 @@ export const Writings = () => {
 
             {drawer == true &&
                 <React.Fragment>
+                    <div style={{height:'100vh', backgroundColor:'#1f1f1f'}}>
                     <Drawer
                         handleDrawerClose={handleDrawerClose}
                     />
+                    </div>
                 </React.Fragment>
             }
             

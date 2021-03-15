@@ -129,21 +129,9 @@ const Header = ({t,...props}) => {
                   </Link>
               </Grid>
               <Grid item xs={1} md={2}></Grid>
-              <Grid item xs={1} md={2}></Grid>
+              <Grid item xs={1}></Grid>
               <Hidden mdDown>
-                <Grid item xs={1} style={{marginTop:'0.3rem'}}>
-                  <IconButton
-                    style={{backgroundColor: 'transparent',color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
-                    disableRipple={true}
-                    onClick={handleMode}
-                  >
-                    {mode === 'day'?
-                      <Brightness2OutlinedIcon fontSize='large'/>
-                      :<WbSunnyOutlinedIcon fontSize='large'/>
-                    }
-                  </IconButton>
-                </Grid>
-                <Grid item xs={1} style={{marginTop:'0.3rem'}}>
+                <Grid item xs={2} style={{marginTop:'0.3rem', paddingLeft:'6%'}}>
                   <Select2
                       name="language"
                       value={language}
@@ -154,6 +142,18 @@ const Header = ({t,...props}) => {
                       ]}
                       mode={mode}
                   />
+                </Grid>
+                <Grid item xs={1} style={{marginTop:'0.3rem',textAlign:'center'}}>
+                  <IconButton
+                    style={{backgroundColor: 'transparent',color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
+                    disableRipple={true}
+                    onClick={handleMode}
+                  >
+                    {mode === 'day'?
+                      <Brightness2OutlinedIcon fontSize='large'/>
+                      :<WbSunnyOutlinedIcon fontSize='large'/>
+                    }
+                  </IconButton>
                 </Grid>
                 <Grid item xs={1} style={{marginTop:'1.5rem'}}>
                   {mode==='day'&&

@@ -20,9 +20,10 @@ const LearnByDoing = ({t,...props}) => {
     return(
         <React.Fragment>
             <Grid container>
-                <Grid item xs={4}></Grid>
-                <Grid item xs={4}></Grid>
-                <Grid item xs={4}></Grid>
+                <Grid item xs={3}></Grid>
+                <Grid item xs={3}></Grid>
+                <Grid item xs={3}></Grid>
+                <Grid item xs={3}></Grid>
             </Grid>
         </React.Fragment>
     )

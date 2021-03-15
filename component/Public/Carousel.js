@@ -1,9 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import styles from '../../css/Public.module.css';
-import IconButton from '@material-ui/core/IconButton';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -66,13 +63,7 @@ export const Carousel = (props) => {
                     <Grid item xs={12} md={8}>
                         <Grid container>
                             <Grid item xs={3}>
-                                <IconButton
-                                    onClick={handleCarouselLast}
-                                    style={{backgroundColor: 'transparent'}}
-                                    disableRipple={true}
-                                >
-                                    <ArrowBackIcon className={classes.icon}/>
-                                </IconButton>
+                                
                             </Grid>
                             
                             <Grid item xs={6}>
@@ -82,13 +73,7 @@ export const Carousel = (props) => {
                             </Grid>
 
                             <Grid item xs={3} style={{textAlign:'right'}}>
-                                <IconButton
-                                    onClick={handleCarouselNext}
-                                    style={{backgroundColor: 'transparent'}}
-                                    disableRipple={true}
-                                >
-                                    <ArrowForwardIcon className={classes.icon}/>
-                                </IconButton>
+                                
                             </Grid>
                         </Grid>
                     </Grid>

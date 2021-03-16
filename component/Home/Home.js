@@ -72,7 +72,7 @@ export const Home = () => {
                             />
                         </div>
 
-                        <div className={classes.body}>
+                        <div className={classes.body} style={{marginTop:'1rem'}}>
                             <Footer
                                 mode={mode}
                             />

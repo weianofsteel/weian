@@ -1,12 +1,14 @@
 /* footer.js */
 
 .footerBlock {
+    /* margin-top:1rem; */
     border-top: 1px solid black;
     padding-top: 5%;
     font-family:'Roboto'
 }
 
 .footerBlockNight {
+    /* margin-top:1rem; */
     border-top: 1px solid white;
     padding-top: 5%;
     font-family:'Roboto'

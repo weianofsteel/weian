@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/core/styles'
 import { i18n, withTranslation } from '../../../i18n'
 import PropTypes from 'prop-types'
+import Carousel from '../../Public/Carousel'
 import styles from '../../../css/Home.module.css'
 
 const useStyles = makeStyles({
@@ -22,7 +23,13 @@ const LearnByDoing = ({t,...props}) => {
 
     return(
         <React.Fragment>
-
+            <p className={classes.title}>{t('title')}</p>
+            <Grid container>
+                <Grid item xs={4}>
+                    
+                </Grid>
+                <Grid item xs={8}></Grid>
+            </Grid>
         </React.Fragment>
     )
 }

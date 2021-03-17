@@ -37,7 +37,7 @@ export const Carousel = (props) => {
 
     const {
         imgsrc,
-        caption
+        // caption
     } = props;
     
     return(
@@ -68,7 +68,7 @@ export const Carousel = (props) => {
                             
                             <Grid item xs={6}>
                                 <span className={styles.imgDescription}>
-                                    {caption[carousel]}
+                                    {/* {caption[carousel]} */}
                                 </span>
                             </Grid>
 

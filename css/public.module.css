@@ -1,4 +1,4 @@
-/* footer.js */
+/* Footer.js */
 
 .footerBlock {
     border-top: 1px solid black;
@@ -13,4 +13,24 @@
 }
 
 
-/* footer.js */
+/* Footer.js */
+
+/* Carousel.js */
+
+.imgBox {
+    background-color:black;
+}
+
+.imgBoxNight {
+    background-color:white;
+}
+
+.imgDescription {
+    color:white;
+}
+
+.imgDescriptionNight {
+    color:black;
+}
+
+/* Carousel.js */

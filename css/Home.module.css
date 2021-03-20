@@ -1,5 +1,5 @@
 .ball {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 40%;
     height: 40%;
     padding-left: 30%;
@@ -32,3 +32,8 @@
       transform: translateY(-15px);
     }
   }
+
+.skillBlock {
+  background-color: #ebebeb;
+  padding: 3rem 2rem 1rem 2rem;
+}  

@@ -38,71 +38,73 @@ const Skill = ({t,...props}) => {
     return(
         <React.Fragment>
             <p className={classes.title}>{t('title')}</p>
-            <Grid container style={{height:'5rem'}}>
-                <Grid item xs={2}>
+            <div className={styles.skillBlock}>
+            <Grid container style={{height:'5rem'}} spacing={4}>
+                <Grid item xs={4} md={2}>
                     <div className={styles.ball}>
                         <img src={reactIcon} style={{width:'80%', paddingLeft:'10%'}}/>
                     </div>
                 </Grid>
-                <Grid item xs={2}>
-                    <div className={styles.ball} style={{backgroundColor:'white'}}>
+                <Grid item xs={4} md={2}>
+                    <div className={styles.ball}>
                         <img src={jestIcon} style={{width:'70%', paddingLeft:'15%'}}/>
                     </div>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={4} md={2}>
                     <div className={styles.ball}>
                         <img src={gitIcon} style={{width:'80%', paddingLeft:'10%'}}/>
                     </div>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={4} md={2}>
                     <div className={styles.ball}>
                         <img src={nextIcon} style={{width:'80%', paddingLeft:'10%'}}/>
                     </div>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={4} md={2}>
                     <div className={styles.ball}>
                         <img src={javascriptIcon} style={{width:'80%', paddingLeft:'10%'}}/>
                     </div>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={4} md={2}>
                     <div className={styles.ball}>
                         <img src={cssIcon} style={{width:'80%', paddingLeft:'10%'}}/>
                     </div>
                 </Grid>
             </Grid>
 
-            <Grid container style={{height:'5rem', marginTop:'1rem'}}>
-                <Grid item xs={2}>
+            <Grid container style={{height:'5rem', marginTop:'1rem'}} spacing={4}>
+                <Grid item xs={4} md={2}>
                     <div className={styles.ball}>
                         <img src={phpIcon} style={{width:'80%', paddingLeft:'10%'}}/>
                     </div>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={4} md={2}>
                     <div className={styles.ball}>
                         <img src={npmIcon} style={{width:'80%', paddingLeft:'10%'}}/>
                     </div>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={4} md={2}>
                     <div className={styles.ball}>
                         <img src={mysqlIcon} style={{width:'80%', paddingLeft:'10%'}}/>
                     </div>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={4} md={2}>
                     <div className={styles.ball}>
                         <img src={figmaIcon} style={{width:'80%', paddingLeft:'10%'}}/>
                     </div>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={4} md={2}>
                     <div className={styles.ball}>
                         <img src={webpackIcon} style={{width:'80%', paddingLeft:'10%'}}/>
                     </div>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={4} md={2}>
                     <div className={styles.ball}>
                         <img src={symfonyIcon} style={{width:'80%', paddingLeft:'10%'}}/>
                     </div>
                 </Grid>
             </Grid>
+            </div>
         </React.Fragment>
     )
 }

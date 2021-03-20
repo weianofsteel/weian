@@ -61,13 +61,13 @@ export const Home = () => {
                             />
                         </div>
                         
-                        <div className={classes.body}>
+                        <div className={classes.body} style={{marginTop:'12%'}}>
                             <Banner
                                 mode={mode}
                             />
                         </div>
 
-                        <div className={classes.body}>
+                        <div className={classes.body} style={{marginTop:'5%'}}>
                             <Skill
                                 mode={mode}
                             />

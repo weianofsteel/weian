@@ -5,7 +5,10 @@ import PropTypes from 'prop-types'
 import { withTranslation } from '../../i18n'
 
 const useStyles = makeStyles({
-
+    content:{
+        fontFamily:'Roboto',
+        fontSize:'2rem'
+    }
 })
 
 const Banner = ({t,...props}) => {
@@ -21,7 +24,12 @@ const Banner = ({t,...props}) => {
             
             <div>
 
-                <Typewriter
+                <p className={classes.content}>
+                    {t('context1')}<br/>
+                    {t('context2')}
+                </p>
+                
+                {/* <Typewriter
                     rotateSpeed={800}
                     typeSpeed={80}
                     fontSize={'24px'}
@@ -29,7 +37,7 @@ const Banner = ({t,...props}) => {
                     color={mode=='day'?'black':'white'}
                     heading={'Typewriter'}
                     dataText={[ t('context1'), t('context2')]}
-                />  
+                />   */}
 
             </div>
 

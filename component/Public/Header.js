@@ -125,7 +125,8 @@ const Header = ({t,...props}) => {
                     className={classes.title}
                     style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                   >
-                    {t('title')}
+                    WEIAN WANG
+                    {/* {t('title')} */}
                   </Link>
               </Grid>
               <Grid item xs={1} md={2}></Grid>
@@ -279,9 +280,9 @@ const Header = ({t,...props}) => {
 
             </Grid>
 
-            <Grid container>
+            {/* <Grid container>
                 <p className={styles.ball}></p>
-            </Grid>
+            </Grid> */}
              
         </React.Fragment>
     )

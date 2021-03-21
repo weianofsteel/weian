@@ -8,6 +8,7 @@ import Carousel from '../../Public/Carousel'
 import styles from '../../../css/Home.module.css'
 import gif1 from '../../../public/image/gif/gif1.gif'
 import gif2 from '../../../public/image/gif/gif2.gif'
+import blank from '../../../public/image/gif/blank.jpg'
 
 const useStyles = makeStyles({
     title:{
@@ -29,13 +30,13 @@ const LearnByDoing = ({t,...props}) => {
             <Grid container>
                 <Grid item xs={3}>
                     <Carousel
-                        imgsrc={[gif1, gif2]}
+                        imgsrc={[gif1, blank, gif2]}
                         mode={mode}
                     />
                 </Grid>
                 <Grid item xs={3}>
                     <Carousel
-                        imgsrc={[gif1, gif2]}
+                        imgsrc={[gif1, blank, gif2]}
                         mode={mode}
                     />
                 </Grid>

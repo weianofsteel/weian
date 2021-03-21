@@ -67,13 +67,13 @@ export const Home = () => {
                             />
                         </div>
 
-                        <div className={classes.body} style={{marginTop:'5%'}}>
+                        <div className={classes.body} style={{marginTop:'8%'}}>
                             <Skill
                                 mode={mode}
                             />
                         </div>
 
-                        <div className={classes.body}>
+                        <div className={classes.body} style={{marginTop:'1rem'}}>
                             <LearnByDoing
                                 mode={mode}
                             />

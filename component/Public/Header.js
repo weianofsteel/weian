@@ -130,7 +130,7 @@ const Header = ({t,...props}) => {
                   </Link>
               </Grid>
               <Grid item xs={1} md={2}></Grid>
-              <Grid item xs={1}></Grid>
+              <Grid item xs={1} md={2} lg={1}></Grid>
               <Hidden mdDown>
                 <Grid item xs={2} style={{marginTop:'0.3rem', paddingLeft:'6%'}}>
                   <Select2

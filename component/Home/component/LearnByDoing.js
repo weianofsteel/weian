@@ -28,13 +28,13 @@ const LearnByDoing = ({t,...props}) => {
         <React.Fragment>
             <p className={classes.title}>{t('title')}</p>
             <Grid container>
-                <Grid item xs={3}>
+                <Grid item xs={6} md={4}>
                     <Carousel
                         imgsrc={[gif1, blank, gif2]}
                         mode={mode}
                     />
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={6} md={4}>
                     <Carousel
                         imgsrc={[gif1, blank, gif2]}
                         mode={mode}

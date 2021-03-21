@@ -70,14 +70,14 @@ class Carousel extends React.Component {
                         >
                             {parseInt( this.state.count / 3) % imgsrc.length === i ?
                                 <div>
-                                    {
-                                        this.state.isBoxHover==false &&
+                                    {/* {
+                                        this.state.isBoxHover==false && */}
                                         <img src={imgsrc[i]} style={{margin: '0 auto', width:'100%', height:'100%'}}/>
-                                    }
-                                    {
+                                    {/* } */}
+                                    {/* {
                                         this.state.isBoxHover==true &&
                                         <p className={mode=='day'?styles.imgDescription:styles.imgDescriptionNight}>hello</p>
-                                    }
+                                    } */}
                                 </div>
                             :''}        
                         </div>
@@ -108,6 +108,12 @@ class Carousel extends React.Component {
 
                 <Grid container justify="center" alignItems="center">
 
+                    {/* {this.state.isBoxHover==false&&
+                        {list}
+                    }
+                    {this.state.isBoxHover==true&&
+                        <div>hllo</div>
+                    } */}
                     {list}
                 
                 </Grid>

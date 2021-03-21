@@ -3,7 +3,7 @@
     width: 40%;
     height: 40%;
     padding-left: 30%;
-    background-color: transparent;
+    /* background-color: transparent; */
 }
 
 .ball:hover {
@@ -34,6 +34,6 @@
   }
 
 .skillBlock {
-  background-color: #ebebeb;
+  background-color: transparent;
   padding: 3rem 2rem 1rem 2rem;
 }  

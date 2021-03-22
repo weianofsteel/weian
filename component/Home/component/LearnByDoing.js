@@ -4,21 +4,40 @@ import Grid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/core/styles'
 import { i18n, withTranslation } from '../../../i18n'
 import PropTypes from 'prop-types'
-import Carousel from '../../Public/Carousel'
-import styles from '../../../css/Home.module.css'
-import gif1 from '../../../public/image/gif/gif1.gif'
-import gif2 from '../../../public/image/gif/gif2.gif'
-import blank from '../../../public/image/gif/blank.jpg'
+import gif4 from '../../../public/image/gif/gif4.gif'
+import gif5 from '../../../public/image/gif/gif5.gif'
+import gif6 from '../../../public/image/gif/gif6.gif'
+import gif7 from '../../../public/image/gif/gif7.gif'
+import gif8 from '../../../public/image/gif/gif8.gif'
+import gif10 from '../../../public/image/gif/gif10.gif'
 
 const useStyles = makeStyles({
     title:{
         fontFamily:'Roboto Slab',
         fontSize:'2rem'
+    },
+    imgBlock:{
+        width:'100%',
+        // padding:'1rem'
+    },
+    imgHover:{
+        backgroundColor:'black',
+        zIndex:999
     }
 })
 
 const LearnByDoing = ({t,...props}) => {
     const classes = useStyles();
+
+    const [onHover, setOnHover] = React.useState(false);
+
+    const handleOnHover = () => {
+        setOnHover(true);
+    }
+
+    const handleMouseLeave = () => {
+        setOnHover(false);
+    }
 
     const {
         mode
@@ -27,21 +46,32 @@ const LearnByDoing = ({t,...props}) => {
     return(
         <React.Fragment>
             <p className={classes.title}>{t('title')}</p>
-            <Grid container>
+            <Grid container spacing={3}>
                 <Grid item xs={6} md={4}>
-                    <Carousel
-                        imgsrc={[gif1, blank, gif2]}
-                        mode={mode}
-                    />
+                    <div 
+                        onMouseEnter={handleOnHover}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        {onHover === false &&
+                            <img src={gif4} className={classes.imgBlock}/>
+                        }
+                    </div>
                 </Grid>
                 <Grid item xs={6} md={4}>
-                    <Carousel
-                        imgsrc={[gif1, blank, gif2]}
-                        mode={mode}
-                    />
+                    <img src={gif5} className={classes.imgBlock}/>
                 </Grid>
-                <Grid item xs={3}></Grid>
-                <Grid item xs={3}></Grid>
+                <Grid item xs={6} md={4}>
+                    <img src={gif6} className={classes.imgBlock}/>
+                </Grid>
+                <Grid item xs={6} md={4}>
+                    <img src={gif7} className={classes.imgBlock}/>
+                </Grid>
+                <Grid item xs={6} md={4}>
+                    <img src={gif8} className={classes.imgBlock}/>
+                </Grid>
+                <Grid item xs={6} md={4}>
+                    <img src={gif10} className={classes.imgBlock}/>
+                </Grid>
             </Grid>
         </React.Fragment>
     )

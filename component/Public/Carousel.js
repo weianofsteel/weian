@@ -63,7 +63,7 @@ class Carousel extends React.Component {
                     list.push(
                         <div 
                             key={i} 
-                            className={mode=='day'?styles.imgBox:styles.imgBoxNight} 
+                            // className={mode=='day'?styles.imgBox:styles.imgBoxNight} 
                             onMouseEnter={this.handleBoxHover} 
                             onMouseLeave={this.handleMouseLeave}
                             // style={{width:'100%', height:'100%'}}
@@ -88,7 +88,7 @@ class Carousel extends React.Component {
                     list.push(
                         <div 
                             key={i}
-                            className={styles.imgBox} 
+                            // className={styles.imgBox} 
                             onMouseEnter={this.handleBoxHover} 
                             onMouseLeave={this.handleMouseLeave}
                         >
@@ -106,17 +106,11 @@ class Carousel extends React.Component {
         return(
             <React.Fragment>
 
-                <Grid container justify="center" alignItems="center">
+                <div style={{padding:'1rem'}}>
 
-                    {/* {this.state.isBoxHover==false&&
-                        {list}
-                    }
-                    {this.state.isBoxHover==true&&
-                        <div>hllo</div>
-                    } */}
                     {list}
                 
-                </Grid>
+                </div>
 
             </React.Fragment>
         )

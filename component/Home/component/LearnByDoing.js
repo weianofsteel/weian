@@ -51,8 +51,9 @@ const LearnByDoing = ({t,...props}) => {
                     <div 
                         onMouseEnter={handleOnHover}
                         onMouseLeave={handleMouseLeave}
+                        style={{height:'100%'}}
                     >
-                        {onHover === false &&
+                        {onHover == false &&
                             <img src={gif4} className={classes.imgBlock}/>
                         }
                     </div>

@@ -10,6 +10,7 @@ import gif6 from '../../../public/image/gif/gif6.gif'
 import gif7 from '../../../public/image/gif/gif7.gif'
 import gif8 from '../../../public/image/gif/gif8.gif'
 import gif10 from '../../../public/image/gif/gif10.gif'
+import mysqlIcon from '../../../public/image/home/mysql.png'
 
 const useStyles = makeStyles({
     title:{
@@ -53,12 +54,17 @@ const LearnByDoing = ({t,...props}) => {
                         onMouseLeave={handleMouseLeave}
                         style={{height:'100%'}}
                     >
-                        {onHover == false &&
+                        {/* {onHover == false &&
                             <img src={gif4} className={classes.imgBlock}/>
                         }
+                        {onHover == true &&
+                            <div style={{backgroundColor:'black',height:'100%'}}>
+                                <p style={{color:'white'}}>Carousel</p>
+                            </div>
+                        } */}
                     </div>
                 </Grid>
-                <Grid item xs={6} md={4}>
+                {/* <Grid item xs={6} md={4}>
                     <img src={gif5} className={classes.imgBlock}/>
                 </Grid>
                 <Grid item xs={6} md={4}>
@@ -72,7 +78,7 @@ const LearnByDoing = ({t,...props}) => {
                 </Grid>
                 <Grid item xs={6} md={4}>
                     <img src={gif10} className={classes.imgBlock}/>
-                </Grid>
+                </Grid> */}
             </Grid>
         </React.Fragment>
     )

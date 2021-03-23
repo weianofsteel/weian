@@ -186,68 +186,6 @@ const Skill = ({t,...props}) => {
                 </Grid>
             </Grid>
 
-            {/* <Grid container style={{height:'5rem', marginTop:'1rem'}} spacing={4}>
-                <Grid item xs={4} md={2}>
-                    <div className={styles.ball}>
-                        {mode=="day"&&
-                            <img src={phpIcon}/>
-                        }    
-                        {mode=="night"&&    
-                            <img src={phpNightIcon}/>
-                        }
-                    </div>
-                </Grid>
-                <Grid item xs={4} md={2}>
-                    <div className={styles.ball}>
-                        {mode=="day"&&
-                            <img src={npmIcon}/>
-                        }    
-                        {mode=="night"&&    
-                            <img src={npmNightIcon}/>
-                        }
-                    </div>
-                </Grid>
-                <Grid item xs={4} md={2}>
-                    <div className={styles.ball}>
-                        {mode=="day"&&
-                            <img src={mysqlIcon}/>
-                        }    
-                        {mode=="night"&&    
-                            <img src={mysqlNightIcon}/>
-                        }
-                    </div>
-                </Grid>
-                <Grid item xs={4} md={2}>
-                    <div className={styles.ball}>
-                        {mode=="day"&&
-                            <img src={figmaIcon}/>
-                        }    
-                        {mode=="night"&&    
-                            <img src={figmaNightIcon}/>
-                        }
-                    </div>
-                </Grid>
-                <Grid item xs={4} md={2}>
-                    <div className={styles.ball}>
-                        {mode=="day"&&
-                            <img src={webpackIcon}/>
-                        }    
-                        {mode=="night"&&    
-                            <img src={webpackNightIcon}/>
-                        }
-                    </div>
-                </Grid>
-                <Grid item xs={4} md={2}>
-                    <div className={styles.ball}>
-                        {mode=="day"&&
-                            <img src={symfonyIcon}/>
-                        }    
-                        {mode=="night"&&    
-                            <img src={symfonyNightIcon}/>
-                        }
-                    </div>
-                </Grid>
-            </Grid> */}
             </div>
         </React.Fragment>
     )

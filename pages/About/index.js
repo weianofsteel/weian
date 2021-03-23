@@ -8,7 +8,7 @@ const AboutPage = () => {
 }
 
 AboutPage.getInitialProps = async () => ({
-    namespacesRequired: ['header', 'banner'],
+    namespacesRequired: ['header', 'banner', 'content'],
 })
 
 export default AboutPage

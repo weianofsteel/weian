@@ -11,7 +11,7 @@ const HomePage = ({ t }) =>{
 }
 
 HomePage.getInitialProps = async () => ({
-    namespacesRequired: ['header', 'banner', 'footer', 'skill', 'learnByDoing'],
+    namespacesRequired: ['header', 'banner', 'footer', 'skill', 'learnByDoing', 'sharing'],
   })
   
 HomePage.propTypes = {

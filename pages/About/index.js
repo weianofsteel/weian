@@ -1,14 +1,20 @@
 import React from 'react'
 import { About } from '../../component/About/About'
+import PropTypes from 'prop-types'
+import { withTranslation } from '../../i18n'
 
-const AboutPage = () => {
+const AboutPage = ({ t }) => {
     return(
         <About/> 
     )
 }
 
 AboutPage.getInitialProps = async () => ({
-    namespacesRequired: ['header', 'banner', 'content'],
+    namespacesRequired: ['header', 'banner', 'about'],
 })
 
-export default AboutPage
+AboutPage.propTypes = {
+    t: PropTypes.func.isRequired,
+}
+
+export default withTranslation('header')(AboutPage)

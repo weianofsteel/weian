@@ -3,6 +3,7 @@ import Header from '../Public/Header'
 import Banner from '../Public/Banner'
 import Drawer from '../Public/Drawer'
 import Footer from '../Public/Footer'
+import Content from './component/Content'
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles({
@@ -63,6 +64,12 @@ export const About = () => {
                                 mode={mode}
                             />
                         </div>
+
+                        {/* <div className={classes.body}>
+                            <Content
+                                mode={mode}
+                            />
+                        </div> */}
 
                         <div className={classes.body}>
                             <Footer

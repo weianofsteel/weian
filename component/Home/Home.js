@@ -4,6 +4,7 @@ import Banner from '../Public/Banner'
 import Drawer from '../Public/Drawer'
 import Footer from '../Public/Footer'
 import Skill from '../Home/component/Skill'
+import Sharing from './component/Sharing'
 import LearnByDoing from '../Home/component/LearnByDoing'
 import { makeStyles } from '@material-ui/core/styles'
 
@@ -61,23 +62,29 @@ export const Home = () => {
                             />
                         </div>
                         
-                        <div className={classes.body} style={{marginTop:'12%'}}>
+                        <div className={classes.body} style={{marginTop:'10%'}}>
                             <Banner
                                 mode={mode}
                             />
                         </div>
 
-                        <div className={classes.body} style={{marginTop:'8%'}}>
+                        <div className={classes.body} style={{marginTop:'6%'}}>
                             <Skill
                                 mode={mode}
                             />
                         </div>
 
-                        <div className={classes.body} style={{marginTop:'1rem'}}>
-                            <LearnByDoing
+                        <div className={classes.body} style={{marginTop:'6%'}}>
+                            <Sharing
                                 mode={mode}
                             />
                         </div>
+
+                        {/* <div className={classes.body} style={{marginTop:'1rem'}}>
+                            <LearnByDoing
+                                mode={mode}
+                            />
+                        </div> */}
 
                         <div className={classes.body} style={{marginTop:'1rem'}}>
                             <Footer

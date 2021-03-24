@@ -26,6 +26,10 @@ const Footer = ({t, ...props}) => {
                     <span>{t('copyrightDescription')}</span>
                 </Grid>
             </Grid>
+            <br/>
+            <div>
+                &nbsp;
+            </div>
 
         </React.Fragment>
     )

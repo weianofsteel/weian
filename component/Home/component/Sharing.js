@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/core/styles'
 import { i18n, withTranslation } from '../../../i18n'
 import PropTypes from 'prop-types'
-import CustomizeCarousel from 'react-customize-carousel';
+import CustomizeCarousel from '../../Public/Carousel2';
 import photo1 from '../../../public/image/home/carousel1.jpg'
 import photo2 from '../../../public/image/home/carousel2.jpg'
 import photo3 from '../../../public/image/home/carousel3.jpg'
@@ -36,12 +36,10 @@ const Sharing = ({t,...props}) => {
             <p className={classes.title}>{t('title')}</p>
             <Grid container spacing={3}>
             
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={4} style={{textAlign:'left'}}>
                     <CustomizeCarousel
                         imgsrc={[photo1, photo2, photo3]}
-                        rotateBy={2}
-                        width={'600px'}
-                        height={'500px'}
+                        rotateBy={3}
                         navigateButton={true}
                         controlButton={true}
                     />

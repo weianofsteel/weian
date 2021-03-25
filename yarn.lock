@@ -4334,10 +4334,10 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-customize-carousel@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/react-customize-carousel/-/react-customize-carousel-1.5.0.tgz#0c02365027c851e7c9995f18fc456e7c177d27b7"
-  integrity sha512-chYbgU7b7rHK1sgufKvmaQtcArZR58AwkhQSyhfP5n+zESaDxGM2xLP+JnU0xii6j1Cf7gNy3BzwW1JpX7zh5A==
+react-customize-carousel@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/react-customize-carousel/-/react-customize-carousel-1.7.0.tgz#4f33c46ec42daab348ecb8393c48d4fd98afed0f"
+  integrity sha512-AN43qByZdxeACeVf8LTTWA69F6p4FtcLWEfWF4SzUAMcuzJdENGGdaqLFKKigwRfbevtuxGoYtzrlP0qcVMr9w==
 
 react-dom@^17.0.1:
   version "17.0.1"

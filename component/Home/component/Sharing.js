@@ -19,11 +19,30 @@ const useStyles = makeStyles({
     },
     imgBlock:{
         width:'100%',
-        // padding:'1rem'
     },
     imgHover:{
         backgroundColor:'black',
         zIndex:999
+    },
+    subtitle:{
+        fontFamily:'Roboto',
+        fontSize:'1.5rem',
+        color:'black'
+    },
+    subtitleNight:{
+        fontFamily:'Roboto',
+        fontSize:'1.5rem',
+        color:'white'
+    },
+    description:{
+        fontFamily:'Roboto',
+        fontSize:'1.5rem',
+        color:'black'
+    },
+    descriptionNight:{
+        fontFamily:'Roboto',
+        fontSize:'1.2rem',
+        color:'white'
     }
 })
 
@@ -45,9 +64,11 @@ const Sharing = ({t,...props}) => {
                         underline='none'
                         target='_blank'
                     >
-                        <p>react-typewriting-animation</p>
+                        <p className={mode==='day'?classes.subtitle:classes.subtileNight}>
+                            react-typewriting-animation
+                        </p>
                         <br/>
-                        <p>
+                        <p className={mode==='day'?classes.description:classes.descriptionNight}>
                             {t('description2')}
                         </p>
                     </Link>
@@ -73,9 +94,11 @@ const Sharing = ({t,...props}) => {
                         underline='none'
                         target='_blank'
                     >
-                        <p>react-customize-carousel</p>
+                        <p className={mode==='day'?classes.subtitle:classes.subtileNight}>
+                            react-customize-carousel
+                        </p>
                         <br/>
-                        <p>
+                        <p className={mode==='day'?classes.description:classes.descriptionNight}>
                             {t('description1')}
                         </p>
                     </Link>
@@ -97,7 +120,13 @@ const Sharing = ({t,...props}) => {
                         underline='none'
                         target='_blank'
                     >
-                        <p>react-scroll-up-btn</p>
+                        <p className={mode==='day'?classes.subtitle:classes.subtileNight}>
+                            react-scroll-up-btn
+                        </p>
+                        <br/>
+                        <p className={mode==='day'?classes.description:classes.descriptionNight}>
+                            {t('description3')}
+                        </p>
                     </Link>
                 </Grid>
 

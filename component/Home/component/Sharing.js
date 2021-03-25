@@ -38,15 +38,35 @@ const Sharing = ({t,...props}) => {
             <Grid container spacing={3}>
             
                 <Grid item xs={12} md={4} style={{textAlign:'left'}}>
-                    <CustomizeCarousel
-                        imgsrc={[photo1, photo2, photo3]}
-                        rotateBy={3}
-                        navigateButton={true}
-                        controlButton={true}
-                    />
+                    <Link
+                        href='https://www.npmjs.com/package/react-customize-carousel'
+                        underline='none'
+                    >
+                        <CustomizeCarousel
+                            imgsrc={[photo1, photo2, photo3]}
+                            rotateBy={3}
+                            navigateButton={true}
+                            controlButton={true}
+                        />
+                        <p>React customize carousel</p>
+                    </Link>
                 </Grid>
-                <Grid item xs={12} md={4}></Grid>
-                <Grid item xs={12} md={4}></Grid>
+                <Grid item xs={12} md={4}>
+                    <Link
+                        href='https://www.npmjs.com/package/react-typewriting-animation'
+                        underline='none'
+                    >
+                        <p>React typewriter</p>
+                    </Link>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <Link
+                        href='https://www.npmjs.com/package/react-scroll-up-btn'
+                        underline='none'
+                    >
+                        <p>React scroll up button</p>
+                    </Link>
+                </Grid>
 
             </Grid>
         </React.Fragment>

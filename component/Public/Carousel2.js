@@ -93,7 +93,7 @@ class CustomizeCarousel extends React.Component {
                         <div key={i}>
                             {parseInt( this.state.count / 3) % imgsrc.length === i ?
                                 <div style={{width:'100%'}}>
-                                    <img src={imgsrc[i]} style={{margin: '0 auto', width:'100%', height:'100%'}}/>
+                                    <img src={imgsrc[i]} style={{margin: '0 auto', width:'100%'}}/>
                                 </div>
                             :''}        
                         </div>
@@ -105,7 +105,7 @@ class CustomizeCarousel extends React.Component {
                         <div key={i}>
                             {parseInt( this.state.count / rotateBy) % imgsrc.length === i ?
                                 <div style={{width:'100%'}}>
-                                    <img src={imgsrc[i]} style={{margin: '0 auto', width:'100%', height:'100%'}}/>
+                                    <img src={imgsrc[i]} style={{margin: '0 auto', width:'100%'}}/>
                                 </div>
                             :''}        
                         </div>
@@ -125,11 +125,11 @@ class CustomizeCarousel extends React.Component {
                     RadioNavigation.push(
                         <div key={i} style={{display:'inline', textAlign:'center'}}>
                             {parseInt( this.state.count / 3) % imgsrc.length === i ?
-                                <IconButton onClick={()=>{this.setState({count: 3 * i})}}>
+                                <IconButton size="small" onClick={()=>{this.setState({count: 3 * i})}}>
                                     <PlayCircleFilledIcon/>
                                 </IconButton>
                             :
-                                <IconButton onClick={()=>{this.setState({count: 3 * i})}}>
+                                <IconButton size="small" onClick={()=>{this.setState({count: 3 * i})}}>
                                     <RadioButtonUncheckedIcon/>
                                 </IconButton>
                             }
@@ -141,11 +141,11 @@ class CustomizeCarousel extends React.Component {
                     RadioNavigation.push(
                         <div key={i} style={{display:'inline', textAlign:'center'}}>
                             {parseInt( this.state.count / rotateBy) % imgsrc.length === i ?
-                                <IconButton onClick={()=>{this.setState({count: rotateBy * i})}}>
+                                <IconButton size="small" onClick={()=>{this.setState({count: rotateBy * i})}}>
                                     <PlayCircleFilledIcon/>
                                 </IconButton>
                             :
-                                <IconButton onClick={()=>{this.setState({count: rotateBy * i})}}>
+                                <IconButton size="small" onClick={()=>{this.setState({count: rotateBy * i})}}>
                                     <RadioButtonUncheckedIcon/>
                                 </IconButton>
                             }
@@ -167,23 +167,23 @@ class CustomizeCarousel extends React.Component {
                 
                 </Grid>
 
-                <Grid container>
-                    <Grid item xs={1} sm={1}>
+                <Grid container style={{marginLeft:'-1rem'}}>
+                    <Grid item xs={1} md={1} style={{paddingLeft:0}}>
                         {controlButton === true &&
-                            <Button style={{margin:0}} onClick={this.handleBack}>
+                            <Button onClick={this.handleBack}>
                                 <ArrowBackIosIcon/>
                             </Button>
                         }
                     </Grid>
                     {navigateButton===true?
-                        <Grid item xs={9} sm={10} style={{textAlign:'center'}}>
+                        <Grid item xs={10} md={10} style={{textAlign:'center'}}>
                             {RadioNavigation}
                         </Grid>
                         :<Grid item xs={10} style={{textAlign:'center'}}></Grid>
                     }               
-                    <Grid item xs={1} sm={1}>
+                    <Grid item xs={1} md={1}>
                         {controlButton === true &&
-                            <Button style={{margin:0}} onClick={this.handleNext}>
+                            <Button onClick={this.handleNext}>
                                 <ArrowForwardIosIcon/>
                             </Button>
                         }

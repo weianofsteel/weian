@@ -1,3 +1,5 @@
 {
-    "title":"Package sharing"
+    "title":"Package sharing",
+    "description1":"A simple react carousel component. With optional navbar and control button, The time of rotation is also adjustable.",
+    "description2":""
 }

@@ -1,5 +1,5 @@
 {
     "title":"Package sharing",
-    "description1":"A simple react carousel component. With optional navbar and control button, The time of rotation is also adjustable.",
-    "description2":""
+    "description1":"A simple react carousel component. With optional navbar and control button. The rotation speed is also adjustable.",
+    "description2":"A react type writer animation component. Pass the contents as string to it, all of them will show up letter by letter just like typing. And typing speed is adjustable."
 }

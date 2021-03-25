@@ -15,7 +15,7 @@ import photo3 from '../../../public/image/home/carousel3.jpg'
 const useStyles = makeStyles({
     title:{
         fontFamily:'Roboto Slab',
-        fontSize:'2rem'
+        fontSize:'2rem',
     },
     imgBlock:{
         width:'100%',
@@ -64,7 +64,7 @@ const Sharing = ({t,...props}) => {
                         underline='none'
                         target='_blank'
                     >
-                        <p className={mode==='day'?classes.subtitle:classes.subtileNight}>
+                        <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
                             react-typewriting-animation
                         </p>
                         <br/>
@@ -94,7 +94,7 @@ const Sharing = ({t,...props}) => {
                         underline='none'
                         target='_blank'
                     >
-                        <p className={mode==='day'?classes.subtitle:classes.subtileNight}>
+                        <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
                             react-customize-carousel
                         </p>
                         <br/>
@@ -109,6 +109,7 @@ const Sharing = ({t,...props}) => {
                         rotateBy={3}
                         navigateButton={true}
                         controlButton={true}
+                        mode={mode}
                     />
                 </Grid>
             </Grid>    
@@ -120,7 +121,7 @@ const Sharing = ({t,...props}) => {
                         underline='none'
                         target='_blank'
                     >
-                        <p className={mode==='day'?classes.subtitle:classes.subtileNight}>
+                        <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
                             react-scroll-up-btn
                         </p>
                         <br/>

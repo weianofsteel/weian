@@ -76,8 +76,7 @@ class CustomizeCarousel extends React.Component {
         const {
             imgsrc,
             rotateBy,
-            width,
-            height,
+            mode,
             controlButton,
             navigateButton
         } = this.props;
@@ -170,7 +169,10 @@ class CustomizeCarousel extends React.Component {
                 <Grid container style={{marginLeft:'-1rem'}}>
                     <Grid item xs={1} md={1} style={{paddingLeft:0}}>
                         {controlButton === true &&
-                            <Button onClick={this.handleBack}>
+                            <Button 
+                                style={{color:(mode==='day'?'black':'white')}}
+                                onClick={this.handleBack}
+                            >
                                 <ArrowBackIosIcon/>
                             </Button>
                         }
@@ -183,7 +185,10 @@ class CustomizeCarousel extends React.Component {
                     }               
                     <Grid item xs={1} md={1}>
                         {controlButton === true &&
-                            <Button onClick={this.handleNext}>
+                            <Button 
+                                onClick={this.handleNext}
+                                style={{color:(mode==='day'?'black':'white')}}
+                            >
                                 <ArrowForwardIosIcon/>
                             </Button>
                         }

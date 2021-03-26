@@ -64,7 +64,7 @@ const Skill = ({t,...props}) => {
                 <Grid item xs={3} md={2}>
                     
                         <Hidden mdDown>
-                            <div style={{width:'25%'}}>
+                            <div className={styles.jestLogoLg}>
                             {mode=="day"&&
                                 <img src={jestIcon} style={{width:'100%'}}/>
                             }    

@@ -44,6 +44,14 @@ const useStyles = makeStyles({
         fontFamily:'Roboto',
         fontSize:'1.2rem',
         color:'white'
+    },
+    packageBlock:{
+        marginTop:'3rem',
+        borderBottom:'1px solid black'
+    },
+    packageBlockNight:{
+        marginTop:'3rem',
+        borderBottom:'1px solid white'
     }
 })
 
@@ -58,7 +66,7 @@ const Sharing = ({t,...props}) => {
         <React.Fragment>
             <p className={classes.title}>{t('title')}</p>
             
-            <Grid container spacing={3} style={{marginTop:'4%'}}>
+            <Grid container spacing={3} className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>
                 <Grid item xs={12} sm={7}>
                     <Link
                         href='https://www.npmjs.com/package/react-typewriting-animation'
@@ -87,7 +95,7 @@ const Sharing = ({t,...props}) => {
                 </Grid>
             </Grid>
             
-            <Grid container spacing={3}>
+            <Grid container spacing={3} className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>
             
                 <Grid item xs={12} sm={6} md={7} style={{textAlign:'left'}}>
                     <Link
@@ -115,7 +123,7 @@ const Sharing = ({t,...props}) => {
                 </Grid>
             </Grid>    
 
-            <Grid container spacing={3}>    
+            <Grid container spacing={3} className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>    
                 <Grid item xs={12} sm={7}>
                     <Link
                         href='https://www.npmjs.com/package/react-scroll-up-btn'

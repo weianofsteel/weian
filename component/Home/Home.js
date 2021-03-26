@@ -62,19 +62,19 @@ export const Home = () => {
                             />
                         </div>
                         
-                        <div className={classes.body} style={{marginTop:'10%'}}>
+                        <div className={classes.body} style={{marginTop:'8rem'}}>
                             <Banner
                                 mode={mode}
                             />
                         </div>
 
-                        <div className={classes.body} style={{marginTop:'6%'}}>
+                        <div className={classes.body} style={{marginTop:'6rem'}}>
                             <Skill
                                 mode={mode}
                             />
                         </div>
 
-                        <div className={classes.body} style={{marginTop:'6%'}}>
+                        <div className={classes.body} style={{marginTop:'6rem'}}>
                             <Sharing
                                 mode={mode}
                             />

@@ -8,6 +8,7 @@ import PropTypes from 'prop-types'
 import CustomizeCarousel from '../../Public/Carousel2'
 import Typewriter from 'react-typewriting-animation'
 import ScrollUpButton from 'react-scroll-up-btn'
+import { Scrollup } from '../../Public/Scrollup'
 import photo1 from '../../../public/image/home/carousel1.jpg'
 import photo2 from '../../../public/image/home/carousel2.jpg'
 import photo3 from '../../../public/image/home/carousel3.jpg'
@@ -132,11 +133,12 @@ const Sharing = ({t,...props}) => {
                 </Grid>
 
                 <Grid item xs={12} sm={5} style={{textAlign:'center'}}>
-                    <ScrollUpButton 
+                    {/* <ScrollUpButton 
                         behavior={'smooth'}
                         IconSize={'5rem'}
                         appearCoordinate={600}
-                    /> 
+                    />  */}
+                    <Scrollup mode={mode}/>
                 </Grid>
 
             </Grid>

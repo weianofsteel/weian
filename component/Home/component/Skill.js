@@ -50,7 +50,7 @@ const Skill = ({t,...props}) => {
         <React.Fragment>
             <p className={classes.title}>{t('title')}</p>
             <div>
-            <Grid container spacing={4}>
+            <Grid container spacing={4} style={{marginTop:'4%'}}>
                 <Grid item xs={3} md={2}>
                     <div className={styles.ball}>
                         {mode=="day"&&
@@ -63,7 +63,18 @@ const Skill = ({t,...props}) => {
                 </Grid>
                 <Grid item xs={3} md={2}>
                     
-                        <Hidden smDown>
+                        <Hidden mdDown>
+                            <div style={{width:'25%'}}>
+                            {mode=="day"&&
+                                <img src={jestIcon} style={{width:'100%'}}/>
+                            }    
+                            {mode=="night"&&    
+                                <img src={jestNightIcon} style={{width:'100%'}}/>
+                            }
+                            </div>
+                        </Hidden>
+                        
+                        <Hidden smDown lgUp>
                             <div className={styles.ball}>
                             {mode=="day"&&
                                 <img src={jestIcon} style={{width:'100%'}}/>

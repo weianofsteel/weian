@@ -58,7 +58,7 @@ const Sharing = ({t,...props}) => {
         <React.Fragment>
             <p className={classes.title}>{t('title')}</p>
             
-            <Grid container spacing={3}>
+            <Grid container spacing={3} style={{marginTop:'4%'}}>
                 <Grid item xs={12} sm={7}>
                     <Link
                         href='https://www.npmjs.com/package/react-typewriting-animation'

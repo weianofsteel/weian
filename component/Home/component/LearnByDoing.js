@@ -49,22 +49,15 @@ const LearnByDoing = ({t,...props}) => {
             <p className={classes.title}>{t('title')}</p>
             <Grid container spacing={3}>
                 <Grid item xs={6} md={4}>
-                    <div 
-                        onMouseEnter={handleOnHover}
-                        onMouseLeave={handleMouseLeave}
-                        style={{height:'100%'}}
+                    <Link
+                        href=''
+                        underline='none'
+                        target='_blank'
                     >
-                        {/* {onHover == false &&
-                            <img src={gif4} className={classes.imgBlock}/>
-                        }
-                        {onHover == true &&
-                            <div style={{backgroundColor:'black',height:'100%'}}>
-                                <p style={{color:'white'}}>Carousel</p>
-                            </div>
-                        } */}
-                    </div>
+                        <img src={gif4} className={classes.imgBlock}/>
+                    </Link>
                 </Grid>
-                {/* <Grid item xs={6} md={4}>
+                <Grid item xs={6} md={4}>
                     <img src={gif5} className={classes.imgBlock}/>
                 </Grid>
                 <Grid item xs={6} md={4}>
@@ -78,7 +71,7 @@ const LearnByDoing = ({t,...props}) => {
                 </Grid>
                 <Grid item xs={6} md={4}>
                     <img src={gif10} className={classes.imgBlock}/>
-                </Grid> */}
+                </Grid>
             </Grid>
         </React.Fragment>
     )

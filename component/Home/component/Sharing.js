@@ -58,7 +58,7 @@ const useStyles = makeStyles({
         transition: '.4s ease-in-out'
     },
     packageBlockNight:{
-        // borderBottom:'1px solid white',
+        borderBottom:'1px solid white',
         padding:'1rem',
         backgroundColor: '#423e3e',
         height: '100%',
@@ -96,7 +96,7 @@ const Sharing = ({t,...props}) => {
             <p className={classes.title}>{t('title')}</p>
             
             <Grid container className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>
-                <Grid item xs={12} sm={7}>
+                <Grid item xs={12} md={7}>
                     <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
                             react-typewriting-animation
                     </p>
@@ -115,7 +115,7 @@ const Sharing = ({t,...props}) => {
                     </Link>
                     <p>&nbsp;</p>
                 </Grid>
-                <Grid item xs={12} sm={5} style={{textAlign:'center'}}>
+                <Grid item xs={12} md={5} style={{textAlign:'center'}}>
                     <Hidden smDown>
                         <div style={{paddingTop:'30%'}}>
                         <Typewriter
@@ -145,7 +145,7 @@ const Sharing = ({t,...props}) => {
             
             <Grid container className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>
             
-                <Grid item xs={12} sm={6} md={7} style={{textAlign:'left'}}>
+                <Grid item xs={12} md={7} style={{textAlign:'left'}}>
                     <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
                         react-customize-carousel
                     </p>
@@ -164,7 +164,7 @@ const Sharing = ({t,...props}) => {
                     </Link>
                     <p>&nbsp;</p>
                 </Grid>
-                <Grid item xs={12} sm={6} md={5} style={{textAlign:'left',padding:'1rem'}}>
+                <Grid item xs={12} md={5} style={{textAlign:'left',paddingTop:'1rem'}}>
                     <CustomizeCarousel
                         imgsrc={[photo1, photo2, photo3, photo2, photo1]}
                         rotateBy={3}
@@ -175,21 +175,25 @@ const Sharing = ({t,...props}) => {
                 </Grid>
             </Grid>    
 
-            <Grid container spacing={3} className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>    
+            <Grid container className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>    
                 <Grid item xs={12} md={7}>
+                    <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
+                        react-scroll-up-btn
+                    </p>
+                    <br/>
+                    <p className={mode==='day'?classes.description:classes.descriptionNight}>
+                        {t('description3')}
+                    </p>
+                    <br/>
                     <Link
                         href='https://www.npmjs.com/package/react-scroll-up-btn'
                         underline='none'
                         target='_blank'
+                        className={mode==='day'?classes.link:classes.nightLink}
                     >
-                        <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
-                            react-scroll-up-btn
-                        </p>
-                        <br/>
-                        <p className={mode==='day'?classes.description:classes.descriptionNight}>
-                            {t('description3')}
-                        </p>
+                        <SearchIcon style={{marginBottom:'-0.4rem'}}/>{t('link')}
                     </Link>
+                    <p>&nbsp;</p>
                 </Grid>
 
                 <Grid item xs={12} md={5} style={{textAlign:'center'}}>

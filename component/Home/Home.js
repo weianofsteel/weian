@@ -80,11 +80,11 @@ export const Home = () => {
                             />
                         </div>
 
-                        {/* <div className={classes.body} style={{marginTop:'1rem'}}>
+                        <div className={classes.body} style={{marginTop:'6rem'}}>
                             <LearnByDoing
                                 mode={mode}
                             />
-                        </div> */}
+                        </div>
 
                         <div className={classes.body} style={{marginTop:'1rem'}}>
                             <Footer

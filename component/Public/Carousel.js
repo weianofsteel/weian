@@ -1,19 +1,23 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import styles from '../../css/public.module.css';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import Button from '@material-ui/core/Button';
+import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
+import IconButton from '@material-ui/core/IconButton';
 
-class Carousel extends React.Component {
+class CustomizeCarousel extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            count: 0,
-            isBoxHover: false
+            count: 0
         }
 
         this.handleTimer = this.handleTimer.bind(this);
         this.timer = this.timer.bind(this);
-        this.handleBoxHover = this.handleBoxHover.bind(this);
-        this.handleMouseLeave = this.handleMouseLeave.bind(this);
+        this.handleNext = this.handleNext.bind(this);
+        this.handleBack = this.handleBack.bind(this);
     }
 
     componentDidMount() {
@@ -34,13 +38,37 @@ class Carousel extends React.Component {
         }));
     }
 
-    handleBoxHover() {
-        this.setState({isBoxHover:true});
-        console.log(this.props.mode, 999);
+    handleNext() {
+        if(!this.props.rotateBy) {
+            this.setState((prevState)=>({
+                count: prevState.count + 3
+            }));
+        }else {
+            this.setState((prevState, props)=>({
+                count: prevState.count + props.rotateBy
+            }));
+        }
     }
 
-    handleMouseLeave() {
-        this.setState({isBoxHover:false})
+    handleBack() {
+        if(!this.props.rotateBy) {
+            if(this.state.count > 3) {
+                this.setState((prevState)=>({
+                    count: prevState.count - 3
+                }));
+            }else {
+                this.setState({count: 0});
+            }
+        }else {
+            if(this.state.count > 3) {
+                this.setState((prevState, props)=>({
+                    count: prevState.count - props.rotateBy
+                }));
+            }else {
+                this.setState({count: 0});
+            }
+            
+        }
     }
 
     render() {
@@ -48,9 +76,9 @@ class Carousel extends React.Component {
         const {
             imgsrc,
             rotateBy,
-            width,
-            height,
-            mode
+            mode,
+            controlButton,
+            navigateButton
         } = this.props;
 
         const list = [];
@@ -61,23 +89,10 @@ class Carousel extends React.Component {
             if(!rotateBy) {
                 for(let i = 0; i <= imgsrc.length - 1; i++) {
                     list.push(
-                        <div 
-                            key={i} 
-                            // className={mode=='day'?styles.imgBox:styles.imgBoxNight} 
-                            onMouseEnter={this.handleBoxHover} 
-                            onMouseLeave={this.handleMouseLeave}
-                            // style={{width:'100%', height:'100%'}}
-                        >
+                        <div key={i}>
                             {parseInt( this.state.count / 3) % imgsrc.length === i ?
-                                <div>
-                                    {/* {
-                                        this.state.isBoxHover==false && */}
-                                        <img src={imgsrc[i]} style={{margin: '0 auto', width:'100%', height:'100%'}}/>
-                                    {/* } */}
-                                    {/* {
-                                        this.state.isBoxHover==true &&
-                                        <p className={mode=='day'?styles.imgDescription:styles.imgDescriptionNight}>hello</p>
-                                    } */}
+                                <div style={{width:'100%'}}>
+                                    <img src={imgsrc[i]} style={{margin: '0 auto', width:'100%'}}/>
                                 </div>
                             :''}        
                         </div>
@@ -86,17 +101,53 @@ class Carousel extends React.Component {
             }else {
                 for(let i = 0; i <= imgsrc.length - 1; i++) {
                     list.push(
-                        <div 
-                            key={i}
-                            // className={styles.imgBox} 
-                            onMouseEnter={this.handleBoxHover} 
-                            onMouseLeave={this.handleMouseLeave}
-                        >
+                        <div key={i}>
                             {parseInt( this.state.count / rotateBy) % imgsrc.length === i ?
-                                <div style={{width:width?width:'600px', height:height?height:'500px'}}>
-                                    <img src={imgsrc[i]} style={{margin: '0 auto', width:'100%', height:'100%'}}/>
+                                <div style={{width:'100%'}}>
+                                    <img src={imgsrc[i]} style={{margin: '0 auto', width:'100%'}}/>
                                 </div>
                             :''}        
+                        </div>
+                    )
+                }
+            }
+        }
+    
+        const RadioNavigation = [];
+
+        if(!imgsrc) {
+            return RadioNavigation
+        }
+        else {
+            if(!rotateBy) {
+                for(let i = 0; i <= imgsrc.length - 1; i++) {
+                    RadioNavigation.push(
+                        <div key={i} style={{display:'inline', textAlign:'center'}}>
+                            {parseInt( this.state.count / 3) % imgsrc.length === i ?
+                                <IconButton size="small" onClick={()=>{this.setState({count: 3 * i})}}>
+                                    <PlayCircleFilledIcon style={{color:(mode==='day'?'black':'white')}}/>
+                                </IconButton>
+                            :
+                                <IconButton size="small" onClick={()=>{this.setState({count: 3 * i})}}>
+                                    <RadioButtonUncheckedIcon style={{color:(mode==='day'?'black':'white')}}/>
+                                </IconButton>
+                            }
+                        </div>
+                    )
+                }
+            }else {
+                for(let i = 0; i <= imgsrc.length - 1; i++) {
+                    RadioNavigation.push(
+                        <div key={i} style={{display:'inline', textAlign:'center'}}>
+                            {parseInt( this.state.count / rotateBy) % imgsrc.length === i ?
+                                <IconButton size="small" onClick={()=>{this.setState({count: rotateBy * i})}}>
+                                    <PlayCircleFilledIcon style={{color:(mode==='day'?'black':'white')}}/>
+                                </IconButton>
+                            :
+                                <IconButton size="small" onClick={()=>{this.setState({count: rotateBy * i})}}>
+                                    <RadioButtonUncheckedIcon style={{color:(mode==='day'?'black':'white')}}/>
+                                </IconButton>
+                            }
                         </div>
                     )
                 }
@@ -106,15 +157,48 @@ class Carousel extends React.Component {
         return(
             <React.Fragment>
 
-                <div style={{padding:'1rem'}}>
-
-                    {list}
+                <Grid container>
                 
-                </div>
+                    <Grid item xs={12}>
+                        {list}
+                    </Grid>
+
+                
+                </Grid>
+
+                <Grid container style={{marginLeft:'-1rem'}}>
+                    <Grid item xs={1} md={1} style={{paddingLeft:0}}>
+                        {controlButton === true &&
+                            <Button 
+                                style={{color:(mode==='day'?'black':'white')}}
+                                onClick={this.handleBack}
+                            >
+                                <ArrowBackIosIcon/>
+                            </Button>
+                        }
+                    </Grid>
+                    {navigateButton===true?
+                        <Grid item xs={10} md={10} style={{textAlign:'center'}}>
+                            {RadioNavigation}
+                        </Grid>
+                        :<Grid item xs={10} style={{textAlign:'center'}}></Grid>
+                    }               
+                    <Grid item xs={1} md={1}>
+                        {controlButton === true &&
+                            <Button 
+                                onClick={this.handleNext}
+                                style={{color:(mode==='day'?'black':'white')}}
+                            >
+                                <ArrowForwardIosIcon/>
+                            </Button>
+                        }
+                    </Grid>
+                </Grid>
+                
 
             </React.Fragment>
         )
     }
 }
 
-export default Carousel;
+export default CustomizeCarousel;

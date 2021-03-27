@@ -4,8 +4,7 @@ import Grid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/core/styles'
 import { i18n, withTranslation } from '../../../i18n'
 import PropTypes from 'prop-types'
-// import CustomizeCarousel from 'react-customize-carousel'
-import CustomizeCarousel from '../../Public/Carousel2'
+import CustomizeCarousel from '../../Public/Carousel'
 import Typewriter from 'react-typewriting-animation'
 import ScrollUpButton from 'react-scroll-up-btn'
 import { Scrollup } from '../../Public/Scrollup'
@@ -16,7 +15,7 @@ import photo3 from '../../../public/image/home/carousel3.jpg'
 const useStyles = makeStyles({
     title:{
         fontFamily:'Roboto Slab',
-        fontSize:'2rem',
+        fontSize:'2rem'
     },
     imgBlock:{
         width:'100%',
@@ -72,6 +71,7 @@ const Sharing = ({t,...props}) => {
                         href='https://www.npmjs.com/package/react-typewriting-animation'
                         underline='none'
                         target='_blank'
+                        className={classes.link}
                     >
                         <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
                             react-typewriting-animation

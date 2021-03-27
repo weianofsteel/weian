@@ -11,6 +11,8 @@ import { Scrollup } from '../../Public/Scrollup'
 import photo1 from '../../../public/image/home/carousel1.jpg'
 import photo2 from '../../../public/image/home/carousel2.jpg'
 import photo3 from '../../../public/image/home/carousel3.jpg'
+import SearchIcon from '@material-ui/icons/Search';
+import Hidden from '@material-ui/core/Hidden'
 
 const useStyles = makeStyles({
     title:{
@@ -27,7 +29,7 @@ const useStyles = makeStyles({
     subtitle:{
         fontFamily:'Roboto',
         fontSize:'1.5rem',
-        color:'black'
+        fontWeight:700
     },
     subtitleNight:{
         fontFamily:'Roboto',
@@ -36,7 +38,7 @@ const useStyles = makeStyles({
     },
     description:{
         fontFamily:'Roboto',
-        fontSize:'1.5rem',
+        fontSize:'1.2rem',
         color:'black'
     },
     descriptionNight:{
@@ -46,11 +48,39 @@ const useStyles = makeStyles({
     },
     packageBlock:{
         marginTop:'3rem',
-        borderBottom:'1px solid black'
+        padding:'1rem',
+        borderBottom:'1px solid black',
+        color:'black',
+        backgroundColor: '#F5F5F5',
+        height: '100%',
+        width:'100%',
+        overflow:'hidden',
+        transition: '.4s ease-in-out'
     },
     packageBlockNight:{
-        marginTop:'3rem',
-        borderBottom:'1px solid white'
+        // borderBottom:'1px solid white',
+        padding:'1rem',
+        backgroundColor: '#423e3e',
+        height: '100%',
+        width:'100%',
+        overflow:'hidden',
+        marginTop:'3rem'
+    },
+    link: {
+        fontFamily:'Roboto',
+        fontSize:'1.2rem',
+        color:'black',
+        "&:hover":{
+           color:'#5c5c5c'
+        }
+    },
+    nightLink:{
+        fontFamily:'Roboto',
+        fontSize:'1.2rem',
+        color:'white',
+        "&:hover":{
+            color:'#c4c4c4'
+        }
     }
 })
 
@@ -65,54 +95,76 @@ const Sharing = ({t,...props}) => {
         <React.Fragment>
             <p className={classes.title}>{t('title')}</p>
             
-            <Grid container spacing={3} className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>
+            <Grid container className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>
                 <Grid item xs={12} sm={7}>
+                    <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
+                            react-typewriting-animation
+                    </p>
+                    <br/>
+                    <p className={mode==='day'?classes.description:classes.descriptionNight}>
+                        {t('description2')}
+                    </p>
+                    <br/>
                     <Link
                         href='https://www.npmjs.com/package/react-typewriting-animation'
                         underline='none'
                         target='_blank'
-                        className={classes.link}
+                        className={mode==='day'?classes.link:classes.nightLink}
                     >
-                        <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
-                            react-typewriting-animation
-                        </p>
-                        <br/>
-                        <p className={mode==='day'?classes.description:classes.descriptionNight}>
-                            {t('description2')}
-                        </p>
+                        <SearchIcon style={{marginBottom:'-0.4rem'}}/>{t('link')}
                     </Link>
+                    <p>&nbsp;</p>
                 </Grid>
-                <Grid item xs={12} sm={5}>
-                    <Typewriter
-                        rotateSpeed={800}
-                        typeSpeed={80}
-                        fontSize={'24px'}
-                        fontFamily={'Roboto'}
-                        color={mode=='day'?'black':'white'}
-                        heading={'Typewriter'}
-                        dataText={["Hello World"]}
-                    />  
+                <Grid item xs={12} sm={5} style={{textAlign:'center'}}>
+                    <Hidden smDown>
+                        <div style={{paddingTop:'30%'}}>
+                        <Typewriter
+                            rotateSpeed={800}
+                            typeSpeed={80}
+                            fontSize={'24px'}
+                            fontFamily={'Roboto'}
+                            color={mode=='day'?'black':'white'}
+                            heading={'Typewriter'}
+                            dataText={["Hello World"]}
+                        />
+                        </div>
+                    </Hidden> 
+                    <Hidden mdUp>
+                        <Typewriter
+                            rotateSpeed={800}
+                            typeSpeed={80}
+                            fontSize={'24px'}
+                            fontFamily={'Roboto'}
+                            color={mode=='day'?'black':'white'}
+                            heading={'Typewriter'}
+                            dataText={["Hello World"]}
+                        />
+                    </Hidden>
                 </Grid>
             </Grid>
             
-            <Grid container spacing={3} className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>
+            <Grid container className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>
             
                 <Grid item xs={12} sm={6} md={7} style={{textAlign:'left'}}>
+                    <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
+                        react-customize-carousel
+                    </p>
+                    <br/>
+                    <p className={mode==='day'?classes.description:classes.descriptionNight}>
+                        {t('description1')}
+                    </p>
+                    <br/>
                     <Link
                         href='https://www.npmjs.com/package/react-customize-carousel'
                         underline='none'
                         target='_blank'
+                        className={mode==='day'?classes.link:classes.nightLink}
                     >
-                        <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
-                            react-customize-carousel
-                        </p>
-                        <br/>
-                        <p className={mode==='day'?classes.description:classes.descriptionNight}>
-                            {t('description1')}
-                        </p>
+                        <SearchIcon style={{marginBottom:'-0.4rem'}}/>{t('link')}
                     </Link>
+                    <p>&nbsp;</p>
                 </Grid>
-                <Grid item xs={12} sm={6} md={5} style={{textAlign:'left'}}>
+                <Grid item xs={12} sm={6} md={5} style={{textAlign:'left',padding:'1rem'}}>
                     <CustomizeCarousel
                         imgsrc={[photo1, photo2, photo3, photo2, photo1]}
                         rotateBy={3}
@@ -124,7 +176,7 @@ const Sharing = ({t,...props}) => {
             </Grid>    
 
             <Grid container spacing={3} className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>    
-                <Grid item xs={12} sm={7}>
+                <Grid item xs={12} md={7}>
                     <Link
                         href='https://www.npmjs.com/package/react-scroll-up-btn'
                         underline='none'
@@ -140,13 +192,15 @@ const Sharing = ({t,...props}) => {
                     </Link>
                 </Grid>
 
-                <Grid item xs={12} sm={5} style={{textAlign:'center'}}>
-                    {/* <ScrollUpButton 
-                        behavior={'smooth'}
-                        IconSize={'5rem'}
-                        appearCoordinate={600}
-                    />  */}
-                    <Scrollup mode={mode}/>
+                <Grid item xs={12} md={5} style={{textAlign:'center'}}>
+                    <Hidden smDown>
+                        <div style={{padding:'20%'}}>
+                            <Scrollup mode={mode}/>
+                        </div>
+                    </Hidden>
+                    <Hidden mdUp>
+                        <Scrollup mode={mode}/>
+                    </Hidden>
                 </Grid>
 
             </Grid>

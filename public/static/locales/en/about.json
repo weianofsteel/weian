@@ -1,4 +1,5 @@
 {
     "title":"About Me",
-    "bio":"I am a front-end developer"
+    "bio":"I am a front-end developer",
+    "greeting":"Hello!"
 }

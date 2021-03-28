@@ -47,7 +47,7 @@ const LearnByDoing = ({t,...props}) => {
     return(
         <React.Fragment>
             <p className={classes.title}>{t('title')}</p>
-            <Grid container spacing={3}>
+            <Grid container spacing={2}>
                 <Grid item xs={6} md={4}>
                     <Link
                         href=''
@@ -58,19 +58,49 @@ const LearnByDoing = ({t,...props}) => {
                     </Link>
                 </Grid>
                 <Grid item xs={6} md={4}>
-                    <img src={gif5} className={classes.imgBlock}/>
+                    <Link
+                        href=''
+                        underline='none'
+                        target='_blank'
+                    >
+                        <img src={gif5} className={classes.imgBlock}/>
+                    </Link>
                 </Grid>
                 <Grid item xs={6} md={4}>
-                    <img src={gif6} className={classes.imgBlock}/>
+                    <Link
+                        href=''
+                        underline='none'
+                        target='_blank'
+                    >
+                        <img src={gif6} className={classes.imgBlock}/>
+                    </Link>
                 </Grid>
                 <Grid item xs={6} md={4}>
+                    <Link
+                        href=''
+                        underline='none'
+                        target='_blank'
+                    >
                     <img src={gif7} className={classes.imgBlock}/>
+                    </Link>
                 </Grid>
                 <Grid item xs={6} md={4}>
-                    <img src={gif8} className={classes.imgBlock}/>
+                    <Link
+                        href=''
+                        underline='none'
+                        target='_blank'
+                    >
+                        <img src={gif8} className={classes.imgBlock}/>
+                    </Link>
                 </Grid>
                 <Grid item xs={6} md={4}>
-                    <img src={gif10} className={classes.imgBlock}/>
+                    <Link
+                        href=''
+                        underline='none'
+                        target='_blank'
+                    >
+                        <img src={gif10} className={classes.imgBlock}/>
+                    </Link>
                 </Grid>
             </Grid>
         </React.Fragment>

@@ -4,6 +4,7 @@ import Typewriter from 'react-typewriting-animation'
 import PropTypes from 'prop-types'
 import { withTranslation } from '../../../i18n'
 import Grid from '@material-ui/core/Grid'
+import avartar from '../../../public/image/about/avartar2.jpg'
 
 const useStyles = makeStyles({
     content:{
@@ -37,6 +38,14 @@ const Bio = ({t,...props}) => {
                     <p className={classes.content}>
                         {t('greeting')}
                     </p>
+                </Grid>
+                <Grid item xs={3}></Grid>
+            </Grid>
+
+            <Grid container>
+                <Grid item xs={3}></Grid>
+                <Grid item xs={6}>
+                    <img src={avartar} style={{width:'100%'}}/>
                 </Grid>
                 <Grid item xs={3}></Grid>
             </Grid>

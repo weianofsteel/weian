@@ -7,6 +7,7 @@ import Skill from '../Home/component/Skill'
 import Sharing from './component/Sharing'
 import LearnByDoing from '../Home/component/LearnByDoing'
 import { makeStyles } from '@material-ui/core/styles'
+import { PageLoader } from '../Public/PageLoader'
 
 const useStyles = makeStyles({
     dayBackground:{
@@ -54,6 +55,9 @@ export const Home = () => {
             {drawer == false &&
                 <React.Fragment>
                     <div className={mode==='day'?classes.dayBackground:classes.nightBackground}>
+                        
+                        <PageLoader/>
+
                         <div className={classes.body}>
                             <Header
                                 handleDrawerOpen={handleDrawerOpen}

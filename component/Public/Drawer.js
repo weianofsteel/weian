@@ -68,7 +68,7 @@ const Drawer = ({t,...props}) => {
                         underline='none'
                         className={classes.title}
                     >
-                        {t('title')}
+                        WEIAN WANG
                     </Link>
                     </Grid>
                     <Grid item xs={1} md={2}></Grid>

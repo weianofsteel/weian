@@ -28,16 +28,6 @@ const Banner = ({t,...props}) => {
                     {t('context1')}<br/>
                     {t('context2')}
                 </p>
-                
-                {/* <Typewriter
-                    rotateSpeed={800}
-                    typeSpeed={80}
-                    fontSize={'24px'}
-                    fontFamily={'Roboto'}
-                    color={mode=='day'?'black':'white'}
-                    heading={'Typewriter'}
-                    dataText={[ t('context1'), t('context2')]}
-                />   */}
 
             </div>
 

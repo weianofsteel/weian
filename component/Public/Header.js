@@ -126,7 +126,6 @@ const Header = ({t,...props}) => {
                     style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                   >
                     WEIAN WANG
-                    {/* {t('title')} */}
                   </Link>
               </Grid>
               <Grid item xs={1} md={2}></Grid>

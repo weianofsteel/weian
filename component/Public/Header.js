@@ -14,6 +14,7 @@ import Brightness2OutlinedIcon from '@material-ui/icons/Brightness2Outlined';
 import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
 
 import { useSelector, useDispatch } from 'react-redux'
+import { toDay, toNight, reset } from '../../store'
 import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles({
@@ -87,25 +88,6 @@ const useStyles = makeStyles({
   }
 })
 
-const useMode = () => {
-  const mode2 = useSelector((state) => state.mode)
-  const dispatch = useDispatch()
-  const toDay = () => 
-      dispatch({
-          type: 'DAY',
-      })
-  const toNight = () => 
-      dispatch({
-          type: 'NIGHT',
-      })  
-  const reset = () =>
-      dispatch({
-        type: 'RESET',
-      })      
-  
-  return { mode2, toDay, toNight, reset }
-}
-
 const Header = ({t,...props}) => {
 
     const classes = useStyles();
@@ -129,7 +111,8 @@ const Header = ({t,...props}) => {
       setOpen(true);
     };
 
-    const { mode2, toDay, toNight, reset } = useMode();
+    // const mode2 = useSelector((state) => state.mode)
+    // const dispatch = useDispatch()
 
     const {
       handleDrawerOpen,
@@ -149,13 +132,13 @@ const Header = ({t,...props}) => {
                     className={classes.title}
                     style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                   >
-                    {/* WEIAN WANG */}
-                    {mode2}
+                    WEIAN WANG
+                    {/* {mode2} */}
                   </Link>
               </Grid>
               <Grid item xs={1} md={2}>
-                <Button onClick={toNight}>night</Button>
-                <Button onClick={toDay}>day</Button>
+                {/* <Button onClick={dispatch(toNight)}>night</Button>
+                <Button onClick={dispatch(toDay)}>day</Button> */}
               </Grid>
               <Grid item xs={1} md={2} lg={1}></Grid>
               <Hidden mdDown>

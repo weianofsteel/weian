@@ -88,6 +88,25 @@ const useStyles = makeStyles({
   }
 })
 
+// const useMode = () => {
+//   const mode2 = useSelector((state) => state.mode)
+//   const dispatch = useDispatch()
+//   const toDay = () => 
+//       dispatch({
+//           type: 'DAY',
+//       })
+//   const toNight = () => 
+//       dispatch({
+//           type: 'NIGHT',
+//       })  
+//   const reset = () =>
+//       dispatch({
+//         type: 'RESET',
+//       })      
+  
+//   return { mode2, toDay, toNight, reset }
+// }
+
 const Header = ({t,...props}) => {
 
     const classes = useStyles();

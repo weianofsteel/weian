@@ -58,6 +58,8 @@ export const Writings = () => {
                                 mode={mode}
                             />
                         </div>
+
+
                         
                         <div className={classes.body}>
                             <Banner

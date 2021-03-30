@@ -5,7 +5,13 @@ import Head from 'next/head'
 import { appWithTranslation } from '../i18n'
 import '../css/main.css'
 
+import { Provider } from 'react-redux'
+import { useStore } from '../store'
+
 const MyApp = ({ Component, pageProps }) => {
+    
+    const store = useStore(pageProps.initialReduxState)
+
     return(
         <React.Fragment>
 
@@ -13,7 +19,9 @@ const MyApp = ({ Component, pageProps }) => {
                 <title>Weian Wang | Frontend Developer</title>
             </Head>
     
-            <Component {...pageProps} />
+            <Provider store={store}>
+                <Component {...pageProps} />
+            </Provider>
         
         </React.Fragment>
     )

@@ -6,6 +6,7 @@ import Footer from '../Public/Footer'
 import Showcase from './component/Showcase'
 import { makeStyles } from '@material-ui/core/styles';
 import { useSelector } from 'react-redux'
+import { PageLoader } from '../Public/PageLoader'
 
 const useStyles = makeStyles({
     dayBackground:{
@@ -44,6 +45,9 @@ export const Writings = () => {
             {drawer == false &&
                 <React.Fragment>
                     <div className={mode==='day'?classes.dayBackground:classes.nightBackground}>
+                        
+                        <PageLoader mode={mode}/>
+
                         <div className={classes.body}>
                             <Header
                                 handleDrawerOpen={handleDrawerOpen}

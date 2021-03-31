@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import LoadingBar from 'react-top-loading-bar'
  
-export const PageLoader = () => {
+export const PageLoader = (props) => {
   
   const [progress, setProgress] = React.useState(0);
 
@@ -18,7 +18,7 @@ export const PageLoader = () => {
       <LoadingBar
         color={mode==='day'?'black':'white'}
         height={3}
-        waitingTime={500}
+        waitingTime={600}
         progress={progress}
         onLoaderFinished={() => setProgress(0)}
       />

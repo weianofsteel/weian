@@ -130,8 +130,8 @@ const Header = ({t,...props}) => {
       setOpen(true);
     };
 
-    // const mode2 = useSelector((state) => state.mode)
-    // const dispatch = useDispatch()
+    const mode2 = useSelector((state) => state.mode)
+    const dispatch = useDispatch()
 
     const {
       handleDrawerOpen,
@@ -151,13 +151,13 @@ const Header = ({t,...props}) => {
                     className={classes.title}
                     style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                   >
-                    WEIAN WANG
-                    {/* {mode2} */}
+                    {/* WEIAN WANG */}
+                    {mode2}
                   </Link>
               </Grid>
               <Grid item xs={1} md={2}>
-                {/* <Button onClick={dispatch(toNight)}>night</Button>
-                <Button onClick={dispatch(toDay)}>day</Button> */}
+                <Button onClick={()=>dispatch(toNight())}>night</Button>
+                <Button onClick={()=>dispatch(toDay())}>day</Button>
               </Grid>
               <Grid item xs={1} md={2} lg={1}></Grid>
               <Hidden mdDown>

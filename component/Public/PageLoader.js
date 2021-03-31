@@ -18,7 +18,9 @@ export const PageLoader = (props) => {
       <LoadingBar
         color={mode==='day'?'black':'white'}
         height={3}
-        waitingTime={600}
+        waitingTime={500}
+        transitionTime={1000}
+        loaderSpeed={600}
         progress={progress}
         onLoaderFinished={() => setProgress(0)}
       />

@@ -4,8 +4,9 @@ import PropTypes from 'prop-types'
 import { withTranslation } from '../../i18n'
 
 const AboutPage = ({ t }) => {
+
     return(
-        <About/> 
+            <About/>
     )
 }
 

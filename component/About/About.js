@@ -44,9 +44,8 @@ export const About = () => {
             
             {drawer == false &&
                 <React.Fragment>
+                    <PageLoader mode={mode}/>
                     <div className={mode==='day'?classes.dayBackground:classes.nightBackground}>
-                        
-                        <PageLoader mode={mode}/>
 
                         <div className={classes.body}>
                             <Header

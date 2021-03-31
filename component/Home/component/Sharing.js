@@ -60,7 +60,7 @@ const useStyles = makeStyles({
     packageBlockNight:{
         borderBottom:'1px solid white',
         padding:'1rem',
-        backgroundColor: '#423e3e',
+        backgroundColor: '#5c5c5c',
         height: '100%',
         width:'100%',
         overflow:'hidden',

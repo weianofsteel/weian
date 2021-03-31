@@ -13,9 +13,8 @@ import {Select, Select2} from './PublicComponent';
 import Brightness2OutlinedIcon from '@material-ui/icons/Brightness2Outlined';
 import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
 
-import { useSelector, useDispatch } from 'react-redux'
-import { toDay, toNight, reset } from '../../store'
-import Button from '@material-ui/core/Button';
+import { useDispatch } from 'react-redux'
+import { toDay, toNight } from '../../store'
 
 const useStyles = makeStyles({
   title: {
@@ -130,15 +129,10 @@ const Header = ({t,...props}) => {
                     className={classes.title}
                     style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                   >
-                    {/* WEIAN WANG */}
-                    {mode}
+                    WEIAN WANG
                   </Link>
               </Grid>
-              <Grid item xs={1} md={2}>
-                <Button onClick={()=>dispatch(toNight())}>night</Button>
-                <Button onClick={()=>dispatch(toDay())}>day</Button>
-                <Button onClick={()=>{console.log(123, mode)}}>console</Button>
-              </Grid>
+              <Grid item xs={1} md={2}></Grid>
               <Grid item xs={1} md={2} lg={1}></Grid>
               <Hidden mdDown>
                 <Grid item xs={2} style={{marginTop:'0.3rem', paddingLeft:'6%'}}>

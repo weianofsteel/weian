@@ -88,25 +88,6 @@ const useStyles = makeStyles({
   }
 })
 
-// const useMode = () => {
-//   const mode2 = useSelector((state) => state.mode)
-//   const dispatch = useDispatch()
-//   const toDay = () => 
-//       dispatch({
-//           type: 'DAY',
-//       })
-//   const toNight = () => 
-//       dispatch({
-//           type: 'NIGHT',
-//       })  
-//   const reset = () =>
-//       dispatch({
-//         type: 'RESET',
-//       })      
-  
-//   return { mode2, toDay, toNight, reset }
-// }
-
 const Header = ({t,...props}) => {
 
     const classes = useStyles();
@@ -130,12 +111,10 @@ const Header = ({t,...props}) => {
       setOpen(true);
     };
 
-    const mode2 = useSelector((state) => state.mode)
     const dispatch = useDispatch()
 
     const {
       handleDrawerOpen,
-      handleMode,
       mode
     } = props;
 
@@ -152,12 +131,13 @@ const Header = ({t,...props}) => {
                     style={{color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
                   >
                     {/* WEIAN WANG */}
-                    {mode2}
+                    {mode}
                   </Link>
               </Grid>
               <Grid item xs={1} md={2}>
                 <Button onClick={()=>dispatch(toNight())}>night</Button>
                 <Button onClick={()=>dispatch(toDay())}>day</Button>
+                <Button onClick={()=>{console.log(123, mode)}}>console</Button>
               </Grid>
               <Grid item xs={1} md={2} lg={1}></Grid>
               <Hidden mdDown>
@@ -174,16 +154,22 @@ const Header = ({t,...props}) => {
                   />
                 </Grid>
                 <Grid item xs={1} style={{marginTop:'0.3rem',textAlign:'center'}}>
-                  <IconButton
-                    style={{backgroundColor: 'transparent',color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
-                    disableRipple={true}
-                    onClick={handleMode}
-                  >
-                    {mode === 'day'?
-                      <Brightness2OutlinedIcon fontSize='large'/>
-                      :<WbSunnyOutlinedIcon fontSize='large'/>
-                    }
-                  </IconButton>
+                  {mode === 'day'?
+                    <IconButton
+                      style={{backgroundColor: 'transparent',color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
+                      disableRipple={true}
+                      onClick={()=>dispatch(toNight())}
+                    >
+                        <Brightness2OutlinedIcon fontSize='large'/>
+                    </IconButton>:
+                    <IconButton
+                      style={{backgroundColor: 'transparent',color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
+                      disableRipple={true}
+                      onClick={()=>dispatch(toDay())}
+                    >
+                      <WbSunnyOutlinedIcon fontSize='large'/>
+                    </IconButton>
+                  }
                 </Grid>
                 <Grid item xs={1} style={{marginTop:'1.5rem'}}>
                   {mode==='day'&&
@@ -266,16 +252,22 @@ const Header = ({t,...props}) => {
               <Hidden lgUp>
                 <Grid item xs={1} sm={2}></Grid>
                 <Grid item xs={1}>
-                  <IconButton
-                    style={{backgroundColor: 'transparent',color:(mode==='day'?'#1F1F1F':'#FFFFFF'),fontSize:'1.6rem'}}
-                    disableRipple={true}
-                    onClick={handleMode}
-                  >
-                    {mode === 'day'?
-                      <Brightness2OutlinedIcon fontSize='inherit'/>
-                      :<WbSunnyOutlinedIcon fontSize='inherit'/>
-                    }
-                  </IconButton>
+                  {mode === 'day'?
+                    <IconButton
+                      style={{backgroundColor: 'transparent',color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
+                      disableRipple={true}
+                      onClick={()=>dispatch(toNight())}
+                    >
+                        <Brightness2OutlinedIcon fontSize='inherit'/>
+                    </IconButton>:
+                    <IconButton
+                      style={{backgroundColor: 'transparent',color:(mode==='day'?'#1F1F1F':'#FFFFFF')}}
+                      disableRipple={true}
+                      onClick={()=>dispatch(toDay())}
+                    >
+                      <WbSunnyOutlinedIcon fontSize='inherit'/>
+                    </IconButton>
+                  }
                 </Grid>
                 <Hidden smUp>
                   <Grid item xs={1}></Grid>

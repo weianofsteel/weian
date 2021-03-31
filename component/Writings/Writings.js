@@ -5,6 +5,7 @@ import Drawer from '../Public/Drawer'
 import Footer from '../Public/Footer'
 import Showcase from './component/Showcase'
 import { makeStyles } from '@material-ui/core/styles';
+import { useSelector } from 'react-redux'
 
 const useStyles = makeStyles({
     dayBackground:{
@@ -27,8 +28,6 @@ export const Writings = () => {
 
     const [drawer, setDrawer] = React.useState(false);
 
-    const [ mode, setMode ] = React.useState('day');
-
     const handleDrawerOpen = () => {
         setDrawer(true);
     }
@@ -37,13 +36,7 @@ export const Writings = () => {
         setDrawer(false);
     }
 
-    const handleMode = () => {
-        if(mode === 'day') {
-          setMode('night')
-        }else{
-          setMode('day')
-        }
-    }
+    const mode = useSelector((state) => state.mode)
 
     return(
         <React.Fragment>
@@ -54,7 +47,6 @@ export const Writings = () => {
                         <div className={classes.body}>
                             <Header
                                 handleDrawerOpen={handleDrawerOpen}
-                                handleMode={handleMode}
                                 mode={mode}
                             />
                         </div>

@@ -8,11 +8,15 @@ export const PageLoader = () => {
   useEffect(()=>{
     setProgress(100);
   },[])
+
+  const {
+    mode
+  } = props;
  
   return (
     <div>
       <LoadingBar
-        color='#1F1F1F'
+        color={mode==='day'?'black':'white'}
         height={3}
         waitingTime={500}
         progress={progress}

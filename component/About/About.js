@@ -3,8 +3,10 @@ import Header from '../Public/Header'
 import Banner from '../Public/Banner'
 import Drawer from '../Public/Drawer'
 import Footer from '../Public/Footer'
+import { PageLoader } from '../Public/PageLoader'
 import Bio from './component/Bio'
 import { makeStyles } from '@material-ui/core/styles'
+import { useSelector } from 'react-redux'
 
 const useStyles = makeStyles({
     dayBackground:{
@@ -27,8 +29,6 @@ export const About = () => {
 
     const [drawer, setDrawer] = React.useState(false);
 
-    const [ mode, setMode ] = React.useState('day');
-
     const handleDrawerOpen = () => {
         setDrawer(true);
     }
@@ -37,13 +37,7 @@ export const About = () => {
         setDrawer(false);
     }
 
-    const handleMode = () => {
-        if(mode === 'day') {
-          setMode('night')
-        }else{
-          setMode('day')
-        }
-    }
+    const mode = useSelector((state) => state.mode)
 
     return(
         <React.Fragment>
@@ -51,10 +45,12 @@ export const About = () => {
             {drawer == false &&
                 <React.Fragment>
                     <div className={mode==='day'?classes.dayBackground:classes.nightBackground}>
+                        
+                        <PageLoader mode={mode}/>
+
                         <div className={classes.body}>
                             <Header
                                 handleDrawerOpen={handleDrawerOpen}
-                                handleMode={handleMode}
                                 mode={mode}
                             />
                         </div>

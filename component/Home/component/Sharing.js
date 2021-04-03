@@ -28,13 +28,14 @@ const useStyles = makeStyles({
     },
     subtitle:{
         fontFamily:'Roboto',
-        fontSize:'1.5rem',
-        fontWeight:700
+        fontSize:'1.8rem',
+        fontWeight:900
     },
     subtitleNight:{
         fontFamily:'Roboto',
-        fontSize:'1.5rem',
-        color:'white'
+        fontSize:'1.8rem',
+        color:'white',
+        fontWeight:900
     },
     description:{
         fontFamily:'Roboto',
@@ -48,18 +49,18 @@ const useStyles = makeStyles({
     },
     packageBlock:{
         marginTop:'3rem',
-        padding:'1rem',
+        padding:'3rem',
         borderBottom:'1px solid black',
         color:'black',
         backgroundColor: '#F5F5F5',
         height: '100%',
         width:'100%',
         overflow:'hidden',
-        transition: '.4s ease-in-out'
+        // transition: '.4s ease-in-out'
     },
     packageBlockNight:{
         borderBottom:'1px solid white',
-        padding:'1rem',
+        padding:'3rem',
         backgroundColor: '#5c5c5c',
         height: '100%',
         width:'100%',
@@ -95,7 +96,7 @@ const Sharing = ({t,...props}) => {
         <React.Fragment>
             <p className={classes.title}>{t('title')}</p>
             
-            <Grid container className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>
+            <Grid container className={mode==='day'?classes.packageBlock:classes.packageBlockNight} spacing={2}>
                 <Grid item xs={12} md={7}>
                     <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
                             react-typewriting-animation

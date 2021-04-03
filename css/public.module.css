@@ -26,3 +26,13 @@
 }
 
 /* Carousel.js */
+
+/* LoadingBar.js */
+
+.bar {
+    background-color: black;
+    position: absolute;
+    transition: 'width 1s ease-in-out'
+}
+
+/* LoadingBar.js */

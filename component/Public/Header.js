@@ -12,9 +12,8 @@ import IconButton from '@material-ui/core/IconButton';
 import {Select, Select2} from './PublicComponent';
 import Brightness2OutlinedIcon from '@material-ui/icons/Brightness2Outlined';
 import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
-
 import { useDispatch } from 'react-redux'
-import { toDay, toNight } from '../../store'
+import { toDay, toNight, toEn, toZhHant } from '../../store'
 
 const useStyles = makeStyles({
   title: {
@@ -93,14 +92,24 @@ const Header = ({t,...props}) => {
 
     const router = useRouter();
 
-    const [ language, setLanguage ] = React.useState('en');
+    // const [ language, setLanguage ] = React.useState('en');
 
     const [open, setOpen] = React.useState(false);
 
     const handleChange = (event) => {
-      setLanguage(event.target.value);
+      // setLanguage(event.target.value);
+      handleLangToRedux(event.target.value);
       i18n.changeLanguage(event.target.value);
     };
+
+    const handleLangToRedux = (value) => {
+      if(value == 'en') {
+        dispatch(toEn())
+      } 
+      else if (value == 'zhHant') {
+        dispatch(toZhHant())
+      }
+    }
 
     const handleClose = () => {
       setOpen(false);
@@ -114,7 +123,8 @@ const Header = ({t,...props}) => {
 
     const {
       handleDrawerOpen,
-      mode
+      mode,
+      lang
     } = props;
 
     return(
@@ -137,8 +147,8 @@ const Header = ({t,...props}) => {
               <Hidden mdDown>
                 <Grid item xs={2} style={{marginTop:'0.3rem', paddingLeft:'6%'}}>
                   <Select2
-                      name="language"
-                      value={language}
+                      name="lang"
+                      value={lang}
                       onChange={handleChange}
                       items={[
                           {value:'en',label:"English"},
@@ -268,8 +278,8 @@ const Header = ({t,...props}) => {
                 </Hidden>
                 <Grid item xs={1} style={{marginTop:'0.5rem',textAlign:'center'}}>
                     <Select
-                      name="language"
-                      value={language}
+                      name="lang"
+                      value={lang}
                       onChange={handleChange}
                       open={open}
                       onClose={handleClose}

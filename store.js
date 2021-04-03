@@ -7,12 +7,15 @@ import storage from 'redux-persist/lib/storage'
 let store
 
 const exampleInitialState = {
-  mode:'day'
+  mode:'day',
+  lang:'en'
 }
 
 export const actionTypes = {
   DAY: 'DAY',
   NIGHT: 'NIGHT',
+  EN: 'EN',
+  ZHHANT: 'ZHHANT',
   RESET: 'RESET'
 }
 
@@ -29,10 +32,21 @@ export const reducer = (state = exampleInitialState, action) => {
         ...state,
         mode: 'night'
       }
+    case actionTypes.EN:
+      return {
+        ...state,
+        lang: 'en'
+      }
+    case actionTypes.ZHHANT:
+      return {
+        ...state,
+        lang: 'zhHant'
+      } 
     case actionTypes.RESET:
       return {
         ...state,
-        mode: 'day'
+        mode: 'day',
+        lang: 'en'
       }
     default:
       return state
@@ -48,6 +62,14 @@ export const toNight = () => {
   return { type: actionTypes.NIGHT }
 }
 
+export const toEn = () => {
+  return { type: actionTypes.EN }
+}
+
+export const toZhHant = () => {
+  return { type: actionTypes.ZHHANT }
+}
+
 export const resetCount = () => {
   return { type: actionTypes.RESET }
 }
@@ -55,7 +77,7 @@ export const resetCount = () => {
 const persistConfig = {
   key: 'primary',
   storage,
-  whitelist: ['mode'], // place to select which state you want to persist
+  whitelist: ['mode', 'lang'], // place to select which state you want to persist
 }
 
 const persistedReducer = persistReducer(persistConfig, reducer)

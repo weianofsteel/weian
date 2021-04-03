@@ -37,6 +37,7 @@ export const Work = () => {
     }
 
     const mode = useSelector((state) => state.mode)
+    const lang = useSelector((state) => state.lang)
 
     return(
         <React.Fragment>
@@ -51,10 +52,11 @@ export const Work = () => {
                             <Header
                                 handleDrawerOpen={handleDrawerOpen}
                                 mode={mode}
+                                lang={lang}
                             />
                         </div>
                         
-                        <div className={classes.body}>
+                        <div className={classes.body} style={{marginTop:'8rem'}}>
                             <Banner
                                 mode={mode}
                             />

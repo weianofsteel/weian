@@ -40,6 +40,7 @@ export const Home = () => {
     }
 
     const mode = useSelector((state) => state.mode)
+    const lang = useSelector((state) => state.lang)
 
     return(
         <React.Fragment>
@@ -54,6 +55,7 @@ export const Home = () => {
                             <Header
                                 handleDrawerOpen={handleDrawerOpen}
                                 mode={mode}
+                                lang={lang}
                             />
                         </div>
                         

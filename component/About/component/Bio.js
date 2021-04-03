@@ -7,9 +7,13 @@ import Grid from '@material-ui/core/Grid'
 import avartar from '../../../public/image/about/avartar.jpg'
 
 const useStyles = makeStyles({
-    content:{
+    title:{
         fontFamily:'Roboto',
         fontSize:'2rem'
+    },
+    content:{
+        fontFamily:'Roboto',
+        fontSize:'1.2rem'
     },
     img:{
         borderRadius:'50%'
@@ -38,7 +42,7 @@ const Bio = ({t,...props}) => {
             <Grid container>
                 <Grid item xs={false} md={3}></Grid>
                 <Grid item xs={12} md={6}>
-                    <p className={classes.content}>
+                    <p className={classes.title}>
                         {t('greeting')}
                     </p>
                 </Grid>
@@ -51,6 +55,16 @@ const Bio = ({t,...props}) => {
                     <img src={avartar} className={classes.img} style={{width:'100%'}}/>
                 </Grid>
                 <Grid item xs={3} md={4}></Grid>
+            </Grid>
+
+            <Grid container>
+                <Grid item xs={false} md={3}></Grid>
+                <Grid item xs={12} md={6}>
+                    <p className={classes.content}>
+                        {t('content')}
+                    </p>
+                </Grid>
+                <Grid item xs={false} md={3}></Grid>
             </Grid>
 
         </React.Fragment>

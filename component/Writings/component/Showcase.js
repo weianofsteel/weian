@@ -205,6 +205,20 @@ const Showcase = ({t,...props}) => {
                             box={box2}
                         />
                     </div>
+                    <div 
+                        className={box3===true?classes.link:classes.linkOnHover}
+                        onMouseEnter={handleBox3On}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <ArticleBlock 
+                            title={t('title2')}
+                            description={t('description2')}
+                            image={img02}
+                            url={'./'}
+                            mode={mode}
+                            box={box2}
+                        />
+                    </div>
                 </React.Fragment>
             }
 
@@ -227,6 +241,20 @@ const Showcase = ({t,...props}) => {
                     <div 
                         className={box2===true?classes.nightLink:classes.nightLinkOnHover}
                         onMouseEnter={handleBox2On}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <ArticleBlock 
+                            title={t('title2')}
+                            description={t('description2')}
+                            image={img02}
+                            url={'./'}
+                            mode={mode}
+                            box={box2}
+                        />
+                    </div>
+                    <div 
+                        className={box3===true?classes.nightLink:classes.nightLinkOnHover}
+                        onMouseEnter={handleBox3On}
                         onMouseLeave={handleMouseLeave}
                     >
                         <ArticleBlock 

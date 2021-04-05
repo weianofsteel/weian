@@ -7,6 +7,7 @@ import PropTypes from 'prop-types'
 import ArticleBlock from './ArticleBlock'
 import img01 from '../../../public/image/writings/dynamic-import.png'
 import img02 from '../../../public/image/writings/globe.png'
+import img03 from '../../../public/image/writings/npm.png'
 
 const useStyles = makeStyles({
     showcase: {
@@ -97,84 +98,6 @@ const Showcase = ({t,...props}) => {
     return(
         <React.Fragment>
 
-            {/* <Link 
-                href='./'
-                underline='none'
-                target='_blank' 
-                rel='noopener'
-            >
-                <div 
-                    className={box1===true?classes.link:classes.linkOnHover}
-                    onMouseEnter={handleBox1On}
-                    onMouseLeave={handleMouseLeave}
-                >
-                    <Grid container>
-                        <Grid item xs={5}>
-
-                        </Grid>
-                        <Grid item xs={7}>
-                            <p className={box1===true?classes.title:classes.titleOnHover}>
-                                Exploring Next.js : multi-lingual support with next-i18next
-                            </p>
-                            <p className={box1===true?classes.description:classes.descriptionOnHover}>
-                                Dynamic import help us cut down loading time when website first render. Next.js provides us a strong feature 'next/dynamic' to do this. Let's check it! 
-                            </p>
-                        </Grid>
-                    </Grid>
-                </div>
-            </Link>
-
-            <Link 
-                href='./'
-                underline='none'
-                target='_blank' 
-                rel='noopener'
-                className={classes.showcase}
-            >
-                <div 
-                    className={box2===true?classes.link:classes.linkOnHover}
-                    onMouseEnter={handleBox2On}
-                    onMouseLeave={handleMouseLeave}
-                >
-                    <Grid container>
-                        <Grid item xs={5}>
-
-                        </Grid>
-                        <Grid item xs={7}>
-                            <p className={box2===true?classes.title:classes.titleOnHover}>
-                                Exploring Next.js : dynamic import
-                            </p>
-                            <p className={box2===true?classes.description:classes.descriptionOnHover}>
-                                Nowadays multi-lingual support is getting more and more important. Here is an example using next-i18next to implement multi-lingual support to a next.js project...
-                            </p>
-                        </Grid>
-                    </Grid>
-                </div>
-            </Link>
-
-            <Link 
-                href='./'
-                underline='none'
-                target='_blank' 
-                rel='noopener'
-                className={classes.showcase}
-            >
-                <div 
-                    className={box3===true?classes.link:classes.linkOnHover}
-                    onMouseEnter={handleBox3On}
-                    onMouseLeave={handleMouseLeave}
-                >
-                    <Grid container>
-                        <Grid item xs={5}>
-
-                        </Grid>
-                        <Grid item xs={7}>
-                            <p className={box3===true?classes.title:classes.titleOnHover}>Exploring Next.js : multi-lingual support with next-i18next</p>
-                        </Grid>
-                    </Grid>
-                </div>
-            </Link> */}
-
             {mode=='day'&&
                 <React.Fragment>
                     <div 
@@ -213,10 +136,10 @@ const Showcase = ({t,...props}) => {
                         <ArticleBlock 
                             title={t('title2')}
                             description={t('description2')}
-                            image={img02}
+                            image={img03}
                             url={'./'}
                             mode={mode}
-                            box={box2}
+                            box={box3}
                         />
                     </div>
                 </React.Fragment>
@@ -260,10 +183,10 @@ const Showcase = ({t,...props}) => {
                         <ArticleBlock 
                             title={t('title2')}
                             description={t('description2')}
-                            image={img02}
+                            image={img03}
                             url={'./'}
                             mode={mode}
-                            box={box2}
+                            box={box3}
                         />
                     </div>
                 </React.Fragment>

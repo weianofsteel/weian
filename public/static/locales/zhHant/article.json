@@ -1,8 +1,10 @@
 {
     "title":"文章分享",
     "readMore":"更多分享",
-    "title1":"探索 Next.js : 用next-i18next實現多語系切換功能",
-    "description1":"網路無國界，用next-i18next實現多語系切換功能，才能讓更多人看到...",
+    "title1":"探索 Next.js : 用 next-i18next 實現多語系切換功能",
+    "description1":"網路無國界，用 next-i18next 實現多語系切換功能，才能讓更多人看到...，如何將它應用到自己的專案上呢?",
     "title2":"探索 Next.js : 動態導入",
-    "description2":"Next.js提供了動態導入的解決方法，強大又容易上手..."
+    "description2":"在 React 的世界中，動態導入是一定會遇到的問題。Next.js 提供了動態導入的解決方法，而且強大又容易上手...",
+    "title3":"如何發布自己的 React Component 套件到 npm 上?",
+    "description3":"NPM 是 Node.js 的套件管理工具，也是一個開源的套件庫，有上百萬的套件。如何發布自己的 React Component 套件到 npm 上?"
 }

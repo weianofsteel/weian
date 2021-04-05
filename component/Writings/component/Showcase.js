@@ -92,7 +92,8 @@ const Showcase = ({t,...props}) => {
     }
 
     const {
-        mode
+        mode,
+        lang
     } = props;
     
     return(
@@ -109,9 +110,11 @@ const Showcase = ({t,...props}) => {
                             title={t('title1')}
                             description={t('description1')}
                             image={img01}
-                            url={'./'}
+                            urlEn={'./'}
+                            urlZhHant={'./'}
                             mode={mode}
                             box={box1}
+                            lang={lang}
                         />
                     </div>
                     <div 
@@ -123,9 +126,11 @@ const Showcase = ({t,...props}) => {
                             title={t('title2')}
                             description={t('description2')}
                             image={img02}
-                            url={'./'}
+                            urlEn={'./'}
+                            urlZhHant={'./'}
                             mode={mode}
                             box={box2}
+                            lang={lang}
                         />
                     </div>
                     <div 
@@ -137,9 +142,11 @@ const Showcase = ({t,...props}) => {
                             title={t('title3')}
                             description={t('description3')}
                             image={img03}
-                            url={'https://weianofsteel.medium.com/how-to-publish-your-react-component-package-to-npm-20ee4f81a506'}
+                            urlEn={'https://weianofsteel.medium.com/how-to-publish-your-react-component-package-to-npm-20ee4f81a506'}
+                            urlZhHant={'https://weianofsteel.medium.com/%E5%A6%82%E4%BD%95%E7%99%BC%E5%B8%83%E8%87%AA%E5%B7%B1%E7%9A%84-react-component-%E5%A5%97%E4%BB%B6%E5%88%B0-npm-%E4%B8%8A-acb042118ef5'}
                             mode={mode}
                             box={box3}
+                            lang={lang}
                         />
                     </div>
                 </React.Fragment>
@@ -156,9 +163,11 @@ const Showcase = ({t,...props}) => {
                         title={t('title1')}
                         description={t('description1')}
                         image={img01}
-                        url={'./'}
+                        urlEn={'./'}
+                        urlZhHant={'./'}
                         mode={mode}
                         box={box1}
+                        lang={lang}
                     />
                     </div>
                     <div 
@@ -170,9 +179,11 @@ const Showcase = ({t,...props}) => {
                             title={t('title2')}
                             description={t('description2')}
                             image={img02}
-                            url={'./'}
+                            urlEn={'./'}
+                            urlZhHant={'./'}
                             mode={mode}
                             box={box2}
+                            lang={lang}
                         />
                     </div>
                     <div 
@@ -184,9 +195,11 @@ const Showcase = ({t,...props}) => {
                             title={t('title3')}
                             description={t('description3')}
                             image={img03}
-                            url={'https://weianofsteel.medium.com/how-to-publish-your-react-component-package-to-npm-20ee4f81a506'}
+                            urlEn={'https://weianofsteel.medium.com/how-to-publish-your-react-component-package-to-npm-20ee4f81a506'}
+                            urlZhHant={'https://weianofsteel.medium.com/%E5%A6%82%E4%BD%95%E7%99%BC%E5%B8%83%E8%87%AA%E5%B7%B1%E7%9A%84-react-component-%E5%A5%97%E4%BB%B6%E5%88%B0-npm-%E4%B8%8A-acb042118ef5'}
                             mode={mode}
                             box={box3}
+                            lang={lang}
                         />
                     </div>
                 </React.Fragment>

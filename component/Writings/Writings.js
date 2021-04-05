@@ -67,6 +67,7 @@ export const Writings = () => {
                         <div className={classes.body}>
                             <Showcase
                                 mode={mode}
+                                lang={lang}
                             />
                         </div>
 

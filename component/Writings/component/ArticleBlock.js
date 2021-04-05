@@ -29,15 +29,17 @@ const ArticleBlock = ({t,...props}) => {
         title,
         description,
         image,
-        url,
+        urlEn,
+        urlZhHant,
         mode,
-        box
+        box,
+        lang
     } = props;
 
     return(
         <React.Fragment>
             <Link
-                href={url}
+                href={lang==='en'?urlEn:urlZhHant}
                 underline='none'
                 target='_blank' 
                 rel='noopener'

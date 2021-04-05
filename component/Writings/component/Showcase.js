@@ -134,8 +134,8 @@ const Showcase = ({t,...props}) => {
                         onMouseLeave={handleMouseLeave}
                     >
                         <ArticleBlock 
-                            title={t('title2')}
-                            description={t('description2')}
+                            title={t('title3')}
+                            description={t('description3')}
                             image={img03}
                             url={'./'}
                             mode={mode}
@@ -181,8 +181,8 @@ const Showcase = ({t,...props}) => {
                         onMouseLeave={handleMouseLeave}
                     >
                         <ArticleBlock 
-                            title={t('title2')}
-                            description={t('description2')}
+                            title={t('title3')}
+                            description={t('description3')}
                             image={img03}
                             url={'./'}
                             mode={mode}

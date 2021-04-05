@@ -7,13 +7,16 @@ import PropTypes from 'prop-types'
 
 const useStyles = makeStyles({
     title:{
+        fontFamily:'Roboto',
         color:'black',
         fontWeight:700,
         fontSize:'2rem'
     },
     description:{
+        fontFamily:'Roboto',
         color:'black',
-        marginTop:'1rem'
+        marginTop:'1rem',
+        fontSize:'1.2rem'
     },
     img:{
         width:'80%',
@@ -51,7 +54,7 @@ const ArticleBlock = ({t,...props}) => {
                             className={classes.img}
                         />
                     </Grid>
-                    <Grid item xs={12} md={8}>
+                    <Grid item xs={12} md={8} style={{padding:'1rem'}}>
                         {box==true&&
                             <React.Fragment>
                                 <p className={classes.title} style={{color:(mode=='day'?'black':'white')}}>

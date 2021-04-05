@@ -137,7 +137,7 @@ const Showcase = ({t,...props}) => {
                             title={t('title3')}
                             description={t('description3')}
                             image={img03}
-                            url={'./'}
+                            url={'https://weianofsteel.medium.com/how-to-publish-your-react-component-package-to-npm-20ee4f81a506'}
                             mode={mode}
                             box={box3}
                         />
@@ -184,7 +184,7 @@ const Showcase = ({t,...props}) => {
                             title={t('title3')}
                             description={t('description3')}
                             image={img03}
-                            url={'./'}
+                            url={'https://weianofsteel.medium.com/how-to-publish-your-react-component-package-to-npm-20ee4f81a506'}
                             mode={mode}
                             box={box3}
                         />

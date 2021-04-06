@@ -73,6 +73,8 @@ const Showcase = ({t,...props}) => {
 
     const [ box3, setBox3] = React.useState(true);
 
+    const [ box4, setBox4] = React.useState(true);
+
     const handleBox1On = () => {
         setBox1(false);
     }
@@ -85,10 +87,15 @@ const Showcase = ({t,...props}) => {
         setBox3(false);
     }
 
+    const handleBox4On = () => {
+        setBox4(false);
+    }
+
     const handleMouseLeave = () => {
         setBox1(true);
         setBox2(true);
         setBox3(true);
+        setBox4(true);
     }
 
     const {
@@ -149,6 +156,22 @@ const Showcase = ({t,...props}) => {
                             lang={lang}
                         />
                     </div>
+                    <div 
+                        className={box4===true?classes.link:classes.linkOnHover}
+                        onMouseEnter={handleBox4On}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <ArticleBlock 
+                            title={t('title4')}
+                            description={t('description4')}
+                            image={img03}
+                            urlEn={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
+                            urlZhHant={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
+                            mode={mode}
+                            box={box4}
+                            lang={lang}
+                        />
+                    </div>
                 </React.Fragment>
             }
 
@@ -199,6 +222,22 @@ const Showcase = ({t,...props}) => {
                             urlZhHant={'https://weianofsteel.medium.com/%E5%A6%82%E4%BD%95%E7%99%BC%E5%B8%83%E8%87%AA%E5%B7%B1%E7%9A%84-react-component-%E5%A5%97%E4%BB%B6%E5%88%B0-npm-%E4%B8%8A-acb042118ef5'}
                             mode={mode}
                             box={box3}
+                            lang={lang}
+                        />
+                    </div>
+                    <div 
+                        className={box4===true?classes.nightLink:classes.nightLinkOnHover}
+                        onMouseEnter={handleBox4On}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <ArticleBlock 
+                            title={t('title4')}
+                            description={t('description4')}
+                            image={img03}
+                            urlEn={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
+                            urlZhHant={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
+                            mode={mode}
+                            box={box4}
                             lang={lang}
                         />
                     </div>

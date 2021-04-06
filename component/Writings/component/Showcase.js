@@ -8,6 +8,7 @@ import ArticleBlock from './ArticleBlock'
 import img01 from '../../../public/image/writings/dynamic-import.png'
 import img02 from '../../../public/image/writings/globe.png'
 import img03 from '../../../public/image/writings/npm.png'
+import img04 from '../../../public/image/writings/laptop.png'
 
 const useStyles = makeStyles({
     showcase: {
@@ -164,7 +165,7 @@ const Showcase = ({t,...props}) => {
                         <ArticleBlock 
                             title={t('title4')}
                             description={t('description4')}
-                            image={img03}
+                            image={img04}
                             urlEn={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
                             urlZhHant={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
                             mode={mode}
@@ -233,7 +234,7 @@ const Showcase = ({t,...props}) => {
                         <ArticleBlock 
                             title={t('title4')}
                             description={t('description4')}
-                            image={img03}
+                            image={img04}
                             urlEn={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
                             urlZhHant={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
                             mode={mode}

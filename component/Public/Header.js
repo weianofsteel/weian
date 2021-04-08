@@ -237,7 +237,7 @@ const Header = ({t,...props}) => {
                 </Grid>
                 <Grid item xs={1} style={{marginTop:'1.5rem', paddingLeft:'0.5rem'}}>
                   {
-                    lang === 'en' &&
+                    mode==='day' &&
                       <Link 
                         href="./Resume"
                         underline='none'
@@ -247,11 +247,11 @@ const Header = ({t,...props}) => {
                       </Link>
                   }
                   {
-                    lang === 'zHHant' &&
+                    mode==='night' &&
                       <Link 
                         href="./Resume"
                         underline='none'
-                        className={router.pathname == '/Resume'?classes.linkAnchor:classes.link}
+                        className={router.pathname == '/Resume'?classes.nightLinkAnchor:classes.nightLink}
                       >
                         {t('resume')}
                       </Link>

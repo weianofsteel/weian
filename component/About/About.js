@@ -69,7 +69,7 @@ export const About = () => {
                             />
                         </div>
 
-                        <div className={classes.body}>
+                        <div className={classes.body} style={{marginTop:'4rem'}}>
                             <Footer
                                 mode={mode}
                             />

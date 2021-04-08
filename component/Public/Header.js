@@ -236,20 +236,33 @@ const Header = ({t,...props}) => {
                   }
                 </Grid>
                 <Grid item xs={1} style={{marginTop:'1.5rem', paddingLeft:'0.5rem'}}>
+                  {
+                    lang === 'en' &&
+                      <Link 
+                        href="./Resume"
+                        underline='none'
+                        className={router.pathname == '/Resume'?classes.linkAnchor:classes.link}
+                      >
+                        {t('resume')}
+                      </Link>
+                  }
+                  {
+                    lang === 'zHHant' &&
+                      <Link 
+                        href="./Resume"
+                        underline='none'
+                        className={router.pathname == '/Resume'?classes.linkAnchor:classes.link}
+                      >
+                        {t('resume')}
+                      </Link>
+                  }
                   {/* <Link 
-                    href="./Resume"
-                    underline='none'
-                    className={router.pathname == '/Resume'?classes.linkAnchor:classes.link}
-                  >
-                    {t('resume')}
-                  </Link> */}
-                  <Link 
                     href="./Sample"
                     underline='none'
                     className={router.pathname == '/Sample'?classes.linkAnchor:classes.link}
                   >
                     Sample
-                  </Link>
+                  </Link> */}
                 </Grid>
               </Hidden>
 

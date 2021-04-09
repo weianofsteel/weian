@@ -11,13 +11,18 @@ const useStyles = makeStyles({
         fontFamily:'Roboto',
         fontSize:'2rem'
     },
+    subtitle:{
+        fontFamily:'Roboto',
+        fontSize:'2rem',
+        fontWeight: 700
+    },
+    img:{
+        borderRadius:'50%'
+    },
     content:{
         fontFamily:'Roboto',
         fontSize:'1.2rem'
     },
-    img:{
-        borderRadius:'50%'
-    }
 })
 
 const Bio = ({t,...props}) => {
@@ -33,7 +38,7 @@ const Bio = ({t,...props}) => {
             
             <div>
 
-                <p className={classes.content}>
+                <p className={classes.subtitle}>
                     {t('title')}
                 </p>
 

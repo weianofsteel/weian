@@ -56,7 +56,7 @@ const Bio = ({t,...props}) => {
 
             <Grid container>
                 <Grid item xs={3} md={4}></Grid>
-                <Grid item xs={6} md={4}>
+                <Grid item xs={6} md={3}>
                     <img src={avartar} className={classes.img} style={{width:'100%'}}/>
                 </Grid>
                 <Grid item xs={3} md={4}></Grid>

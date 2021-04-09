@@ -195,7 +195,7 @@ const Header = ({t,...props}) => {
                     </Link>
                   }
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:'-1rem'}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:'-0.8rem'}}>
                   {mode==='day'&&
                     <Link 
                       href="./Writings"
@@ -215,7 +215,7 @@ const Header = ({t,...props}) => {
                     </Link>
                   }
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:'0.5rem'}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:'1rem'}}>
                   {mode==='day'&&
                     <Link 
                       href="./About"
@@ -235,7 +235,7 @@ const Header = ({t,...props}) => {
                     </Link>
                   }
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'1.5rem', paddingLeft:'0.5rem'}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:'-0.6rem'}}>
                   {
                     mode==='day' &&
                       <Link 

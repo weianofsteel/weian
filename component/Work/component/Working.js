@@ -50,4 +50,4 @@ Working.propTypes = {
     t: PropTypes.func.isRequired,
 }
 
-export default withTranslation('about')(Working) 
+export default withTranslation('working')(Working) 

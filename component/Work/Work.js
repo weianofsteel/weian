@@ -9,6 +9,7 @@ import { PageLoader } from '../Public/PageLoader'
 import LearnByDoing from '../Home/component/LearnByDoing'
 import Skill from '../Home/component/Skill'
 import Sharing from '../Home/component/Sharing'
+import Working from './component/Working'
 
 const useStyles = makeStyles({
     dayBackground:{
@@ -61,6 +62,12 @@ export const Work = () => {
                         
                         <div className={classes.body} style={{marginTop:'8rem'}}>
                             <Banner
+                                mode={mode}
+                            />
+                        </div>
+
+                        <div className={classes.body} style={{marginTop:'6rem'}}>
+                            <Working
                                 mode={mode}
                             />
                         </div>

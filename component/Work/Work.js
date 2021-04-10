@@ -6,6 +6,9 @@ import Footer from '../Public/Footer'
 import { makeStyles } from '@material-ui/core/styles';
 import { useSelector } from 'react-redux'
 import { PageLoader } from '../Public/PageLoader'
+import LearnByDoing from '../Home/component/LearnByDoing'
+import Skill from '../Home/component/Skill'
+import Sharing from '../Home/component/Sharing'
 
 const useStyles = makeStyles({
     dayBackground:{
@@ -58,6 +61,24 @@ export const Work = () => {
                         
                         <div className={classes.body} style={{marginTop:'8rem'}}>
                             <Banner
+                                mode={mode}
+                            />
+                        </div>
+
+                        <div className={classes.body} style={{marginTop:'6rem'}}>
+                            <Skill
+                                mode={mode}
+                            />
+                        </div>
+
+                        <div className={classes.body} style={{marginTop:'6rem'}}>
+                            <Sharing
+                                mode={mode}
+                            />
+                        </div>
+
+                        <div className={classes.body} style={{marginTop:'6rem'}}>
+                            <LearnByDoing
                                 mode={mode}
                             />
                         </div>

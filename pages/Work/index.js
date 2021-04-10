@@ -3,18 +3,18 @@ import { Work } from '../../component/Work/Work'
 import { withTranslation } from '../../i18n'
 import PropTypes from 'prop-types'
 
-const WorkPage = () => {
+const WorkPage = ({ t }) => {
     return(
       <Work/>   
     )
 }
 
 WorkPage.getInitialProps = async () => ({
-  namespacesRequired: ['header', 'banner'],
+  namespacesRequired: ['header', 'banner', 'working'],
 })
 
-// HomePage.propTypes = {
-// t: PropTypes.func.isRequired,
-// }
+WorkPage.propTypes = {
+t: PropTypes.func.isRequired,
+}
 
-export default WorkPage
+export default withTranslation('header')(WorkPage)

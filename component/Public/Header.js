@@ -143,7 +143,7 @@ const Header = ({t,...props}) => {
                   </Link>
               </Grid>
               <Grid item xs={1} md={2}></Grid>
-              <Grid item xs={1} md={2} lg={1}></Grid>
+              <Grid item xs={1} md={2} lg={2}></Grid>
               <Hidden mdDown>
                 <Grid item xs={2} style={{marginTop:'0.3rem', paddingLeft:'6%'}}>
                   <Select2
@@ -195,7 +195,7 @@ const Header = ({t,...props}) => {
                     </Link>
                   }
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:'-0.8rem'}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:(lang=='en'?'-1.5rem':'')}}>
                   {mode==='day'&&
                     <Link 
                       href="./Writings"
@@ -215,7 +215,7 @@ const Header = ({t,...props}) => {
                     </Link>
                   }
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:'1rem'}}>
+                {/* <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:'1rem'}}>
                   {mode==='day'&&
                     <Link 
                       href="./About"
@@ -234,8 +234,8 @@ const Header = ({t,...props}) => {
                       {t('about')}
                     </Link>
                   }
-                </Grid>
-                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:'-0.6rem'}}>
+                </Grid> */}
+                <Grid item xs={1} style={{marginTop:'1.5rem'}}>
                   {
                     mode==='day' &&
                       <Link 

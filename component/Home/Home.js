@@ -6,6 +6,7 @@ import Footer from '../Public/Footer'
 import Skill from '../Home/component/Skill'
 import Sharing from './component/Sharing'
 import LearnByDoing from '../Home/component/LearnByDoing'
+import Bio from '../About/component/Bio'
 import { makeStyles } from '@material-ui/core/styles'
 import { PageLoader } from '../Public/PageLoader'
 import { useSelector } from 'react-redux'
@@ -66,6 +67,12 @@ export const Home = () => {
                         </div>
 
                         <div className={classes.body} style={{marginTop:'6rem'}}>
+                            <Bio
+                                mode={mode}
+                            />
+                        </div>
+
+                        {/* <div className={classes.body} style={{marginTop:'6rem'}}>
                             <Skill
                                 mode={mode}
                             />
@@ -81,7 +88,7 @@ export const Home = () => {
                             <LearnByDoing
                                 mode={mode}
                             />
-                        </div>
+                        </div> */}
 
                         <div className={classes.body} style={{marginTop:'1rem'}}>
                             <Footer

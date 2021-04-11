@@ -47,18 +47,18 @@ const Bio = ({t,...props}) => {
             </Grid>
 
             <Grid container>
-                <Grid item xs={3} md={4}></Grid>
-                <Grid item xs={6} md={4} style={{padding:'2rem', textAlign:'center'}}>
+                <Grid item xs={2} sm={3} md={4}></Grid>
+                <Grid item xs={8} sm={6} md={4} style={{marginTop:'-1rem',padding:'1rem', textAlign:'center'}}>
                     <img src={avartar} className={classes.img} style={{width:'100%'}}/>
                 </Grid>
-                <Grid item xs={3} md={4}></Grid>
+                <Grid item xs={2} sm={3} md={4}></Grid>
             </Grid>
 
             <Grid container>
                 <Grid item xs={false} md={3}></Grid>
                 <Grid item xs={12} md={6}>
                     <p className={classes.content}>
-                        {t('content')}
+                        {t('content1')}
                     </p>
                 </Grid>
                 <Grid item xs={false} md={3}></Grid>

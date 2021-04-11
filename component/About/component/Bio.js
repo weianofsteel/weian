@@ -35,14 +35,6 @@ const Bio = ({t,...props}) => {
 
     return(
         <React.Fragment>
-            
-            <div>
-
-                <p className={classes.subtitle}>
-                    {t('title')}
-                </p>
-
-            </div>
 
             <Grid container>
                 <Grid item xs={false} md={3}></Grid>
@@ -56,7 +48,7 @@ const Bio = ({t,...props}) => {
 
             <Grid container>
                 <Grid item xs={3} md={4}></Grid>
-                <Grid item xs={6} md={3}>
+                <Grid item xs={6} md={4} style={{padding:'2rem', textAlign:'center'}}>
                     <img src={avartar} className={classes.img} style={{width:'100%'}}/>
                 </Grid>
                 <Grid item xs={3} md={4}></Grid>

@@ -175,7 +175,7 @@ const Header = ({t,...props}) => {
                     </IconButton>
                   }
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'1.5rem'}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:(lang=='en'?'-1rem':'')}}>
                   {mode==='day'&&
                     <Link 
                       href="./Work"
@@ -195,7 +195,7 @@ const Header = ({t,...props}) => {
                     </Link>
                   }
                 </Grid>
-                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:(lang=='en'?'-1.5rem':'')}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:(lang=='en'?'-1rem':'')}}>
                   {mode==='day'&&
                     <Link 
                       href="./Writings"
@@ -235,7 +235,7 @@ const Header = ({t,...props}) => {
                     </Link>
                   }
                 </Grid> */}
-                <Grid item xs={1} style={{marginTop:'1.5rem'}}>
+                <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:(lang=='en'?'0.8rem':'')}}>
                   {
                     mode==='day' &&
                       <Link 

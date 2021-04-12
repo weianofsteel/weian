@@ -21,7 +21,8 @@ const useStyles = makeStyles({
     },
     content:{
         fontFamily:'Roboto',
-        fontSize:'1.2rem'
+        fontSize:'1.2rem',
+        lineHeight:'1.8rem'
     },
 })
 
@@ -59,6 +60,9 @@ const Bio = ({t,...props}) => {
                 <Grid item xs={12} md={6}>
                     <p className={classes.content}>
                         {t('content1')}
+                    </p>
+                    <p className={classes.content}>
+                        {t('content2')}
                     </p>
                 </Grid>
                 <Grid item xs={false} md={3}></Grid>

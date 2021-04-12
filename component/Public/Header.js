@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     letterSpacing:'1px',
     marginLeft: '32px',
     color:'#8F8F8F',
-    fontSize:'1rem',
+    fontSize:'1.1rem',
     "&:hover":{
         color:'black'
     }
@@ -39,7 +39,7 @@ const useStyles = makeStyles({
     letterSpacing:'1px',
     marginLeft: '32px',
     color:'#FFFFFF',
-    fontSize:'1rem',
+    fontSize:'1.1rem',
     "&:hover":{
         color:'#BDBDBD'
     }
@@ -50,7 +50,7 @@ const useStyles = makeStyles({
     letterSpacing:'1px',
     marginLeft: '32px',
     color:'black',
-    fontSize:'1rem'
+    fontSize:'1.1rem'
   },
   nightLinkAnchor: {
     fontFamily:'Roboto',
@@ -58,7 +58,7 @@ const useStyles = makeStyles({
     letterSpacing:'1px',
     marginLeft: '32px',
     color:'#BDBDBD',
-    fontSize:'1rem'
+    fontSize:'1.1rem'
   },
   icon: {
     fontSize:'1.5rem',
@@ -181,6 +181,7 @@ const Header = ({t,...props}) => {
                       href="./Work"
                       underline='none'
                       className={router.pathname == '/Work'?classes.linkAnchor:classes.link}
+                      style={{fontWeight:(lang=='en'?'normal':'bold')}}
                     >
                       {t('work')}
                     </Link>
@@ -190,6 +191,7 @@ const Header = ({t,...props}) => {
                       href="./Work"
                       underline='none'
                       className={router.pathname == '/Work'?classes.nightLinkAnchor:classes.nightLink}
+                      style={{fontWeight:(lang=='en'?'normal':'bold')}}
                     >
                       {t('work')}
                     </Link>
@@ -201,6 +203,7 @@ const Header = ({t,...props}) => {
                       href="./Writings"
                       underline='none'
                       className={router.pathname == '/Writings'?classes.linkAnchor:classes.link}
+                      style={{fontWeight:(lang=='en'?'normal':'bold')}}
                     >
                       {t('writings')}
                     </Link>
@@ -210,6 +213,7 @@ const Header = ({t,...props}) => {
                       href="./Writings"
                       underline='none'
                       className={router.pathname == '/Writings'?classes.nightLinkAnchor:classes.nightLink}
+                      style={{fontWeight:(lang=='en'?'normal':'bold')}}
                     >
                       {t('writings')}
                     </Link>
@@ -242,6 +246,7 @@ const Header = ({t,...props}) => {
                         href="./Resume"
                         underline='none'
                         className={router.pathname == '/Resume'?classes.linkAnchor:classes.link}
+                        style={{fontWeight:(lang=='en'?'normal':'bold')}}
                       >
                         {t('resume')}
                       </Link>
@@ -252,6 +257,7 @@ const Header = ({t,...props}) => {
                         href="./Resume"
                         underline='none'
                         className={router.pathname == '/Resume'?classes.nightLinkAnchor:classes.nightLink}
+                        style={{fontWeight:(lang=='en'?'normal':'bold')}}
                       >
                         {t('resume')}
                       </Link>

@@ -6,15 +6,11 @@ import TranslateIcon from '@material-ui/icons/Translate';
 
 const useStyles = makeStyles({
     inputLabel: {
-        fontSize:"1rem",
+        fontSize:"1.1rem",
         fontFamily:"微軟正黑體",
         display: "flex",
         flexDirection: "row-Reverse"
-    },
-    selectRequired:{
-        
-    },
-
+    }
 })
 
 export function Select(props) {

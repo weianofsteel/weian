@@ -11,8 +11,8 @@ const useStyles = makeStyles({
     },
     subtitle:{
         fontFamily:'Roboto',
-        fontSize:'2rem',
-        fontWeight: 700
+        fontSize:'1.6rem',
+        fontWeight: 500
     },
     img:{
         borderRadius:'50%'
@@ -36,11 +36,31 @@ const Working = ({t,...props}) => {
             
             <div>
 
-                <p className={classes.subtitle}>
+                <p className={classes.title}>
                     {t('title')}
                 </p>
 
             </div>
+
+            <Grid container>
+                <Grid item xs={4}></Grid>
+                <Grid item xs={4}>
+                    <p className={classes.subtitle}>
+                        {t('subtitle1')}
+                    </p>
+                </Grid>
+                <Grid item xs={2}></Grid>
+            </Grid>
+
+            <Grid container>
+                <Grid item xs={2}></Grid>
+                <Grid item xs={8}>
+                    <p className={classes.content}>
+                        {t('content1-1')}
+                    </p>
+                </Grid>
+                <Grid item xs={2}></Grid>
+            </Grid>
 
         </React.Fragment>
     )

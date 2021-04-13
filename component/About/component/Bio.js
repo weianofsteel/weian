@@ -64,6 +64,9 @@ const Bio = ({t,...props}) => {
                     <p className={classes.content}>
                         {t('content2')}
                     </p>
+                    <p className={classes.content}>
+                        {t('content3')}
+                    </p>
                 </Grid>
                 <Grid item xs={false} md={3}></Grid>
             </Grid>

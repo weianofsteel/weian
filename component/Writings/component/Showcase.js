@@ -77,6 +77,8 @@ const Showcase = ({t,...props}) => {
 
     const [ box4, setBox4] = React.useState(true);
 
+    const [ box5, setBox5] = React.useState(true);
+
     const handleBox1On = () => {
         setBox1(false);
     }
@@ -93,11 +95,16 @@ const Showcase = ({t,...props}) => {
         setBox4(false);
     }
 
+    const handleBox5On = () => {
+        setBox5(false);
+    }
+
     const handleMouseLeave = () => {
         setBox1(true);
         setBox2(true);
         setBox3(true);
         setBox4(true);
+        setBox5(true);
     }
 
     const {
@@ -119,8 +126,8 @@ const Showcase = ({t,...props}) => {
                             title={t('title1')}
                             description={t('description1')}
                             image={img02}
-                            urlEn={'./'}
-                            urlZhHant={'./'}
+                            urlEn={'https://levelup.gitconnected.com/exploring-next-js-multi-lingual-support-with-next-i18next-f4275d63c0e9'}
+                            urlZhHant={'https://weianofsteel.medium.com/%E6%8E%A2%E7%B4%A2-next-js-%E7%94%A8-next-i18next-%E5%AE%8C%E6%88%90%E5%A4%9A%E8%AA%9E%E8%A8%80%E6%94%AF%E6%8F%B4-eced3f5f99dc'}
                             mode={mode}
                             box={box1}
                             lang={lang}
@@ -132,13 +139,13 @@ const Showcase = ({t,...props}) => {
                         onMouseLeave={handleMouseLeave}
                     >
                         <ArticleBlock 
-                            title={t('title2')}
-                            description={t('description2')}
-                            image={img01}
-                            urlEn={'./'}
-                            urlZhHant={'./'}
+                            title={t('title3')}
+                            description={t('description3')}
+                            image={img03}
+                            urlEn={'https://weianofsteel.medium.com/how-to-publish-your-react-component-package-to-npm-20ee4f81a506'}
+                            urlZhHant={'https://weianofsteel.medium.com/%E5%A6%82%E4%BD%95%E7%99%BC%E5%B8%83%E8%87%AA%E5%B7%B1%E7%9A%84-react-component-%E5%A5%97%E4%BB%B6%E5%88%B0-npm-%E4%B8%8A-acb042118ef5'}
                             mode={mode}
-                            box={box2}
+                            box={box3}
                             lang={lang}
                         />
                     </div>
@@ -148,13 +155,13 @@ const Showcase = ({t,...props}) => {
                         onMouseLeave={handleMouseLeave}
                     >
                         <ArticleBlock 
-                            title={t('title3')}
-                            description={t('description3')}
-                            image={img03}
-                            urlEn={'https://weianofsteel.medium.com/how-to-publish-your-react-component-package-to-npm-20ee4f81a506'}
-                            urlZhHant={'https://weianofsteel.medium.com/%E5%A6%82%E4%BD%95%E7%99%BC%E5%B8%83%E8%87%AA%E5%B7%B1%E7%9A%84-react-component-%E5%A5%97%E4%BB%B6%E5%88%B0-npm-%E4%B8%8A-acb042118ef5'}
+                            title={t('title2')}
+                            description={t('description2')}
+                            image={img01}
+                            urlEn={'https://javascript.plainenglish.io/exploring-next-js-dynamic-import-ccb28a03e7f9'}
+                            urlZhHant={'https://javascript.plainenglish.io/exploring-next-js-dynamic-import-ccb28a03e7f9'}
                             mode={mode}
-                            box={box3}
+                            box={box2}
                             lang={lang}
                         />
                     </div>
@@ -174,6 +181,22 @@ const Showcase = ({t,...props}) => {
                             lang={lang}
                         />
                     </div>
+                    <div 
+                        className={box5===true?classes.link:classes.linkOnHover}
+                        onMouseEnter={handleBox5On}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <ArticleBlock 
+                            title={t('title5')}
+                            description={t('description5')}
+                            image={img04}
+                            urlEn={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
+                            urlZhHant={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
+                            mode={mode}
+                            box={box5}
+                            lang={lang}
+                        />
+                    </div>
                 </React.Fragment>
             }
 
@@ -188,8 +211,8 @@ const Showcase = ({t,...props}) => {
                         title={t('title1')}
                         description={t('description1')}
                         image={img02}
-                        urlEn={'./'}
-                        urlZhHant={'./'}
+                        urlEn={'https://levelup.gitconnected.com/exploring-next-js-multi-lingual-support-with-next-i18next-f4275d63c0e9'}
+                        urlZhHant={'https://weianofsteel.medium.com/%E6%8E%A2%E7%B4%A2-next-js-%E7%94%A8-next-i18next-%E5%AE%8C%E6%88%90%E5%A4%9A%E8%AA%9E%E8%A8%80%E6%94%AF%E6%8F%B4-eced3f5f99dc'}
                         mode={mode}
                         box={box1}
                         lang={lang}
@@ -201,13 +224,13 @@ const Showcase = ({t,...props}) => {
                         onMouseLeave={handleMouseLeave}
                     >
                         <ArticleBlock 
-                            title={t('title2')}
-                            description={t('description2')}
-                            image={img01}
-                            urlEn={'./'}
-                            urlZhHant={'./'}
+                            title={t('title3')}
+                            description={t('description3')}
+                            image={img03}
+                            urlEn={'https://weianofsteel.medium.com/how-to-publish-your-react-component-package-to-npm-20ee4f81a506'}
+                            urlZhHant={'https://weianofsteel.medium.com/%E5%A6%82%E4%BD%95%E7%99%BC%E5%B8%83%E8%87%AA%E5%B7%B1%E7%9A%84-react-component-%E5%A5%97%E4%BB%B6%E5%88%B0-npm-%E4%B8%8A-acb042118ef5'}
                             mode={mode}
-                            box={box2}
+                            box={box3}
                             lang={lang}
                         />
                     </div>
@@ -217,13 +240,13 @@ const Showcase = ({t,...props}) => {
                         onMouseLeave={handleMouseLeave}
                     >
                         <ArticleBlock 
-                            title={t('title3')}
-                            description={t('description3')}
-                            image={img03}
-                            urlEn={'https://weianofsteel.medium.com/how-to-publish-your-react-component-package-to-npm-20ee4f81a506'}
-                            urlZhHant={'https://weianofsteel.medium.com/%E5%A6%82%E4%BD%95%E7%99%BC%E5%B8%83%E8%87%AA%E5%B7%B1%E7%9A%84-react-component-%E5%A5%97%E4%BB%B6%E5%88%B0-npm-%E4%B8%8A-acb042118ef5'}
+                            title={t('title2')}
+                            description={t('description2')}
+                            image={img01}
+                            urlEn={'https://javascript.plainenglish.io/exploring-next-js-dynamic-import-ccb28a03e7f9'}
+                            urlZhHant={'https://javascript.plainenglish.io/exploring-next-js-dynamic-import-ccb28a03e7f9'}
                             mode={mode}
-                            box={box3}
+                            box={box2}
                             lang={lang}
                         />
                     </div>
@@ -240,6 +263,22 @@ const Showcase = ({t,...props}) => {
                             urlZhHant={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
                             mode={mode}
                             box={box4}
+                            lang={lang}
+                        />
+                    </div>
+                    <div 
+                        className={box5===true?classes.nightLink:classes.nightLinkOnHover}
+                        onMouseEnter={handleBox5On}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <ArticleBlock 
+                            title={t('title5')}
+                            description={t('description5')}
+                            image={img04}
+                            urlEn={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
+                            urlZhHant={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
+                            mode={mode}
+                            box={box5}
                             lang={lang}
                         />
                     </div>

@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import { i18n, withTranslation } from '../../../i18n'
 import PropTypes from 'prop-types'
 import ArticleBlock from './ArticleBlock'
+import ArticleBlock2 from './ArticleBlock2'
 import img01 from '../../../public/image/writings/dynamic-import.png'
 import img02 from '../../../public/image/writings/globe.png'
 import img03 from '../../../public/image/writings/npm.png'
@@ -114,10 +115,10 @@ const Showcase = ({t,...props}) => {
                         onMouseEnter={handleBox1On}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <ArticleBlock 
+                        <ArticleBlock2 
                             title={t('title1')}
                             description={t('description1')}
-                            image={img01}
+                            image={img02}
                             urlEn={'./'}
                             urlZhHant={'./'}
                             mode={mode}
@@ -133,7 +134,7 @@ const Showcase = ({t,...props}) => {
                         <ArticleBlock 
                             title={t('title2')}
                             description={t('description2')}
-                            image={img02}
+                            image={img01}
                             urlEn={'./'}
                             urlZhHant={'./'}
                             mode={mode}
@@ -183,10 +184,10 @@ const Showcase = ({t,...props}) => {
                         onMouseEnter={handleBox1On}
                         onMouseLeave={handleMouseLeave}
                     >
-                    <ArticleBlock 
+                    <ArticleBlock2 
                         title={t('title1')}
                         description={t('description1')}
-                        image={img01}
+                        image={img02}
                         urlEn={'./'}
                         urlZhHant={'./'}
                         mode={mode}
@@ -202,7 +203,7 @@ const Showcase = ({t,...props}) => {
                         <ArticleBlock 
                             title={t('title2')}
                             description={t('description2')}
-                            image={img02}
+                            image={img01}
                             urlEn={'./'}
                             urlZhHant={'./'}
                             mode={mode}

@@ -219,26 +219,7 @@ const Header = ({t,...props}) => {
                     </Link>
                   }
                 </Grid>
-                {/* <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:'1rem'}}>
-                  {mode==='day'&&
-                    <Link 
-                      href="./About"
-                      underline='none'
-                      className={router.pathname == '/About'?classes.linkAnchor:classes.link}
-                    >
-                      {t('about')}
-                    </Link>
-                  }
-                  {mode==='night'&&
-                    <Link 
-                      href="./About"
-                      underline='none'
-                      className={router.pathname == '/About'?classes.nightLinkAnchor:classes.nightLink}
-                    >
-                      {t('about')}
-                    </Link>
-                  }
-                </Grid> */}
+                
                 <Grid item xs={1} style={{marginTop:'1.5rem', marginLeft:(lang=='en'?'0.8rem':'')}}>
                   {
                     mode==='day' &&
@@ -266,13 +247,6 @@ const Header = ({t,...props}) => {
                         {t('resume')}
                       </Link>
                   }
-                  {/* <Link 
-                    href="./Sample"
-                    underline='none'
-                    className={router.pathname == '/Sample'?classes.linkAnchor:classes.link}
-                  >
-                    Sample
-                  </Link> */}
                 </Grid>
               </Hidden>
 

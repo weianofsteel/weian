@@ -10,6 +10,7 @@ import img01 from '../../../public/image/writings/dynamic-import.png'
 import img02 from '../../../public/image/writings/globe.png'
 import img03 from '../../../public/image/writings/npm.png'
 import img04 from '../../../public/image/writings/laptop.png'
+import img05 from '../../../public/image/writings/typewriter.png'
 
 const useStyles = makeStyles({
     showcase: {
@@ -134,8 +135,8 @@ const Showcase = ({t,...props}) => {
                         />
                     </div>
                     <div 
-                        className={box2===true?classes.link:classes.linkOnHover}
-                        onMouseEnter={handleBox2On}
+                        className={box3===true?classes.link:classes.linkOnHover}
+                        onMouseEnter={handleBox3On}
                         onMouseLeave={handleMouseLeave}
                     >
                         <ArticleBlock 
@@ -150,8 +151,8 @@ const Showcase = ({t,...props}) => {
                         />
                     </div>
                     <div 
-                        className={box3===true?classes.link:classes.linkOnHover}
-                        onMouseEnter={handleBox3On}
+                        className={box2===true?classes.link:classes.linkOnHover}
+                        onMouseEnter={handleBox2On}
                         onMouseLeave={handleMouseLeave}
                     >
                         <ArticleBlock 
@@ -170,10 +171,10 @@ const Showcase = ({t,...props}) => {
                         onMouseEnter={handleBox4On}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <ArticleBlock 
+                        <ArticleBlock2
                             title={t('title4')}
                             description={t('description4')}
-                            image={img04}
+                            image={img05}
                             urlEn={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
                             urlZhHant={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
                             mode={mode}
@@ -219,8 +220,8 @@ const Showcase = ({t,...props}) => {
                     />
                     </div>
                     <div 
-                        className={box2===true?classes.nightLink:classes.nightLinkOnHover}
-                        onMouseEnter={handleBox2On}
+                        className={box3===true?classes.nightLink:classes.nightLinkOnHover}
+                        onMouseEnter={handleBox3On}
                         onMouseLeave={handleMouseLeave}
                     >
                         <ArticleBlock 
@@ -235,8 +236,8 @@ const Showcase = ({t,...props}) => {
                         />
                     </div>
                     <div 
-                        className={box3===true?classes.nightLink:classes.nightLinkOnHover}
-                        onMouseEnter={handleBox3On}
+                        className={box2===true?classes.nightLink:classes.nightLinkOnHover}
+                        onMouseEnter={handleBox2On}
                         onMouseLeave={handleMouseLeave}
                     >
                         <ArticleBlock 
@@ -255,10 +256,10 @@ const Showcase = ({t,...props}) => {
                         onMouseEnter={handleBox4On}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <ArticleBlock 
+                        <ArticleBlock2 
                             title={t('title4')}
                             description={t('description4')}
-                            image={img04}
+                            image={img05}
                             urlEn={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
                             urlZhHant={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
                             mode={mode}

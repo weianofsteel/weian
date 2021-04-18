@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     },
     img:{
         width:'70%',
-        paddingLeft:'5%'
+        // padding:'5%',
     }
 })
 

@@ -243,7 +243,9 @@ const Header = ({t,...props}) => {
                   {
                     mode==='day' &&
                       <Link 
-                        href="./Resume"
+                        href={lang=='en'?'./resume.pdf':'./履歷.pdf'}
+                        target='_blank'
+                        rel='noopener'
                         underline='none'
                         className={router.pathname == '/Resume'?classes.linkAnchor:classes.link}
                         style={{fontWeight:(lang=='en'?'normal':'bold')}}
@@ -254,7 +256,9 @@ const Header = ({t,...props}) => {
                   {
                     mode==='night' &&
                       <Link 
-                        href="./Resume"
+                        href={lang=='en'?'./resume.pdf':'./履歷.pdf'}
+                        target='_blank'
+                        rel='noopener'
                         underline='none'
                         className={router.pathname == '/Resume'?classes.nightLinkAnchor:classes.nightLink}
                         style={{fontWeight:(lang=='en'?'normal':'bold')}}

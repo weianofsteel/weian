@@ -85,6 +85,7 @@ export const Writings = () => {
                     <div style={{height:'100vh', backgroundColor:'#1f1f1f'}}>
                     <Drawer
                         handleDrawerClose={handleDrawerClose}
+                        lang={lang}
                     />
                     </div>
                 </React.Fragment>

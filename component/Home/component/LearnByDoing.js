@@ -50,7 +50,7 @@ const LearnByDoing = ({t,...props}) => {
             <Grid container spacing={2}>
                 <Grid item xs={6} md={4}>
                     <Link
-                        href=''
+                        href='https://weianofsteel.github.io/Learn-By-Doing/04-slide-show/'
                         underline='none'
                         target='_blank'
                     >
@@ -59,7 +59,7 @@ const LearnByDoing = ({t,...props}) => {
                 </Grid>
                 <Grid item xs={6} md={4}>
                     <Link
-                        href=''
+                        href='https://weianofsteel.github.io/Learn-By-Doing/05-shopping-cart/'
                         underline='none'
                         target='_blank'
                     >
@@ -68,7 +68,7 @@ const LearnByDoing = ({t,...props}) => {
                 </Grid>
                 <Grid item xs={6} md={4}>
                     <Link
-                        href=''
+                        href='https://weianofsteel.github.io/Learn-By-Doing/06-canvas-drawing/'
                         underline='none'
                         target='_blank'
                     >
@@ -77,7 +77,7 @@ const LearnByDoing = ({t,...props}) => {
                 </Grid>
                 <Grid item xs={6} md={4}>
                     <Link
-                        href=''
+                        href='https://weianofsteel.github.io/Learn-By-Doing/07-movie-trailer/'
                         underline='none'
                         target='_blank'
                     >
@@ -86,7 +86,7 @@ const LearnByDoing = ({t,...props}) => {
                 </Grid>
                 <Grid item xs={6} md={4}>
                     <Link
-                        href=''
+                        href='https://weianofsteel.github.io/react-weather-app/'
                         underline='none'
                         target='_blank'
                     >
@@ -95,7 +95,7 @@ const LearnByDoing = ({t,...props}) => {
                 </Grid>
                 <Grid item xs={6} md={4}>
                     <Link
-                        href=''
+                        href='https://react-text-editor-itcl78xy9-weianofsteel.vercel.app/'
                         underline='none'
                         target='_blank'
                     >

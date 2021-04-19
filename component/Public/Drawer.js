@@ -53,7 +53,8 @@ const Drawer = ({t,...props}) => {
     const classes = useStyles();
 
     const {
-        handleDrawerClose
+        handleDrawerClose,
+        lang
     } = props;
     
     return(
@@ -106,15 +107,12 @@ const Drawer = ({t,...props}) => {
 
                 <Grid container className={classes.drawerHeader}>
                     <Grid item xs={4}>
-                        <Link href="/About" underline='none' className={classes.drawerLink}>
-                            {t('about')}
-                        </Link>
-                    </Grid>
-                </Grid>
-
-                <Grid container className={classes.drawerHeader}>
-                    <Grid item xs={4}>
-                        <Link href='./SalieChien_Resume.pdf' target='_blank' rel='noopener' underline='none' className={classes.drawerLink}>
+                        <Link 
+                            href={lang=='en'?'./resume.pdf':'./履歷.pdf'} 
+                            target='_blank' rel='noopener' 
+                            underline='none' 
+                            className={classes.drawerLink}
+                        >
                             {t('resume')}
                         </Link>
                     </Grid>

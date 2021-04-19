@@ -105,6 +105,7 @@ export const Work = () => {
                 <React.Fragment>
                     <Drawer
                         handleDrawerClose={handleDrawerClose}
+                        lang={lang}
                     />
                 </React.Fragment>
             }

@@ -4,6 +4,22 @@ import { withTranslation } from '../../i18n'
 import PropTypes from 'prop-types'
 import styles from '../../css/public.module.css'
 import Link from '@material-ui/core/Link';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+    link: {
+        color:'black',
+        "&:hover":{
+            color:'#919191'
+        }
+    },
+    linkNight:{
+        color:'white',
+        "&:hover":{
+            color:'#BDBDBD'
+        }
+    }
+})
 
 const Footer = ({t, ...props}) => {
 
@@ -11,36 +27,55 @@ const Footer = ({t, ...props}) => {
         mode
     }  = props;
 
+    const classes = useStyles();
+
     return(
         <React.Fragment>
             
             <Grid container className={mode=='day'?styles.footerBlock:styles.footerBlockNight}>
-                <Grid item xs={6} md={4} style={{marginBottom:'2rem'}}>
+                <Grid item xs={8} sm={7} md={4} style={{marginBottom:'2rem'}}>
                     <span>{t('contactTitle')}</span>
                     <br/>
-                    <p>+8869 12 597 109</p>
-                    {/* <br/> */}
-                    <p>weianofsteel@gmail.com</p>
+                    <br/>
+                    <span>+8869 12 597 109</span>
+                    <br/>
+                    <br/>
+                    <span>weianofsteel@gmail.com</span>
                 </Grid>
-                <Grid item xs={6} md={4}>
+                <Grid item xs={4} sm={5} md={4} style={{marginBottom:'2rem'}}>
                     <span>{t('followTitle')}</span>
+                    <br/>
                     <br/>
                     <Link
                         href='https://weianofsteel.medium.com/'
                         target='_blank'
                         rel='noopener'
                         underline='none'
+                        className={mode=='day'?classes.link:classes.linkNight}
                     >
                         Medium
                     </Link>
+                    <br/>
                     <br/>
                     <Link
                         href='https://github.com/weianofsteel'
                         target='_blank'
                         rel='noopener'
                         underline='none'
+                        className={mode=='day'?classes.link:classes.linkNight}
                     >
                         Github
+                    </Link>
+                    <br/>
+                    <br/>
+                    <Link
+                        href='https://www.linkedin.com/in/weian-wang/'
+                        target='_blank'
+                        rel='noopener'
+                        underline='none'
+                        className={mode=='day'?classes.link:classes.linkNight}
+                    >
+                        Linkedin
                     </Link>
                 </Grid>
                 <Grid item xs={12} md={4}>
@@ -60,8 +95,8 @@ const Footer = ({t, ...props}) => {
 
 Footer.propTypes = {
     t: PropTypes.func.isRequired,
-  }
+}
   
   
-  export default withTranslation('footer')(Footer)
+export default withTranslation('footer')(Footer)
 

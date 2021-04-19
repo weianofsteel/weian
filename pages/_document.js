@@ -9,7 +9,7 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     
-                    <link rel="shortcut icon" href="/man.png"/>
+                    <link rel="shortcut icon" href="/logo.png"/>
 
                     {/* Google analytics */}
                     {/* <script

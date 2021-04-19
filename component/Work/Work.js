@@ -90,7 +90,7 @@ export const Work = () => {
                             />
                         </div>
 
-                        <div className={classes.body}>
+                        <div className={classes.body} style={{marginTop:'2rem'}}>
                             <Footer
                                 mode={mode}
                             />

@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import PropTypes from 'prop-types'
 import { withTranslation } from '../../../i18n'
 import Grid from '@material-ui/core/Grid'
+import Hidden from '@material-ui/core/Hidden';
 
 const useStyles = makeStyles({
     title:{
@@ -43,23 +44,77 @@ const Working = ({t,...props}) => {
             </div>
 
             <Grid container>
-                <Grid item xs={4}></Grid>
-                <Grid item xs={4}>
-                    <p className={classes.subtitle}>
-                        {t('subtitle1')}
-                    </p>
-                </Grid>
-                <Grid item xs={2}></Grid>
+                <Hidden xsDown>
+                    <Grid item xs={12}>
+                        <p className={classes.subtitle}>
+                            ●&nbsp;{t('subtitle1')}
+                        </p>
+                    </Grid>
+                </Hidden>
+                <Hidden smUp>
+                    <Grid item xs={1}>
+                        <p className={classes.subtitle}>
+                            ●
+                        </p>
+                    </Grid>
+                    <Grid item xs={11}>
+                        <p className={classes.subtitle}>
+                            {t('subtitle1')}
+                        </p>
+                    </Grid>
+                </Hidden>
             </Grid>
 
             <Grid container>
-                <Grid item xs={2}></Grid>
-                <Grid item xs={8}>
+                <Grid item xs={12}>
                     <p className={classes.content}>
                         {t('content1-1')}
                     </p>
                 </Grid>
-                <Grid item xs={2}></Grid>
+            </Grid>
+
+            <Grid container>
+                <Hidden xsDown>
+                    <Grid item xs={12}>
+                        <p className={classes.subtitle}>
+                            ●&nbsp;{t('subtitle2')}
+                        </p>
+                    </Grid>
+                </Hidden>
+                <Hidden smUp>
+                    <Grid item xs={1}>
+                        <p className={classes.subtitle}>
+                            ●
+                        </p>
+                    </Grid>
+                    <Grid item xs={11}>
+                        <p className={classes.subtitle}>
+                            {t('subtitle2')}
+                        </p>
+                    </Grid>
+                </Hidden>
+            </Grid>
+
+            <Grid container>
+                <Hidden xsDown>
+                    <Grid item xs={12}>
+                        <p className={classes.subtitle}>
+                            ●&nbsp;{t('subtitle3')}
+                        </p>
+                    </Grid>
+                </Hidden>
+                <Hidden smUp>
+                    <Grid item xs={1}>
+                        <p className={classes.subtitle}>
+                            ●
+                        </p>
+                    </Grid>
+                    <Grid item xs={11}>
+                        <p className={classes.subtitle}>
+                            {t('subtitle3')}
+                        </p>
+                    </Grid>
+                </Hidden>
             </Grid>
 
         </React.Fragment>

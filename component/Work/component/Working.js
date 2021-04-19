@@ -74,6 +74,22 @@ const Working = ({t,...props}) => {
             </Grid>
 
             <Grid container>
+                <Grid item xs={12}>
+                    <p className={classes.content}>
+                        {t('content1-2')}
+                    </p>
+                </Grid>
+            </Grid>
+
+            <Grid container>
+                <Grid item xs={12}>
+                    <p className={classes.content}>
+                        {t('content1-3')}
+                    </p>
+                </Grid>
+            </Grid>
+
+            <Grid container>
                 <Hidden xsDown>
                     <Grid item xs={12}>
                         <p className={classes.subtitle}>

@@ -175,8 +175,8 @@ const Showcase = ({t,...props}) => {
                             title={t('title4')}
                             description={t('description4')}
                             image={img05}
-                            urlEn={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
-                            urlZhHant={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
+                            urlEn={'https://javascript.plainenglish.io/building-a-rich-text-editor-with-react-draft-wysiwyg-2b2f99a57907'}
+                            urlZhHant={'https://weianofsteel.medium.com/10minutes-handle-react-draft-wysiwyg-97278ff899a4'}
                             mode={mode}
                             box={box4}
                             lang={lang}
@@ -260,8 +260,8 @@ const Showcase = ({t,...props}) => {
                             title={t('title4')}
                             description={t('description4')}
                             image={img05}
-                            urlEn={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
-                            urlZhHant={'https://weianofsteel.medium.com/how-i-transitioned-to-front-end-developer-in-6-months-eae7a1d734'}
+                            urlEn={'https://javascript.plainenglish.io/building-a-rich-text-editor-with-react-draft-wysiwyg-2b2f99a57907'}
+                            urlZhHant={'https://weianofsteel.medium.com/10minutes-handle-react-draft-wysiwyg-97278ff899a4'}
                             mode={mode}
                             box={box4}
                             lang={lang}

@@ -112,6 +112,22 @@ const Working = ({t,...props}) => {
             </Grid>
 
             <Grid container>
+                <Grid item xs={12}>
+                    <p className={classes.content}>
+                        {t('content2-1')}
+                    </p>
+                </Grid>
+            </Grid>
+
+            <Grid container>
+                <Grid item xs={12}>
+                    <p className={classes.content}>
+                        {t('content2-2')}
+                    </p>
+                </Grid>
+            </Grid>
+
+            <Grid container>
                 <Hidden xsDown>
                     <Grid item xs={12}>
                         <p className={classes.subtitle}>
@@ -128,6 +144,50 @@ const Working = ({t,...props}) => {
                     <Grid item xs={11}>
                         <p className={classes.subtitle}>
                             {t('subtitle3')}
+                        </p>
+                    </Grid>
+                </Hidden>
+            </Grid>
+
+            <Grid container>
+                <Hidden xsDown>
+                    <Grid item xs={12}>
+                        <p className={classes.subtitle}>
+                            ●&nbsp;{t('subtitle4')}
+                        </p>
+                    </Grid>
+                </Hidden>
+                <Hidden smUp>
+                    <Grid item xs={1}>
+                        <p className={classes.subtitle}>
+                            ●
+                        </p>
+                    </Grid>
+                    <Grid item xs={11}>
+                        <p className={classes.subtitle}>
+                            {t('subtitle4')}
+                        </p>
+                    </Grid>
+                </Hidden>
+            </Grid>
+
+            <Grid container>
+                <Hidden xsDown>
+                    <Grid item xs={12}>
+                        <p className={classes.subtitle}>
+                            ●&nbsp;{t('subtitle5')}
+                        </p>
+                    </Grid>
+                </Hidden>
+                <Hidden smUp>
+                    <Grid item xs={1}>
+                        <p className={classes.subtitle}>
+                            ●
+                        </p>
+                    </Grid>
+                    <Grid item xs={11}>
+                        <p className={classes.subtitle}>
+                            {t('subtitle5')}
                         </p>
                     </Grid>
                 </Hidden>

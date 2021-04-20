@@ -6,7 +6,9 @@
     "content1-3":"Built an easy-to-operate backend system for government department to manage.",
     "content1-4":"Tech stack : Symfony, React.js, MySQL",
     "subtitle2":"Enterprise online system",
-    "content2-1":"Built powerful system for enterprise to replace outdated work flow",
+    "content2-1":"Built powerful system for enterprise to replace outdated work flow. Make all tasks online",
     "content2-2":"Built customized web interface in order to meet their diverse needs.",
-    "subtitle3":"Single page web application"
+    "subtitle3":"Scrum development",
+    "subtitle4":"Version control",
+    "subtitle5":"Code review & Unit test"
 }

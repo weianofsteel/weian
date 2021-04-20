@@ -10,7 +10,6 @@ import ScrollUpButton from 'react-scroll-up-btn'
 import { Scrollup } from '../../Public/Scrollup'
 import photo1 from '../../../public/image/home/carousel1.jpg'
 import photo2 from '../../../public/image/home/carousel2.jpg'
-import photo3 from '../../../public/image/home/carousel3.jpg'
 import SearchIcon from '@material-ui/icons/Search';
 import Hidden from '@material-ui/core/Hidden'
 
@@ -49,7 +48,7 @@ const useStyles = makeStyles({
     },
     packageBlock:{
         marginTop:'3rem',
-        padding:'3rem',
+        padding:'1rem',
         borderBottom:'1px solid black',
         color:'black',
         backgroundColor: '#F5F5F5',
@@ -60,7 +59,7 @@ const useStyles = makeStyles({
     },
     packageBlockNight:{
         borderBottom:'1px solid white',
-        padding:'3rem',
+        padding:'1rem',
         backgroundColor: '#5c5c5c',
         height: '100%',
         width:'100%',
@@ -96,7 +95,7 @@ const Sharing = ({t,...props}) => {
         <React.Fragment>
             <p className={classes.title}>{t('title')}</p>
             
-            <Grid container className={mode==='day'?classes.packageBlock:classes.packageBlockNight} spacing={2}>
+            <Grid container className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>
                 <Grid item xs={12} md={7}>
                     <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
                             react-typewriting-animation
@@ -165,9 +164,9 @@ const Sharing = ({t,...props}) => {
                     </Link>
                     <p>&nbsp;</p>
                 </Grid>
-                <Grid item xs={12} md={5} style={{textAlign:'left',paddingTop:'1rem'}}>
+                <Grid item xs={12} md={5} style={{textAlign:'left',paddingTop:'1rem',paddingLeft:'1rem'}}>
                     <CustomizeCarousel
-                        imgsrc={[photo1, photo2, photo3, photo2, photo1]}
+                        imgsrc={[photo1, photo2, photo1, photo2, photo1]}
                         rotateBy={3}
                         navigateButton={true}
                         controlButton={true}

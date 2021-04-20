@@ -8,8 +8,6 @@ import CustomizeCarousel from '../../Public/Carousel'
 import Typewriter from 'react-typewriting-animation'
 import ScrollUpButton from 'react-scroll-up-btn'
 import { Scrollup } from '../../Public/Scrollup'
-import photo1 from '../../../public/image/home/carousel1.jpg'
-import photo2 from '../../../public/image/home/carousel2.jpg'
 import SearchIcon from '@material-ui/icons/Search';
 import Hidden from '@material-ui/core/Hidden'
 
@@ -143,7 +141,7 @@ const Sharing = ({t,...props}) => {
                 </Grid>
             </Grid>
             
-            <Grid container className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>
+            {/* <Grid container className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>
             
                 <Grid item xs={12} md={7} style={{textAlign:'left'}}>
                     <p className={mode==='day'?classes.subtitle:classes.subtitleNight}>
@@ -165,15 +163,9 @@ const Sharing = ({t,...props}) => {
                     <p>&nbsp;</p>
                 </Grid>
                 <Grid item xs={12} md={5} style={{textAlign:'left',paddingTop:'1rem',paddingLeft:'1rem'}}>
-                    <CustomizeCarousel
-                        imgsrc={[photo1, photo2, photo1, photo2, photo1]}
-                        rotateBy={3}
-                        navigateButton={true}
-                        controlButton={true}
-                        mode={mode}
-                    />
+                
                 </Grid>
-            </Grid>    
+            </Grid>     */}
 
             <Grid container className={mode==='day'?classes.packageBlock:classes.packageBlockNight}>    
                 <Grid item xs={12} md={7}>

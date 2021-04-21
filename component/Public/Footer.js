@@ -33,8 +33,8 @@ const Footer = ({t, ...props}) => {
         <React.Fragment>
             
             <Grid container className={mode=='day'?styles.footerBlock:styles.footerBlockNight}>
-                <Grid item xs={8} sm={7} md={4} style={{marginBottom:'2rem'}}>
-                    <span>{t('contactTitle')}</span>
+                <Grid item xs={12} sm={7} md={4} style={{marginBottom:'2rem', fontSize:'1.2rem'}}>
+                    <span style={{fontWeight:'bold'}}>{t('contactTitle')}</span>
                     <br/>
                     <br/>
                     <span>+8869 12 597 109</span>
@@ -42,8 +42,8 @@ const Footer = ({t, ...props}) => {
                     <br/>
                     <span>weianofsteel@gmail.com</span>
                 </Grid>
-                <Grid item xs={4} sm={5} md={4} style={{marginBottom:'2rem'}}>
-                    <span>{t('followTitle')}</span>
+                <Grid item xs={12} sm={5} md={4} style={{marginBottom:'2rem'}}>
+                    <span style={{fontWeight:'bold'}}>{t('followTitle')}</span>
                     <br/>
                     <br/>
                     <Link

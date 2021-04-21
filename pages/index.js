@@ -17,7 +17,7 @@ const HomePage = ({ t }) =>{
                     description: 'I am a front-end developer, open to opportunities.',
                     images: [
                       {
-                        url: 'https://github.com/weianofsteel/saliejung/blob/master/public/openGraph.jpg',
+                        url: 'https://raw.githubusercontent.com/weianofsteel/saliejung/master/public/openGraph.jpg',
                         width: 800,
                         height: 600,
                         alt: 'Weian Wang | Front-end developer',

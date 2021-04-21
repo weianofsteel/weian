@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     fontFamily:'Bebas Neue ',
     fontWeight:400,
     letterSpacing:'1px',
-    fontSize:'2rem',
+    fontSize:'1.7rem',
   },
   link: {
     fontFamily:'Roboto',
@@ -132,8 +132,8 @@ const Header = ({t,...props}) => {
              
             <Grid container>
 
-              <Grid item xs={4} md={2} style={{marginTop:'0.5rem'}}>
-                <Link 
+              <Grid item xs={6} md={2} style={{marginTop:'0.5rem'}}>
+                  <Link 
                     href="."
                     underline='none'
                     className={classes.title}
@@ -142,8 +142,8 @@ const Header = ({t,...props}) => {
                     WEIAN WANG
                   </Link>
               </Grid>
-              <Grid item xs={1} md={2}></Grid>
-              <Grid item xs={1} md={2} lg={2}></Grid>
+              <Grid item xs={false} md={2}></Grid>
+              <Grid item xs={false} md={2} lg={2}></Grid>
               <Hidden mdDown>
                 <Grid item xs={2} style={{marginTop:'0.3rem', paddingLeft:'6%'}}>
                   <Select2

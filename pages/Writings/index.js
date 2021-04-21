@@ -9,11 +9,11 @@ const WritingsPage = ({t}) => {
         <React.Fragment>
 
             <NextSeo
-                title="Weian Wang | Blog"
+                title="Weian Wang | Front-end developer"
                 description="I am a front-end developer, open to opportunities."
                 openGraph={{
                     url: 'https://weianofsteel.com/Writings',
-                    title: 'Weian Wang | Blog',
+                    title: 'Weian Wang | Front-end developer',
                     description: 'I am a front-end developer, open to opportunities.',
                     images: [
                       {

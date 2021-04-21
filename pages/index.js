@@ -8,7 +8,7 @@ const HomePage = ({ t }) =>{
     return (
         <React.Fragment>
 
-            {/* <NextSeo
+            <NextSeo
                 title="Weian Wang | Front-end developer"
                 description="I am a front-end developer, open to opportunities."
                 openGraph={{
@@ -25,7 +25,7 @@ const HomePage = ({ t }) =>{
                     ],
                     site_name: 'Weian Wang | Front-end developer',
                   }}
-            /> */}
+            />
 
           <Home/>
 

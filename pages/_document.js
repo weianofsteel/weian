@@ -31,13 +31,13 @@ class MyDocument extends Document {
                     <meta property="og:url" content="https://weianofsteel.com" />
                     {/* <meta property="og:type" content="website" /> */}
                     {/* <meta property="fb:app_id" content="your fb id" /> */}
-                    <meta property="og:title" content="Weian Wang | Front-end developer"/>
+                    <meta property="og:title" content="Weian Wang - Front-end developer"/>
                     {/* <meta name="twitter:card" content="summary" /> */}
                     <meta
                     property="og:description"
                     content="I am a front-end developer, open to opportunities."
                     />
-                    <meta property="og:image" content="https://raw.githubusercontent.com/weianofsteel/saliejung/master/public/openGraph.jpg" />
+                    {/* <meta property="og:image" content="https://raw.githubusercontent.com/weianofsteel/saliejung/master/public/openGraph.jpg" /> */}
                     
                     <link 
                         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 

@@ -13,7 +13,7 @@ const WritingsPage = ({t}) => {
                 description="I am a front-end developer, open to opportunities."
                 openGraph={{
                     url: 'https://weianofsteel.com/Writings',
-                    title: 'Weian Wang | Front-end developer',
+                    title: 'Weian Wang | Blog',
                     description: 'I am a front-end developer, open to opportunities.',
                     images: [
                       {

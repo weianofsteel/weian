@@ -224,7 +224,7 @@ const Header = ({t,...props}) => {
                   {
                     mode==='day' &&
                       <Link 
-                        href={lang=='en'?'./resume.pdf':'./履歷.pdf'}
+                        href={lang=='en'?'./WeianWang_Resume.pdf':'./王偉安_履歷.pdf'}
                         target='_blank'
                         rel='noopener'
                         underline='none'
@@ -237,7 +237,7 @@ const Header = ({t,...props}) => {
                   {
                     mode==='night' &&
                       <Link 
-                        href={lang=='en'?'./resume.pdf':'./履歷.pdf'}
+                        href={lang=='en'?'./WeianWang_Resume.pdf':'./王偉安_履歷.pdf'}
                         target='_blank'
                         rel='noopener'
                         underline='none'

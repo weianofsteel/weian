@@ -63,7 +63,7 @@ const Drawer = ({t,...props}) => {
             <div className={classes.main}>
                 
                 <Grid container>
-                    <Grid item xs={4} md={2} style={{marginTop:'0.5rem'}}>
+                    <Grid item xs={6} md={2} style={{marginTop:'0.5rem'}}>
                     <Link 
                         href="."
                         underline='none'
@@ -72,8 +72,8 @@ const Drawer = ({t,...props}) => {
                         WEIAN WANG
                     </Link>
                     </Grid>
-                    <Grid item xs={1} md={2}></Grid>
-                    <Grid item xs={1} md={2}></Grid>
+                    <Grid item xs={false} md={2}></Grid>
+                    <Grid item xs={false} md={2}></Grid>
                     <Grid item xs={2}></Grid>
                     <Grid item xs={2}></Grid>
                     <Grid item xs={1}></Grid>
@@ -108,7 +108,7 @@ const Drawer = ({t,...props}) => {
                 <Grid container className={classes.drawerHeader}>
                     <Grid item xs={4}>
                         <Link 
-                            href={lang=='en'?'./resume.pdf':'./履歷.pdf'} 
+                            href={lang=='en'?'./WeianWang_Resume.pdf':'./王偉安_履歷.pdf'}
                             target='_blank' rel='noopener' 
                             underline='none' 
                             className={classes.drawerLink}

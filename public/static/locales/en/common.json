@@ -1,3 +1,4 @@
 {
-  
+    "error-with-status":"error",
+    "error-without-status":"error"
 }

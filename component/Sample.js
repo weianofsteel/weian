@@ -78,8 +78,8 @@ const Sample = ({t}) => {
                         >
                             <MenuItem value={'en'}>English</MenuItem>
                             <MenuItem value={'zhHant'}>中文</MenuItem>
-                            <MenuItem value={'fr'}>Français</MenuItem>
-                            <MenuItem value={'es'}>Español</MenuItem>
+                            {/* <MenuItem value={'fr'}>Français</MenuItem>
+                            <MenuItem value={'es'}>Español</MenuItem> */}
                         </Select>
                     </FormControl>
                 </Grid>

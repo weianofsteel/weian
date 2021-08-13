@@ -26,7 +26,7 @@ const Banner = ({t,...props}) => {
 
                 <p className={classes.content}>
                     {t('context1')}<br/>
-                    {t('context2')}
+                    <span style={{textDecoration:'line-through'}}>{t('context2')}</span>
                 </p>
 
             </div>

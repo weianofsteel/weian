@@ -1,6 +1,5 @@
 import React from 'react'
 import { i18n, withTranslation } from '../i18n'
-import Button from '@material-ui/core/Button'
 import PropTypes from 'prop-types'
 import TranslateIcon from '@material-ui/icons/Translate'
 import { makeStyles } from '@material-ui/core/styles'

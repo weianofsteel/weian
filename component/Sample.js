@@ -22,8 +22,8 @@ const useStyles = makeStyles({
       }
     },
     formControl: {
-        width:'20rem',
-        fontSize:'1.6rem'
+        // width:'20rem',
+        // fontSize:'1.6rem'
     }
   })
 

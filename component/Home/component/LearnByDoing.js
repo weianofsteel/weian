@@ -10,7 +10,6 @@ import gif6 from '../../../public/image/gif/gif6.gif'
 import gif7 from '../../../public/image/gif/gif7.gif'
 import gif8 from '../../../public/image/gif/gif8.gif'
 import gif10 from '../../../public/image/gif/gif10.gif'
-import mysqlIcon from '../../../public/image/home/mysql.png'
 
 const useStyles = makeStyles({
     title:{
@@ -18,8 +17,7 @@ const useStyles = makeStyles({
         fontSize:'2rem'
     },
     imgBlock:{
-        width:'100%',
-        // padding:'1rem'
+        width:'100%'
     },
     imgHover:{
         backgroundColor:'black',

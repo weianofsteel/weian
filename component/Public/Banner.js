@@ -25,7 +25,16 @@ const Banner = ({t,...props}) => {
             <div>
 
                 <p className={classes.content}>
-                    {t('context1')}<br/>
+                    <Typewriter
+                        rotateSpeed={800}
+                        typeSpeed={80}
+                        fontSize={'2rem'}
+                        fontFamily={'Roboto'}
+                        color={mode=='day'?'black':'white'}
+                        heading={'Typewriter'}
+                        dataText={[t('context1')]}
+                    />
+                    <br/>
                     <span style={{textDecoration:'line-through'}}>{t('context2')}</span>
                 </p>
 

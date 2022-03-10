@@ -7,7 +7,7 @@ import Bio from '../About/component/Bio'
 import { makeStyles } from '@material-ui/core/styles'
 import { PageLoader } from '../Public/PageLoader'
 import { useSelector } from 'react-redux'
-import MessengerCustomerChat from 'react-messenger-customer-chat'
+// import MessengerCustomerChat from 'react-messenger-customer-chat'
 
 const useStyles = makeStyles({
     dayBackground:{
@@ -76,10 +76,10 @@ export const Home = () => {
                             />
                         </div>
 
-                        <MessengerCustomerChat
+                        {/* <MessengerCustomerChat
                             pageId="1376745752632975"
                             appId="1255803504912128"
-                        />
+                        /> */}
                     </div>
 
                 </React.Fragment>

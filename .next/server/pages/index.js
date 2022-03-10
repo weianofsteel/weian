@@ -88,1795 +88,469 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./pages/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "+5sc":
+/***/ "./component/About/component/Bio.js":
+/*!******************************************!*\
+  !*** ./component/About/component/Bio.js ***!
+  \******************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("F5FC");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("k7Sn");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("9Pu4");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("MCme");
-/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("JQ2V");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_icons_Close__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("j08L");
-/* harmony import */ var _material_ui_icons_Close__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Close__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("EmCc");
-/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__);
-
-
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-
-
-
-
-
-const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])({
-  main: {
-    height: '100vh',
-    overflowY: 'hidden',
-    backgroundColor: '#1f1f1f',
-    paddingLeft: '8%',
-    paddingRight: '8%'
-  },
-  title: {
-    fontFamily: 'Bebas Neue ',
-    fontWeight: 400,
-    letterSpacing: '1px',
-    color: '#CACACA',
-    fontSize: '2rem',
-    "&:hover": {
-      color: 'white'
-    }
-  },
-  drawerLink: {
-    fontFamily: 'Roboto',
-    textAlign: 'left',
-    fontWeight: 400,
-    letterSpacing: '1px',
-    color: '#CACACA',
-    fontSize: '22px',
-    "&:hover": {
-      color: 'white'
-    }
-  },
-  drawerHeader: {
-    marginTop: '3rem'
-  },
-  icon: {
-    fontSize: '1.5rem',
-    color: '#8F8F8F',
-    "&:hover": {
-      color: 'white'
-    }
-  }
-});
-
-const Drawer = (_ref) => {
-  let {
-    t
-  } = _ref,
-      props = _objectWithoutProperties(_ref, ["t"]);
-
-  const classes = useStyles();
-  const {
-    handleDrawerClose,
-    lang
-  } = props;
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
-    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-      className: classes.main,
-      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-        container: true,
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 6,
-          md: 2,
-          style: {
-            marginTop: '0.5rem'
-          },
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-            href: ".",
-            underline: "none",
-            className: classes.title,
-            children: "WEIAN WANG"
-          })
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: false,
-          md: 2
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: false,
-          md: 2
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 2
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 2
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 1
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 1,
-          style: {
-            textAlign: 'right'
-          },
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7___default.a, {
-            style: {
-              backgroundColor: 'transparent'
-            },
-            disableRipple: true,
-            onClick: handleDrawerClose,
-            children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_icons_Close__WEBPACK_IMPORTED_MODULE_6___default.a, {
-              className: classes.icon
-            })
-          })
-        })]
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-        container: true,
-        className: classes.drawerHeader,
-        style: {
-          marginTop: '4rem'
-        },
-        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 4,
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-            href: "/Work",
-            underline: "none",
-            className: classes.drawerLink,
-            children: t('work')
-          })
-        })
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-        container: true,
-        className: classes.drawerHeader,
-        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 4,
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-            href: "/Writings",
-            underline: "none",
-            className: classes.drawerLink,
-            children: t('writings')
-          })
-        })
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-        container: true,
-        className: classes.drawerHeader,
-        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          item: true,
-          xs: 4,
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-            href: lang == 'en' ? './WeianWang_Resume.pdf' : './王偉安_履歷.pdf',
-            target: "_blank",
-            rel: "noopener",
-            underline: "none",
-            className: classes.drawerLink,
-            children: t('resume')
-          })
-        })
-      })]
-    })
-  });
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_2__["withTranslation"])('header')(Drawer));
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ \"@material-ui/core/styles\");\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../i18n */ \"./i18n.js\");\n/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Grid */ \"@material-ui/core/Grid\");\n/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _public_image_about_avartar_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../public/image/about/avartar.jpg */ \"./public/image/about/avartar.jpg\");\n/* harmony import */ var _public_image_about_avartar_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_public_image_about_avartar_jpg__WEBPACK_IMPORTED_MODULE_6__);\n\nvar _jsxFileName = \"/Users/wangweian/wangweian/weian/component/About/component/Bio.js\";\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n\n\n\n\n\n\nconst useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__[\"makeStyles\"])({\n  title: {\n    fontFamily: 'Roboto',\n    fontSize: '2rem'\n  },\n  subtitle: {\n    fontFamily: 'Roboto',\n    fontSize: '2rem',\n    fontWeight: 700\n  },\n  img: {\n    borderRadius: '50%'\n  },\n  content: {\n    fontFamily: 'Roboto',\n    fontSize: '1.2rem',\n    lineHeight: '1.8rem'\n  }\n});\n\nconst Bio = (_ref) => {\n  let {\n    t\n  } = _ref,\n      props = _objectWithoutProperties(_ref, [\"t\"]);\n\n  const classes = useStyles();\n  const {\n    mode\n  } = props;\n  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {\n    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n      container: true,\n      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        item: true,\n        xs: false,\n        md: 3\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 40,\n        columnNumber: 17\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        item: true,\n        xs: 12,\n        md: 6,\n        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"p\", {\n          className: classes.title,\n          children: t('greeting')\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 42,\n          columnNumber: 21\n        }, undefined)\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 41,\n        columnNumber: 17\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        item: true,\n        xs: false,\n        md: 3\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 46,\n        columnNumber: 17\n      }, undefined)]\n    }, void 0, true, {\n      fileName: _jsxFileName,\n      lineNumber: 39,\n      columnNumber: 13\n    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n      container: true,\n      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        item: true,\n        xs: 2,\n        sm: 3,\n        md: 4\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 50,\n        columnNumber: 17\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        item: true,\n        xs: 8,\n        sm: 6,\n        md: 4,\n        style: {\n          marginTop: '-1rem',\n          padding: '1rem',\n          textAlign: 'center'\n        },\n        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"img\", {\n          src: _public_image_about_avartar_jpg__WEBPACK_IMPORTED_MODULE_6___default.a,\n          className: classes.img,\n          style: {\n            width: '100%'\n          }\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 52,\n          columnNumber: 21\n        }, undefined)\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 51,\n        columnNumber: 17\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        item: true,\n        xs: 2,\n        sm: 3,\n        md: 4\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 54,\n        columnNumber: 17\n      }, undefined)]\n    }, void 0, true, {\n      fileName: _jsxFileName,\n      lineNumber: 49,\n      columnNumber: 13\n    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n      container: true,\n      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        item: true,\n        xs: false,\n        md: 3\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 58,\n        columnNumber: 17\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        item: true,\n        xs: 12,\n        md: 6,\n        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"p\", {\n          className: classes.content,\n          children: t('content1')\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 60,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"p\", {\n          className: classes.content,\n          children: t('content2')\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 63,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"p\", {\n          className: classes.content,\n          children: t('content3')\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 66,\n          columnNumber: 21\n        }, undefined)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 59,\n        columnNumber: 17\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        item: true,\n        xs: false,\n        md: 3\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 70,\n        columnNumber: 17\n      }, undefined)]\n    }, void 0, true, {\n      fileName: _jsxFileName,\n      lineNumber: 57,\n      columnNumber: 13\n    }, undefined)]\n  }, void 0, true, {\n    fileName: _jsxFileName,\n    lineNumber: 37,\n    columnNumber: 9\n  }, undefined);\n};\n\nBio.propTypes = {\n  t: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func.isRequired\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_4__[\"withTranslation\"])('about')(Bio));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb21wb25lbnQvQWJvdXQvY29tcG9uZW50L0Jpby5qcz8xZjExIl0sIm5hbWVzIjpbInVzZVN0eWxlcyIsIm1ha2VTdHlsZXMiLCJ0aXRsZSIsImZvbnRGYW1pbHkiLCJmb250U2l6ZSIsInN1YnRpdGxlIiwiZm9udFdlaWdodCIsImltZyIsImJvcmRlclJhZGl1cyIsImNvbnRlbnQiLCJsaW5lSGVpZ2h0IiwiQmlvIiwidCIsInByb3BzIiwiY2xhc3NlcyIsIm1vZGUiLCJtYXJnaW5Ub3AiLCJwYWRkaW5nIiwidGV4dEFsaWduIiwiYXZhcnRhciIsIndpZHRoIiwicHJvcFR5cGVzIiwiUHJvcFR5cGVzIiwiZnVuYyIsImlzUmVxdWlyZWQiLCJ3aXRoVHJhbnNsYXRpb24iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQSxNQUFNQSxTQUFTLEdBQUdDLDJFQUFVLENBQUM7QUFDekJDLE9BQUssRUFBQztBQUNGQyxjQUFVLEVBQUMsUUFEVDtBQUVGQyxZQUFRLEVBQUM7QUFGUCxHQURtQjtBQUt6QkMsVUFBUSxFQUFDO0FBQ0xGLGNBQVUsRUFBQyxRQUROO0FBRUxDLFlBQVEsRUFBQyxNQUZKO0FBR0xFLGNBQVUsRUFBRTtBQUhQLEdBTGdCO0FBVXpCQyxLQUFHLEVBQUM7QUFDQUMsZ0JBQVksRUFBQztBQURiLEdBVnFCO0FBYXpCQyxTQUFPLEVBQUM7QUFDSk4sY0FBVSxFQUFDLFFBRFA7QUFFSkMsWUFBUSxFQUFDLFFBRkw7QUFHSk0sY0FBVSxFQUFDO0FBSFA7QUFiaUIsQ0FBRCxDQUE1Qjs7QUFvQkEsTUFBTUMsR0FBRyxHQUFHLFVBQWtCO0FBQUEsTUFBakI7QUFBQ0M7QUFBRCxHQUFpQjtBQUFBLE1BQVhDLEtBQVc7O0FBRTFCLFFBQU1DLE9BQU8sR0FBR2QsU0FBUyxFQUF6QjtBQUVBLFFBQU07QUFDRmU7QUFERSxNQUVGRixLQUZKO0FBSUEsc0JB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LG1CQWJKO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxpQkFwQko7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGVBREo7QUF1Q0gsQ0EvQ0Q7O0FBaURBRCxHQUFHLENBQUNVLFNBQUosR0FBZ0I7QUFDWlQsR0FBQyxFQUFFVSxpREFBUyxDQUFDQyxJQUFWLENBQWVDO0FBRE4sQ0FBaEI7QUFJZUMsNEhBQWUsQ0FBQyxPQUFELENBQWYsQ0FBeUJkLEdBQXpCLENBQWYiLCJmaWxlIjoiLi9jb21wb25lbnQvQWJvdXQvY29tcG9uZW50L0Jpby5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCB7IG1ha2VTdHlsZXMgfSBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9zdHlsZXMnXG5pbXBvcnQgUHJvcFR5cGVzIGZyb20gJ3Byb3AtdHlwZXMnXG5pbXBvcnQgeyB3aXRoVHJhbnNsYXRpb24gfSBmcm9tICcuLi8uLi8uLi9pMThuJ1xuaW1wb3J0IEdyaWQgZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvR3JpZCdcbmltcG9ydCBhdmFydGFyIGZyb20gJy4uLy4uLy4uL3B1YmxpYy9pbWFnZS9hYm91dC9hdmFydGFyLmpwZydcblxuY29uc3QgdXNlU3R5bGVzID0gbWFrZVN0eWxlcyh7XG4gICAgdGl0bGU6e1xuICAgICAgICBmb250RmFtaWx5OidSb2JvdG8nLFxuICAgICAgICBmb250U2l6ZTonMnJlbSdcbiAgICB9LFxuICAgIHN1YnRpdGxlOntcbiAgICAgICAgZm9udEZhbWlseTonUm9ib3RvJyxcbiAgICAgICAgZm9udFNpemU6JzJyZW0nLFxuICAgICAgICBmb250V2VpZ2h0OiA3MDBcbiAgICB9LFxuICAgIGltZzp7XG4gICAgICAgIGJvcmRlclJhZGl1czonNTAlJ1xuICAgIH0sXG4gICAgY29udGVudDp7XG4gICAgICAgIGZvbnRGYW1pbHk6J1JvYm90bycsXG4gICAgICAgIGZvbnRTaXplOicxLjJyZW0nLFxuICAgICAgICBsaW5lSGVpZ2h0OicxLjhyZW0nXG4gICAgfSxcbn0pXG5cbmNvbnN0IEJpbyA9ICh7dCwuLi5wcm9wc30pID0+IHtcbiAgICBcbiAgICBjb25zdCBjbGFzc2VzID0gdXNlU3R5bGVzKCk7XG5cbiAgICBjb25zdCB7XG4gICAgICAgIG1vZGVcbiAgICB9ID0gcHJvcHM7XG5cbiAgICByZXR1cm4oXG4gICAgICAgIDxSZWFjdC5GcmFnbWVudD5cblxuICAgICAgICAgICAgPEdyaWQgY29udGFpbmVyPlxuICAgICAgICAgICAgICAgIDxHcmlkIGl0ZW0geHM9e2ZhbHNlfSBtZD17M30+PC9HcmlkPlxuICAgICAgICAgICAgICAgIDxHcmlkIGl0ZW0geHM9ezEyfSBtZD17Nn0+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT17Y2xhc3Nlcy50aXRsZX0+XG4gICAgICAgICAgICAgICAgICAgICAgICB7dCgnZ3JlZXRpbmcnKX1cbiAgICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgIDwvR3JpZD5cbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXtmYWxzZX0gbWQ9ezN9PjwvR3JpZD5cbiAgICAgICAgICAgIDwvR3JpZD5cblxuICAgICAgICAgICAgPEdyaWQgY29udGFpbmVyPlxuICAgICAgICAgICAgICAgIDxHcmlkIGl0ZW0geHM9ezJ9IHNtPXszfSBtZD17NH0+PC9HcmlkPlxuICAgICAgICAgICAgICAgIDxHcmlkIGl0ZW0geHM9ezh9IHNtPXs2fSBtZD17NH0gc3R5bGU9e3ttYXJnaW5Ub3A6Jy0xcmVtJyxwYWRkaW5nOicxcmVtJywgdGV4dEFsaWduOidjZW50ZXInfX0+XG4gICAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPXthdmFydGFyfSBjbGFzc05hbWU9e2NsYXNzZXMuaW1nfSBzdHlsZT17e3dpZHRoOicxMDAlJ319Lz5cbiAgICAgICAgICAgICAgICA8L0dyaWQ+XG4gICAgICAgICAgICAgICAgPEdyaWQgaXRlbSB4cz17Mn0gc209ezN9IG1kPXs0fT48L0dyaWQ+XG4gICAgICAgICAgICA8L0dyaWQ+XG5cbiAgICAgICAgICAgIDxHcmlkIGNvbnRhaW5lcj5cbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXtmYWxzZX0gbWQ9ezN9PjwvR3JpZD5cbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsxMn0gbWQ9ezZ9PlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9e2NsYXNzZXMuY29udGVudH0+XG4gICAgICAgICAgICAgICAgICAgICAgICB7dCgnY29udGVudDEnKX1cbiAgICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9e2NsYXNzZXMuY29udGVudH0+XG4gICAgICAgICAgICAgICAgICAgICAgICB7dCgnY29udGVudDInKX1cbiAgICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9e2NsYXNzZXMuY29udGVudH0+XG4gICAgICAgICAgICAgICAgICAgICAgICB7dCgnY29udGVudDMnKX1cbiAgICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgIDwvR3JpZD5cbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXtmYWxzZX0gbWQ9ezN9PjwvR3JpZD5cbiAgICAgICAgICAgIDwvR3JpZD5cblxuICAgICAgICA8L1JlYWN0LkZyYWdtZW50PlxuICAgIClcbn1cblxuQmlvLnByb3BUeXBlcyA9IHtcbiAgICB0OiBQcm9wVHlwZXMuZnVuYy5pc1JlcXVpcmVkLFxufVxuXG5leHBvcnQgZGVmYXVsdCB3aXRoVHJhbnNsYXRpb24oJ2Fib3V0JykoQmlvKSAiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./component/About/component/Bio.js\n");
 
 /***/ }),
 
-/***/ "+Pat":
+/***/ "./component/Home/Home.js":
+/*!********************************!*\
+  !*** ./component/Home/Home.js ***!
+  \********************************/
+/*! exports provided: Home */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Home\", function() { return Home; });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Public_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Public/Header */ \"./component/Public/Header.js\");\n/* harmony import */ var _Public_Banner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Public/Banner */ \"./component/Public/Banner.js\");\n/* harmony import */ var _Public_Drawer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Public/Drawer */ \"./component/Public/Drawer.js\");\n/* harmony import */ var _Public_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Public/Footer */ \"./component/Public/Footer.js\");\n/* harmony import */ var _About_component_Bio__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../About/component/Bio */ \"./component/About/component/Bio.js\");\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/styles */ \"@material-ui/core/styles\");\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _Public_PageLoader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Public/PageLoader */ \"./component/Public/PageLoader.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-redux */ \"react-redux\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-messenger-customer-chat */ \"react-messenger-customer-chat\");\n/* harmony import */ var react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_10__);\n\nvar _jsxFileName = \"/Users/wangweian/wangweian/weian/component/Home/Home.js\";\n\n\n\n\n\n\n\n\n\n\nconst useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__[\"makeStyles\"])({\n  dayBackground: {\n    backgroundColor: '#FFFFFF',\n    color: '#1F1F1F'\n  },\n  nightBackground: {\n    backgroundColor: 'black',\n    color: '#FFFFFF'\n  },\n  body: {\n    paddingLeft: '8%',\n    paddingRight: '8%'\n  }\n});\nconst Home = () => {\n  const classes = useStyles();\n  const [drawer, setDrawer] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(false);\n\n  const handleDrawerOpen = () => {\n    setDrawer(true);\n  };\n\n  const handleDrawerClose = () => {\n    setDrawer(false);\n  };\n\n  const mode = Object(react_redux__WEBPACK_IMPORTED_MODULE_9__[\"useSelector\"])(state => state.mode);\n  const lang = Object(react_redux__WEBPACK_IMPORTED_MODULE_9__[\"useSelector\"])(state => state.lang);\n  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {\n    children: [drawer == false && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {\n      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"div\", {\n        className: mode === 'day' ? classes.dayBackground : classes.nightBackground,\n        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_Public_PageLoader__WEBPACK_IMPORTED_MODULE_8__[\"PageLoader\"], {\n          mode: mode\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 51,\n          columnNumber: 25\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"div\", {\n          className: classes.body,\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_Public_Header__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n            handleDrawerOpen: handleDrawerOpen,\n            mode: mode,\n            lang: lang\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 54,\n            columnNumber: 29\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 53,\n          columnNumber: 25\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"div\", {\n          className: classes.body,\n          style: {\n            marginTop: '8rem'\n          },\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_Public_Banner__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n            mode: mode\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 62,\n            columnNumber: 29\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 61,\n          columnNumber: 25\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"div\", {\n          className: classes.body,\n          style: {\n            marginTop: '1rem'\n          },\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_About_component_Bio__WEBPACK_IMPORTED_MODULE_6__[\"default\"], {\n            mode: mode\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 68,\n            columnNumber: 29\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 67,\n          columnNumber: 25\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"div\", {\n          className: classes.body,\n          style: {\n            marginTop: '1rem'\n          },\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_Public_Footer__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n            mode: mode\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 74,\n            columnNumber: 29\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 73,\n          columnNumber: 25\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_10___default.a, {\n          pageId: \"1376745752632975\",\n          appId: \"1255803504912128\"\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 79,\n          columnNumber: 25\n        }, undefined)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 49,\n        columnNumber: 21\n      }, undefined)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 48,\n      columnNumber: 17\n    }, undefined), drawer == true && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {\n      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"div\", {\n        style: {\n          height: '100vh',\n          backgroundColor: '#1f1f1f'\n        },\n        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_Public_Drawer__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n          handleDrawerClose: handleDrawerClose,\n          lang: lang\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 91,\n          columnNumber: 21\n        }, undefined)\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 90,\n        columnNumber: 21\n      }, undefined)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 89,\n      columnNumber: 17\n    }, undefined)]\n  }, void 0, true, {\n    fileName: _jsxFileName,\n    lineNumber: 45,\n    columnNumber: 9\n  }, undefined);\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb21wb25lbnQvSG9tZS9Ib21lLmpzP2EyYWUiXSwibmFtZXMiOlsidXNlU3R5bGVzIiwibWFrZVN0eWxlcyIsImRheUJhY2tncm91bmQiLCJiYWNrZ3JvdW5kQ29sb3IiLCJjb2xvciIsIm5pZ2h0QmFja2dyb3VuZCIsImJvZHkiLCJwYWRkaW5nTGVmdCIsInBhZGRpbmdSaWdodCIsIkhvbWUiLCJjbGFzc2VzIiwiZHJhd2VyIiwic2V0RHJhd2VyIiwiUmVhY3QiLCJ1c2VTdGF0ZSIsImhhbmRsZURyYXdlck9wZW4iLCJoYW5kbGVEcmF3ZXJDbG9zZSIsIm1vZGUiLCJ1c2VTZWxlY3RvciIsInN0YXRlIiwibGFuZyIsIm1hcmdpblRvcCIsImhlaWdodCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBLE1BQU1BLFNBQVMsR0FBR0MsMkVBQVUsQ0FBQztBQUN6QkMsZUFBYSxFQUFDO0FBQ1ZDLG1CQUFlLEVBQUMsU0FETjtBQUVWQyxTQUFLLEVBQUM7QUFGSSxHQURXO0FBS3pCQyxpQkFBZSxFQUFDO0FBQ1pGLG1CQUFlLEVBQUMsT0FESjtBQUVaQyxTQUFLLEVBQUM7QUFGTSxHQUxTO0FBU3pCRSxNQUFJLEVBQUM7QUFDREMsZUFBVyxFQUFDLElBRFg7QUFFREMsZ0JBQVksRUFBQztBQUZaO0FBVG9CLENBQUQsQ0FBNUI7QUFlTyxNQUFNQyxJQUFJLEdBQUcsTUFBTTtBQUV0QixRQUFNQyxPQUFPLEdBQUdWLFNBQVMsRUFBekI7QUFFQSxRQUFNLENBQUNXLE1BQUQsRUFBU0MsU0FBVCxJQUFzQkMsNENBQUssQ0FBQ0MsUUFBTixDQUFlLEtBQWYsQ0FBNUI7O0FBRUEsUUFBTUMsZ0JBQWdCLEdBQUcsTUFBTTtBQUMzQkgsYUFBUyxDQUFDLElBQUQsQ0FBVDtBQUNILEdBRkQ7O0FBSUEsUUFBTUksaUJBQWlCLEdBQUcsTUFBTTtBQUM1QkosYUFBUyxDQUFDLEtBQUQsQ0FBVDtBQUNILEdBRkQ7O0FBSUEsUUFBTUssSUFBSSxHQUFHQywrREFBVyxDQUFFQyxLQUFELElBQVdBLEtBQUssQ0FBQ0YsSUFBbEIsQ0FBeEI7QUFDQSxRQUFNRyxJQUFJLEdBQUdGLCtEQUFXLENBQUVDLEtBQUQsSUFBV0EsS0FBSyxDQUFDQyxJQUFsQixDQUF4QjtBQUVBLHNCQUNJLHFFQUFDLDRDQUFELENBQU8sUUFBUDtBQUFBLGVBRUtULE1BQU0sSUFBSSxLQUFWLGlCQUNHLHFFQUFDLDRDQUFELENBQU8sUUFBUDtBQUFBLDZCQUNJO0FBQUssaUJBQVMsRUFBRU0sSUFBSSxLQUFHLEtBQVAsR0FBYVAsT0FBTyxDQUFDUixhQUFyQixHQUFtQ1EsT0FBTyxDQUFDTCxlQUEzRDtBQUFBLGdDQUVJLHFFQUFDLDZEQUFEO0FBQVksY0FBSSxFQUFFWTtBQUFsQjtBQUFBO0FBQUE7QUFBQTtBQUFBLHFCQUZKLGVBSUk7QUFBSyxtQkFBUyxFQUFFUCxPQUFPLENBQUNKLElBQXhCO0FBQUEsaUNBQ0kscUVBQUMsc0RBQUQ7QUFDSSw0QkFBZ0IsRUFBRVMsZ0JBRHRCO0FBRUksZ0JBQUksRUFBRUUsSUFGVjtBQUdJLGdCQUFJLEVBQUVHO0FBSFY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURKO0FBQUE7QUFBQTtBQUFBO0FBQUEscUJBSkosZUFZSTtBQUFLLG1CQUFTLEVBQUVWLE9BQU8sQ0FBQ0osSUFBeEI7QUFBOEIsZUFBSyxFQUFFO0FBQUNlLHFCQUFTLEVBQUM7QUFBWCxXQUFyQztBQUFBLGlDQUNJLHFFQUFDLHNEQUFEO0FBQ0ksZ0JBQUksRUFBRUo7QUFEVjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBREo7QUFBQTtBQUFBO0FBQUE7QUFBQSxxQkFaSixlQWtCSTtBQUFLLG1CQUFTLEVBQUVQLE9BQU8sQ0FBQ0osSUFBeEI7QUFBOEIsZUFBSyxFQUFFO0FBQUNlLHFCQUFTLEVBQUM7QUFBWCxXQUFyQztBQUFBLGlDQUNJLHFFQUFDLDREQUFEO0FBQ0ksZ0JBQUksRUFBRUo7QUFEVjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBREo7QUFBQTtBQUFBO0FBQUE7QUFBQSxxQkFsQkosZUF3Qkk7QUFBSyxtQkFBUyxFQUFFUCxPQUFPLENBQUNKLElBQXhCO0FBQThCLGVBQUssRUFBRTtBQUFDZSxxQkFBUyxFQUFDO0FBQVgsV0FBckM7QUFBQSxpQ0FDSSxxRUFBQyxzREFBRDtBQUNJLGdCQUFJLEVBQUVKO0FBRFY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURKO0FBQUE7QUFBQTtBQUFBO0FBQUEscUJBeEJKLGVBOEJJLHFFQUFDLHFFQUFEO0FBQ0ksZ0JBQU0sRUFBQyxrQkFEWDtBQUVJLGVBQUssRUFBQztBQUZWO0FBQUE7QUFBQTtBQUFBO0FBQUEscUJBOUJKO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURKO0FBQUE7QUFBQTtBQUFBO0FBQUEsaUJBSFIsRUEyQ0tOLE1BQU0sSUFBSSxJQUFWLGlCQUNHLHFFQUFDLDRDQUFELENBQU8sUUFBUDtBQUFBLDZCQUNJO0FBQUssYUFBSyxFQUFFO0FBQUNXLGdCQUFNLEVBQUMsT0FBUjtBQUFpQm5CLHlCQUFlLEVBQUM7QUFBakMsU0FBWjtBQUFBLCtCQUNBLHFFQUFDLHNEQUFEO0FBQ0ksMkJBQWlCLEVBQUVhLGlCQUR2QjtBQUVJLGNBQUksRUFBRUk7QUFGVjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBREE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURKO0FBQUE7QUFBQTtBQUFBO0FBQUEsaUJBNUNSO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQURKO0FBeURILENBMUVNIiwiZmlsZSI6Ii4vY29tcG9uZW50L0hvbWUvSG9tZS5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCBIZWFkZXIgZnJvbSAnLi4vUHVibGljL0hlYWRlcidcbmltcG9ydCBCYW5uZXIgZnJvbSAnLi4vUHVibGljL0Jhbm5lcidcbmltcG9ydCBEcmF3ZXIgZnJvbSAnLi4vUHVibGljL0RyYXdlcidcbmltcG9ydCBGb290ZXIgZnJvbSAnLi4vUHVibGljL0Zvb3RlcidcbmltcG9ydCBCaW8gZnJvbSAnLi4vQWJvdXQvY29tcG9uZW50L0JpbydcbmltcG9ydCB7IG1ha2VTdHlsZXMgfSBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9zdHlsZXMnXG5pbXBvcnQgeyBQYWdlTG9hZGVyIH0gZnJvbSAnLi4vUHVibGljL1BhZ2VMb2FkZXInXG5pbXBvcnQgeyB1c2VTZWxlY3RvciB9IGZyb20gJ3JlYWN0LXJlZHV4J1xuaW1wb3J0IE1lc3NlbmdlckN1c3RvbWVyQ2hhdCBmcm9tICdyZWFjdC1tZXNzZW5nZXItY3VzdG9tZXItY2hhdCdcblxuY29uc3QgdXNlU3R5bGVzID0gbWFrZVN0eWxlcyh7XG4gICAgZGF5QmFja2dyb3VuZDp7XG4gICAgICAgIGJhY2tncm91bmRDb2xvcjonI0ZGRkZGRicsXG4gICAgICAgIGNvbG9yOicjMUYxRjFGJ1xuICAgIH0sXG4gICAgbmlnaHRCYWNrZ3JvdW5kOntcbiAgICAgICAgYmFja2dyb3VuZENvbG9yOidibGFjaycsXG4gICAgICAgIGNvbG9yOicjRkZGRkZGJ1xuICAgIH0sXG4gICAgYm9keTp7XG4gICAgICAgIHBhZGRpbmdMZWZ0Oic4JScsIFxuICAgICAgICBwYWRkaW5nUmlnaHQ6JzglJ1xuICAgIH1cbn0pXG5cbmV4cG9ydCBjb25zdCBIb21lID0gKCkgPT4ge1xuXG4gICAgY29uc3QgY2xhc3NlcyA9IHVzZVN0eWxlcygpO1xuICAgIFxuICAgIGNvbnN0IFtkcmF3ZXIsIHNldERyYXdlcl0gPSBSZWFjdC51c2VTdGF0ZShmYWxzZSk7XG5cbiAgICBjb25zdCBoYW5kbGVEcmF3ZXJPcGVuID0gKCkgPT4ge1xuICAgICAgICBzZXREcmF3ZXIodHJ1ZSk7XG4gICAgfVxuXG4gICAgY29uc3QgaGFuZGxlRHJhd2VyQ2xvc2UgPSAoKSA9PiB7XG4gICAgICAgIHNldERyYXdlcihmYWxzZSk7XG4gICAgfVxuXG4gICAgY29uc3QgbW9kZSA9IHVzZVNlbGVjdG9yKChzdGF0ZSkgPT4gc3RhdGUubW9kZSlcbiAgICBjb25zdCBsYW5nID0gdXNlU2VsZWN0b3IoKHN0YXRlKSA9PiBzdGF0ZS5sYW5nKVxuXG4gICAgcmV0dXJuKFxuICAgICAgICA8UmVhY3QuRnJhZ21lbnQ+XG4gICAgICAgICAgICBcbiAgICAgICAgICAgIHtkcmF3ZXIgPT0gZmFsc2UgJiZcbiAgICAgICAgICAgICAgICA8UmVhY3QuRnJhZ21lbnQ+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXttb2RlPT09J2RheSc/Y2xhc3Nlcy5kYXlCYWNrZ3JvdW5kOmNsYXNzZXMubmlnaHRCYWNrZ3JvdW5kfT5cbiAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgPFBhZ2VMb2FkZXIgbW9kZT17bW9kZX0vPlxuXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5ib2R5fT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8SGVhZGVyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhhbmRsZURyYXdlck9wZW49e2hhbmRsZURyYXdlck9wZW59XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1vZGU9e21vZGV9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxhbmc9e2xhbmd9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5ib2R5fSBzdHlsZT17e21hcmdpblRvcDonOHJlbSd9fT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8QmFubmVyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1vZGU9e21vZGV9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5ib2R5fSBzdHlsZT17e21hcmdpblRvcDonMXJlbSd9fT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8QmlvXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1vZGU9e21vZGV9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5ib2R5fSBzdHlsZT17e21hcmdpblRvcDonMXJlbSd9fT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Rm9vdGVyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1vZGU9e21vZGV9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICAgICAgICA8TWVzc2VuZ2VyQ3VzdG9tZXJDaGF0XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgcGFnZUlkPVwiMTM3Njc0NTc1MjYzMjk3NVwiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgYXBwSWQ9XCIxMjU1ODAzNTA0OTEyMTI4XCJcbiAgICAgICAgICAgICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgICAgICAgICAgIH1cblxuICAgICAgICAgICAge2RyYXdlciA9PSB0cnVlICYmXG4gICAgICAgICAgICAgICAgPFJlYWN0LkZyYWdtZW50PlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPXt7aGVpZ2h0OicxMDB2aCcsIGJhY2tncm91bmRDb2xvcjonIzFmMWYxZid9fT5cbiAgICAgICAgICAgICAgICAgICAgPERyYXdlclxuICAgICAgICAgICAgICAgICAgICAgICAgaGFuZGxlRHJhd2VyQ2xvc2U9e2hhbmRsZURyYXdlckNsb3NlfVxuICAgICAgICAgICAgICAgICAgICAgICAgbGFuZz17bGFuZ31cbiAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgICAgICAgICAgIH1cbiAgICAgICAgICAgIFxuICAgICAgICA8L1JlYWN0LkZyYWdtZW50PlxuICAgIClcbn0iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./component/Home/Home.js\n");
+
+/***/ }),
+
+/***/ "./component/Public/Banner.js":
+/*!************************************!*\
+  !*** ./component/Public/Banner.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ \"@material-ui/core/styles\");\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react_typewriting_animation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-typewriting-animation */ \"react-typewriting-animation\");\n/* harmony import */ var react_typewriting_animation__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_typewriting_animation__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../i18n */ \"./i18n.js\");\n/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_5__);\n\nvar _jsxFileName = \"/Users/wangweian/wangweian/weian/component/Public/Banner.js\";\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n\n\n\n\n\nconst useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__[\"makeStyles\"])({\n  content: {\n    fontFamily: 'Roboto',\n    fontSize: '2rem'\n  }\n});\n\nconst Banner = (_ref) => {\n  let {\n    t\n  } = _ref,\n      props = _objectWithoutProperties(_ref, [\"t\"]);\n\n  const classes = useStyles();\n  const {\n    mode\n  } = props;\n  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {\n    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"div\", {\n      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"p\", {\n        className: classes.content,\n        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(react_typewriting_animation__WEBPACK_IMPORTED_MODULE_3___default.a, {\n          rotateSpeed: 800,\n          typeSpeed: 80,\n          fontSize: '2rem',\n          fontFamily: 'Roboto',\n          color: mode == 'day' ? 'black' : 'white',\n          heading: 'Typewriter',\n          dataText: [t('context1')]\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 28,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 37,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"span\", {\n          style: {\n            textDecoration: 'line-through'\n          },\n          children: t('context2')\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 38,\n          columnNumber: 21\n        }, undefined)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 27,\n        columnNumber: 17\n      }, undefined)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 25,\n      columnNumber: 13\n    }, undefined)\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 23,\n    columnNumber: 9\n  }, undefined);\n};\n\nBanner.propTypes = {\n  t: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_5__[\"withTranslation\"])('banner')(Banner));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb21wb25lbnQvUHVibGljL0Jhbm5lci5qcz9jMTE1Il0sIm5hbWVzIjpbInVzZVN0eWxlcyIsIm1ha2VTdHlsZXMiLCJjb250ZW50IiwiZm9udEZhbWlseSIsImZvbnRTaXplIiwiQmFubmVyIiwidCIsInByb3BzIiwiY2xhc3NlcyIsIm1vZGUiLCJ0ZXh0RGVjb3JhdGlvbiIsInByb3BUeXBlcyIsIlByb3BUeXBlcyIsImZ1bmMiLCJpc1JlcXVpcmVkIiwid2l0aFRyYW5zbGF0aW9uIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQSxNQUFNQSxTQUFTLEdBQUdDLDJFQUFVLENBQUM7QUFDekJDLFNBQU8sRUFBQztBQUNKQyxjQUFVLEVBQUMsUUFEUDtBQUVKQyxZQUFRLEVBQUM7QUFGTDtBQURpQixDQUFELENBQTVCOztBQU9BLE1BQU1DLE1BQU0sR0FBRyxVQUFrQjtBQUFBLE1BQWpCO0FBQUNDO0FBQUQsR0FBaUI7QUFBQSxNQUFYQyxLQUFXOztBQUU3QixRQUFNQyxPQUFPLEdBQUdSLFNBQVMsRUFBekI7QUFFQSxRQUFNO0FBQ0ZTO0FBREUsTUFFRkYsS0FGSjtBQUlBLHNCQUNJLHFFQUFDLDRDQUFELENBQU8sUUFBUDtBQUFBLDJCQUVJO0FBQUEsNkJBRUk7QUFBRyxpQkFBUyxFQUFFQyxPQUFPLENBQUNOLE9BQXRCO0FBQUEsZ0NBQ0kscUVBQUMsa0VBQUQ7QUFDSSxxQkFBVyxFQUFFLEdBRGpCO0FBRUksbUJBQVMsRUFBRSxFQUZmO0FBR0ksa0JBQVEsRUFBRSxNQUhkO0FBSUksb0JBQVUsRUFBRSxRQUpoQjtBQUtJLGVBQUssRUFBRU8sSUFBSSxJQUFFLEtBQU4sR0FBWSxPQUFaLEdBQW9CLE9BTC9CO0FBTUksaUJBQU8sRUFBRSxZQU5iO0FBT0ksa0JBQVEsRUFBRSxDQUFDSCxDQUFDLENBQUMsVUFBRCxDQUFGO0FBUGQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxxQkFESixlQVVJO0FBQUE7QUFBQTtBQUFBO0FBQUEscUJBVkosZUFXSTtBQUFNLGVBQUssRUFBRTtBQUFDSSwwQkFBYyxFQUFDO0FBQWhCLFdBQWI7QUFBQSxvQkFBK0NKLENBQUMsQ0FBQyxVQUFEO0FBQWhEO0FBQUE7QUFBQTtBQUFBO0FBQUEscUJBWEo7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBRko7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUZKO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFESjtBQXVCSCxDQS9CRDs7QUFpQ0FELE1BQU0sQ0FBQ00sU0FBUCxHQUFtQjtBQUNmTCxHQUFDLEVBQUVNLGlEQUFTLENBQUNDLElBQVYsQ0FBZUM7QUFESCxDQUFuQjtBQUllQyw0SEFBZSxDQUFDLFFBQUQsQ0FBZixDQUEwQlYsTUFBMUIsQ0FBZiIsImZpbGUiOiIuL2NvbXBvbmVudC9QdWJsaWMvQmFubmVyLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0J1xuaW1wb3J0IHsgbWFrZVN0eWxlcyB9IGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL3N0eWxlcydcbmltcG9ydCBUeXBld3JpdGVyIGZyb20gJ3JlYWN0LXR5cGV3cml0aW5nLWFuaW1hdGlvbidcbmltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcydcbmltcG9ydCB7IHdpdGhUcmFuc2xhdGlvbiB9IGZyb20gJy4uLy4uL2kxOG4nXG5cbmNvbnN0IHVzZVN0eWxlcyA9IG1ha2VTdHlsZXMoe1xuICAgIGNvbnRlbnQ6e1xuICAgICAgICBmb250RmFtaWx5OidSb2JvdG8nLFxuICAgICAgICBmb250U2l6ZTonMnJlbSdcbiAgICB9XG59KVxuXG5jb25zdCBCYW5uZXIgPSAoe3QsLi4ucHJvcHN9KSA9PiB7XG4gICAgXG4gICAgY29uc3QgY2xhc3NlcyA9IHVzZVN0eWxlcygpO1xuXG4gICAgY29uc3Qge1xuICAgICAgICBtb2RlXG4gICAgfSA9IHByb3BzO1xuXG4gICAgcmV0dXJuKFxuICAgICAgICA8UmVhY3QuRnJhZ21lbnQ+XG4gICAgICAgICAgICBcbiAgICAgICAgICAgIDxkaXY+XG5cbiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9e2NsYXNzZXMuY29udGVudH0+XG4gICAgICAgICAgICAgICAgICAgIDxUeXBld3JpdGVyXG4gICAgICAgICAgICAgICAgICAgICAgICByb3RhdGVTcGVlZD17ODAwfVxuICAgICAgICAgICAgICAgICAgICAgICAgdHlwZVNwZWVkPXs4MH1cbiAgICAgICAgICAgICAgICAgICAgICAgIGZvbnRTaXplPXsnMnJlbSd9XG4gICAgICAgICAgICAgICAgICAgICAgICBmb250RmFtaWx5PXsnUm9ib3RvJ31cbiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yPXttb2RlPT0nZGF5Jz8nYmxhY2snOid3aGl0ZSd9XG4gICAgICAgICAgICAgICAgICAgICAgICBoZWFkaW5nPXsnVHlwZXdyaXRlcid9XG4gICAgICAgICAgICAgICAgICAgICAgICBkYXRhVGV4dD17W3QoJ2NvbnRleHQxJyldfVxuICAgICAgICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgICAgICAgICA8YnIvPlxuICAgICAgICAgICAgICAgICAgICA8c3BhbiBzdHlsZT17e3RleHREZWNvcmF0aW9uOidsaW5lLXRocm91Z2gnfX0+e3QoJ2NvbnRleHQyJyl9PC9zcGFuPlxuICAgICAgICAgICAgICAgIDwvcD5cblxuICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgICApXG59XG5cbkJhbm5lci5wcm9wVHlwZXMgPSB7XG4gICAgdDogUHJvcFR5cGVzLmZ1bmMuaXNSZXF1aXJlZCxcbn1cblxuZXhwb3J0IGRlZmF1bHQgd2l0aFRyYW5zbGF0aW9uKCdiYW5uZXInKShCYW5uZXIpICAgICAgICJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./component/Public/Banner.js\n");
+
+/***/ }),
+
+/***/ "./component/Public/Drawer.js":
+/*!************************************!*\
+  !*** ./component/Public/Drawer.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../i18n */ \"./i18n.js\");\n/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ \"@material-ui/core/styles\");\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Link */ \"@material-ui/core/Link\");\n/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Grid */ \"@material-ui/core/Grid\");\n/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _material_ui_icons_Close__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Close */ \"@material-ui/icons/Close\");\n/* harmony import */ var _material_ui_icons_Close__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Close__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/IconButton */ \"@material-ui/core/IconButton\");\n/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);\n\nvar _jsxFileName = \"/Users/wangweian/wangweian/weian/component/Public/Drawer.js\";\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n\n\n\n\n\n\n\n\nconst useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__[\"makeStyles\"])({\n  main: {\n    height: '100vh',\n    overflowY: 'hidden',\n    backgroundColor: '#1f1f1f',\n    paddingLeft: '8%',\n    paddingRight: '8%'\n  },\n  title: {\n    fontFamily: 'Bebas Neue ',\n    fontWeight: 400,\n    letterSpacing: '1px',\n    color: '#CACACA',\n    fontSize: '2rem',\n    \"&:hover\": {\n      color: 'white'\n    }\n  },\n  drawerLink: {\n    fontFamily: 'Roboto',\n    textAlign: 'left',\n    fontWeight: 400,\n    letterSpacing: '1px',\n    color: '#CACACA',\n    fontSize: '22px',\n    \"&:hover\": {\n      color: 'white'\n    }\n  },\n  drawerHeader: {\n    marginTop: '3rem'\n  },\n  icon: {\n    fontSize: '1.5rem',\n    color: '#8F8F8F',\n    \"&:hover\": {\n      color: 'white'\n    }\n  }\n});\n\nconst Drawer = (_ref) => {\n  let {\n    t\n  } = _ref,\n      props = _objectWithoutProperties(_ref, [\"t\"]);\n\n  const classes = useStyles();\n  const {\n    handleDrawerClose,\n    lang\n  } = props;\n  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {\n    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"div\", {\n      className: classes.main,\n      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        container: true,\n        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n          item: true,\n          xs: 6,\n          md: 2,\n          style: {\n            marginTop: '0.5rem'\n          },\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default.a, {\n            href: \".\",\n            underline: \"none\",\n            className: classes.title,\n            children: \"WEIAN WANG\"\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 67,\n            columnNumber: 21\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 66,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n          item: true,\n          xs: false,\n          md: 2\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 75,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n          item: true,\n          xs: false,\n          md: 2\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 76,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n          item: true,\n          xs: 2\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 77,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n          item: true,\n          xs: 2\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 78,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n          item: true,\n          xs: 1\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 79,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n          item: true,\n          xs: 1,\n          style: {\n            textAlign: 'right'\n          },\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7___default.a, {\n            style: {\n              backgroundColor: 'transparent'\n            },\n            disableRipple: true,\n            onClick: handleDrawerClose,\n            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_icons_Close__WEBPACK_IMPORTED_MODULE_6___default.a, {\n              className: classes.icon\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 86,\n              columnNumber: 29\n            }, undefined)\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 81,\n            columnNumber: 25\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 80,\n          columnNumber: 21\n        }, undefined)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 65,\n        columnNumber: 17\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        container: true,\n        className: classes.drawerHeader,\n        style: {\n          marginTop: '4rem'\n        },\n        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n          item: true,\n          xs: 4,\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default.a, {\n            href: \"/Work\",\n            underline: \"none\",\n            className: classes.drawerLink,\n            children: t('work')\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 93,\n            columnNumber: 25\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 92,\n          columnNumber: 21\n        }, undefined)\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 91,\n        columnNumber: 17\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        container: true,\n        className: classes.drawerHeader,\n        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n          item: true,\n          xs: 4,\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default.a, {\n            href: \"/Writings\",\n            underline: \"none\",\n            className: classes.drawerLink,\n            children: t('writings')\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 101,\n            columnNumber: 25\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 100,\n          columnNumber: 21\n        }, undefined)\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 99,\n        columnNumber: 17\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n        container: true,\n        className: classes.drawerHeader,\n        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n          item: true,\n          xs: 4,\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4___default.a, {\n            href: lang == 'en' ? './WeianWang_Resume.pdf' : './王偉安_履歷.pdf',\n            target: \"_blank\",\n            rel: \"noopener\",\n            underline: \"none\",\n            className: classes.drawerLink,\n            children: t('resume')\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 110,\n            columnNumber: 25\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 109,\n          columnNumber: 21\n        }, undefined)\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 108,\n        columnNumber: 17\n      }, undefined)]\n    }, void 0, true, {\n      fileName: _jsxFileName,\n      lineNumber: 63,\n      columnNumber: 13\n    }, undefined)\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 61,\n    columnNumber: 9\n  }, undefined);\n};\n\nDrawer.propTypes = {\n  t: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.func.isRequired\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_2__[\"withTranslation\"])('header')(Drawer));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb21wb25lbnQvUHVibGljL0RyYXdlci5qcz9mYjliIl0sIm5hbWVzIjpbInVzZVN0eWxlcyIsIm1ha2VTdHlsZXMiLCJtYWluIiwiaGVpZ2h0Iiwib3ZlcmZsb3dZIiwiYmFja2dyb3VuZENvbG9yIiwicGFkZGluZ0xlZnQiLCJwYWRkaW5nUmlnaHQiLCJ0aXRsZSIsImZvbnRGYW1pbHkiLCJmb250V2VpZ2h0IiwibGV0dGVyU3BhY2luZyIsImNvbG9yIiwiZm9udFNpemUiLCJkcmF3ZXJMaW5rIiwidGV4dEFsaWduIiwiZHJhd2VySGVhZGVyIiwibWFyZ2luVG9wIiwiaWNvbiIsIkRyYXdlciIsInQiLCJwcm9wcyIsImNsYXNzZXMiLCJoYW5kbGVEcmF3ZXJDbG9zZSIsImxhbmciLCJwcm9wVHlwZXMiLCJQcm9wVHlwZXMiLCJmdW5jIiwiaXNSZXF1aXJlZCIsIndpdGhUcmFuc2xhdGlvbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUEsTUFBTUEsU0FBUyxHQUFHQywyRUFBVSxDQUFDO0FBQ3pCQyxNQUFJLEVBQUU7QUFDRkMsVUFBTSxFQUFDLE9BREw7QUFFRkMsYUFBUyxFQUFDLFFBRlI7QUFHRkMsbUJBQWUsRUFBQyxTQUhkO0FBSUZDLGVBQVcsRUFBQyxJQUpWO0FBS0ZDLGdCQUFZLEVBQUM7QUFMWCxHQURtQjtBQVF6QkMsT0FBSyxFQUFFO0FBQ0hDLGNBQVUsRUFBQyxhQURSO0FBRUhDLGNBQVUsRUFBQyxHQUZSO0FBR0hDLGlCQUFhLEVBQUMsS0FIWDtBQUlIQyxTQUFLLEVBQUMsU0FKSDtBQUtIQyxZQUFRLEVBQUMsTUFMTjtBQU1ILGVBQVU7QUFDTkQsV0FBSyxFQUFDO0FBREE7QUFOUCxHQVJrQjtBQWtCekJFLFlBQVUsRUFBRTtBQUNSTCxjQUFVLEVBQUMsUUFESDtBQUVSTSxhQUFTLEVBQUMsTUFGRjtBQUdS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QUFBO0FBQUE7QUFBQTtBQUFBO0FBREo7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURKO0FBQUE7QUFBQTtBQUFBO0FBQUEsbUJBN0NKO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUZKO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFESjtBQWlFSCxDQTFFRDs7QUE0RUFELE1BQU0sQ0FBQ00sU0FBUCxHQUFtQjtBQUNmTCxHQUFDLEVBQUVNLGlEQUFTLENBQUNDLElBQVYsQ0FBZUM7QUFESCxDQUFuQjtBQUllQyw0SEFBZSxDQUFDLFFBQUQsQ0FBZixDQUEwQlYsTUFBMUIsQ0FBZiIsImZpbGUiOiIuL2NvbXBvbmVudC9QdWJsaWMvRHJhd2VyLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0J1xuaW1wb3J0IHsgaTE4biwgd2l0aFRyYW5zbGF0aW9uIH0gZnJvbSAnLi4vLi4vaTE4bidcbmltcG9ydCB7IG1ha2VTdHlsZXMgfSBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9zdHlsZXMnXG5pbXBvcnQgTGluayBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9MaW5rJ1xuaW1wb3J0IEdyaWQgZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvR3JpZCdcbmltcG9ydCBDbG9zZUljb24gZnJvbSAnQG1hdGVyaWFsLXVpL2ljb25zL0Nsb3NlJztcbmltcG9ydCBJY29uQnV0dG9uIGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL0ljb25CdXR0b24nO1xuaW1wb3J0IFByb3BUeXBlcyBmcm9tICdwcm9wLXR5cGVzJ1xuXG5jb25zdCB1c2VTdHlsZXMgPSBtYWtlU3R5bGVzKHtcbiAgICBtYWluOiB7XG4gICAgICAgIGhlaWdodDonMTAwdmgnLFxuICAgICAgICBvdmVyZmxvd1k6J2hpZGRlbicsXG4gICAgICAgIGJhY2tncm91bmRDb2xvcjonIzFmMWYxZicsXG4gICAgICAgIHBhZGRpbmdMZWZ0Oic4JScsIFxuICAgICAgICBwYWRkaW5nUmlnaHQ6JzglJ1xuICAgIH0sXG4gICAgdGl0bGU6IHtcbiAgICAgICAgZm9udEZhbWlseTonQmViYXMgTmV1ZSAnLFxuICAgICAgICBmb250V2VpZ2h0OjQwMCxcbiAgICAgICAgbGV0dGVyU3BhY2luZzonMXB4JyxcbiAgICAgICAgY29sb3I6JyNDQUNBQ0EnLFxuICAgICAgICBmb250U2l6ZTonMnJlbScsXG4gICAgICAgIFwiJjpob3ZlclwiOntcbiAgICAgICAgICAgIGNvbG9yOid3aGl0ZSdcbiAgICAgICAgfVxuICAgIH0sXG4gICAgZHJhd2VyTGluazoge1xuICAgICAgICBmb250RmFtaWx5OidSb2JvdG8nLFxuICAgICAgICB0ZXh0QWxpZ246J2xlZnQnLFxuICAgICAgICBmb250V2VpZ2h0OjQwMCxcbiAgICAgICAgbGV0dGVyU3BhY2luZzonMXB4JyxcbiAgICAgICAgY29sb3I6JyNDQUNBQ0EnLFxuICAgICAgICBmb250U2l6ZTonMjJweCcsXG4gICAgICAgIFwiJjpob3ZlclwiOntcbiAgICAgICAgICAgIGNvbG9yOid3aGl0ZSdcbiAgICAgICAgfVxuICAgIH0sXG4gICAgZHJhd2VySGVhZGVyOiB7XG4gICAgICAgIG1hcmdpblRvcDonM3JlbSdcbiAgICB9LFxuICAgIGljb246IHtcbiAgICAgICAgZm9udFNpemU6JzEuNXJlbScsXG4gICAgICAgIGNvbG9yOicjOEY4RjhGJyxcbiAgICAgICAgXCImOmhvdmVyXCI6e1xuICAgICAgICAgICAgY29sb3I6J3doaXRlJ1xuICAgICAgICB9XG4gICAgfVxufSlcblxuY29uc3QgRHJhd2VyID0gKHt0LC4uLnByb3BzfSkgPT4ge1xuXG4gICAgY29uc3QgY2xhc3NlcyA9IHVzZVN0eWxlcygpO1xuXG4gICAgY29uc3Qge1xuICAgICAgICBoYW5kbGVEcmF3ZXJDbG9zZSxcbiAgICAgICAgbGFuZ1xuICAgIH0gPSBwcm9wcztcbiAgICBcbiAgICByZXR1cm4oXG4gICAgICAgIDxSZWFjdC5GcmFnbWVudD5cblxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMubWFpbn0+XG4gICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgPEdyaWQgY29udGFpbmVyPlxuICAgICAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXs2fSBtZD17Mn0gc3R5bGU9e3ttYXJnaW5Ub3A6JzAuNXJlbSd9fT5cbiAgICAgICAgICAgICAgICAgICAgPExpbmsgXG4gICAgICAgICAgICAgICAgICAgICAgICBocmVmPVwiLlwiXG4gICAgICAgICAgICAgICAgICAgICAgICB1bmRlcmxpbmU9J25vbmUnXG4gICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2NsYXNzZXMudGl0bGV9XG4gICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgIFdFSUFOIFdBTkdcbiAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgICAgICAgICA8L0dyaWQ+XG4gICAgICAgICAgICAgICAgICAgIDxHcmlkIGl0ZW0geHM9e2ZhbHNlfSBtZD17Mn0+PC9HcmlkPlxuICAgICAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXtmYWxzZX0gbWQ9ezJ9PjwvR3JpZD5cbiAgICAgICAgICAgICAgICAgICAgPEdyaWQgaXRlbSB4cz17Mn0+PC9HcmlkPlxuICAgICAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsyfT48L0dyaWQ+XG4gICAgICAgICAgICAgICAgICAgIDxHcmlkIGl0ZW0geHM9ezF9PjwvR3JpZD5cbiAgICAgICAgICAgICAgICAgICAgPEdyaWQgaXRlbSB4cz17MX0gc3R5bGU9e3t0ZXh0QWxpZ246J3JpZ2h0J319PlxuICAgICAgICAgICAgICAgICAgICAgICAgPEljb25CdXR0b25cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdHlsZT17e2JhY2tncm91bmRDb2xvcjogJ3RyYW5zcGFyZW50J319XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgZGlzYWJsZVJpcHBsZT17dHJ1ZX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXtoYW5kbGVEcmF3ZXJDbG9zZX1cbiAgICAgICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Q2xvc2VJY29uIGNsYXNzTmFtZT17Y2xhc3Nlcy5pY29ufS8+XG4gICAgICAgICAgICAgICAgICAgICAgICA8L0ljb25CdXR0b24+XG4gICAgICAgICAgICAgICAgICAgIDwvR3JpZD5cbiAgICAgICAgICAgICAgICA8L0dyaWQ+XG5cbiAgICAgICAgICAgICAgICA8R3JpZCBjb250YWluZXIgY2xhc3NOYW1lPXtjbGFzc2VzLmRyYXdlckhlYWRlcn0gc3R5bGU9e3ttYXJnaW5Ub3A6JzRyZW0nfX0+XG4gICAgICAgICAgICAgICAgICAgIDxHcmlkIGl0ZW0geHM9ezR9PlxuICAgICAgICAgICAgICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9Xb3JrXCIgdW5kZXJsaW5lPSdub25lJyBjbGFzc05hbWU9e2NsYXNzZXMuZHJhd2VyTGlua30+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAge3QoJ3dvcmsnKX1cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgICAgICAgICAgPC9HcmlkPlxuICAgICAgICAgICAgICAgIDwvR3JpZD4gICAgXG5cbiAgICAgICAgICAgICAgICA8R3JpZCBjb250YWluZXIgY2xhc3NOYW1lPXtjbGFzc2VzLmRyYXdlckhlYWRlcn0+XG4gICAgICAgICAgICAgICAgICAgIDxHcmlkIGl0ZW0geHM9ezR9PlxuICAgICAgICAgICAgICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9Xcml0aW5nc1wiIHVuZGVybGluZT0nbm9uZScgY2xhc3NOYW1lPXtjbGFzc2VzLmRyYXdlckxpbmt9PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIHt0KCd3cml0aW5ncycpfVxuICAgICAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICA8L0dyaWQ+XG4gICAgICAgICAgICAgICAgPC9HcmlkPlxuXG4gICAgICAgICAgICAgICAgPEdyaWQgY29udGFpbmVyIGNsYXNzTmFtZT17Y2xhc3Nlcy5kcmF3ZXJIZWFkZXJ9PlxuICAgICAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXs0fT5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxMaW5rIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhyZWY9e2xhbmc9PSdlbic/Jy4vV2VpYW5XYW5nX1Jlc3VtZS5wZGYnOicuL+eOi+WBieWuiV/lsaXmrbcucGRmJ31cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0YXJnZXQ9J19ibGFuaycgcmVsPSdub29wZW5lcicgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgdW5kZXJsaW5lPSdub25lJyBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2NsYXNzZXMuZHJhd2VyTGlua31cbiAgICAgICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB7dCgncmVzdW1lJyl9XG4gICAgICAgICAgICAgICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgICAgICAgICAgIDwvR3JpZD5cbiAgICAgICAgICAgICAgICA8L0dyaWQ+ICAgIFxuXG4gICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8L1JlYWN0LkZyYWdtZW50PlxuICAgIClcbn1cblxuRHJhd2VyLnByb3BUeXBlcyA9IHtcbiAgICB0OiBQcm9wVHlwZXMuZnVuYy5pc1JlcXVpcmVkLFxufVxuXG5leHBvcnQgZGVmYXVsdCB3aXRoVHJhbnNsYXRpb24oJ2hlYWRlcicpKERyYXdlcikiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./component/Public/Drawer.js\n");
+
+/***/ }),
+
+/***/ "./component/Public/Footer.js":
+/*!************************************!*\
+  !*** ./component/Public/Footer.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Grid */ \"@material-ui/core/Grid\");\n/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../i18n */ \"./i18n.js\");\n/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _css_public_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../css/public.module.css */ \"./css/public.module.css\");\n/* harmony import */ var _css_public_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_css_public_module_css__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Link */ \"@material-ui/core/Link\");\n/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/styles */ \"@material-ui/core/styles\");\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__);\n\nvar _jsxFileName = \"/Users/wangweian/wangweian/weian/component/Public/Footer.js\";\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n\n\n\n\n\n\n\nconst useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__[\"makeStyles\"])({\n  link: {\n    color: 'black',\n    \"&:hover\": {\n      color: '#919191'\n    }\n  },\n  linkNight: {\n    color: 'white',\n    \"&:hover\": {\n      color: '#BDBDBD'\n    }\n  }\n});\n\nconst Footer = (_ref) => {\n  let {\n    t\n  } = _ref,\n      props = _objectWithoutProperties(_ref, [\"t\"]);\n\n  const {\n    mode\n  } = props;\n  const classes = useStyles();\n  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {\n    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {\n      container: true,\n      className: mode == 'day' ? _css_public_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.footerBlock : _css_public_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.footerBlockNight,\n      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {\n        item: true,\n        xs: 12,\n        sm: 7,\n        md: 4,\n        style: {\n          marginBottom: '2rem',\n          fontSize: '1.2rem'\n        },\n        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"span\", {\n          style: {\n            fontWeight: 'bold'\n          },\n          children: t('contactTitle')\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 37,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 38,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 39,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"span\", {\n          children: \"+8869 12 597 109\"\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 40,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 41,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 42,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"span\", {\n          children: \"weianofsteel@gmail.com\"\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 43,\n          columnNumber: 21\n        }, undefined)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 36,\n        columnNumber: 17\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {\n        item: true,\n        xs: 12,\n        sm: 5,\n        md: 4,\n        style: {\n          marginBottom: '2rem'\n        },\n        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"span\", {\n          style: {\n            fontWeight: 'bold'\n          },\n          children: t('followTitle')\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 46,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 47,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 48,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {\n          href: \"https://weianofsteel.medium.com/\",\n          target: \"_blank\",\n          rel: \"noopener\",\n          underline: \"none\",\n          className: mode == 'day' ? classes.link : classes.linkNight,\n          children: \"Medium\"\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 49,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 58,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 59,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {\n          href: \"https://github.com/weianofsteel\",\n          target: \"_blank\",\n          rel: \"noopener\",\n          underline: \"none\",\n          className: mode == 'day' ? classes.link : classes.linkNight,\n          children: \"Github\"\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 60,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 69,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 70,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {\n          href: \"https://www.linkedin.com/in/weian-wang/\",\n          target: \"_blank\",\n          rel: \"noopener\",\n          underline: \"none\",\n          className: mode == 'day' ? classes.link : classes.linkNight,\n          children: \"Linkedin\"\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 71,\n          columnNumber: 21\n        }, undefined)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 45,\n        columnNumber: 17\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {\n        item: true,\n        xs: 12,\n        md: 4,\n        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"span\", {\n          children: t('copyright')\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 82,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 83,\n          columnNumber: 21\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"span\", {\n          children: t('copyrightDescription')\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 84,\n          columnNumber: 21\n        }, undefined)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 81,\n        columnNumber: 17\n      }, undefined)]\n    }, void 0, true, {\n      fileName: _jsxFileName,\n      lineNumber: 35,\n      columnNumber: 13\n    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"br\", {}, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 87,\n      columnNumber: 13\n    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"div\", {\n      children: \"\\xA0\"\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 88,\n      columnNumber: 13\n    }, undefined)]\n  }, void 0, true, {\n    fileName: _jsxFileName,\n    lineNumber: 33,\n    columnNumber: 9\n  }, undefined);\n};\n\nFooter.propTypes = {\n  t: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_3__[\"withTranslation\"])('footer')(Footer));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb21wb25lbnQvUHVibGljL0Zvb3Rlci5qcz85YmMyIl0sIm5hbWVzIjpbInVzZVN0eWxlcyIsIm1ha2VTdHlsZXMiLCJsaW5rIiwiY29sb3IiLCJsaW5rTmlnaHQiLCJGb290ZXIiLCJ0IiwicHJvcHMiLCJtb2RlIiwiY2xhc3NlcyIsInN0eWxlcyIsImZvb3RlckJsb2NrIiwiZm9vdGVyQmxvY2tOaWdodCIsIm1hcmdpbkJvdHRvbSIsImZvbnRTaXplIiwiZm9udFdlaWdodCIsInByb3BUeXBlcyIsIlByb3BUeXBlcyIsImZ1bmMiLCJpc1JlcXVpcmVkIiwid2l0aFRyYW5zbGF0aW9uIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBLE1BQU1BLFNBQVMsR0FBR0MsMkVBQVUsQ0FBQztBQUN6QkMsTUFBSSxFQUFFO0FBQ0ZDLFNBQUssRUFBQyxPQURKO0FBRUYsZUFBVTtBQUNOQSxXQUFLLEVBQUM7QUFEQTtBQUZSLEdBRG1CO0FBT3pCQyxXQUFTLEVBQUM7QUFDTkQsU0FBSyxFQUFDLE9BREE7QUFFTixlQUFVO0FBQ05BLFdBQUssRUFBQztBQURBO0FBRko7QUFQZSxDQUFELENBQTVCOztBQWVBLE1BQU1FLE1BQU0sR0FBRyxVQUFtQjtBQUFBLE1BQWxCO0FBQUNDO0FBQUQsR0FBa0I7QUFBQSxNQUFYQyxLQUFXOztBQUU5QixRQUFNO0FBQ0ZDO0FBREUsTUFFREQsS0FGTDtBQUlBLFFBQU1FLE9BQU8sR0FBR1QsU0FBUyxFQUF6QjtBQUVBLHNCQUNJLHFFQUFDLDRDQUFELENBQU8sUUFBUDtBQUFBLDRCQUVJLHFFQUFDLDZEQUFEO0FBQU0sZUFBUyxNQUFmO0FBQWdCLGVBQVMsRUFBRVEsSUFBSSxJQUFFLEtBQU4sR0FBWUUsNkRBQU0sQ0FBQ0MsV0FBbkIsR0FBK0JELDZEQUFNLENBQUNFLGdCQUFqRTtBQUFBLDhCQUNJLHFFQUFDLDZE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STtBQUFBLG9CQUFPQSxDQUFDLENBQUMsc0JBQUQ7QUFBUjtBQUFBO0FBQUE7QUFBQTtBQUFBLHFCQUhKO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxtQkE5Q0o7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGlCQUZKLGVBc0RJO0FBQUE7QUFBQTtBQUFBO0FBQUEsaUJBdERKLGVBdURJO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGlCQXZESjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFESjtBQThESCxDQXRFRDs7QUF3RUFELE1BQU0sQ0FBQ1csU0FBUCxHQUFtQjtBQUNmVixHQUFDLEVBQUVXLGlEQUFTLENBQUNDLElBQVYsQ0FBZUM7QUFESCxDQUFuQjtBQUtlQyw0SEFBZSxDQUFDLFFBQUQsQ0FBZixDQUEwQmYsTUFBMUIsQ0FBZiIsImZpbGUiOiIuL2NvbXBvbmVudC9QdWJsaWMvRm9vdGVyLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0J1xuaW1wb3J0IEdyaWQgZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvR3JpZCdcbmltcG9ydCB7IHdpdGhUcmFuc2xhdGlvbiB9IGZyb20gJy4uLy4uL2kxOG4nXG5pbXBvcnQgUHJvcFR5cGVzIGZyb20gJ3Byb3AtdHlwZXMnXG5pbXBvcnQgc3R5bGVzIGZyb20gJy4uLy4uL2Nzcy9wdWJsaWMubW9kdWxlLmNzcydcbmltcG9ydCBMaW5rIGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL0xpbmsnO1xuaW1wb3J0IHsgbWFrZVN0eWxlcyB9IGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL3N0eWxlcyc7XG5cbmNvbnN0IHVzZVN0eWxlcyA9IG1ha2VTdHlsZXMoe1xuICAgIGxpbms6IHtcbiAgICAgICAgY29sb3I6J2JsYWNrJyxcbiAgICAgICAgXCImOmhvdmVyXCI6e1xuICAgICAgICAgICAgY29sb3I6JyM5MTkxOTEnXG4gICAgICAgIH1cbiAgICB9LFxuICAgIGxpbmtOaWdodDp7XG4gICAgICAgIGNvbG9yOid3aGl0ZScsXG4gICAgICAgIFwiJjpob3ZlclwiOntcbiAgICAgICAgICAgIGNvbG9yOicjQkRCREJEJ1xuICAgICAgICB9XG4gICAgfVxufSlcblxuY29uc3QgRm9vdGVyID0gKHt0LCAuLi5wcm9wc30pID0+IHtcblxuICAgIGNvbnN0IHtcbiAgICAgICAgbW9kZVxuICAgIH0gID0gcHJvcHM7XG5cbiAgICBjb25zdCBjbGFzc2VzID0gdXNlU3R5bGVzKCk7XG5cbiAgICByZXR1cm4oXG4gICAgICAgIDxSZWFjdC5GcmFnbWVudD5cbiAgICAgICAgICAgIFxuICAgICAgICAgICAgPEdyaWQgY29udGFpbmVyIGNsYXNzTmFtZT17bW9kZT09J2RheSc/c3R5bGVzLmZvb3RlckJsb2NrOnN0eWxlcy5mb290ZXJCbG9ja05pZ2h0fT5cbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsxMn0gc209ezd9IG1kPXs0fSBzdHlsZT17e21hcmdpbkJvdHRvbTonMnJlbScsIGZvbnRTaXplOicxLjJyZW0nfX0+XG4gICAgICAgICAgICAgICAgICAgIDxzcGFuIHN0eWxlPXt7Zm9udFdlaWdodDonYm9sZCd9fT57dCgnY29udGFjdFRpdGxlJyl9PC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICA8YnIvPlxuICAgICAgICAgICAgICAgICAgICA8YnIvPlxuICAgICAgICAgICAgICAgICAgICA8c3Bhbj4rODg2OSAxMiA1OTcgMTA5PC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICA8YnIvPlxuICAgICAgICAgICAgICAgICAgICA8YnIvPlxuICAgICAgICAgICAgICAgICAgICA8c3Bhbj53ZWlhbm9mc3RlZWxAZ21haWwuY29tPC9zcGFuPlxuICAgICAgICAgICAgICAgIDwvR3JpZD5cbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsxMn0gc209ezV9IG1kPXs0fSBzdHlsZT17e21hcmdpbkJvdHRvbTonMnJlbSd9fT5cbiAgICAgICAgICAgICAgICAgICAgPHNwYW4gc3R5bGU9e3tmb250V2VpZ2h0Oidib2xkJ319Pnt0KCdmb2xsb3dUaXRsZScpfTwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgPGJyLz5cbiAgICAgICAgICAgICAgICAgICAgPGJyLz5cbiAgICAgICAgICAgICAgICAgICAgPExpbmtcbiAgICAgICAgICAgICAgICAgICAgICAgIGhyZWY9J2h0dHBzOi8vd2VpYW5vZnN0ZWVsLm1lZGl1bS5jb20vJ1xuICAgICAgICAgICAgICAgICAgICAgICAgdGFyZ2V0PSdfYmxhbmsnXG4gICAgICAgICAgICAgICAgICAgICAgICByZWw9J25vb3BlbmVyJ1xuICAgICAgICAgICAgICAgICAgICAgICAgdW5kZXJsaW5lPSdub25lJ1xuICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXttb2RlPT0nZGF5Jz9jbGFzc2VzLmxpbms6Y2xhc3Nlcy5saW5rTmlnaHR9XG4gICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgIE1lZGl1bVxuICAgICAgICAgICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgICAgICAgICAgIDxici8+XG4gICAgICAgICAgICAgICAgICAgIDxici8+XG4gICAgICAgICAgICAgICAgICAgIDxMaW5rXG4gICAgICAgICAgICAgICAgICAgICAgICBocmVmPSdodHRwczovL2dpdGh1Yi5jb20vd2VpYW5vZnN0ZWVsJ1xuICAgICAgICAgICAgICAgICAgICAgICAgdGFyZ2V0PSdfYmxhbmsnXG4gICAgICAgICAgICAgICAgICAgICAgICByZWw9J25vb3BlbmVyJ1xuICAgICAgICAgICAgICAgICAgICAgICAgdW5kZXJsaW5lPSdub25lJ1xuICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXttb2RlPT0nZGF5Jz9jbGFzc2VzLmxpbms6Y2xhc3Nlcy5saW5rTmlnaHR9XG4gICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgIEdpdGh1YlxuICAgICAgICAgICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgICAgICAgICAgIDxici8+XG4gICAgICAgICAgICAgICAgICAgIDxici8+XG4gICAgICAgICAgICAgICAgICAgIDxMaW5rXG4gICAgICAgICAgICAgICAgICAgICAgICBocmVmPSdodHRwczovL3d3dy5saW5rZWRpbi5jb20vaW4vd2VpYW4td2FuZy8nXG4gICAgICAgICAgICAgICAgICAgICAgICB0YXJnZXQ9J19ibGFuaydcbiAgICAgICAgICAgICAgICAgICAgICAgIHJlbD0nbm9vcGVuZXInXG4gICAgICAgICAgICAgICAgICAgICAgICB1bmRlcmxpbmU9J25vbmUnXG4gICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e21vZGU9PSdkYXknP2NsYXNzZXMubGluazpjbGFzc2VzLmxpbmtOaWdodH1cbiAgICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICAgICAgTGlua2VkaW5cbiAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgICAgIDwvR3JpZD5cbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsxMn0gbWQ9ezR9PlxuICAgICAgICAgICAgICAgICAgICA8c3Bhbj57dCgnY29weXJpZ2h0Jyl9PC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICA8YnIvPlxuICAgICAgICAgICAgICAgICAgICA8c3Bhbj57dCgnY29weXJpZ2h0RGVzY3JpcHRpb24nKX08L3NwYW4+XG4gICAgICAgICAgICAgICAgPC9HcmlkPlxuICAgICAgICAgICAgPC9HcmlkPlxuICAgICAgICAgICAgPGJyLz5cbiAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgJm5ic3A7XG4gICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8L1JlYWN0LkZyYWdtZW50PlxuICAgIClcbn1cblxuRm9vdGVyLnByb3BUeXBlcyA9IHtcbiAgICB0OiBQcm9wVHlwZXMuZnVuYy5pc1JlcXVpcmVkLFxufVxuICBcbiAgXG5leHBvcnQgZGVmYXVsdCB3aXRoVHJhbnNsYXRpb24oJ2Zvb3RlcicpKEZvb3RlcilcblxuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./component/Public/Footer.js\n");
+
+/***/ }),
+
+/***/ "./component/Public/Header.js":
+/*!************************************!*\
+  !*** ./component/Public/Header.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../i18n */ \"./i18n.js\");\n/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ \"@material-ui/core/styles\");\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Grid */ \"@material-ui/core/Grid\");\n/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _css_Public_Header_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../css/Public/Header.module.css */ \"./css/Public/Header.module.css\");\n/* harmony import */ var _css_Public_Header_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_css_Public_Header_module_css__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Link */ \"@material-ui/core/Link\");\n/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/router */ \"next/router\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/Menu */ \"@material-ui/icons/Menu\");\n/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var _material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Hidden */ \"@material-ui/core/Hidden\");\n/* harmony import */ var _material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/IconButton */ \"@material-ui/core/IconButton\");\n/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var _PublicComponent__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./PublicComponent */ \"./component/Public/PublicComponent.js\");\n/* harmony import */ var _material_ui_icons_Brightness2Outlined__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/Brightness2Outlined */ \"@material-ui/icons/Brightness2Outlined\");\n/* harmony import */ var _material_ui_icons_Brightness2Outlined__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Brightness2Outlined__WEBPACK_IMPORTED_MODULE_13__);\n/* harmony import */ var _material_ui_icons_WbSunnyOutlined__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/WbSunnyOutlined */ \"@material-ui/icons/WbSunnyOutlined\");\n/* harmony import */ var _material_ui_icons_WbSunnyOutlined__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_WbSunnyOutlined__WEBPACK_IMPORTED_MODULE_14__);\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-redux */ \"react-redux\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_15__);\n/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../store */ \"./store.js\");\n\nvar _jsxFileName = \"/Users/wangweian/wangweian/weian/component/Public/Header.js\";\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nconst useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__[\"makeStyles\"])({\n  title: {\n    fontFamily: 'Bebas Neue ',\n    fontWeight: 400,\n    letterSpacing: '1px',\n    fontSize: '1.7rem'\n  },\n  link: {\n    fontFamily: 'Roboto',\n    fontWeight: 400,\n    letterSpacing: '1px',\n    marginLeft: '32px',\n    color: '#8F8F8F',\n    fontSize: '1.1rem',\n    \"&:hover\": {\n      color: 'black'\n    }\n  },\n  nightLink: {\n    fontFamily: 'Roboto',\n    fontWeight: 400,\n    letterSpacing: '1px',\n    marginLeft: '32px',\n    color: '#FFFFFF',\n    fontSize: '1.1rem',\n    \"&:hover\": {\n      color: '#BDBDBD'\n    }\n  },\n  linkAnchor: {\n    fontFamily: 'Roboto',\n    fontWeight: 400,\n    letterSpacing: '1px',\n    marginLeft: '32px',\n    color: 'black',\n    fontSize: '1.1rem'\n  },\n  nightLinkAnchor: {\n    fontFamily: 'Roboto',\n    fontWeight: 400,\n    letterSpacing: '1px',\n    marginLeft: '32px',\n    color: '#BDBDBD',\n    fontSize: '1.1rem'\n  },\n  icon: {\n    fontSize: '1.5rem',\n    color: '#8F8F8F',\n    \"&:hover\": {\n      color: '#1F1F1F'\n    }\n  },\n  nightIcon: {\n    fontSize: '1.5rem',\n    color: '#FFFFFF',\n    \"&:hover\": {\n      color: '#BDBDBD'\n    }\n  },\n  formControl: {\n    margin: '0.5rem',\n    width: '6rem'\n  },\n  inputLabel: {\n    fontSize: \"17px\",\n    fontFamily: \"微軟正黑體\",\n    display: \"flex\",\n    flexDirection: \"row-Reverse\"\n  }\n});\n\nconst Header = (_ref) => {\n  let {\n    t\n  } = _ref,\n      props = _objectWithoutProperties(_ref, [\"t\"]);\n\n  const classes = useStyles();\n  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_8__[\"useRouter\"])(); // const [ language, setLanguage ] = React.useState('en');\n\n  const [open, setOpen] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(false);\n\n  const handleChange = event => {\n    // setLanguage(event.target.value);\n    handleLangToRedux(event.target.value);\n    _i18n__WEBPACK_IMPORTED_MODULE_2__[\"i18n\"].changeLanguage(event.target.value);\n  };\n\n  const handleLangToRedux = value => {\n    if (value == 'en') {\n      dispatch(Object(_store__WEBPACK_IMPORTED_MODULE_16__[\"toEn\"])());\n    } else if (value == 'zhHant') {\n      dispatch(Object(_store__WEBPACK_IMPORTED_MODULE_16__[\"toZhHant\"])());\n    }\n  };\n\n  const handleClose = () => {\n    setOpen(false);\n  };\n\n  const handleOpen = () => {\n    setOpen(true);\n  };\n\n  const dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_15__[\"useDispatch\"])();\n  const {\n    handleDrawerOpen,\n    mode,\n    lang\n  } = props;\n  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {\n    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n      container: true,\n      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n        item: true,\n        xs: 6,\n        md: 2,\n        style: {\n          marginTop: '0.5rem'\n        },\n        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_7___default.a, {\n          href: \".\",\n          underline: \"none\",\n          className: classes.title,\n          style: {\n            color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'\n          },\n          children: \"WEIAN WANG\"\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 136,\n          columnNumber: 19\n        }, undefined)\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 135,\n        columnNumber: 15\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n        item: true,\n        xs: false,\n        md: 2\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 145,\n        columnNumber: 15\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n        item: true,\n        xs: false,\n        md: 2,\n        lg: 2\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 146,\n        columnNumber: 15\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_10___default.a, {\n        mdDown: true,\n        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n          item: true,\n          xs: 2,\n          style: {\n            marginTop: '0.3rem',\n            paddingLeft: '6%'\n          },\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_PublicComponent__WEBPACK_IMPORTED_MODULE_12__[\"Select2\"], {\n            name: \"lang\",\n            value: lang,\n            onChange: handleChange,\n            items: [{\n              value: 'en',\n              label: \"English\"\n            }, {\n              value: 'zhHant',\n              label: \"中文\"\n            }],\n            mode: mode\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 149,\n            columnNumber: 19\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 148,\n          columnNumber: 17\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n          item: true,\n          xs: 1,\n          style: {\n            marginTop: '0.3rem',\n            textAlign: 'center'\n          },\n          children: mode === 'day' ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_11___default.a, {\n            style: {\n              backgroundColor: 'transparent',\n              color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'\n            },\n            disableRipple: true,\n            onClick: () => dispatch(Object(_store__WEBPACK_IMPORTED_MODULE_16__[\"toNight\"])()),\n            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_icons_Brightness2Outlined__WEBPACK_IMPORTED_MODULE_13___default.a, {\n              fontSize: \"large\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 167,\n              columnNumber: 25\n            }, undefined)\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 162,\n            columnNumber: 21\n          }, undefined) : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_11___default.a, {\n            style: {\n              backgroundColor: 'transparent',\n              color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'\n            },\n            disableRipple: true,\n            onClick: () => dispatch(Object(_store__WEBPACK_IMPORTED_MODULE_16__[\"toDay\"])()),\n            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_icons_WbSunnyOutlined__WEBPACK_IMPORTED_MODULE_14___default.a, {\n              fontSize: \"large\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 174,\n              columnNumber: 23\n            }, undefined)\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 169,\n            columnNumber: 21\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 160,\n          columnNumber: 17\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n          item: true,\n          xs: 1,\n          style: {\n            marginTop: '1.5rem',\n            marginLeft: lang == 'en' ? '-1rem' : ''\n          },\n          children: [mode === 'day' && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_7___default.a, {\n            href: \"./Work\",\n            underline: \"none\",\n            className: router.pathname == '/Work' ? classes.linkAnchor : classes.link,\n            style: {\n              fontWeight: lang == 'en' ? 'normal' : 'bold'\n            },\n            children: t('work')\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 180,\n            columnNumber: 21\n          }, undefined), mode === 'night' && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_7___default.a, {\n            href: \"./Work\",\n            underline: \"none\",\n            className: router.pathname == '/Work' ? classes.nightLinkAnchor : classes.nightLink,\n            style: {\n              fontWeight: lang == 'en' ? 'normal' : 'bold'\n            },\n            children: t('work')\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 190,\n            columnNumber: 21\n          }, undefined)]\n        }, void 0, true, {\n          fileName: _jsxFileName,\n          lineNumber: 178,\n          columnNumber: 17\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n          item: true,\n          xs: 1,\n          style: {\n            marginTop: '1.5rem',\n            marginLeft: lang == 'en' ? '-1rem' : ''\n          },\n          children: [mode === 'day' && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_7___default.a, {\n            href: \"./Writings\",\n            underline: \"none\",\n            className: router.pathname == '/Writings' ? classes.linkAnchor : classes.link,\n            style: {\n              fontWeight: lang == 'en' ? 'normal' : 'bold'\n            },\n            children: t('writings')\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 202,\n            columnNumber: 21\n          }, undefined), mode === 'night' && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_7___default.a, {\n            href: \"./Writings\",\n            underline: \"none\",\n            className: router.pathname == '/Writings' ? classes.nightLinkAnchor : classes.nightLink,\n            style: {\n              fontWeight: lang == 'en' ? 'normal' : 'bold'\n            },\n            children: t('writings')\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 212,\n            columnNumber: 21\n          }, undefined)]\n        }, void 0, true, {\n          fileName: _jsxFileName,\n          lineNumber: 200,\n          columnNumber: 17\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n          item: true,\n          xs: 1,\n          style: {\n            marginTop: '1.5rem',\n            marginLeft: lang == 'en' ? '0.8rem' : ''\n          },\n          children: [mode === 'day' && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_7___default.a, {\n            href: lang == 'en' ? './WeianWang_Resume.pdf' : './王偉安_履歷.pdf',\n            target: \"_blank\",\n            rel: \"noopener\",\n            underline: \"none\",\n            className: router.pathname == '/Resume' ? classes.linkAnchor : classes.link,\n            style: {\n              fontWeight: lang == 'en' ? 'normal' : 'bold'\n            },\n            children: t('resume')\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 226,\n            columnNumber: 23\n          }, undefined), mode === 'night' && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_7___default.a, {\n            href: lang == 'en' ? './WeianWang_Resume.pdf' : './王偉安_履歷.pdf',\n            target: \"_blank\",\n            rel: \"noopener\",\n            underline: \"none\",\n            className: router.pathname == '/Resume' ? classes.nightLinkAnchor : classes.nightLink,\n            style: {\n              fontWeight: lang == 'en' ? 'normal' : 'bold'\n            },\n            children: t('resume')\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 239,\n            columnNumber: 23\n          }, undefined)]\n        }, void 0, true, {\n          fileName: _jsxFileName,\n          lineNumber: 223,\n          columnNumber: 17\n        }, undefined)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 147,\n        columnNumber: 15\n      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_10___default.a, {\n        lgUp: true,\n        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n          item: true,\n          xs: 1,\n          sm: 2\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 254,\n          columnNumber: 17\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n          item: true,\n          xs: 1,\n          children: mode === 'day' ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_11___default.a, {\n            style: {\n              backgroundColor: 'transparent',\n              color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'\n            },\n            disableRipple: true,\n            onClick: () => dispatch(Object(_store__WEBPACK_IMPORTED_MODULE_16__[\"toNight\"])()),\n            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_icons_Brightness2Outlined__WEBPACK_IMPORTED_MODULE_13___default.a, {\n              fontSize: \"inherit\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 262,\n              columnNumber: 25\n            }, undefined)\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 257,\n            columnNumber: 21\n          }, undefined) : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_11___default.a, {\n            style: {\n              backgroundColor: 'transparent',\n              color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'\n            },\n            disableRipple: true,\n            onClick: () => dispatch(Object(_store__WEBPACK_IMPORTED_MODULE_16__[\"toDay\"])()),\n            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_icons_WbSunnyOutlined__WEBPACK_IMPORTED_MODULE_14___default.a, {\n              fontSize: \"inherit\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 269,\n              columnNumber: 23\n            }, undefined)\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 264,\n            columnNumber: 21\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 255,\n          columnNumber: 17\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_10___default.a, {\n          smUp: true,\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n            item: true,\n            xs: 1\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 274,\n            columnNumber: 19\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 273,\n          columnNumber: 17\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n          item: true,\n          xs: 1,\n          style: {\n            marginTop: '0.5rem',\n            textAlign: 'center'\n          },\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_PublicComponent__WEBPACK_IMPORTED_MODULE_12__[\"Select\"], {\n            name: \"lang\",\n            value: lang,\n            onChange: handleChange,\n            open: open,\n            onClose: handleClose,\n            onOpen: handleOpen,\n            items: [{\n              value: 'en',\n              label: \"English\"\n            }, {\n              value: 'zhHant',\n              label: \"中文\"\n            }],\n            mode: mode\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 277,\n            columnNumber: 21\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 276,\n          columnNumber: 17\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n          item: true,\n          xs: 1\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 291,\n          columnNumber: 17\n        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {\n          item: true,\n          xs: 1,\n          style: {\n            textAlign: 'right'\n          },\n          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_11___default.a, {\n            style: {\n              backgroundColor: 'transparent'\n            },\n            disableRipple: true,\n            onClick: handleDrawerOpen,\n            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_9___default.a, {\n              className: mode == 'day' ? classes.icon : classes.nightIcon\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 298,\n              columnNumber: 21\n            }, undefined)\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 293,\n            columnNumber: 19\n          }, undefined)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 292,\n          columnNumber: 17\n        }, undefined)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 253,\n        columnNumber: 15\n      }, undefined)]\n    }, void 0, true, {\n      fileName: _jsxFileName,\n      lineNumber: 133,\n      columnNumber: 13\n    }, undefined)\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 131,\n    columnNumber: 9\n  }, undefined);\n};\n\nHeader.propTypes = {\n  t: prop_types__WEBPACK_IMPORTED_MODULE_5___default.a.func.isRequired\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_2__[\"withTranslation\"])('header')(Header));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb21wb25lbnQvUHVibGljL0hlYWRlci5qcz85Mzk1Il0sIm5hbWVzIjpbInVzZVN0eWxlcyIsIm1ha2VTdHlsZXMiLCJ0aXRsZSIsImZvbnRGYW1pbHkiLCJmb250V2VpZ2h0IiwibGV0dGVyU3BhY2luZyIsImZvbnRTaXplIiwibGluayIsIm1hcmdpbkxlZnQiLCJjb2xvciIsIm5pZ2h0TGluayIsImxpbmtBbmNob3IiLCJuaWdodExpbmtBbmNob3IiLCJpY29uIiwibmlnaHRJY29uIiwiZm9ybUNvbnRyb2wiLCJtYXJnaW4iLCJ3aWR0aCIsImlucHV0TGFiZWwiLCJkaXNwbGF5IiwiZmxleERpcmVjdGlvbiIsIkhlYWRlciIsInQiLCJwcm9wcyIsImNsYXNzZXMiLCJyb3V0ZXIiLCJ1c2VSb3V0ZXIiLCJvcGVuIiwic2V0T3BlbiIsIlJlYWN0IiwidXNlU3RhdGUiLCJoYW5kbGVDaGFuZ2UiLCJldmVudCIsImhhbmRsZUxhbmdUb1JlZHV4IiwidGFyZ2V0IiwidmFsdWUiLCJpMThuIiwiY2hhbmdlTGFuZ3VhZ2UiLCJkaXNwYXRjaCIsInRvRW4iLCJ0b1poSGFudCIsImhhbmRsZUNsb3NlIiwiaGFuZGxlT3BlbiIsInVzZURpc3BhdGNoIiwiaGFuZGxlRHJhd2VyT3BlbiIsIm1vZGUiLCJsYW5nIiwibWFyZ2luVG9wIiwicGFkZGluZ0xlZnQiLCJsYWJlbCIsInRleHRBbGlnbiIsImJhY2tncm91bmRDb2xvciIsInRvTmlnaHQiLCJ0b0RheSIsInBhdGhuYW1lIiwicHJvcFR5cGVzIiwiUHJvcFR5cGVzIiwiZnVuYyIsImlzUmVxdWlyZWQiLCJ3aXRoVHJhbnNsYXRpb24iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBLE1BQU1B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QUFBQ0sscUJBQVMsRUFBQztBQUFYLFdBQXpCO0FBQUEsaUNBQ0UscUVBQUMsb0VBQUQ7QUFDRSxpQkFBSyxFQUFFO0FBQUNDLDZCQUFlLEVBQUU7QUFBbEIsYUFEVDtBQUVFLHlCQUFhLEVBQUUsSUFGakI7QUFHRSxtQkFBTyxFQUFFUCxnQkFIWDtBQUFBLG1DQUtFLHFFQUFDLDhEQUFEO0FBQVUsdUJBQVMsRUFBRUMsSUFBSSxJQUFFLEtBQU4sR0FBWXJCLE9BQU8sQ0FBQ1gsSUFBcEIsR0FBeUJXLE9BQU8sQ0FBQ1Y7QUFBdEQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUxGO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFERjtBQUFBO0FBQUE7QUFBQTtBQUFBLHFCQXZDRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsbUJBeEhGO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUZKO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFESjtBQXFMSCxDQTlORDs7QUFnT0FPLE1BQU0sQ0FBQ2tDLFNBQVAsR0FBbUI7QUFDakJqQyxHQUFDLEVBQUVrQyxpREFBUyxDQUFDQyxJQUFWLENBQWVDO0FBREQsQ0FBbkI7QUFLZUMsNEhBQWUsQ0FBQyxRQUFELENBQWYsQ0FBMEJ0QyxNQUExQixDQUFmIiwiZmlsZSI6Ii4vY29tcG9uZW50L1B1YmxpYy9IZWFkZXIuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgaTE4biwgd2l0aFRyYW5zbGF0aW9uIH0gZnJvbSAnLi4vLi4vaTE4bic7XG5pbXBvcnQgeyBtYWtlU3R5bGVzIH0gZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvc3R5bGVzJztcbmltcG9ydCBHcmlkIGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL0dyaWQnO1xuaW1wb3J0IFByb3BUeXBlcyBmcm9tICdwcm9wLXR5cGVzJztcbmltcG9ydCBzdHlsZXMgZnJvbSAnLi4vLi4vY3NzL1B1YmxpYy9IZWFkZXIubW9kdWxlLmNzcyc7XG5pbXBvcnQgTGluayBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9MaW5rJztcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gJ25leHQvcm91dGVyJztcbmltcG9ydCBNZW51SWNvbiBmcm9tICdAbWF0ZXJpYWwtdWkvaWNvbnMvTWVudSc7XG5pbXBvcnQgSGlkZGVuIGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL0hpZGRlbic7XG5pbXBvcnQgSWNvbkJ1dHRvbiBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9JY29uQnV0dG9uJztcbmltcG9ydCB7U2VsZWN0LCBTZWxlY3QyfSBmcm9tICcuL1B1YmxpY0NvbXBvbmVudCc7XG5pbXBvcnQgQnJpZ2h0bmVzczJPdXRsaW5lZEljb24gZnJvbSAnQG1hdGVyaWFsLXVpL2ljb25zL0JyaWdodG5lc3MyT3V0bGluZWQnO1xuaW1wb3J0IFdiU3VubnlPdXRsaW5lZEljb24gZnJvbSAnQG1hdGVyaWFsLXVpL2ljb25zL1diU3VubnlPdXRsaW5lZCc7XG5pbXBvcnQgeyB1c2VEaXNwYXRjaCB9IGZyb20gJ3JlYWN0LXJlZHV4J1xuaW1wb3J0IHsgdG9EYXksIHRvTmlnaHQsIHRvRW4sIHRvWmhIYW50IH0gZnJvbSAnLi4vLi4vc3RvcmUnXG5cbmNvbnN0IHVzZVN0eWxlcyA9IG1ha2VTdHlsZXMoe1xuICB0aXRsZToge1xuICAgIGZvbnRGYW1pbHk6J0JlYmFzIE5ldWUgJyxcbiAgICBmb250V2VpZ2h0OjQwMCxcbiAgICBsZXR0ZXJTcGFjaW5nOicxcHgnLFxuICAgIGZvbnRTaXplOicxLjdyZW0nLFxuICB9LFxuICBsaW5rOiB7XG4gICAgZm9udEZhbWlseTonUm9ib3RvJyxcbiAgICBmb250V2VpZ2h0OjQwMCxcbiAgICBsZXR0ZXJTcGFjaW5nOicxcHgnLFxuICAgIG1hcmdpbkxlZnQ6ICczMnB4JyxcbiAgICBjb2xvcjonIzhGOEY4RicsXG4gICAgZm9udFNpemU6JzEuMXJlbScsXG4gICAgXCImOmhvdmVyXCI6e1xuICAgICAgICBjb2xvcjonYmxhY2snXG4gICAgfVxuICB9LFxuICBuaWdodExpbms6IHtcbiAgICBmb250RmFtaWx5OidSb2JvdG8nLFxuICAgIGZvbnRXZWlnaHQ6NDAwLFxuICAgIGxldHRlclNwYWNpbmc6JzFweCcsXG4gICAgbWFyZ2luTGVmdDogJzMycHgnLFxuICAgIGNvbG9yOicjRkZGRkZGJyxcbiAgICBmb250U2l6ZTonMS4xcmVtJyxcbiAgICBcIiY6aG92ZXJcIjp7XG4gICAgICAgIGNvbG9yOicjQkRCREJEJ1xuICAgIH1cbiAgfSxcbiAgbGlua0FuY2hvcjoge1xuICAgIGZvbnRGYW1pbHk6J1JvYm90bycsXG4gICAgZm9udFdlaWdodDo0MDAsXG4gICAgbGV0dGVyU3BhY2luZzonMXB4JyxcbiAgICBtYXJnaW5MZWZ0OiAnMzJweCcsXG4gICAgY29sb3I6J2JsYWNrJyxcbiAgICBmb250U2l6ZTonMS4xcmVtJ1xuICB9LFxuICBuaWdodExpbmtBbmNob3I6IHtcbiAgICBmb250RmFtaWx5OidSb2JvdG8nLFxuICAgIGZvbnRXZWlnaHQ6NDAwLFxuICAgIGxldHRlclNwYWNpbmc6JzFweCcsXG4gICAgbWFyZ2luTGVmdDogJzMycHgnLFxuICAgIGNvbG9yOicjQkRCREJEJyxcbiAgICBmb250U2l6ZTonMS4xcmVtJ1xuICB9LFxuICBpY29uOiB7XG4gICAgZm9udFNpemU6JzEuNXJlbScsXG4gICAgY29sb3I6JyM4RjhGOEYnLFxuICAgIFwiJjpob3ZlclwiOntcbiAgICAgICAgY29sb3I6JyMxRjFGMUYnXG4gICAgfVxuICB9LFxuICBuaWdodEljb246e1xuICAgIGZvbnRTaXplOicxLjVyZW0nLFxuICAgIGNvbG9yOicjRkZGRkZGJyxcbiAgICBcIiY6aG92ZXJcIjp7XG4gICAgICAgIGNvbG9yOicjQkRCREJEJ1xuICAgIH1cbiAgfSxcbiAgZm9ybUNvbnRyb2w6IHtcbiAgICBtYXJnaW46ICcwLjVyZW0nLFxuICAgIHdpZHRoOic2cmVtJyxcbiAgfSxcbiAgaW5wdXRMYWJlbDoge1xuICAgIGZvbnRTaXplOlwiMTdweFwiLFxuICAgIGZvbnRGYW1pbHk6XCLlvq7ou5/mraPpu5Hpq5RcIixcbiAgICBkaXNwbGF5OiBcImZsZXhcIixcbiAgICBmbGV4RGlyZWN0aW9uOiBcInJvdy1SZXZlcnNlXCJcbiAgfVxufSlcblxuY29uc3QgSGVhZGVyID0gKHt0LC4uLnByb3BzfSkgPT4ge1xuXG4gICAgY29uc3QgY2xhc3NlcyA9IHVzZVN0eWxlcygpO1xuXG4gICAgY29uc3Qgcm91dGVyID0gdXNlUm91dGVyKCk7XG5cbiAgICAvLyBjb25zdCBbIGxhbmd1YWdlLCBzZXRMYW5ndWFnZSBdID0gUmVhY3QudXNlU3RhdGUoJ2VuJyk7XG5cbiAgICBjb25zdCBbb3Blbiwgc2V0T3Blbl0gPSBSZWFjdC51c2VTdGF0ZShmYWxzZSk7XG5cbiAgICBjb25zdCBoYW5kbGVDaGFuZ2UgPSAoZXZlbnQpID0+IHtcbiAgICAgIC8vIHNldExhbmd1YWdlKGV2ZW50LnRhcmdldC52YWx1ZSk7XG4gICAgICBoYW5kbGVMYW5nVG9SZWR1eChldmVudC50YXJnZXQudmFsdWUpO1xuICAgICAgaTE4bi5jaGFuZ2VMYW5ndWFnZShldmVudC50YXJnZXQudmFsdWUpO1xuICAgIH07XG5cbiAgICBjb25zdCBoYW5kbGVMYW5nVG9SZWR1eCA9ICh2YWx1ZSkgPT4ge1xuICAgICAgaWYodmFsdWUgPT0gJ2VuJykge1xuICAgICAgICBkaXNwYXRjaCh0b0VuKCkpXG4gICAgICB9IFxuICAgICAgZWxzZSBpZiAodmFsdWUgPT0gJ3poSGFudCcpIHtcbiAgICAgICAgZGlzcGF0Y2godG9aaEhhbnQoKSlcbiAgICAgIH1cbiAgICB9XG5cbiAgICBjb25zdCBoYW5kbGVDbG9zZSA9ICgpID0+IHtcbiAgICAgIHNldE9wZW4oZmFsc2UpO1xuICAgIH07XG4gIFxuICAgIGNvbnN0IGhhbmRsZU9wZW4gPSAoKSA9PiB7XG4gICAgICBzZXRPcGVuKHRydWUpO1xuICAgIH07XG5cbiAgICBjb25zdCBkaXNwYXRjaCA9IHVzZURpc3BhdGNoKClcblxuICAgIGNvbnN0IHtcbiAgICAgIGhhbmRsZURyYXdlck9wZW4sXG4gICAgICBtb2RlLFxuICAgICAgbGFuZ1xuICAgIH0gPSBwcm9wcztcblxuICAgIHJldHVybihcbiAgICAgICAgPFJlYWN0LkZyYWdtZW50PlxuICAgICAgICAgICAgIFxuICAgICAgICAgICAgPEdyaWQgY29udGFpbmVyPlxuXG4gICAgICAgICAgICAgIDxHcmlkIGl0ZW0geHM9ezZ9IG1kPXsyfSBzdHlsZT17e21hcmdpblRvcDonMC41cmVtJ319PlxuICAgICAgICAgICAgICAgICAgPExpbmsgXG4gICAgICAgICAgICAgICAgICAgIGhyZWY9XCIuXCJcbiAgICAgICAgICAgICAgICAgICAgdW5kZXJsaW5lPSdub25lJ1xuICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2NsYXNzZXMudGl0bGV9XG4gICAgICAgICAgICAgICAgICAgIHN0eWxlPXt7Y29sb3I6KG1vZGU9PT0nZGF5Jz8nIzFGMUYxRic6JyNGRkZGRkYnKX19XG4gICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgIFdFSUFOIFdBTkdcbiAgICAgICAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgICAgPC9HcmlkPlxuICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXtmYWxzZX0gbWQ9ezJ9PjwvR3JpZD5cbiAgICAgICAgICAgICAgPEdyaWQgaXRlbSB4cz17ZmFsc2V9IG1kPXsyfSBsZz17Mn0+PC9HcmlkPlxuICAgICAgICAgICAgICA8SGlkZGVuIG1kRG93bj5cbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsyfSBzdHlsZT17e21hcmdpblRvcDonMC4zcmVtJywgcGFkZGluZ0xlZnQ6JzYlJ319PlxuICAgICAgICAgICAgICAgICAgPFNlbGVjdDJcbiAgICAgICAgICAgICAgICAgICAgICBuYW1lPVwibGFuZ1wiXG4gICAgICAgICAgICAgICAgICAgICAgdmFsdWU9e2xhbmd9XG4gICAgICAgICAgICAgICAgICAgICAgb25DaGFuZ2U9e2hhbmRsZUNoYW5nZX1cbiAgICAgICAgICAgICAgICAgICAgICBpdGVtcz17W1xuICAgICAgICAgICAgICAgICAgICAgICAgICB7dmFsdWU6J2VuJyxsYWJlbDpcIkVuZ2xpc2hcIn0sXG4gICAgICAgICAgICAgICAgICAgICAgICAgIHt2YWx1ZTonemhIYW50JyxsYWJlbDpcIuS4reaWh1wifSxcbiAgICAgICAgICAgICAgICAgICAgICBdfVxuICAgICAgICAgICAgICAgICAgICAgIG1vZGU9e21vZGV9XG4gICAgICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgICAgIDwvR3JpZD5cbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsxfSBzdHlsZT17e21hcmdpblRvcDonMC4zcmVtJyx0ZXh0QWxpZ246J2NlbnRlcid9fT5cbiAgICAgICAgICAgICAgICAgIHttb2RlID09PSAnZGF5Jz9cbiAgICAgICAgICAgICAgICAgICAgPEljb25CdXR0b25cbiAgICAgICAgICAgICAgICAgICAgICBzdHlsZT17e2JhY2tncm91bmRDb2xvcjogJ3RyYW5zcGFyZW50Jyxjb2xvcjoobW9kZT09PSdkYXknPycjMUYxRjFGJzonI0ZGRkZGRicpfX1cbiAgICAgICAgICAgICAgICAgICAgICBkaXNhYmxlUmlwcGxlPXt0cnVlfVxuICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpPT5kaXNwYXRjaCh0b05pZ2h0KCkpfVxuICAgICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgICAgICA8QnJpZ2h0bmVzczJPdXRsaW5lZEljb24gZm9udFNpemU9J2xhcmdlJy8+XG4gICAgICAgICAgICAgICAgICAgIDwvSWNvbkJ1dHRvbj46XG4gICAgICAgICAgICAgICAgICAgIDxJY29uQnV0dG9uXG4gICAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3tiYWNrZ3JvdW5kQ29sb3I6ICd0cmFuc3BhcmVudCcsY29sb3I6KG1vZGU9PT0nZGF5Jz8nIzFGMUYxRic6JyNGRkZGRkYnKX19XG4gICAgICAgICAgICAgICAgICAgICAgZGlzYWJsZVJpcHBsZT17dHJ1ZX1cbiAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKT0+ZGlzcGF0Y2godG9EYXkoKSl9XG4gICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICA8V2JTdW5ueU91dGxpbmVkSWNvbiBmb250U2l6ZT0nbGFyZ2UnLz5cbiAgICAgICAgICAgICAgICAgICAgPC9JY29uQnV0dG9uPlxuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIDwvR3JpZD5cbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsxfSBzdHlsZT17e21hcmdpblRvcDonMS41cmVtJywgbWFyZ2luTGVmdDoobGFuZz09J2VuJz8nLTFyZW0nOicnKX19PlxuICAgICAgICAgICAgICAgICAge21vZGU9PT0nZGF5JyYmXG4gICAgICAgICAgICAgICAgICAgIDxMaW5rIFxuICAgICAgICAgICAgICAgICAgICAgIGhyZWY9XCIuL1dvcmtcIlxuICAgICAgICAgICAgICAgICAgICAgIHVuZGVybGluZT0nbm9uZSdcbiAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e3JvdXRlci5wYXRobmFtZSA9PSAnL1dvcmsnP2NsYXNzZXMubGlua0FuY2hvcjpjbGFzc2VzLmxpbmt9XG4gICAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3tmb250V2VpZ2h0OihsYW5nPT0nZW4nPydub3JtYWwnOidib2xkJyl9fVxuICAgICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgICAge3QoJ3dvcmsnKX1cbiAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAge21vZGU9PT0nbmlnaHQnJiZcbiAgICAgICAgICAgICAgICAgICAgPExpbmsgXG4gICAgICAgICAgICAgICAgICAgICAgaHJlZj1cIi4vV29ya1wiXG4gICAgICAgICAgICAgICAgICAgICAgdW5kZXJsaW5lPSdub25lJ1xuICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17cm91dGVyLnBhdGhuYW1lID09ICcvV29yayc/Y2xhc3Nlcy5uaWdodExpbmtBbmNob3I6Y2xhc3Nlcy5uaWdodExpbmt9XG4gICAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3tmb250V2VpZ2h0OihsYW5nPT0nZW4nPydub3JtYWwnOidib2xkJyl9fVxuICAgICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgICAge3QoJ3dvcmsnKX1cbiAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIDwvR3JpZD5cbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsxfSBzdHlsZT17e21hcmdpblRvcDonMS41cmVtJywgbWFyZ2luTGVmdDoobGFuZz09J2VuJz8nLTFyZW0nOicnKX19PlxuICAgICAgICAgICAgICAgICAge21vZGU9PT0nZGF5JyYmXG4gICAgICAgICAgICAgICAgICAgIDxMaW5rIFxuICAgICAgICAgICAgICAgICAgICAgIGhyZWY9XCIuL1dyaXRpbmdzXCJcbiAgICAgICAgICAgICAgICAgICAgICB1bmRlcmxpbmU9J25vbmUnXG4gICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtyb3V0ZXIucGF0aG5hbWUgPT0gJy9Xcml0aW5ncyc/Y2xhc3Nlcy5saW5rQW5jaG9yOmNsYXNzZXMubGlua31cbiAgICAgICAgICAgICAgICAgICAgICBzdHlsZT17e2ZvbnRXZWlnaHQ6KGxhbmc9PSdlbic/J25vcm1hbCc6J2JvbGQnKX19XG4gICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICB7dCgnd3JpdGluZ3MnKX1cbiAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAge21vZGU9PT0nbmlnaHQnJiZcbiAgICAgICAgICAgICAgICAgICAgPExpbmsgXG4gICAgICAgICAgICAgICAgICAgICAgaHJlZj1cIi4vV3JpdGluZ3NcIlxuICAgICAgICAgICAgICAgICAgICAgIHVuZGVybGluZT0nbm9uZSdcbiAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e3JvdXRlci5wYXRobmFtZSA9PSAnL1dyaXRpbmdzJz9jbGFzc2VzLm5pZ2h0TGlua0FuY2hvcjpjbGFzc2VzLm5pZ2h0TGlua31cbiAgICAgICAgICAgICAgICAgICAgICBzdHlsZT17e2ZvbnRXZWlnaHQ6KGxhbmc9PSdlbic/J25vcm1hbCc6J2JvbGQnKX19XG4gICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICB7dCgnd3JpdGluZ3MnKX1cbiAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIDwvR3JpZD5cbiAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsxfSBzdHlsZT17e21hcmdpblRvcDonMS41cmVtJywgbWFyZ2luTGVmdDoobGFuZz09J2VuJz8nMC44cmVtJzonJyl9fT5cbiAgICAgICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICAgICAgbW9kZT09PSdkYXknICYmXG4gICAgICAgICAgICAgICAgICAgICAgPExpbmsgXG4gICAgICAgICAgICAgICAgICAgICAgICBocmVmPXtsYW5nPT0nZW4nPycuL1dlaWFuV2FuZ19SZXN1bWUucGRmJzonLi/njovlgYnlrolf5bGl5q23LnBkZid9XG4gICAgICAgICAgICAgICAgICAgICAgICB0YXJnZXQ9J19ibGFuaydcbiAgICAgICAgICAgICAgICAgICAgICAgIHJlbD0nbm9vcGVuZXInXG4gICAgICAgICAgICAgICAgICAgICAgICB1bmRlcmxpbmU9J25vbmUnXG4gICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e3JvdXRlci5wYXRobmFtZSA9PSAnL1Jlc3VtZSc/Y2xhc3Nlcy5saW5rQW5jaG9yOmNsYXNzZXMubGlua31cbiAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlPXt7Zm9udFdlaWdodDoobGFuZz09J2VuJz8nbm9ybWFsJzonYm9sZCcpfX1cbiAgICAgICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgICAgICB7dCgncmVzdW1lJyl9XG4gICAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgICAgICBtb2RlPT09J25pZ2h0JyAmJlxuICAgICAgICAgICAgICAgICAgICAgIDxMaW5rIFxuICAgICAgICAgICAgICAgICAgICAgICAgaHJlZj17bGFuZz09J2VuJz8nLi9XZWlhbldhbmdfUmVzdW1lLnBkZic6Jy4v546L5YGJ5a6JX+Wxpeatty5wZGYnfVxuICAgICAgICAgICAgICAgICAgICAgICAgdGFyZ2V0PSdfYmxhbmsnXG4gICAgICAgICAgICAgICAgICAgICAgICByZWw9J25vb3BlbmVyJ1xuICAgICAgICAgICAgICAgICAgICAgICAgdW5kZXJsaW5lPSdub25lJ1xuICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtyb3V0ZXIucGF0aG5hbWUgPT0gJy9SZXN1bWUnP2NsYXNzZXMubmlnaHRMaW5rQW5jaG9yOmNsYXNzZXMubmlnaHRMaW5rfVxuICAgICAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3tmb250V2VpZ2h0OihsYW5nPT0nZW4nPydub3JtYWwnOidib2xkJyl9fVxuICAgICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgIHt0KCdyZXN1bWUnKX1cbiAgICAgICAgICAgICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgPC9HcmlkPlxuICAgICAgICAgICAgICA8L0hpZGRlbj5cblxuICAgICAgICAgICAgICA8SGlkZGVuIGxnVXA+XG4gICAgICAgICAgICAgICAgPEdyaWQgaXRlbSB4cz17MX0gc209ezJ9PjwvR3JpZD5cbiAgICAgICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsxfT5cbiAgICAgICAgICAgICAgICAgIHttb2RlID09PSAnZGF5Jz9cbiAgICAgICAgICAgICAgICAgICAgPEljb25CdXR0b25cbiAgICAgICAgICAgICAgICAgICAgICBzdHlsZT17e2JhY2tncm91bmRDb2xvcjogJ3RyYW5zcGFyZW50Jyxjb2xvcjoobW9kZT09PSdkYXknPycjMUYxRjFGJzonI0ZGRkZGRicpfX1cbiAgICAgICAgICAgICAgICAgICAgICBkaXNhYmxlUmlwcGxlPXt0cnVlfVxuICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpPT5kaXNwYXRjaCh0b05pZ2h0KCkpfVxuICAgICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgICAgICA8QnJpZ2h0bmVzczJPdXRsaW5lZEljb24gZm9udFNpemU9J2luaGVyaXQnLz5cbiAgICAgICAgICAgICAgICAgICAgPC9JY29uQnV0dG9uPjpcbiAgICAgICAgICAgICAgICAgICAgPEljb25CdXR0b25cbiAgICAgICAgICAgICAgICAgICAgICBzdHlsZT17e2JhY2tncm91bmRDb2xvcjogJ3RyYW5zcGFyZW50Jyxjb2xvcjoobW9kZT09PSdkYXknPycjMUYxRjFGJzonI0ZGRkZGRicpfX1cbiAgICAgICAgICAgICAgICAgICAgICBkaXNhYmxlUmlwcGxlPXt0cnVlfVxuICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpPT5kaXNwYXRjaCh0b0RheSgpKX1cbiAgICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICAgIDxXYlN1bm55T3V0bGluZWRJY29uIGZvbnRTaXplPSdpbmhlcml0Jy8+XG4gICAgICAgICAgICAgICAgICAgIDwvSWNvbkJ1dHRvbj5cbiAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICA8L0dyaWQ+XG4gICAgICAgICAgICAgICAgPEhpZGRlbiBzbVVwPlxuICAgICAgICAgICAgICAgICAgPEdyaWQgaXRlbSB4cz17MX0+PC9HcmlkPlxuICAgICAgICAgICAgICAgIDwvSGlkZGVuPlxuICAgICAgICAgICAgICAgIDxHcmlkIGl0ZW0geHM9ezF9IHN0eWxlPXt7bWFyZ2luVG9wOicwLjVyZW0nLHRleHRBbGlnbjonY2VudGVyJ319PlxuICAgICAgICAgICAgICAgICAgICA8U2VsZWN0XG4gICAgICAgICAgICAgICAgICAgICAgbmFtZT1cImxhbmdcIlxuICAgICAgICAgICAgICAgICAgICAgIHZhbHVlPXtsYW5nfVxuICAgICAgICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXtoYW5kbGVDaGFuZ2V9XG4gICAgICAgICAgICAgICAgICAgICAgb3Blbj17b3Blbn1cbiAgICAgICAgICAgICAgICAgICAgICBvbkNsb3NlPXtoYW5kbGVDbG9zZX1cbiAgICAgICAgICAgICAgICAgICAgICBvbk9wZW49e2hhbmRsZU9wZW59XG4gICAgICAgICAgICAgICAgICAgICAgaXRlbXM9e1tcbiAgICAgICAgICAgICAgICAgICAgICAgICAge3ZhbHVlOidlbicsbGFiZWw6XCJFbmdsaXNoXCJ9LFxuICAgICAgICAgICAgICAgICAgICAgICAgICB7dmFsdWU6J3poSGFudCcsbGFiZWw6XCLkuK3mlodcIn0sXG4gICAgICAgICAgICAgICAgICAgICAgXX1cbiAgICAgICAgICAgICAgICAgICAgICBtb2RlPXttb2RlfVxuICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICA8L0dyaWQ+XG4gICAgICAgICAgICAgICAgPEdyaWQgaXRlbSB4cz17MX0+PC9HcmlkPlxuICAgICAgICAgICAgICAgIDxHcmlkIGl0ZW0geHM9ezF9IHN0eWxlPXt7dGV4dEFsaWduOidyaWdodCd9fT5cbiAgICAgICAgICAgICAgICAgIDxJY29uQnV0dG9uXG4gICAgICAgICAgICAgICAgICAgIHN0eWxlPXt7YmFja2dyb3VuZENvbG9yOiAndHJhbnNwYXJlbnQnfX1cbiAgICAgICAgICAgICAgICAgICAgZGlzYWJsZVJpcHBsZT17dHJ1ZX1cbiAgICAgICAgICAgICAgICAgICAgb25DbGljaz17aGFuZGxlRHJhd2VyT3Blbn1cbiAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgPE1lbnVJY29uIGNsYXNzTmFtZT17bW9kZT09J2RheSc/Y2xhc3Nlcy5pY29uOmNsYXNzZXMubmlnaHRJY29ufS8+XG4gICAgICAgICAgICAgICAgICA8L0ljb25CdXR0b24+XG4gICAgICAgICAgICAgICAgPC9HcmlkPlxuICAgICAgICAgICAgICA8L0hpZGRlbj5cblxuICAgICAgICAgICAgPC9HcmlkPlxuXG4gICAgICAgICAgICB7LyogPEdyaWQgY29udGFpbmVyPlxuICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT17c3R5bGVzLmJhbGx9PjwvcD5cbiAgICAgICAgICAgIDwvR3JpZD4gKi99XG4gICAgICAgICAgICAgXG4gICAgICAgIDwvUmVhY3QuRnJhZ21lbnQ+XG4gICAgKVxufVxuXG5IZWFkZXIucHJvcFR5cGVzID0ge1xuICB0OiBQcm9wVHlwZXMuZnVuYy5pc1JlcXVpcmVkLFxufVxuXG5cbmV4cG9ydCBkZWZhdWx0IHdpdGhUcmFuc2xhdGlvbignaGVhZGVyJykoSGVhZGVyKSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./component/Public/Header.js\n");
+
+/***/ }),
+
+/***/ "./component/Public/PageLoader.js":
+/*!****************************************!*\
+  !*** ./component/Public/PageLoader.js ***!
+  \****************************************/
+/*! exports provided: PageLoader */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"PageLoader\", function() { return PageLoader; });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_top_loading_bar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-top-loading-bar */ \"react-top-loading-bar\");\n/* harmony import */ var react_top_loading_bar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_top_loading_bar__WEBPACK_IMPORTED_MODULE_2__);\n\nvar _jsxFileName = \"/Users/wangweian/wangweian/weian/component/Public/PageLoader.js\";\n\n\nconst PageLoader = props => {\n  const [progress, setProgress] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(0);\n  Object(react__WEBPACK_IMPORTED_MODULE_1__[\"useEffect\"])(() => {\n    setProgress(100);\n  }, []);\n  const {\n    mode\n  } = props;\n  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"div\", {\n    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(react_top_loading_bar__WEBPACK_IMPORTED_MODULE_2___default.a, {\n      color: mode === 'day' ? 'black' : 'white',\n      height: 3,\n      waitingTime: 500,\n      transitionTime: 1000,\n      loaderSpeed: 600,\n      progress: progress,\n      onLoaderFinished: () => setProgress(0)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 18,\n      columnNumber: 7\n    }, undefined)\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 17,\n    columnNumber: 5\n  }, undefined);\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb21wb25lbnQvUHVibGljL1BhZ2VMb2FkZXIuanM/MDg2MiJdLCJuYW1lcyI6WyJQYWdlTG9hZGVyIiwicHJvcHMiLCJwcm9ncmVzcyIsInNldFByb2dyZXNzIiwiUmVhY3QiLCJ1c2VTdGF0ZSIsInVzZUVmZmVjdCIsIm1vZGUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBRU8sTUFBTUEsVUFBVSxHQUFJQyxLQUFELElBQVc7QUFFbkMsUUFBTSxDQUFDQyxRQUFELEVBQVdDLFdBQVgsSUFBMEJDLDRDQUFLLENBQUNDLFFBQU4sQ0FBZSxDQUFmLENBQWhDO0FBRUFDLHlEQUFTLENBQUMsTUFBSTtBQUNaSCxlQUFXLENBQUMsR0FBRCxDQUFYO0FBQ0QsR0FGUSxFQUVQLEVBRk8sQ0FBVDtBQUlBLFFBQU07QUFDSkk7QUFESSxNQUVGTixLQUZKO0FBSUEsc0JBQ0U7QUFBQSwyQkFDRSxxRUFBQyw0REFBRDtBQUNFLFdBQUssRUFBRU0sSUFBSSxLQUFHLEtBQVAsR0FBYSxPQUFiLEdBQXFCLE9BRDlCO0FBRUUsWUFBTSxFQUFFLENBRlY7QUFHRSxpQkFBVyxFQUFFLEdBSGY7QUFJRSxvQkFBYyxFQUFFLElBSmxCO0FBS0UsaUJBQVcsRUFBRSxHQUxmO0FBTUUsY0FBUSxFQUFFTCxRQU5aO0FBT0Usc0JBQWdCLEVBQUUsTUFBTUMsV0FBVyxDQUFDLENBQUQ7QUFQckM7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFERjtBQWFELENBekJNIiwiZmlsZSI6Ii4vY29tcG9uZW50L1B1YmxpYy9QYWdlTG9hZGVyLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlLCB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCdcbmltcG9ydCBMb2FkaW5nQmFyIGZyb20gJ3JlYWN0LXRvcC1sb2FkaW5nLWJhcidcbiBcbmV4cG9ydCBjb25zdCBQYWdlTG9hZGVyID0gKHByb3BzKSA9PiB7XG4gIFxuICBjb25zdCBbcHJvZ3Jlc3MsIHNldFByb2dyZXNzXSA9IFJlYWN0LnVzZVN0YXRlKDApO1xuXG4gIHVzZUVmZmVjdCgoKT0+e1xuICAgIHNldFByb2dyZXNzKDEwMCk7XG4gIH0sW10pXG5cbiAgY29uc3Qge1xuICAgIG1vZGVcbiAgfSA9IHByb3BzO1xuIFxuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8TG9hZGluZ0JhclxuICAgICAgICBjb2xvcj17bW9kZT09PSdkYXknPydibGFjayc6J3doaXRlJ31cbiAgICAgICAgaGVpZ2h0PXszfVxuICAgICAgICB3YWl0aW5nVGltZT17NTAwfVxuICAgICAgICB0cmFuc2l0aW9uVGltZT17MTAwMH1cbiAgICAgICAgbG9hZGVyU3BlZWQ9ezYwMH1cbiAgICAgICAgcHJvZ3Jlc3M9e3Byb2dyZXNzfVxuICAgICAgICBvbkxvYWRlckZpbmlzaGVkPXsoKSA9PiBzZXRQcm9ncmVzcygwKX1cbiAgICAgIC8+XG4gICAgPC9kaXY+XG4gIClcbn0iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./component/Public/PageLoader.js\n");
+
+/***/ }),
+
+/***/ "./component/Public/PublicComponent.js":
+/*!*********************************************!*\
+  !*** ./component/Public/PublicComponent.js ***!
+  \*********************************************/
+/*! exports provided: Select, Select2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Select\", function() { return Select; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Select2\", function() { return Select2; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ \"@material-ui/core/styles\");\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ \"@material-ui/core\");\n/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Grid */ \"@material-ui/core/Grid\");\n/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _material_ui_icons_Translate__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Translate */ \"@material-ui/icons/Translate\");\n/* harmony import */ var _material_ui_icons_Translate__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Translate__WEBPACK_IMPORTED_MODULE_6__);\n\n\nvar _jsxFileName = \"/Users/wangweian/wangweian/weian/component/Public/PublicComponent.js\";\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nconst useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__[\"makeStyles\"])({\n  inputLabel: {\n    fontSize: \"1.1rem\",\n    fontFamily: \"微軟正黑體\",\n    display: \"flex\",\n    flexDirection: \"row-Reverse\"\n  }\n});\nfunction Select(props) {\n  const classes = useStyles();\n  const {\n    onOpen,\n    onClose,\n    onChange,\n    items,\n    open,\n    value,\n    mode\n  } = props;\n  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__[\"jsxDEV\"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__[\"FormControl\"], {\n    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__[\"jsxDEV\"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__[\"Select\"], {\n      labelId: \"demo-controlled-open-select-label\",\n      id: \"demo-controlled-open-select\",\n      open: open,\n      onClose: onClose,\n      onOpen: onOpen,\n      value: value,\n      onChange: onChange,\n      disableUnderline: true,\n      autoFocus: false,\n      renderValue: () => {\n        return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__[\"jsxDEV\"])(_material_ui_icons_Translate__WEBPACK_IMPORTED_MODULE_6___default.a, {\n          style: {\n            color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'\n          }\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 41,\n          columnNumber: 28\n        }, this);\n      },\n      style: {\n        backgroundColor: 'transparent'\n      },\n      children: items.map(function (item, index) {\n        var _item$props, _item$value, _item$label;\n\n        return /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__[\"MenuItem\"], _objectSpread(_objectSpread({}, (_item$props = item.props) !== null && _item$props !== void 0 ? _item$props : null), {}, {\n          key: index,\n          value: (_item$value = item.value) !== null && _item$value !== void 0 ? _item$value : \"\",\n          classes: {\n            root: classes.input\n          },\n          __self: this,\n          __source: {\n            fileName: _jsxFileName,\n            lineNumber: 47,\n            columnNumber: 25\n          }\n        }), (_item$label = item.label) !== null && _item$label !== void 0 ? _item$label : \"\");\n      })\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 30,\n      columnNumber: 13\n    }, this)\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 29,\n    columnNumber: 9\n  }, this);\n}\nfunction Select2(props) {\n  const classes = useStyles();\n  const {\n    label,\n    value,\n    name,\n    items,\n    formControlProps,\n    selectProps,\n    required,\n    disabled = false,\n    tabIndex = 0,\n    mode\n  } = props;\n\n  let newProps = _objectSpread({}, props);\n\n  delete newProps[\"helperText\"];\n  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n    container: true,\n    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n      item: true,\n      xs: 2,\n      style: {\n        marginTop: '1rem'\n      },\n      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__[\"jsxDEV\"])(_material_ui_icons_Translate__WEBPACK_IMPORTED_MODULE_6___default.a, {}, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 85,\n        columnNumber: 17\n      }, this)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 84,\n      columnNumber: 13\n    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n      item: true,\n      xs: 1\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 87,\n      columnNumber: 13\n    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__[\"jsxDEV\"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {\n      item: true,\n      xs: 9,\n      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__[\"jsxDEV\"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__[\"FormControl\"], _objectSpread(_objectSpread({}, formControlProps), {}, {\n        size: \"small\",\n        fullWidth: true,\n        disabled: disabled,\n        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__[\"jsxDEV\"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__[\"InputLabel\"], {\n          required: required,\n          id: \"demo-simple-select-label\",\n          classes: {\n            root: classes.inputLabel,\n            required: classes.selectRequired\n          },\n          style: {\n            color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'\n          },\n          children: label\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 95,\n          columnNumber: 17\n        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__[\"jsxDEV\"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__[\"Select\"], _objectSpread(_objectSpread(_objectSpread({}, selectProps), {}, {\n          labelId: \"demo-simple-select-label\",\n          id: \"demo-simple-select\",\n          style: {\n            backgroundColor: 'transparent',\n            color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'\n          },\n          disableUnderline: true,\n          inputProps: {\n            name: name,\n            classes: {\n              select: classes.input\n            }\n          },\n          SelectDisplayProps: {\n            tabIndex: tabIndex\n          },\n          value: value === null ? \"\" : value,\n          label: label,\n          displayEmpty: true,\n          renderValue: selected => {\n            function checkEqual(a, b) {\n              if (a === null || a === undefined) {\n                a = \"\";\n              }\n\n              if (b === null || b === undefined) {\n                b = \"\";\n              }\n\n              if (typeof a === \"number\") {\n                a = a.toString();\n              }\n\n              if (typeof b === \"number\") {\n                b = b.toString();\n              }\n\n              return a == b;\n            }\n\n            let filters = items.filter(item => checkEqual(item.value, selected));\n            return filters[0] ? filters[0][\"label\"] : \"\";\n          }\n        }, newProps), {}, {\n          children: items.map(function (item, index) {\n            var _item$props2, _item$value2, _item$label2;\n\n            return /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__[\"MenuItem\"], _objectSpread(_objectSpread({}, (_item$props2 = item.props) !== null && _item$props2 !== void 0 ? _item$props2 : null), {}, {\n              key: index,\n              value: (_item$value2 = item.value) !== null && _item$value2 !== void 0 ? _item$value2 : \"\",\n              classes: {\n                root: classes.input\n              },\n              __self: this,\n              __source: {\n                fileName: _jsxFileName,\n                lineNumber: 151,\n                columnNumber: 29\n              }\n            }), (_item$label2 = item.label) !== null && _item$label2 !== void 0 ? _item$label2 : \"\");\n          })\n        }), void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 106,\n          columnNumber: 17\n        }, this)]\n      }), void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 89,\n        columnNumber: 13\n      }, this)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 88,\n      columnNumber: 13\n    }, this)]\n  }, void 0, true, {\n    fileName: _jsxFileName,\n    lineNumber: 83,\n    columnNumber: 9\n  }, this);\n}\nSelect.propTypes = {\n  label: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,\n  value: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number]).isRequired,\n  onChange: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired,\n  name: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string.isRequired,\n  items: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.array.isRequired,\n  formControlProps: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,\n  inputLabelProps: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,\n  selectProps: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object\n};\nSelect2.propTypes = {\n  label: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,\n  value: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number]).isRequired,\n  onChange: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired,\n  name: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string.isRequired,\n  items: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.array.isRequired,\n  formControlProps: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,\n  inputLabelProps: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,\n  selectProps: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb21wb25lbnQvUHVibGljL1B1YmxpY0NvbXBvbmVudC5qcz80OWYxIl0sIm5hbWVzIjpbInVzZVN0eWxlcyIsIm1ha2VTdHlsZXMiLCJpbnB1dExhYmVsIiwiZm9udFNpemUiLCJmb250RmFtaWx5IiwiZGlzcGxheSIsImZsZXhEaXJlY3Rpb24iLCJTZWxlY3QiLCJwcm9wcyIsImNsYXNzZXMiLCJvbk9wZW4iLCJvbkNsb3NlIiwib25DaGFuZ2UiLCJpdGVtcyIsIm9wZW4iLCJ2YWx1ZSIsIm1vZGUiLCJjb2xvciIsImJhY2tncm91bmRDb2xvciIsIm1hcCIsIml0ZW0iLCJpbmRleCIsInJvb3QiLCJpbnB1dCIsImxhYmVsIiwiU2VsZWN0MiIsIm5hbWUiLCJmb3JtQ29udHJvbFByb3BzIiwic2VsZWN0UHJvcHMiLCJyZXF1aXJlZCIsImRpc2FibGVkIiwidGFiSW5kZXgiLCJuZXdQcm9wcyIsIm1hcmdpblRvcCIsInNlbGVjdFJlcXVpcmVkIiwic2VsZWN0Iiwic2VsZWN0ZWQiLCJjaGVja0VxdWFsIiwiYSIsImIiLCJ1bmRlZmluZWQiLCJ0b1N0cmluZyIsImZpbHRlcnMiLCJmaWx0ZXIiLCJwcm9wVHlwZXMiLCJQcm9wVHlwZXMiLCJzdHJpbmciLCJvbmVPZlR5cGUiLCJudW1iZXIiLCJpc1JlcXVpcmVkIiwiZnVuYyIsImFycmF5Iiwib2JqZWN0IiwiaW5wdXRMYWJlbFByb3BzIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUEsTUFBTUEsU0FBUyxHQUFHQywyRUFBVSxDQUFDO0FBQ3pCQyxZQUFVLEVBQUU7QUFDUkMsWUFBUSxFQUFDLFFBREQ7QUFFUkMsY0FBVSxFQUFDLE9BRkg7QUFHUkMsV0FBTyxFQUFFLE1BSEQ7QUFJUkMsaUJBQWEsRUFBRTtBQUpQO0FBRGEsQ0FBRCxDQUE1QjtBQVNPLFNBQVNDLE1BQVQsQ0FBZ0JDLEtBQWhCLEVBQXVC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QURGO0FBRWYvQixPQUFLLEVBQUU4QixpREFBUyxDQUFDRSxTQUFWLENBQW9CLENBQ3ZCRixpREFBUyxDQUFDQyxNQURhLEVBRXZCRCxpREFBUyxDQUFDRyxNQUZhLENBQXBCLEVBR0pDLFVBTFk7QUFNZnJDLFVBQVEsRUFBRWlDLGlEQUFTLENBQUNLLElBQVYsQ0FBZUQsVUFOVjtBQU9mdkIsTUFBSSxFQUFFbUIsaURBQVMsQ0FBQ0MsTUFBVixDQUFpQkcsVUFQUjtBQVFmcEMsT0FBSyxFQUFFZ0MsaURBQVMsQ0FBQ00sS0FBVixDQUFnQkYsVUFSUjtBQVNmdEIsa0JBQWdCLEVBQUVrQixpREFBUyxDQUFDTyxNQVRiO0FBVWZDLGlCQUFlLEVBQUVSLGlEQUFTLENBQUNPLE1BVlo7QUFXZnhCLGFBQVcsRUFBRWlCLGlEQUFTLENBQUNPO0FBWFIsQ0FBbkI7QUFjQTNCLE9BQU8sQ0FBQ21CLFNBQVIsR0FBb0I7QUFDaEJwQixPQUFLLEVBQUVxQixpREFBUyxDQUFDQyxNQUREO0FBRWhCL0IsT0FBSyxFQUFFOEIsaURBQVMsQ0FBQ0UsU0FBVixDQUFvQixDQUN2QkYsaURBQVMsQ0FBQ0MsTUFEYSxFQUV2QkQsaURBQVMsQ0FBQ0csTUFGYSxDQUFwQixFQUdKQyxVQUxhO0FBTWhCckMsVUFBUSxFQUFFaUMsaURBQVMsQ0FBQ0ssSUFBVixDQUFlRCxVQU5UO0FBT2hCdkIsTUFBSSxFQUFFbUIsaURBQVMsQ0FBQ0MsTUFBVixDQUFpQkcsVUFQUDtBQVFoQnBDLE9BQUssRUFBRWdDLGlEQUFTLENBQUNNLEtBQVYsQ0FBZ0JGLFVBUlA7QUFTaEJ0QixrQkFBZ0IsRUFBRWtCLGlEQUFTLENBQUNPLE1BVFo7QUFVaEJDLGlCQUFlLEVBQUVSLGlEQUFTLENBQUNPLE1BVlg7QUFXaEJ4QixhQUFXLEVBQUVpQixpREFBUyxDQUFDTztBQVhQLENBQXBCIiwiZmlsZSI6Ii4vY29tcG9uZW50L1B1YmxpYy9QdWJsaWNDb21wb25lbnQuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBtYWtlU3R5bGVzIH0gZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUvc3R5bGVzJztcbmltcG9ydCB7IFNlbGVjdCBhcyBNYXRlcmlhbFNlbGVjdCwgSW5wdXRMYWJlbCwgRm9ybUNvbnRyb2wsIE1lbnVJdGVtIH0gZnJvbSAnQG1hdGVyaWFsLXVpL2NvcmUnO1xuaW1wb3J0IFByb3BUeXBlcyBmcm9tICdwcm9wLXR5cGVzJztcbmltcG9ydCBHcmlkIGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlL0dyaWQnO1xuaW1wb3J0IFRyYW5zbGF0ZUljb24gZnJvbSAnQG1hdGVyaWFsLXVpL2ljb25zL1RyYW5zbGF0ZSc7XG5cbmNvbnN0IHVzZVN0eWxlcyA9IG1ha2VTdHlsZXMoe1xuICAgIGlucHV0TGFiZWw6IHtcbiAgICAgICAgZm9udFNpemU6XCIxLjFyZW1cIixcbiAgICAgICAgZm9udEZhbWlseTpcIuW+rui7n+ato+m7kemrlFwiLFxuICAgICAgICBkaXNwbGF5OiBcImZsZXhcIixcbiAgICAgICAgZmxleERpcmVjdGlvbjogXCJyb3ctUmV2ZXJzZVwiXG4gICAgfVxufSlcblxuZXhwb3J0IGZ1bmN0aW9uIFNlbGVjdChwcm9wcykge1xuICAgIGNvbnN0IGNsYXNzZXMgPSB1c2VTdHlsZXMoKTtcbiAgICBjb25zdCB7XG4gICAgICAgIG9uT3BlbixcbiAgICAgICAgb25DbG9zZSxcbiAgICAgICAgb25DaGFuZ2UsXG4gICAgICAgIGl0ZW1zLFxuICAgICAgICBvcGVuLFxuICAgICAgICB2YWx1ZSxcbiAgICAgICAgbW9kZVxuICAgIH0gPSBwcm9wcztcblxuICAgIHJldHVybiAoXG4gICAgICAgIDxGb3JtQ29udHJvbD5cbiAgICAgICAgICAgIDxNYXRlcmlhbFNlbGVjdFxuICAgICAgICAgICAgICAgIGxhYmVsSWQ9XCJkZW1vLWNvbnRyb2xsZWQtb3Blbi1zZWxlY3QtbGFiZWxcIlxuICAgICAgICAgICAgICAgIGlkPVwiZGVtby1jb250cm9sbGVkLW9wZW4tc2VsZWN0XCJcbiAgICAgICAgICAgICAgICBvcGVuPXtvcGVufVxuICAgICAgICAgICAgICAgIG9uQ2xvc2U9e29uQ2xvc2V9XG4gICAgICAgICAgICAgICAgb25PcGVuPXtvbk9wZW59XG4gICAgICAgICAgICAgICAgdmFsdWU9e3ZhbHVlfVxuICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXtvbkNoYW5nZX1cbiAgICAgICAgICAgICAgICBkaXNhYmxlVW5kZXJsaW5lXG4gICAgICAgICAgICAgICAgYXV0b0ZvY3VzPXtmYWxzZX1cbiAgICAgICAgICAgICAgICByZW5kZXJWYWx1ZT17KCk9PntcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIDxUcmFuc2xhdGVJY29uIHN0eWxlPXt7Y29sb3I6KG1vZGU9PT0nZGF5Jz8nIzFGMUYxRic6JyNGRkZGRkYnKX19Lz5cbiAgICAgICAgICAgICAgICB9fVxuICAgICAgICAgICAgICAgIHN0eWxlPXt7YmFja2dyb3VuZENvbG9yOiAndHJhbnNwYXJlbnQnfX1cbiAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICB7aXRlbXMubWFwKGZ1bmN0aW9uKGl0ZW0saW5kZXgpIHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgICAgICAgICAgICAgIDxNZW51SXRlbVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIHsuLi5pdGVtLnByb3BzID8/IG51bGx9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAga2V5PXtpbmRleH1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YWx1ZT17aXRlbS52YWx1ZT8/XCJcIn1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzc2VzPXt7cm9vdDpjbGFzc2VzLmlucHV0fX1cbiAgICAgICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB7aXRlbS5sYWJlbD8/XCJcIn1cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvTWVudUl0ZW0+XG4gICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICB9KX1cbiAgICAgICAgICAgIDwvTWF0ZXJpYWxTZWxlY3Q+XG4gICAgICAgIDwvRm9ybUNvbnRyb2w+ICAgICAgICAgICAgXG4gICAgKTtcbn1cblxuZXhwb3J0IGZ1bmN0aW9uIFNlbGVjdDIocHJvcHMpIHtcbiAgICBjb25zdCBjbGFzc2VzID0gdXNlU3R5bGVzKCk7XG4gICAgY29uc3Qge1xuICAgICAgICBsYWJlbCxcbiAgICAgICAgdmFsdWUsXG4gICAgICAgIG5hbWUsXG4gICAgICAgIGl0ZW1zLFxuICAgICAgICBmb3JtQ29udHJvbFByb3BzLFxuICAgICAgICBzZWxlY3RQcm9wcyxcbiAgICAgICAgcmVxdWlyZWQsXG4gICAgICAgIGRpc2FibGVkID1mYWxzZSxcbiAgICAgICAgdGFiSW5kZXg9MCxcbiAgICAgICAgbW9kZVxuICAgIH0gPSBwcm9wcztcblxuICAgIGxldCBuZXdQcm9wcyA9IHtcbiAgICAgICAgLi4ucHJvcHNcbiAgICB9O1xuICAgIGRlbGV0ZSBuZXdQcm9wc1tcImhlbHBlclRleHRcIl07XG5cbiAgICByZXR1cm4gKFxuICAgICAgICA8R3JpZCBjb250YWluZXI+XG4gICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsyfSBzdHlsZT17e21hcmdpblRvcDonMXJlbSd9fT5cbiAgICAgICAgICAgICAgICA8VHJhbnNsYXRlSWNvbi8+XG4gICAgICAgICAgICA8L0dyaWQ+XG4gICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXsxfT48L0dyaWQ+XG4gICAgICAgICAgICA8R3JpZCBpdGVtIHhzPXs5fT5cbiAgICAgICAgICAgIDxGb3JtQ29udHJvbFxuICAgICAgICAgICAgICAgIHsuLi5mb3JtQ29udHJvbFByb3BzfVxuICAgICAgICAgICAgICAgIHNpemU9XCJzbWFsbFwiXG4gICAgICAgICAgICAgICAgZnVsbFdpZHRoXG4gICAgICAgICAgICAgICAgZGlzYWJsZWQ9e2Rpc2FibGVkfVxuICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIDxJbnB1dExhYmVsXG4gICAgICAgICAgICAgICAgICAgIHJlcXVpcmVkPXtyZXF1aXJlZH1cbiAgICAgICAgICAgICAgICAgICAgaWQ9XCJkZW1vLXNpbXBsZS1zZWxlY3QtbGFiZWxcIlxuICAgICAgICAgICAgICAgICAgICBjbGFzc2VzPXt7XG4gICAgICAgICAgICAgICAgICAgICAgICByb290OmNsYXNzZXMuaW5wdXRMYWJlbCxcbiAgICAgICAgICAgICAgICAgICAgICAgIHJlcXVpcmVkOmNsYXNzZXMuc2VsZWN0UmVxdWlyZWRcbiAgICAgICAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3tjb2xvcjoobW9kZT09PSdkYXknPycjMUYxRjFGJzonI0ZGRkZGRicpfX1cbiAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgIHtsYWJlbH1cbiAgICAgICAgICAgICAgICA8L0lucHV0TGFiZWw+XG4gICAgICAgICAgICAgICAgPE1hdGVyaWFsU2VsZWN0XG4gICAgICAgICAgICAgICAgICAgIHsuLi5zZWxlY3RQcm9wc31cbiAgICAgICAgICAgICAgICAgICAgbGFiZWxJZD1cImRlbW8tc2ltcGxlLXNlbGVjdC1sYWJlbFwiXG4gICAgICAgICAgICAgICAgICAgIGlkPVwiZGVtby1zaW1wbGUtc2VsZWN0XCJcbiAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3tiYWNrZ3JvdW5kQ29sb3I6ICd0cmFuc3BhcmVudCcsY29sb3I6KG1vZGU9PT0nZGF5Jz8nIzFGMUYxRic6JyNGRkZGRkYnKX19XG4gICAgICAgICAgICAgICAgICAgIGRpc2FibGVVbmRlcmxpbmVcbiAgICAgICAgICAgICAgICAgICAgaW5wdXRQcm9wcz17e1xuICAgICAgICAgICAgICAgICAgICAgICAgbmFtZTogbmFtZSxcbiAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzZXM6IHtzZWxlY3Q6IGNsYXNzZXMuaW5wdXR9LFxuICAgICAgICAgICAgICAgICAgICB9fVxuICAgICAgICAgICAgICAgICAgICBTZWxlY3REaXNwbGF5UHJvcHM9e3tcbiAgICAgICAgICAgICAgICAgICAgICAgIHRhYkluZGV4OnRhYkluZGV4XG4gICAgICAgICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAgICAgICAgIHZhbHVlPXt2YWx1ZT09PW51bGw/XCJcIjp2YWx1ZX1cbiAgICAgICAgICAgICAgICAgICAgbGFiZWw9e2xhYmVsfVxuICAgICAgICAgICAgICAgICAgICBkaXNwbGF5RW1wdHk9e3RydWV9XG4gICAgICAgICAgICAgICAgICAgIHJlbmRlclZhbHVlPXtzZWxlY3RlZCA9PiB7XG4gICAgICAgICAgICAgICAgICAgICAgICBmdW5jdGlvbiBjaGVja0VxdWFsKGEsYil7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKGEgPT09IG51bGwgfHwgYT09PXVuZGVmaW5lZCl7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGEgPSBcIlwiO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIChiID09PSBudWxsIHx8IGIgPT09dW5kZWZpbmVkKXtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYiA9IFwiXCI7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKHR5cGVvZiBhID09PSBcIm51bWJlclwiKXtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYSA9IGEudG9TdHJpbmcoKTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiAodHlwZW9mIGIgPT09IFwibnVtYmVyXCIpe1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBiID0gYi50b1N0cmluZygpO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJldHVybiBhID09IGI7XG4gICAgICAgICAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICAgICAgICAgIGxldCBmaWx0ZXJzPSBpdGVtcy5maWx0ZXIoaXRlbT0+IGNoZWNrRXF1YWwoaXRlbS52YWx1ZSxzZWxlY3RlZCkgIClcblxuICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGZpbHRlcnNbMF0/ZmlsdGVyc1swXVtcImxhYmVsXCJdOlwiXCI7XG4gICAgICAgICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAgICAgICAgIHsuLi5uZXdQcm9wc31cbiAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgIHtpdGVtcy5tYXAoZnVuY3Rpb24oaXRlbSxpbmRleCkge1xuICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8TWVudUl0ZW1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgey4uLml0ZW0ucHJvcHMgPz8gbnVsbH1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAga2V5PXtpbmRleH1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFsdWU9e2l0ZW0udmFsdWU/P1wiXCJ9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzZXM9e3tyb290OmNsYXNzZXMuaW5wdXR9fVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge2l0ZW0ubGFiZWw/P1wiXCJ9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9NZW51SXRlbT5cbiAgICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgfSl9XG4gICAgICAgICAgICAgICAgPC9NYXRlcmlhbFNlbGVjdD5cbiAgICAgICAgICAgIDwvRm9ybUNvbnRyb2w+XG4gICAgICAgICAgICA8L0dyaWQ+XG4gICAgICAgIDwvR3JpZD5cbiAgICApO1xufVxuXG5TZWxlY3QucHJvcFR5cGVzID0ge1xuICAgIGxhYmVsOiBQcm9wVHlwZXMuc3RyaW5nLFxuICAgIHZhbHVlOiBQcm9wVHlwZXMub25lT2ZUeXBlKFtcbiAgICAgICAgUHJvcFR5cGVzLnN0cmluZyxcbiAgICAgICAgUHJvcFR5cGVzLm51bWJlclxuICAgIF0pLmlzUmVxdWlyZWQsXG4gICAgb25DaGFuZ2U6IFByb3BUeXBlcy5mdW5jLmlzUmVxdWlyZWQsXG4gICAgbmFtZTogUHJvcFR5cGVzLnN0cmluZy5pc1JlcXVpcmVkLFxuICAgIGl0ZW1zOiBQcm9wVHlwZXMuYXJyYXkuaXNSZXF1aXJlZCxcbiAgICBmb3JtQ29udHJvbFByb3BzOiBQcm9wVHlwZXMub2JqZWN0LFxuICAgIGlucHV0TGFiZWxQcm9wczogUHJvcFR5cGVzLm9iamVjdCxcbiAgICBzZWxlY3RQcm9wczogUHJvcFR5cGVzLm9iamVjdFxufTtcblxuU2VsZWN0Mi5wcm9wVHlwZXMgPSB7XG4gICAgbGFiZWw6IFByb3BUeXBlcy5zdHJpbmcsXG4gICAgdmFsdWU6IFByb3BUeXBlcy5vbmVPZlR5cGUoW1xuICAgICAgICBQcm9wVHlwZXMuc3RyaW5nLFxuICAgICAgICBQcm9wVHlwZXMubnVtYmVyXG4gICAgXSkuaXNSZXF1aXJlZCxcbiAgICBvbkNoYW5nZTogUHJvcFR5cGVzLmZ1bmMuaXNSZXF1aXJlZCxcbiAgICBuYW1lOiBQcm9wVHlwZXMuc3RyaW5nLmlzUmVxdWlyZWQsXG4gICAgaXRlbXM6IFByb3BUeXBlcy5hcnJheS5pc1JlcXVpcmVkLFxuICAgIGZvcm1Db250cm9sUHJvcHM6IFByb3BUeXBlcy5vYmplY3QsXG4gICAgaW5wdXRMYWJlbFByb3BzOiBQcm9wVHlwZXMub2JqZWN0LFxuICAgIHNlbGVjdFByb3BzOiBQcm9wVHlwZXMub2JqZWN0XG59O1xuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./component/Public/PublicComponent.js\n");
+
+/***/ }),
+
+/***/ "./css/Public/Header.module.css":
+/*!**************************************!*\
+  !*** ./css/Public/Header.module.css ***!
+  \**************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-// Exports
-module.exports = {
-	"footerBlock": "public_footerBlock__XuCr-",
-	"footerBlockNight": "public_footerBlockNight__3mi7b",
-	"imgDescription": "public_imgDescription__2GBDJ",
-	"imgDescriptionNight": "public_imgDescriptionNight__3CXJE",
-	"bar": "public_bar__347QX"
-};
-
+eval("// Exports\nmodule.exports = {\n\t\"button2\": \"Header_button2__wF7XG\",\n\t\"bounce\": \"Header_bounce__24tU9\",\n\t\"ball\": \"Header_ball__3pRi7\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jc3MvUHVibGljL0hlYWRlci5tb2R1bGUuY3NzPzRmNWQiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6Ii4vY3NzL1B1YmxpYy9IZWFkZXIubW9kdWxlLmNzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0ge1xuXHRcImJ1dHRvbjJcIjogXCJIZWFkZXJfYnV0dG9uMl9fd0Y3WEdcIixcblx0XCJib3VuY2VcIjogXCJIZWFkZXJfYm91bmNlX18yNHRVOVwiLFxuXHRcImJhbGxcIjogXCJIZWFkZXJfYmFsbF9fM3BSaTdcIlxufTtcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./css/Public/Header.module.css\n");
 
 /***/ }),
 
-/***/ "4D1s":
+/***/ "./css/public.module.css":
+/*!*******************************!*\
+  !*** ./css/public.module.css ***!
+  \*******************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/icons/Menu");
+eval("// Exports\nmodule.exports = {\n\t\"footerBlock\": \"public_footerBlock__XuCr-\",\n\t\"footerBlockNight\": \"public_footerBlockNight__3mi7b\",\n\t\"imgDescription\": \"public_imgDescription__2GBDJ\",\n\t\"imgDescriptionNight\": \"public_imgDescriptionNight__3CXJE\",\n\t\"bar\": \"public_bar__347QX\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jc3MvcHVibGljLm1vZHVsZS5jc3M/YjI1MCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6Ii4vY3NzL3B1YmxpYy5tb2R1bGUuY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gRXhwb3J0c1xubW9kdWxlLmV4cG9ydHMgPSB7XG5cdFwiZm9vdGVyQmxvY2tcIjogXCJwdWJsaWNfZm9vdGVyQmxvY2tfX1h1Q3ItXCIsXG5cdFwiZm9vdGVyQmxvY2tOaWdodFwiOiBcInB1YmxpY19mb290ZXJCbG9ja05pZ2h0X18zbWk3YlwiLFxuXHRcImltZ0Rlc2NyaXB0aW9uXCI6IFwicHVibGljX2ltZ0Rlc2NyaXB0aW9uX18yR0JESlwiLFxuXHRcImltZ0Rlc2NyaXB0aW9uTmlnaHRcIjogXCJwdWJsaWNfaW1nRGVzY3JpcHRpb25OaWdodF9fM0NYSkVcIixcblx0XCJiYXJcIjogXCJwdWJsaWNfYmFyX18zNDdRWFwiXG59O1xuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./css/public.module.css\n");
 
 /***/ }),
 
-/***/ "4Q3z":
-/***/ (function(module, exports) {
-
-module.exports = require("next/router");
-
-/***/ }),
-
-/***/ "4dwz":
-/***/ (function(module, exports) {
-
-module.exports = require("react-top-loading-bar");
-
-/***/ }),
-
-/***/ "6f9I":
-/***/ (function(module, exports) {
-
-module.exports = require("next-i18next");
-
-/***/ }),
-
-/***/ 8:
+/***/ "./i18n.js":
+/*!*****************!*\
+  !*** ./i18n.js ***!
+  \*****************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("RNiq");
-
-
-/***/ }),
-
-/***/ "9Pu4":
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/styles");
+eval("const NextI18Next = __webpack_require__(/*! next-i18next */ \"next-i18next\").default;\n\nconst localeSubpaths = __webpack_require__(/*! next/config */ \"next/config\").default().publicRuntimeConfig;\n\nconst path = __webpack_require__(/*! path */ \"path\");\n\nmodule.exports = new NextI18Next({\n  defaultLanguage: 'en',\n  otherLanguages: ['zhHant'],\n  localeSubpaths: {\n    zhHant: 'cn'\n  },\n  localePath: path.resolve('./public/static/locales')\n}); // export const useTranslation = nextI18Next.useTranslation;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9pMThuLmpzPzkzYjQiXSwibmFtZXMiOlsiTmV4dEkxOE5leHQiLCJyZXF1aXJlIiwiZGVmYXVsdCIsImxvY2FsZVN1YnBhdGhzIiwicHVibGljUnVudGltZUNvbmZpZyIsInBhdGgiLCJtb2R1bGUiLCJleHBvcnRzIiwiZGVmYXVsdExhbmd1YWdlIiwib3RoZXJMYW5ndWFnZXMiLCJ6aEhhbnQiLCJsb2NhbGVQYXRoIiwicmVzb2x2ZSJdLCJtYXBwaW5ncyI6IkFBQ0EsTUFBTUEsV0FBVyxHQUFHQyxtQkFBTyxDQUFDLGtDQUFELENBQVAsQ0FBd0JDLE9BQTVDOztBQUNBLE1BQU1DLGNBQWMsR0FBR0YsbUJBQU8sQ0FBQyxnQ0FBRCxDQUFQLENBQXVCQyxPQUF2QixHQUFpQ0UsbUJBQXhEOztBQUNBLE1BQU1DLElBQUksR0FBR0osbUJBQU8sQ0FBQyxrQkFBRCxDQUFwQjs7QUFFQUssTUFBTSxDQUFDQyxPQUFQLEdBQWlCLElBQUlQLFdBQUosQ0FBZ0I7QUFDL0JRLGlCQUFlLEVBQUMsSUFEZTtBQUUvQkMsZ0JBQWMsRUFBRSxDQUFDLFFBQUQsQ0FGZTtBQUcvQk4sZ0JBQWMsRUFBQztBQUNiTyxVQUFNLEVBQUM7QUFETSxHQUhnQjtBQU0vQkMsWUFBVSxFQUFFTixJQUFJLENBQUNPLE9BQUwsQ0FBYSx5QkFBYjtBQU5tQixDQUFoQixDQUFqQixDLENBUUEiLCJmaWxlIjoiLi9pMThuLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiXG5jb25zdCBOZXh0STE4TmV4dCA9IHJlcXVpcmUoJ25leHQtaTE4bmV4dCcpLmRlZmF1bHRcbmNvbnN0IGxvY2FsZVN1YnBhdGhzID0gcmVxdWlyZSgnbmV4dC9jb25maWcnKS5kZWZhdWx0KCkucHVibGljUnVudGltZUNvbmZpZ1xuY29uc3QgcGF0aCA9IHJlcXVpcmUoJ3BhdGgnKVxuXG5tb2R1bGUuZXhwb3J0cyA9IG5ldyBOZXh0STE4TmV4dCh7XG4gIGRlZmF1bHRMYW5ndWFnZTonZW4nLFxuICBvdGhlckxhbmd1YWdlczogWyd6aEhhbnQnXSxcbiAgbG9jYWxlU3VicGF0aHM6e1xuICAgIHpoSGFudDonY24nXG4gIH0sXG4gIGxvY2FsZVBhdGg6IHBhdGgucmVzb2x2ZSgnLi9wdWJsaWMvc3RhdGljL2xvY2FsZXMnKVxufSlcbi8vIGV4cG9ydCBjb25zdCB1c2VUcmFuc2xhdGlvbiA9IG5leHRJMThOZXh0LnVzZVRyYW5zbGF0aW9uOyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./i18n.js\n");
 
 /***/ }),
 
-/***/ "BXF7":
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export actionTypes */
-/* unused harmony export reducer */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return toDay; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return toNight; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return toEn; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return toZhHant; });
-/* unused harmony export resetCount */
-/* unused harmony export initializeStore */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return useStore; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("rKB8");
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("ufKq");
-/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var redux_persist__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("VNb8");
-/* harmony import */ var redux_persist__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(redux_persist__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var redux_persist_lib_storage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("T8f9");
-/* harmony import */ var redux_persist_lib_storage__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(redux_persist_lib_storage__WEBPACK_IMPORTED_MODULE_4__);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-let store;
-const exampleInitialState = {
-  mode: 'day',
-  lang: 'en'
-};
-const actionTypes = {
-  DAY: 'DAY',
-  NIGHT: 'NIGHT',
-  EN: 'EN',
-  ZHHANT: 'ZHHANT',
-  RESET: 'RESET'
-}; // REDUCERS
-
-const reducer = (state = exampleInitialState, action) => {
-  switch (action.type) {
-    case actionTypes.DAY:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        mode: 'day'
-      });
-
-    case actionTypes.NIGHT:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        mode: 'night'
-      });
-
-    case actionTypes.EN:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        lang: 'en'
-      });
-
-    case actionTypes.ZHHANT:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        lang: 'zhHant'
-      });
-
-    case actionTypes.RESET:
-      return _objectSpread(_objectSpread({}, state), {}, {
-        mode: 'day',
-        lang: 'en'
-      });
-
-    default:
-      return state;
-  }
-}; // ACTIONS
-
-const toDay = () => {
-  return {
-    type: actionTypes.DAY
-  };
-};
-const toNight = () => {
-  return {
-    type: actionTypes.NIGHT
-  };
-};
-const toEn = () => {
-  return {
-    type: actionTypes.EN
-  };
-};
-const toZhHant = () => {
-  return {
-    type: actionTypes.ZHHANT
-  };
-};
-const resetCount = () => {
-  return {
-    type: actionTypes.RESET
-  };
-};
-const persistConfig = {
-  key: 'primary',
-  storage: (redux_persist_lib_storage__WEBPACK_IMPORTED_MODULE_4___default()),
-  whitelist: ['mode', 'lang'] // place to select which state you want to persist
-
-};
-const persistedReducer = Object(redux_persist__WEBPACK_IMPORTED_MODULE_3__["persistReducer"])(persistConfig, reducer);
-
-function makeStore(initialState = exampleInitialState) {
-  return Object(redux__WEBPACK_IMPORTED_MODULE_1__["createStore"])(persistedReducer, initialState, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_1__["applyMiddleware"])()));
-}
-
-const initializeStore = preloadedState => {
-  var _store2;
-
-  let _store = (_store2 = store) !== null && _store2 !== void 0 ? _store2 : makeStore(preloadedState); // After navigating to a page with an initial Redux state, merge that state
-  // with the current state in the store, and create a new store
-
-
-  if (preloadedState && store) {
-    _store = makeStore(_objectSpread(_objectSpread({}, store.getState()), preloadedState)); // Reset the current store
-
-    store = undefined;
-  } // For SSG and SSR always create a new store
-
-
-  if (true) return _store; // Create the store once in the client
-
-  if (!store) store = _store;
-  return _store;
-};
-function useStore(initialState) {
-  const store = Object(react__WEBPACK_IMPORTED_MODULE_0__["useMemo"])(() => initializeStore(initialState), [initialState]);
-  return store;
-} // import { useMemo } from 'react'
-// import { createStore, applyMiddleware } from 'redux'
-// import { composeWithDevTools } from 'redux-devtools-extension'
-// let store
-// const initialState = {
-//     mode:'day'
-// }
-// const reducer = (state = initialState, action) => {
-//   switch (action.type) {
-//     case 'DAY':
-//       return {
-//         ...state,
-//         mode: 'day',
-//       }
-//     case 'NIGHT':
-//       return {
-//         ...state,
-//         mode: 'night',
-//       }
-//     case 'RESET':
-//       return {
-//         ...state,
-//       }
-//     default:
-//       return state
-//   }
-// }
-// function initStore(preloadedState = initialState) {
-//   return createStore(
-//     reducer,
-//     preloadedState,
-//     composeWithDevTools(applyMiddleware())
-//   )
-// }
-// export const initializeStore = (preloadedState) => {
-//   let _store = store ?? initStore(preloadedState)
-//   // After navigating to a page with an initial Redux state, merge that state
-//   // with the current state in the store, and create a new store
-//   if (preloadedState && store) {
-//     _store = initStore({
-//       ...store.getState(),
-//       ...preloadedState,
-//     })
-//     // Reset the current store
-//     store = undefined
-//   }
-//   // For SSG and SSR always create a new store
-//   if (typeof window === 'undefined') return _store
-//   // Create the store once in the client
-//   if (!store) store = _store
-//   return _store
-// }
-// export function useStore(initialState) {
-//   const store = useMemo(() => initializeStore(initialState), [initialState])
-//   return store
-// }
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../i18n */ \"./i18n.js\");\n/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ \"prop-types\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _component_Home_Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../component/Home/Home */ \"./component/Home/Home.js\");\n/* harmony import */ var next_seo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next-seo */ \"next-seo\");\n/* harmony import */ var next_seo__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_seo__WEBPACK_IMPORTED_MODULE_5__);\n\nvar _jsxFileName = \"/Users/wangweian/wangweian/weian/pages/index.js\";\n\n\n\n\n\n\nconst HomePage = ({\n  t\n}) => {\n  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {\n    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(next_seo__WEBPACK_IMPORTED_MODULE_5__[\"NextSeo\"], {\n      title: \"Weian Wang | Front-end developer\",\n      description: \"I am a front-end developer, open to opportunities.\",\n      openGraph: {\n        url: 'https://weianofsteel.com',\n        title: 'Weian Wang | Front-end developer',\n        description: 'I am a front-end developer, open to opportunities.',\n        images: [{\n          url: 'https://raw.githubusercontent.com/weianofsteel/saliejung/master/public/openGraph.jpg',\n          width: 800,\n          height: 600,\n          alt: 'Weian Wang | Front-end developer'\n        }],\n        site_name: 'Weian Wang | Front-end developer'\n      }\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 11,\n      columnNumber: 13\n    }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(_component_Home_Home__WEBPACK_IMPORTED_MODULE_4__[\"Home\"], {}, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 30,\n      columnNumber: 11\n    }, undefined)]\n  }, void 0, true, {\n    fileName: _jsxFileName,\n    lineNumber: 9,\n    columnNumber: 9\n  }, undefined);\n};\n\nHomePage.getInitialProps = async () => ({\n  namespacesRequired: ['header', 'banner', 'footer', 'skill', 'learnByDoing', 'sharing']\n});\n\nHomePage.propTypes = {\n  t: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func.isRequired\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_2__[\"withTranslation\"])('header')(HomePage));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWdlcy9pbmRleC5qcz80NGQ4Il0sIm5hbWVzIjpbIkhvbWVQYWdlIiwidCIsInVybCIsInRpdGxlIiwiZGVzY3JpcHRpb24iLCJpbWFnZXMiLCJ3aWR0aCIsImhlaWdodCIsImFsdCIsInNpdGVfbmFtZSIsImdldEluaXRpYWxQcm9wcyIsIm5hbWVzcGFjZXNSZXF1aXJlZCIsInByb3BUeXBlcyIsIlByb3BUeXBlcyIsImZ1bmMiLCJpc1JlcXVpcmVkIiwid2l0aFRyYW5zbGF0aW9uIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7OztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUEsTUFBTUEsUUFBUSxHQUFHLENBQUM7QUFBRUM7QUFBRixDQUFELEtBQVU7QUFDdkIsc0JBQ0kscUVBQUMsNENBQUQsQ0FBTyxRQUFQO0FBQUEsNEJBRUkscUVBQUMsZ0RBQUQ7QUFDSSxXQUFLLEVBQUMsa0NBRFY7QUFFSSxpQkFBVyxFQUFDLG9EQUZoQjtBQUdJLGVBQVMsRUFBRTtBQUNQQyxXQUFHLEVBQUUsMEJBREU7QUFFUEMsYUFBSyxFQUFFLGtDQUZBO0FBR1BDLG1CQUFXLEVBQUUsb0RBSE47QUFJUEMsY0FBTSxFQUFFLENBQ047QUFDRUgsYUFBRyxFQUFFLHNGQURQO0FBRUVJLGVBQUssRUFBRSxHQUZUO0FBR0VDLGdCQUFNLEVBQUUsR0FIVjtBQUlFQyxhQUFHLEVBQUU7QUFKUCxTQURNLENBSkQ7QUFZUEMsaUJBQVMsRUFBRTtBQVpKO0FBSGY7QUFBQTtBQUFBO0FBQUE7QUFBQSxpQkFGSixlQXFCRSxxRUFBQyx5REFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBLGlCQXJCRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFESjtBQTJCSCxDQTVCRDs7QUE4QkFULFFBQVEsQ0FBQ1UsZUFBVCxHQUEyQixhQUFhO0FBQ3BDQyxvQkFBa0IsRUFBRSxDQUFDLFFBQUQsRUFBVyxRQUFYLEVBQXFCLFFBQXJCLEVBQStCLE9BQS9CLEVBQXdDLGNBQXhDLEVBQXdELFNBQXhEO0FBRGdCLENBQWIsQ0FBM0I7O0FBSUFYLFFBQVEsQ0FBQ1ksU0FBVCxHQUFxQjtBQUNuQlgsR0FBQyxFQUFFWSxpREFBUyxDQUFDQyxJQUFWLENBQWVDO0FBREMsQ0FBckI7QUFJZUMsNEhBQWUsQ0FBQyxRQUFELENBQWYsQ0FBMEJoQixRQUExQixDQUFmIiwiZmlsZSI6Ii4vcGFnZXMvaW5kZXguanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgeyB3aXRoVHJhbnNsYXRpb24gfSBmcm9tICcuLi9pMThuJ1xuaW1wb3J0IFByb3BUeXBlcyBmcm9tICdwcm9wLXR5cGVzJ1xuaW1wb3J0IHtIb21lfSBmcm9tICcuLi9jb21wb25lbnQvSG9tZS9Ib21lJ1xuaW1wb3J0IHsgTmV4dFNlbyB9IGZyb20gJ25leHQtc2VvJ1xuXG5jb25zdCBIb21lUGFnZSA9ICh7IHQgfSkgPT57XG4gICAgcmV0dXJuIChcbiAgICAgICAgPFJlYWN0LkZyYWdtZW50PlxuXG4gICAgICAgICAgICA8TmV4dFNlb1xuICAgICAgICAgICAgICAgIHRpdGxlPVwiV2VpYW4gV2FuZyB8IEZyb250LWVuZCBkZXZlbG9wZXJcIlxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uPVwiSSBhbSBhIGZyb250LWVuZCBkZXZlbG9wZXIsIG9wZW4gdG8gb3Bwb3J0dW5pdGllcy5cIlxuICAgICAgICAgICAgICAgIG9wZW5HcmFwaD17e1xuICAgICAgICAgICAgICAgICAgICB1cmw6ICdodHRwczovL3dlaWFub2ZzdGVlbC5jb20nLFxuICAgICAgICAgICAgICAgICAgICB0aXRsZTogJ1dlaWFuIFdhbmcgfCBGcm9udC1lbmQgZGV2ZWxvcGVyJyxcbiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICdJIGFtIGEgZnJvbnQtZW5kIGRldmVsb3Blciwgb3BlbiB0byBvcHBvcnR1bml0aWVzLicsXG4gICAgICAgICAgICAgICAgICAgIGltYWdlczogW1xuICAgICAgICAgICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIHVybDogJ2h0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS93ZWlhbm9mc3RlZWwvc2FsaWVqdW5nL21hc3Rlci9wdWJsaWMvb3BlbkdyYXBoLmpwZycsXG4gICAgICAgICAgICAgICAgICAgICAgICB3aWR0aDogODAwLFxuICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiA2MDAsXG4gICAgICAgICAgICAgICAgICAgICAgICBhbHQ6ICdXZWlhbiBXYW5nIHwgRnJvbnQtZW5kIGRldmVsb3BlcicsXG4gICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICBdLFxuICAgICAgICAgICAgICAgICAgICBzaXRlX25hbWU6ICdXZWlhbiBXYW5nIHwgRnJvbnQtZW5kIGRldmVsb3BlcicsXG4gICAgICAgICAgICAgICAgICB9fVxuICAgICAgICAgICAgLz5cblxuICAgICAgICAgIDxIb21lLz5cblxuICAgICAgICA8L1JlYWN0LkZyYWdtZW50PlxuICAgIClcblxufVxuXG5Ib21lUGFnZS5nZXRJbml0aWFsUHJvcHMgPSBhc3luYyAoKSA9PiAoe1xuICAgIG5hbWVzcGFjZXNSZXF1aXJlZDogWydoZWFkZXInLCAnYmFubmVyJywgJ2Zvb3RlcicsICdza2lsbCcsICdsZWFybkJ5RG9pbmcnLCAnc2hhcmluZyddLFxuICB9KVxuICBcbkhvbWVQYWdlLnByb3BUeXBlcyA9IHtcbiAgdDogUHJvcFR5cGVzLmZ1bmMuaXNSZXF1aXJlZCxcbn1cbiAgXG5leHBvcnQgZGVmYXVsdCB3aXRoVHJhbnNsYXRpb24oJ2hlYWRlcicpKEhvbWVQYWdlKSAiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/index.js\n");
 
 /***/ }),
 
-/***/ "CGI1":
+/***/ "./public/image/about/avartar.jpg":
+/*!****************************************!*\
+  !*** ./public/image/about/avartar.jpg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"/_next/static/images/avartar-363832ec308a8456a3f66989d21ee96d.jpg\";//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wdWJsaWMvaW1hZ2UvYWJvdXQvYXZhcnRhci5qcGc/MWE0NCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiIuL3B1YmxpYy9pbWFnZS9hYm91dC9hdmFydGFyLmpwZy5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gXCIvX25leHQvc3RhdGljL2ltYWdlcy9hdmFydGFyLTM2MzgzMmVjMzA4YTg0NTZhM2Y2Njk4OWQyMWVlOTZkLmpwZ1wiOyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./public/image/about/avartar.jpg\n");
+
+/***/ }),
+
+/***/ "./store.js":
+/*!******************!*\
+  !*** ./store.js ***!
+  \******************/
+/*! exports provided: actionTypes, reducer, toDay, toNight, toEn, toZhHant, resetCount, initializeStore, useStore */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PageLoader; });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("F5FC");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_top_loading_bar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("4dwz");
-/* harmony import */ var react_top_loading_bar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_top_loading_bar__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-const PageLoader = props => {
-  const [progress, setProgress] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(0);
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
-    setProgress(100);
-  }, []);
-  const {
-    mode
-  } = props;
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_top_loading_bar__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      color: mode === 'day' ? 'black' : 'white',
-      height: 3,
-      waitingTime: 500,
-      transitionTime: 1000,
-      loaderSpeed: 600,
-      progress: progress,
-      onLoaderFinished: () => setProgress(0)
-    })
-  });
-};
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"actionTypes\", function() { return actionTypes; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"reducer\", function() { return reducer; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"toDay\", function() { return toDay; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"toNight\", function() { return toNight; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"toEn\", function() { return toEn; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"toZhHant\", function() { return toZhHant; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"resetCount\", function() { return resetCount; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"initializeStore\", function() { return initializeStore; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"useStore\", function() { return useStore; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux */ \"redux\");\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-devtools-extension */ \"redux-devtools-extension\");\n/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var redux_persist__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux-persist */ \"redux-persist\");\n/* harmony import */ var redux_persist__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(redux_persist__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var redux_persist_lib_storage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! redux-persist/lib/storage */ \"redux-persist/lib/storage\");\n/* harmony import */ var redux_persist_lib_storage__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(redux_persist_lib_storage__WEBPACK_IMPORTED_MODULE_4__);\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nlet store;\nconst exampleInitialState = {\n  mode: 'day',\n  lang: 'en'\n};\nconst actionTypes = {\n  DAY: 'DAY',\n  NIGHT: 'NIGHT',\n  EN: 'EN',\n  ZHHANT: 'ZHHANT',\n  RESET: 'RESET'\n}; // REDUCERS\n\nconst reducer = (state = exampleInitialState, action) => {\n  switch (action.type) {\n    case actionTypes.DAY:\n      return _objectSpread(_objectSpread({}, state), {}, {\n        mode: 'day'\n      });\n\n    case actionTypes.NIGHT:\n      return _objectSpread(_objectSpread({}, state), {}, {\n        mode: 'night'\n      });\n\n    case actionTypes.EN:\n      return _objectSpread(_objectSpread({}, state), {}, {\n        lang: 'en'\n      });\n\n    case actionTypes.ZHHANT:\n      return _objectSpread(_objectSpread({}, state), {}, {\n        lang: 'zhHant'\n      });\n\n    case actionTypes.RESET:\n      return _objectSpread(_objectSpread({}, state), {}, {\n        mode: 'day',\n        lang: 'en'\n      });\n\n    default:\n      return state;\n  }\n}; // ACTIONS\n\nconst toDay = () => {\n  return {\n    type: actionTypes.DAY\n  };\n};\nconst toNight = () => {\n  return {\n    type: actionTypes.NIGHT\n  };\n};\nconst toEn = () => {\n  return {\n    type: actionTypes.EN\n  };\n};\nconst toZhHant = () => {\n  return {\n    type: actionTypes.ZHHANT\n  };\n};\nconst resetCount = () => {\n  return {\n    type: actionTypes.RESET\n  };\n};\nconst persistConfig = {\n  key: 'primary',\n  storage: (redux_persist_lib_storage__WEBPACK_IMPORTED_MODULE_4___default()),\n  whitelist: ['mode', 'lang'] // place to select which state you want to persist\n\n};\nconst persistedReducer = Object(redux_persist__WEBPACK_IMPORTED_MODULE_3__[\"persistReducer\"])(persistConfig, reducer);\n\nfunction makeStore(initialState = exampleInitialState) {\n  return Object(redux__WEBPACK_IMPORTED_MODULE_1__[\"createStore\"])(persistedReducer, initialState, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__[\"composeWithDevTools\"])(Object(redux__WEBPACK_IMPORTED_MODULE_1__[\"applyMiddleware\"])()));\n}\n\nconst initializeStore = preloadedState => {\n  var _store2;\n\n  let _store = (_store2 = store) !== null && _store2 !== void 0 ? _store2 : makeStore(preloadedState); // After navigating to a page with an initial Redux state, merge that state\n  // with the current state in the store, and create a new store\n\n\n  if (preloadedState && store) {\n    _store = makeStore(_objectSpread(_objectSpread({}, store.getState()), preloadedState)); // Reset the current store\n\n    store = undefined;\n  } // For SSG and SSR always create a new store\n\n\n  if (true) return _store; // Create the store once in the client\n\n  if (!store) store = _store;\n  return _store;\n};\nfunction useStore(initialState) {\n  const store = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useMemo\"])(() => initializeStore(initialState), [initialState]);\n  return store;\n} // import { useMemo } from 'react'\n// import { createStore, applyMiddleware } from 'redux'\n// import { composeWithDevTools } from 'redux-devtools-extension'\n// let store\n// const initialState = {\n//     mode:'day'\n// }\n// const reducer = (state = initialState, action) => {\n//   switch (action.type) {\n//     case 'DAY':\n//       return {\n//         ...state,\n//         mode: 'day',\n//       }\n//     case 'NIGHT':\n//       return {\n//         ...state,\n//         mode: 'night',\n//       }\n//     case 'RESET':\n//       return {\n//         ...state,\n//       }\n//     default:\n//       return state\n//   }\n// }\n// function initStore(preloadedState = initialState) {\n//   return createStore(\n//     reducer,\n//     preloadedState,\n//     composeWithDevTools(applyMiddleware())\n//   )\n// }\n// export const initializeStore = (preloadedState) => {\n//   let _store = store ?? initStore(preloadedState)\n//   // After navigating to a page with an initial Redux state, merge that state\n//   // with the current state in the store, and create a new store\n//   if (preloadedState && store) {\n//     _store = initStore({\n//       ...store.getState(),\n//       ...preloadedState,\n//     })\n//     // Reset the current store\n//     store = undefined\n//   }\n//   // For SSG and SSR always create a new store\n//   if (typeof window === 'undefined') return _store\n//   // Create the store once in the client\n//   if (!store) store = _store\n//   return _store\n// }\n// export function useStore(initialState) {\n//   const store = useMemo(() => initializeStore(initialState), [initialState])\n//   return store\n// }//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zdG9yZS5qcz8wNTcxIl0sIm5hbWVzIjpbInN0b3JlIiwiZXhhbXBsZUluaXRpYWxTdGF0ZSIsIm1vZGUiLCJsYW5nIiwiYWN0aW9uVHlwZXMiLCJEQVkiLCJOSUdIVCIsIkVOIiwiWkhIQU5UIiwiUkVTRVQiLCJyZWR1Y2VyIiwic3RhdGUiLCJhY3Rpb24iLCJ0eXBlIiwidG9EYXkiLCJ0b05pZ2h0IiwidG9FbiIsInRvWmhIYW50IiwicmVzZXRDb3VudCIsInBlcnNpc3RDb25maWciLCJrZXkiLCJzdG9yYWdlIiwid2hpdGVsaXN0IiwicGVyc2lzdGVkUmVkdWNlciIsInBlcnNpc3RSZWR1Y2VyIiwibWFrZVN0b3JlIiwiaW5pdGlhbFN0YXRlIiwiY3JlYXRlU3RvcmUiLCJjb21wb3NlV2l0aERldlRvb2xzIiwiYXBwbHlNaWRkbGV3YXJlIiwiaW5pdGlhbGl6ZVN0b3JlIiwicHJlbG9hZGVkU3RhdGUiLCJfc3RvcmUiLCJnZXRTdGF0ZSIsInVuZGVmaW5lZCIsInVzZVN0b3JlIiwidXNlTWVtbyJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUEsSUFBSUEsS0FBSjtBQUVBLE1BQU1DLG1CQUFtQixHQUFHO0FBQzFCQyxNQUFJLEVBQUMsS0FEcUI7QUFFMUJDLE1BQUksRUFBQztBQUZxQixDQUE1QjtBQUtPLE1BQU1DLFdBQVcsR0FBRztBQUN6QkMsS0FBRyxFQUFFLEtBRG9CO0FBRXpCQyxPQUFLLEVBQUUsT0FGa0I7QUFHekJDLElBQUUsRUFBRSxJQUhxQjtBQUl6QkMsUUFBTSxFQUFFLFFBSmlCO0FBS3pCQyxPQUFLLEVBQUU7QUFMa0IsQ0FBcEIsQyxDQVFQOztBQUNPLE1BQU1DLE9BQU8sR0FBRyxDQUFDQyxLQUFLLEdBQUdWLG1CQUFULEVBQThCVyxNQUE5QixLQUF5QztBQUM5RCxVQUFRQSxNQUFNLENBQUNDLElBQWY7QUFDRSxTQUFLVCxXQUFX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Q0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiIuL3N0b3JlLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgdXNlTWVtbyB9IGZyb20gJ3JlYWN0J1xuaW1wb3J0IHsgY3JlYXRlU3RvcmUsIGFwcGx5TWlkZGxld2FyZSB9IGZyb20gJ3JlZHV4J1xuaW1wb3J0IHsgY29tcG9zZVdpdGhEZXZUb29scyB9IGZyb20gJ3JlZHV4LWRldnRvb2xzLWV4dGVuc2lvbidcbmltcG9ydCB7IHBlcnNpc3RSZWR1Y2VyIH0gZnJvbSAncmVkdXgtcGVyc2lzdCdcbmltcG9ydCBzdG9yYWdlIGZyb20gJ3JlZHV4LXBlcnNpc3QvbGliL3N0b3JhZ2UnXG5cbmxldCBzdG9yZVxuXG5jb25zdCBleGFtcGxlSW5pdGlhbFN0YXRlID0ge1xuICBtb2RlOidkYXknLFxuICBsYW5nOidlbidcbn1cblxuZXhwb3J0IGNvbnN0IGFjdGlvblR5cGVzID0ge1xuICBEQVk6ICdEQVknLFxuICBOSUdIVDogJ05JR0hUJyxcbiAgRU46ICdFTicsXG4gIFpISEFOVDogJ1pISEFOVCcsXG4gIFJFU0VUOiAnUkVTRVQnXG59XG5cbi8vIFJFRFVDRVJTXG5leHBvcnQgY29uc3QgcmVkdWNlciA9IChzdGF0ZSA9IGV4YW1wbGVJbml0aWFsU3RhdGUsIGFjdGlvbikgPT4ge1xuICBzd2l0Y2ggKGFjdGlvbi50eXBlKSB7XG4gICAgY2FzZSBhY3Rpb25UeXBlcy5EQVk6XG4gICAgICByZXR1cm4ge1xuICAgICAgICAuLi5zdGF0ZSxcbiAgICAgICAgbW9kZTogJ2RheSdcbiAgICAgIH1cbiAgICBjYXNlIGFjdGlvblR5cGVzLk5JR0hUOlxuICAgICAgcmV0dXJuIHtcbiAgICAgICAgLi4uc3RhdGUsXG4gICAgICAgIG1vZGU6ICduaWdodCdcbiAgICAgIH1cbiAgICBjYXNlIGFjdGlvblR5cGVzLkVOOlxuICAgICAgcmV0dXJuIHtcbiAgICAgICAgLi4uc3RhdGUsXG4gICAgICAgIGxhbmc6ICdlbidcbiAgICAgIH1cbiAgICBjYXNlIGFjdGlvblR5cGVzLlpISEFOVDpcbiAgICAgIHJldHVybiB7XG4gICAgICAgIC4uLnN0YXRlLFxuICAgICAgICBsYW5nOiAnemhIYW50J1xuICAgICAgfSBcbiAgICBjYXNlIGFjdGlvblR5cGVzLlJFU0VUOlxuICAgICAgcmV0dXJuIHtcbiAgICAgICAgLi4uc3RhdGUsXG4gICAgICAgIG1vZGU6ICdkYXknLFxuICAgICAgICBsYW5nOiAnZW4nXG4gICAgICB9XG4gICAgZGVmYXVsdDpcbiAgICAgIHJldHVybiBzdGF0ZVxuICB9XG59XG5cbi8vIEFDVElPTlNcbmV4cG9ydCBjb25zdCB0b0RheSA9ICgpID0+IHtcbiAgcmV0dXJuIHsgdHlwZTogYWN0aW9uVHlwZXMuREFZIH1cbn1cblxuZXhwb3J0IGNvbnN0IHRvTmlnaHQgPSAoKSA9PiB7XG4gIHJldHVybiB7IHR5cGU6IGFjdGlvblR5cGVzLk5JR0hUIH1cbn1cblxuZXhwb3J0IGNvbnN0IHRvRW4gPSAoKSA9PiB7XG4gIHJldHVybiB7IHR5cGU6IGFjdGlvblR5cGVzLkVOIH1cbn1cblxuZXhwb3J0IGNvbnN0IHRvWmhIYW50ID0gKCkgPT4ge1xuICByZXR1cm4geyB0eXBlOiBhY3Rpb25UeXBlcy5aSEhBTlQgfVxufVxuXG5leHBvcnQgY29uc3QgcmVzZXRDb3VudCA9ICgpID0+IHtcbiAgcmV0dXJuIHsgdHlwZTogYWN0aW9uVHlwZXMuUkVTRVQgfVxufVxuXG5jb25zdCBwZXJzaXN0Q29uZmlnID0ge1xuICBrZXk6ICdwcmltYXJ5JyxcbiAgc3RvcmFnZSxcbiAgd2hpdGVsaXN0OiBbJ21vZGUnLCAnbGFuZyddLCAvLyBwbGFjZSB0byBzZWxlY3Qgd2hpY2ggc3RhdGUgeW91IHdhbnQgdG8gcGVyc2lzdFxufVxuXG5jb25zdCBwZXJzaXN0ZWRSZWR1Y2VyID0gcGVyc2lzdFJlZHVjZXIocGVyc2lzdENvbmZpZywgcmVkdWNlcilcblxuZnVuY3Rpb24gbWFrZVN0b3JlKGluaXRpYWxTdGF0ZSA9IGV4YW1wbGVJbml0aWFsU3RhdGUpIHtcbiAgcmV0dXJuIGNyZWF0ZVN0b3JlKFxuICAgIHBlcnNpc3RlZFJlZHVjZXIsXG4gICAgaW5pdGlhbFN0YXRlLFxuICAgIGNvbXBvc2VXaXRoRGV2VG9vbHMoYXBwbHlNaWRkbGV3YXJlKCkpXG4gIClcbn1cblxuZXhwb3J0IGNvbnN0IGluaXRpYWxpemVTdG9yZSA9IChwcmVsb2FkZWRTdGF0ZSkgPT4ge1xuICBsZXQgX3N0b3JlID0gc3RvcmUgPz8gbWFrZVN0b3JlKHByZWxvYWRlZFN0YXRlKVxuXG4gIC8vIEFmdGVyIG5hdmlnYXRpbmcgdG8gYSBwYWdlIHdpdGggYW4gaW5pdGlhbCBSZWR1eCBzdGF0ZSwgbWVyZ2UgdGhhdCBzdGF0ZVxuICAvLyB3aXRoIHRoZSBjdXJyZW50IHN0YXRlIGluIHRoZSBzdG9yZSwgYW5kIGNyZWF0ZSBhIG5ldyBzdG9yZVxuICBpZiAocHJlbG9hZGVkU3RhdGUgJiYgc3RvcmUpIHtcbiAgICBfc3RvcmUgPSBtYWtlU3RvcmUoe1xuICAgICAgLi4uc3RvcmUuZ2V0U3RhdGUoKSxcbiAgICAgIC4uLnByZWxvYWRlZFN0YXRlLFxuICAgIH0pXG4gICAgLy8gUmVzZXQgdGhlIGN1cnJlbnQgc3RvcmVcbiAgICBzdG9yZSA9IHVuZGVmaW5lZFxuICB9XG5cbiAgLy8gRm9yIFNTRyBhbmQgU1NSIGFsd2F5cyBjcmVhdGUgYSBuZXcgc3RvcmVcbiAgaWYgKHR5cGVvZiB3aW5kb3cgPT09ICd1bmRlZmluZWQnKSByZXR1cm4gX3N0b3JlXG4gIC8vIENyZWF0ZSB0aGUgc3RvcmUgb25jZSBpbiB0aGUgY2xpZW50XG4gIGlmICghc3RvcmUpIHN0b3JlID0gX3N0b3JlXG5cbiAgcmV0dXJuIF9zdG9yZVxufVxuXG5leHBvcnQgZnVuY3Rpb24gdXNlU3RvcmUoaW5pdGlhbFN0YXRlKSB7XG4gIGNvbnN0IHN0b3JlID0gdXNlTWVtbygoKSA9PiBpbml0aWFsaXplU3RvcmUoaW5pdGlhbFN0YXRlKSwgW2luaXRpYWxTdGF0ZV0pXG4gIHJldHVybiBzdG9yZVxufVxuXG5cbi8vIGltcG9ydCB7IHVzZU1lbW8gfSBmcm9tICdyZWFjdCdcbi8vIGltcG9ydCB7IGNyZWF0ZVN0b3JlLCBhcHBseU1pZGRsZXdhcmUgfSBmcm9tICdyZWR1eCdcbi8vIGltcG9ydCB7IGNvbXBvc2VXaXRoRGV2VG9vbHMgfSBmcm9tICdyZWR1eC1kZXZ0b29scy1leHRlbnNpb24nXG5cbi8vIGxldCBzdG9yZVxuXG4vLyBjb25zdCBpbml0aWFsU3RhdGUgPSB7XG4vLyAgICAgbW9kZTonZGF5J1xuLy8gfVxuXG4vLyBjb25zdCByZWR1Y2VyID0gKHN0YXRlID0gaW5pdGlhbFN0YXRlLCBhY3Rpb24pID0+IHtcbi8vICAgc3dpdGNoIChhY3Rpb24udHlwZSkge1xuLy8gICAgIGNhc2UgJ0RBWSc6XG4vLyAgICAgICByZXR1cm4ge1xuLy8gICAgICAgICAuLi5zdGF0ZSxcbi8vICAgICAgICAgbW9kZTogJ2RheScsXG4vLyAgICAgICB9XG4vLyAgICAgY2FzZSAnTklHSFQnOlxuLy8gICAgICAgcmV0dXJuIHtcbi8vICAgICAgICAgLi4uc3RhdGUsXG4vLyAgICAgICAgIG1vZGU6ICduaWdodCcsXG4vLyAgICAgICB9XG4vLyAgICAgY2FzZSAnUkVTRVQnOlxuLy8gICAgICAgcmV0dXJuIHtcbi8vICAgICAgICAgLi4uc3RhdGUsXG4vLyAgICAgICB9XG4vLyAgICAgZGVmYXVsdDpcbi8vICAgICAgIHJldHVybiBzdGF0ZVxuLy8gICB9XG4vLyB9XG5cbi8vIGZ1bmN0aW9uIGluaXRTdG9yZShwcmVsb2FkZWRTdGF0ZSA9IGluaXRpYWxTdGF0ZSkge1xuLy8gICByZXR1cm4gY3JlYXRlU3RvcmUoXG4vLyAgICAgcmVkdWNlcixcbi8vICAgICBwcmVsb2FkZWRTdGF0ZSxcbi8vICAgICBjb21wb3NlV2l0aERldlRvb2xzKGFwcGx5TWlkZGxld2FyZSgpKVxuLy8gICApXG4vLyB9XG5cbi8vIGV4cG9ydCBjb25zdCBpbml0aWFsaXplU3RvcmUgPSAocHJlbG9hZGVkU3RhdGUpID0+IHtcbi8vICAgbGV0IF9zdG9yZSA9IHN0b3JlID8/IGluaXRTdG9yZShwcmVsb2FkZWRTdGF0ZSlcblxuLy8gICAvLyBBZnRlciBuYXZpZ2F0aW5nIHRvIGEgcGFnZSB3aXRoIGFuIGluaXRpYWwgUmVkdXggc3RhdGUsIG1lcmdlIHRoYXQgc3RhdGVcbi8vICAgLy8gd2l0aCB0aGUgY3VycmVudCBzdGF0ZSBpbiB0aGUgc3RvcmUsIGFuZCBjcmVhdGUgYSBuZXcgc3RvcmVcbi8vICAgaWYgKHByZWxvYWRlZFN0YXRlICYmIHN0b3JlKSB7XG4vLyAgICAgX3N0b3JlID0gaW5pdFN0b3JlKHtcbi8vICAgICAgIC4uLnN0b3JlLmdldFN0YXRlKCksXG4vLyAgICAgICAuLi5wcmVsb2FkZWRTdGF0ZSxcbi8vICAgICB9KVxuLy8gICAgIC8vIFJlc2V0IHRoZSBjdXJyZW50IHN0b3JlXG4vLyAgICAgc3RvcmUgPSB1bmRlZmluZWRcbi8vICAgfVxuXG4vLyAgIC8vIEZvciBTU0cgYW5kIFNTUiBhbHdheXMgY3JlYXRlIGEgbmV3IHN0b3JlXG4vLyAgIGlmICh0eXBlb2Ygd2luZG93ID09PSAndW5kZWZpbmVkJykgcmV0dXJuIF9zdG9yZVxuLy8gICAvLyBDcmVhdGUgdGhlIHN0b3JlIG9uY2UgaW4gdGhlIGNsaWVudFxuLy8gICBpZiAoIXN0b3JlKSBzdG9yZSA9IF9zdG9yZVxuXG4vLyAgIHJldHVybiBfc3RvcmVcbi8vIH1cblxuLy8gZXhwb3J0IGZ1bmN0aW9uIHVzZVN0b3JlKGluaXRpYWxTdGF0ZSkge1xuLy8gICBjb25zdCBzdG9yZSA9IHVzZU1lbW8oKCkgPT4gaW5pdGlhbGl6ZVN0b3JlKGluaXRpYWxTdGF0ZSksIFtpbml0aWFsU3RhdGVdKVxuLy8gICByZXR1cm4gc3RvcmVcbi8vIH0iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./store.js\n");
 
 /***/ }),
 
-/***/ "EmCc":
+/***/ "@material-ui/core":
+/*!************************************!*\
+  !*** external "@material-ui/core" ***!
+  \************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/IconButton");
+eval("module.exports = require(\"@material-ui/core\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJAbWF0ZXJpYWwtdWkvY29yZVwiP2I2OTkiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiQG1hdGVyaWFsLXVpL2NvcmUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJAbWF0ZXJpYWwtdWkvY29yZVwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///@material-ui/core\n");
 
 /***/ }),
 
-/***/ "F5FC":
+/***/ "@material-ui/core/Grid":
+/*!*****************************************!*\
+  !*** external "@material-ui/core/Grid" ***!
+  \*****************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("react/jsx-runtime");
+eval("module.exports = require(\"@material-ui/core/Grid\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJAbWF0ZXJpYWwtdWkvY29yZS9HcmlkXCI/ZjZmYyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJAbWF0ZXJpYWwtdWkvY29yZS9HcmlkLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwiQG1hdGVyaWFsLXVpL2NvcmUvR3JpZFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///@material-ui/core/Grid\n");
 
 /***/ }),
 
-/***/ "HxH1":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("F5FC");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("9Pu4");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("k7Sn");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("JQ2V");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _public_image_about_avartar_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("bm6N");
-/* harmony import */ var _public_image_about_avartar_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_public_image_about_avartar_jpg__WEBPACK_IMPORTED_MODULE_5__);
-
-
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-
-
-
-const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])({
-  title: {
-    fontFamily: 'Roboto',
-    fontSize: '2rem'
-  },
-  subtitle: {
-    fontFamily: 'Roboto',
-    fontSize: '2rem',
-    fontWeight: 700
-  },
-  img: {
-    borderRadius: '50%'
-  },
-  content: {
-    fontFamily: 'Roboto',
-    fontSize: '1.2rem',
-    lineHeight: '1.8rem'
-  }
-});
-
-const Bio = (_ref) => {
-  let {
-    t
-  } = _ref,
-      props = _objectWithoutProperties(_ref, ["t"]);
-
-  const classes = useStyles();
-  const {
-    mode
-  } = props;
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
-    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-      container: true,
-      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        item: true,
-        xs: false,
-        md: 3
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        item: true,
-        xs: 12,
-        md: 6,
-        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-          className: classes.title,
-          children: t('greeting')
-        })
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        item: true,
-        xs: false,
-        md: 3
-      })]
-    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-      container: true,
-      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        item: true,
-        xs: 2,
-        sm: 3,
-        md: 4
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        item: true,
-        xs: 8,
-        sm: 6,
-        md: 4,
-        style: {
-          marginTop: '-1rem',
-          padding: '1rem',
-          textAlign: 'center'
-        },
-        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-          src: _public_image_about_avartar_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
-          className: classes.img,
-          style: {
-            width: '100%'
-          }
-        })
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        item: true,
-        xs: 2,
-        sm: 3,
-        md: 4
-      })]
-    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-      container: true,
-      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        item: true,
-        xs: false,
-        md: 3
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        item: true,
-        xs: 12,
-        md: 6,
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-          className: classes.content,
-          children: t('content1')
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-          className: classes.content,
-          children: t('content2')
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-          className: classes.content,
-          children: t('content3')
-        })]
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4___default.a, {
-        item: true,
-        xs: false,
-        md: 3
-      })]
-    })]
-  });
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_3__["withTranslation"])('about')(Bio));
-
-/***/ }),
-
-/***/ "JQ2V":
+/***/ "@material-ui/core/Hidden":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/Hidden" ***!
+  \*******************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/Grid");
+eval("module.exports = require(\"@material-ui/core/Hidden\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJAbWF0ZXJpYWwtdWkvY29yZS9IaWRkZW5cIj84ZTMyIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6IkBtYXRlcmlhbC11aS9jb3JlL0hpZGRlbi5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIkBtYXRlcmlhbC11aS9jb3JlL0hpZGRlblwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///@material-ui/core/Hidden\n");
 
 /***/ }),
 
-/***/ "KJeo":
+/***/ "@material-ui/core/IconButton":
+/*!***********************************************!*\
+  !*** external "@material-ui/core/IconButton" ***!
+  \***********************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/icons/Translate");
+eval("module.exports = require(\"@material-ui/core/IconButton\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJAbWF0ZXJpYWwtdWkvY29yZS9JY29uQnV0dG9uXCI/N2ZmMSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJAbWF0ZXJpYWwtdWkvY29yZS9JY29uQnV0dG9uLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwiQG1hdGVyaWFsLXVpL2NvcmUvSWNvbkJ1dHRvblwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///@material-ui/core/IconButton\n");
 
 /***/ }),
 
-/***/ "KKbo":
+/***/ "@material-ui/core/Link":
+/*!*****************************************!*\
+  !*** external "@material-ui/core/Link" ***!
+  \*****************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core");
+eval("module.exports = require(\"@material-ui/core/Link\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJAbWF0ZXJpYWwtdWkvY29yZS9MaW5rXCI/YjIxZCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJAbWF0ZXJpYWwtdWkvY29yZS9MaW5rLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwiQG1hdGVyaWFsLXVpL2NvcmUvTGlua1wiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///@material-ui/core/Link\n");
 
 /***/ }),
 
-/***/ "KNus":
+/***/ "@material-ui/core/styles":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/styles" ***!
+  \*******************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("next/config");
+eval("module.exports = require(\"@material-ui/core/styles\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJAbWF0ZXJpYWwtdWkvY29yZS9zdHlsZXNcIj80MTAyIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6IkBtYXRlcmlhbC11aS9jb3JlL3N0eWxlcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIkBtYXRlcmlhbC11aS9jb3JlL3N0eWxlc1wiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///@material-ui/core/styles\n");
 
 /***/ }),
 
-/***/ "Kd8Z":
+/***/ "@material-ui/icons/Brightness2Outlined":
+/*!*********************************************************!*\
+  !*** external "@material-ui/icons/Brightness2Outlined" ***!
+  \*********************************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/icons/Brightness2Outlined");
+eval("module.exports = require(\"@material-ui/icons/Brightness2Outlined\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJAbWF0ZXJpYWwtdWkvaWNvbnMvQnJpZ2h0bmVzczJPdXRsaW5lZFwiPzk2ZWIiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiQG1hdGVyaWFsLXVpL2ljb25zL0JyaWdodG5lc3MyT3V0bGluZWQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJAbWF0ZXJpYWwtdWkvaWNvbnMvQnJpZ2h0bmVzczJPdXRsaW5lZFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///@material-ui/icons/Brightness2Outlined\n");
 
 /***/ }),
 
-/***/ "MCme":
+/***/ "@material-ui/icons/Close":
+/*!*******************************************!*\
+  !*** external "@material-ui/icons/Close" ***!
+  \*******************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/Link");
+eval("module.exports = require(\"@material-ui/icons/Close\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJAbWF0ZXJpYWwtdWkvaWNvbnMvQ2xvc2VcIj9jMjExIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6IkBtYXRlcmlhbC11aS9pY29ucy9DbG9zZS5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIkBtYXRlcmlhbC11aS9pY29ucy9DbG9zZVwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///@material-ui/icons/Close\n");
 
 /***/ }),
 
-/***/ "RNiq":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__("F5FC");
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
-// EXTERNAL MODULE: ./i18n.js
-var i18n = __webpack_require__("k7Sn");
-
-// EXTERNAL MODULE: ./component/Public/Header.js + 1 modules
-var Header = __webpack_require__("k5U7");
-
-// EXTERNAL MODULE: ./component/Public/Banner.js
-var Banner = __webpack_require__("wRVT");
-
-// EXTERNAL MODULE: ./component/Public/Drawer.js
-var Drawer = __webpack_require__("+5sc");
-
-// EXTERNAL MODULE: ./component/Public/Footer.js
-var Footer = __webpack_require__("m8Kb");
-
-// EXTERNAL MODULE: ./component/About/component/Bio.js
-var Bio = __webpack_require__("HxH1");
-
-// EXTERNAL MODULE: external "@material-ui/core/styles"
-var styles_ = __webpack_require__("9Pu4");
-
-// EXTERNAL MODULE: ./component/Public/PageLoader.js
-var PageLoader = __webpack_require__("CGI1");
-
-// EXTERNAL MODULE: external "react-redux"
-var external_react_redux_ = __webpack_require__("h74D");
-
-// CONCATENATED MODULE: ./component/Home/Home.js
-
-
-
-
-
-
-
-
-
-
-
-const useStyles = Object(styles_["makeStyles"])({
-  dayBackground: {
-    backgroundColor: '#FFFFFF',
-    color: '#1F1F1F'
-  },
-  nightBackground: {
-    backgroundColor: 'black',
-    color: '#FFFFFF'
-  },
-  body: {
-    paddingLeft: '8%',
-    paddingRight: '8%'
-  }
-});
-const Home = () => {
-  const classes = useStyles();
-  const [drawer, setDrawer] = external_react_default.a.useState(false);
-
-  const handleDrawerOpen = () => {
-    setDrawer(true);
-  };
-
-  const handleDrawerClose = () => {
-    setDrawer(false);
-  };
-
-  const mode = Object(external_react_redux_["useSelector"])(state => state.mode);
-  const lang = Object(external_react_redux_["useSelector"])(state => state.lang);
-  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])(external_react_default.a.Fragment, {
-    children: [drawer == false && /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_default.a.Fragment, {
-      children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-        className: mode === 'day' ? classes.dayBackground : classes.nightBackground,
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(PageLoader["a" /* PageLoader */], {
-          mode: mode
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-          className: classes.body,
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Header["a" /* default */], {
-            handleDrawerOpen: handleDrawerOpen,
-            mode: mode,
-            lang: lang
-          })
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-          className: classes.body,
-          style: {
-            marginTop: '8rem'
-          },
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Banner["a" /* default */], {
-            mode: mode
-          })
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-          className: classes.body,
-          style: {
-            marginTop: '1rem'
-          },
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Bio["a" /* default */], {
-            mode: mode
-          })
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-          className: classes.body,
-          style: {
-            marginTop: '1rem'
-          },
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Footer["a" /* default */], {
-            mode: mode
-          })
-        })]
-      })
-    }), drawer == true && /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_default.a.Fragment, {
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-        style: {
-          height: '100vh',
-          backgroundColor: '#1f1f1f'
-        },
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Drawer["a" /* default */], {
-          handleDrawerClose: handleDrawerClose,
-          lang: lang
-        })
-      })
-    })]
-  });
-};
-// EXTERNAL MODULE: external "next-seo"
-var external_next_seo_ = __webpack_require__("efsx");
-
-// CONCATENATED MODULE: ./pages/index.js
-
-
-
-
-
-
-
-const HomePage = ({
-  t
-}) => {
-  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])(external_react_default.a.Fragment, {
-    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(external_next_seo_["NextSeo"], {
-      title: "Weian Wang | Front-end developer",
-      description: "I am a front-end developer, open to opportunities.",
-      openGraph: {
-        url: 'https://weianofsteel.com',
-        title: 'Weian Wang | Front-end developer',
-        description: 'I am a front-end developer, open to opportunities.',
-        images: [{
-          url: 'https://raw.githubusercontent.com/weianofsteel/saliejung/master/public/openGraph.jpg',
-          width: 800,
-          height: 600,
-          alt: 'Weian Wang | Front-end developer'
-        }],
-        site_name: 'Weian Wang | Front-end developer'
-      }
-    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Home, {})]
-  });
-};
-
-HomePage.getInitialProps = async () => ({
-  namespacesRequired: ['header', 'banner', 'footer', 'skill', 'learnByDoing', 'sharing']
-});
-
-/* harmony default export */ var pages = __webpack_exports__["default"] = (Object(i18n["withTranslation"])('header')(HomePage));
-
-/***/ }),
-
-/***/ "T8f9":
+/***/ "@material-ui/icons/Menu":
+/*!******************************************!*\
+  !*** external "@material-ui/icons/Menu" ***!
+  \******************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("redux-persist/lib/storage");
+eval("module.exports = require(\"@material-ui/icons/Menu\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJAbWF0ZXJpYWwtdWkvaWNvbnMvTWVudVwiPzhlZmUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiQG1hdGVyaWFsLXVpL2ljb25zL01lbnUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJAbWF0ZXJpYWwtdWkvaWNvbnMvTWVudVwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///@material-ui/icons/Menu\n");
 
 /***/ }),
 
-/***/ "VNb8":
+/***/ "@material-ui/icons/Translate":
+/*!***********************************************!*\
+  !*** external "@material-ui/icons/Translate" ***!
+  \***********************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("redux-persist");
+eval("module.exports = require(\"@material-ui/icons/Translate\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJAbWF0ZXJpYWwtdWkvaWNvbnMvVHJhbnNsYXRlXCI/YThlNSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJAbWF0ZXJpYWwtdWkvaWNvbnMvVHJhbnNsYXRlLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwiQG1hdGVyaWFsLXVpL2ljb25zL1RyYW5zbGF0ZVwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///@material-ui/icons/Translate\n");
 
 /***/ }),
 
-/***/ "XqvA":
+/***/ "@material-ui/icons/WbSunnyOutlined":
+/*!*****************************************************!*\
+  !*** external "@material-ui/icons/WbSunnyOutlined" ***!
+  \*****************************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/icons/WbSunnyOutlined");
+eval("module.exports = require(\"@material-ui/icons/WbSunnyOutlined\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJAbWF0ZXJpYWwtdWkvaWNvbnMvV2JTdW5ueU91dGxpbmVkXCI/ZTdlMCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJAbWF0ZXJpYWwtdWkvaWNvbnMvV2JTdW5ueU91dGxpbmVkLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwiQG1hdGVyaWFsLXVpL2ljb25zL1diU3VubnlPdXRsaW5lZFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///@material-ui/icons/WbSunnyOutlined\n");
 
 /***/ }),
 
-/***/ "Y8uC":
+/***/ "next-i18next":
+/*!*******************************!*\
+  !*** external "next-i18next" ***!
+  \*******************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/Hidden");
+eval("module.exports = require(\"next-i18next\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJuZXh0LWkxOG5leHRcIj9mMGZiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Im5leHQtaTE4bmV4dC5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIm5leHQtaTE4bmV4dFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///next-i18next\n");
 
 /***/ }),
 
-/***/ "bm6N":
+/***/ "next-seo":
+/*!***************************!*\
+  !*** external "next-seo" ***!
+  \***************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/avartar-363832ec308a8456a3f66989d21ee96d.jpg";
+eval("module.exports = require(\"next-seo\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJuZXh0LXNlb1wiPzJjYmUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoibmV4dC1zZW8uanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJuZXh0LXNlb1wiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///next-seo\n");
 
 /***/ }),
 
-/***/ "cDcd":
+/***/ "next/config":
+/*!******************************!*\
+  !*** external "next/config" ***!
+  \******************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("react");
+eval("module.exports = require(\"next/config\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJuZXh0L2NvbmZpZ1wiP2Y4NzkiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoibmV4dC9jb25maWcuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJuZXh0L2NvbmZpZ1wiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///next/config\n");
 
 /***/ }),
 
-/***/ "efsx":
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("next-seo");
+eval("module.exports = require(\"next/router\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJuZXh0L3JvdXRlclwiP2Q4M2UiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoibmV4dC9yb3V0ZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJuZXh0L3JvdXRlclwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///next/router\n");
 
 /***/ }),
 
-/***/ "h74D":
+/***/ "path":
+/*!***********************!*\
+  !*** external "path" ***!
+  \***********************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("react-redux");
+eval("module.exports = require(\"path\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJwYXRoXCI/NzRiYiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJwYXRoLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwicGF0aFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///path\n");
 
 /***/ }),
 
-/***/ "j08L":
+/***/ "prop-types":
+/*!*****************************!*\
+  !*** external "prop-types" ***!
+  \*****************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/icons/Close");
+eval("module.exports = require(\"prop-types\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJwcm9wLXR5cGVzXCI/MzgzMiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJwcm9wLXR5cGVzLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwicHJvcC10eXBlc1wiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///prop-types\n");
 
 /***/ }),
 
-/***/ "k5U7":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__("F5FC");
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
-// EXTERNAL MODULE: ./i18n.js
-var i18n = __webpack_require__("k7Sn");
-
-// EXTERNAL MODULE: external "@material-ui/core/styles"
-var styles_ = __webpack_require__("9Pu4");
-
-// EXTERNAL MODULE: external "@material-ui/core/Grid"
-var Grid_ = __webpack_require__("JQ2V");
-var Grid_default = /*#__PURE__*/__webpack_require__.n(Grid_);
-
-// EXTERNAL MODULE: external "@material-ui/core/Link"
-var Link_ = __webpack_require__("MCme");
-var Link_default = /*#__PURE__*/__webpack_require__.n(Link_);
-
-// EXTERNAL MODULE: external "next/router"
-var router_ = __webpack_require__("4Q3z");
-
-// EXTERNAL MODULE: external "@material-ui/icons/Menu"
-var Menu_ = __webpack_require__("4D1s");
-var Menu_default = /*#__PURE__*/__webpack_require__.n(Menu_);
-
-// EXTERNAL MODULE: external "@material-ui/core/Hidden"
-var Hidden_ = __webpack_require__("Y8uC");
-var Hidden_default = /*#__PURE__*/__webpack_require__.n(Hidden_);
-
-// EXTERNAL MODULE: external "@material-ui/core/IconButton"
-var IconButton_ = __webpack_require__("EmCc");
-var IconButton_default = /*#__PURE__*/__webpack_require__.n(IconButton_);
-
-// EXTERNAL MODULE: external "@material-ui/core"
-var core_ = __webpack_require__("KKbo");
-
-// EXTERNAL MODULE: external "@material-ui/icons/Translate"
-var Translate_ = __webpack_require__("KJeo");
-var Translate_default = /*#__PURE__*/__webpack_require__.n(Translate_);
-
-// CONCATENATED MODULE: ./component/Public/PublicComponent.js
-
-
-
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-const useStyles = Object(styles_["makeStyles"])({
-  inputLabel: {
-    fontSize: "1.1rem",
-    fontFamily: "微軟正黑體",
-    display: "flex",
-    flexDirection: "row-Reverse"
-  }
-});
-function Select(props) {
-  const classes = useStyles();
-  const {
-    onOpen,
-    onClose,
-    onChange,
-    items,
-    open,
-    value,
-    mode
-  } = props;
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])(core_["FormControl"], {
-    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(core_["Select"], {
-      labelId: "demo-controlled-open-select-label",
-      id: "demo-controlled-open-select",
-      open: open,
-      onClose: onClose,
-      onOpen: onOpen,
-      value: value,
-      onChange: onChange,
-      disableUnderline: true,
-      autoFocus: false,
-      renderValue: () => {
-        return /*#__PURE__*/Object(jsx_runtime_["jsx"])(Translate_default.a, {
-          style: {
-            color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'
-          }
-        });
-      },
-      style: {
-        backgroundColor: 'transparent'
-      },
-      children: items.map(function (item, index) {
-        var _item$props, _item$value, _item$label;
-
-        return /*#__PURE__*/Object(external_react_["createElement"])(core_["MenuItem"], _objectSpread(_objectSpread({}, (_item$props = item.props) !== null && _item$props !== void 0 ? _item$props : null), {}, {
-          key: index,
-          value: (_item$value = item.value) !== null && _item$value !== void 0 ? _item$value : "",
-          classes: {
-            root: classes.input
-          }
-        }), (_item$label = item.label) !== null && _item$label !== void 0 ? _item$label : "");
-      })
-    })
-  });
-}
-function Select2(props) {
-  const classes = useStyles();
-  const {
-    label,
-    value,
-    name,
-    items,
-    formControlProps,
-    selectProps,
-    required,
-    disabled = false,
-    tabIndex = 0,
-    mode
-  } = props;
-
-  let newProps = _objectSpread({}, props);
-
-  delete newProps["helperText"];
-  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Grid_default.a, {
-    container: true,
-    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-      item: true,
-      xs: 2,
-      style: {
-        marginTop: '1rem'
-      },
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Translate_default.a, {})
-    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-      item: true,
-      xs: 1
-    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-      item: true,
-      xs: 9,
-      children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])(core_["FormControl"], _objectSpread(_objectSpread({}, formControlProps), {}, {
-        size: "small",
-        fullWidth: true,
-        disabled: disabled,
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(core_["InputLabel"], {
-          required: required,
-          id: "demo-simple-select-label",
-          classes: {
-            root: classes.inputLabel,
-            required: classes.selectRequired
-          },
-          style: {
-            color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'
-          },
-          children: label
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(core_["Select"], _objectSpread(_objectSpread(_objectSpread({}, selectProps), {}, {
-          labelId: "demo-simple-select-label",
-          id: "demo-simple-select",
-          style: {
-            backgroundColor: 'transparent',
-            color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'
-          },
-          disableUnderline: true,
-          inputProps: {
-            name: name,
-            classes: {
-              select: classes.input
-            }
-          },
-          SelectDisplayProps: {
-            tabIndex: tabIndex
-          },
-          value: value === null ? "" : value,
-          label: label,
-          displayEmpty: true,
-          renderValue: selected => {
-            function checkEqual(a, b) {
-              if (a === null || a === undefined) {
-                a = "";
-              }
-
-              if (b === null || b === undefined) {
-                b = "";
-              }
-
-              if (typeof a === "number") {
-                a = a.toString();
-              }
-
-              if (typeof b === "number") {
-                b = b.toString();
-              }
-
-              return a == b;
-            }
-
-            let filters = items.filter(item => checkEqual(item.value, selected));
-            return filters[0] ? filters[0]["label"] : "";
-          }
-        }, newProps), {}, {
-          children: items.map(function (item, index) {
-            var _item$props2, _item$value2, _item$label2;
-
-            return /*#__PURE__*/Object(external_react_["createElement"])(core_["MenuItem"], _objectSpread(_objectSpread({}, (_item$props2 = item.props) !== null && _item$props2 !== void 0 ? _item$props2 : null), {}, {
-              key: index,
-              value: (_item$value2 = item.value) !== null && _item$value2 !== void 0 ? _item$value2 : "",
-              classes: {
-                root: classes.input
-              }
-            }), (_item$label2 = item.label) !== null && _item$label2 !== void 0 ? _item$label2 : "");
-          })
-        }))]
-      }))
-    })]
-  });
-}
-// EXTERNAL MODULE: external "@material-ui/icons/Brightness2Outlined"
-var Brightness2Outlined_ = __webpack_require__("Kd8Z");
-var Brightness2Outlined_default = /*#__PURE__*/__webpack_require__.n(Brightness2Outlined_);
-
-// EXTERNAL MODULE: external "@material-ui/icons/WbSunnyOutlined"
-var WbSunnyOutlined_ = __webpack_require__("XqvA");
-var WbSunnyOutlined_default = /*#__PURE__*/__webpack_require__.n(WbSunnyOutlined_);
-
-// EXTERNAL MODULE: external "react-redux"
-var external_react_redux_ = __webpack_require__("h74D");
-
-// EXTERNAL MODULE: ./store.js
-var store = __webpack_require__("BXF7");
-
-// CONCATENATED MODULE: ./component/Public/Header.js
-
-
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const Header_useStyles = Object(styles_["makeStyles"])({
-  title: {
-    fontFamily: 'Bebas Neue ',
-    fontWeight: 400,
-    letterSpacing: '1px',
-    fontSize: '1.7rem'
-  },
-  link: {
-    fontFamily: 'Roboto',
-    fontWeight: 400,
-    letterSpacing: '1px',
-    marginLeft: '32px',
-    color: '#8F8F8F',
-    fontSize: '1.1rem',
-    "&:hover": {
-      color: 'black'
-    }
-  },
-  nightLink: {
-    fontFamily: 'Roboto',
-    fontWeight: 400,
-    letterSpacing: '1px',
-    marginLeft: '32px',
-    color: '#FFFFFF',
-    fontSize: '1.1rem',
-    "&:hover": {
-      color: '#BDBDBD'
-    }
-  },
-  linkAnchor: {
-    fontFamily: 'Roboto',
-    fontWeight: 400,
-    letterSpacing: '1px',
-    marginLeft: '32px',
-    color: 'black',
-    fontSize: '1.1rem'
-  },
-  nightLinkAnchor: {
-    fontFamily: 'Roboto',
-    fontWeight: 400,
-    letterSpacing: '1px',
-    marginLeft: '32px',
-    color: '#BDBDBD',
-    fontSize: '1.1rem'
-  },
-  icon: {
-    fontSize: '1.5rem',
-    color: '#8F8F8F',
-    "&:hover": {
-      color: '#1F1F1F'
-    }
-  },
-  nightIcon: {
-    fontSize: '1.5rem',
-    color: '#FFFFFF',
-    "&:hover": {
-      color: '#BDBDBD'
-    }
-  },
-  formControl: {
-    margin: '0.5rem',
-    width: '6rem'
-  },
-  inputLabel: {
-    fontSize: "17px",
-    fontFamily: "微軟正黑體",
-    display: "flex",
-    flexDirection: "row-Reverse"
-  }
-});
-
-const Header = (_ref) => {
-  let {
-    t
-  } = _ref,
-      props = _objectWithoutProperties(_ref, ["t"]);
-
-  const classes = Header_useStyles();
-  const router = Object(router_["useRouter"])(); // const [ language, setLanguage ] = React.useState('en');
-
-  const [open, setOpen] = external_react_default.a.useState(false);
-
-  const handleChange = event => {
-    // setLanguage(event.target.value);
-    handleLangToRedux(event.target.value);
-    i18n["i18n"].changeLanguage(event.target.value);
-  };
-
-  const handleLangToRedux = value => {
-    if (value == 'en') {
-      dispatch(Object(store["b" /* toEn */])());
-    } else if (value == 'zhHant') {
-      dispatch(Object(store["d" /* toZhHant */])());
-    }
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const dispatch = Object(external_react_redux_["useDispatch"])();
-  const {
-    handleDrawerOpen,
-    mode,
-    lang
-  } = props;
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_default.a.Fragment, {
-    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Grid_default.a, {
-      container: true,
-      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-        item: true,
-        xs: 6,
-        md: 2,
-        style: {
-          marginTop: '0.5rem'
-        },
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Link_default.a, {
-          href: ".",
-          underline: "none",
-          className: classes.title,
-          style: {
-            color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'
-          },
-          children: "WEIAN WANG"
-        })
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-        item: true,
-        xs: false,
-        md: 2
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-        item: true,
-        xs: false,
-        md: 2,
-        lg: 2
-      }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Hidden_default.a, {
-        mdDown: true,
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-          item: true,
-          xs: 2,
-          style: {
-            marginTop: '0.3rem',
-            paddingLeft: '6%'
-          },
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Select2, {
-            name: "lang",
-            value: lang,
-            onChange: handleChange,
-            items: [{
-              value: 'en',
-              label: "English"
-            }, {
-              value: 'zhHant',
-              label: "中文"
-            }],
-            mode: mode
-          })
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-          item: true,
-          xs: 1,
-          style: {
-            marginTop: '0.3rem',
-            textAlign: 'center'
-          },
-          children: mode === 'day' ? /*#__PURE__*/Object(jsx_runtime_["jsx"])(IconButton_default.a, {
-            style: {
-              backgroundColor: 'transparent',
-              color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'
-            },
-            disableRipple: true,
-            onClick: () => dispatch(Object(store["c" /* toNight */])()),
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Brightness2Outlined_default.a, {
-              fontSize: "large"
-            })
-          }) : /*#__PURE__*/Object(jsx_runtime_["jsx"])(IconButton_default.a, {
-            style: {
-              backgroundColor: 'transparent',
-              color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'
-            },
-            disableRipple: true,
-            onClick: () => dispatch(Object(store["a" /* toDay */])()),
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(WbSunnyOutlined_default.a, {
-              fontSize: "large"
-            })
-          })
-        }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Grid_default.a, {
-          item: true,
-          xs: 1,
-          style: {
-            marginTop: '1.5rem',
-            marginLeft: lang == 'en' ? '-1rem' : ''
-          },
-          children: [mode === 'day' && /*#__PURE__*/Object(jsx_runtime_["jsx"])(Link_default.a, {
-            href: "./Work",
-            underline: "none",
-            className: router.pathname == '/Work' ? classes.linkAnchor : classes.link,
-            style: {
-              fontWeight: lang == 'en' ? 'normal' : 'bold'
-            },
-            children: t('work')
-          }), mode === 'night' && /*#__PURE__*/Object(jsx_runtime_["jsx"])(Link_default.a, {
-            href: "./Work",
-            underline: "none",
-            className: router.pathname == '/Work' ? classes.nightLinkAnchor : classes.nightLink,
-            style: {
-              fontWeight: lang == 'en' ? 'normal' : 'bold'
-            },
-            children: t('work')
-          })]
-        }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Grid_default.a, {
-          item: true,
-          xs: 1,
-          style: {
-            marginTop: '1.5rem',
-            marginLeft: lang == 'en' ? '-1rem' : ''
-          },
-          children: [mode === 'day' && /*#__PURE__*/Object(jsx_runtime_["jsx"])(Link_default.a, {
-            href: "./Writings",
-            underline: "none",
-            className: router.pathname == '/Writings' ? classes.linkAnchor : classes.link,
-            style: {
-              fontWeight: lang == 'en' ? 'normal' : 'bold'
-            },
-            children: t('writings')
-          }), mode === 'night' && /*#__PURE__*/Object(jsx_runtime_["jsx"])(Link_default.a, {
-            href: "./Writings",
-            underline: "none",
-            className: router.pathname == '/Writings' ? classes.nightLinkAnchor : classes.nightLink,
-            style: {
-              fontWeight: lang == 'en' ? 'normal' : 'bold'
-            },
-            children: t('writings')
-          })]
-        }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Grid_default.a, {
-          item: true,
-          xs: 1,
-          style: {
-            marginTop: '1.5rem',
-            marginLeft: lang == 'en' ? '0.8rem' : ''
-          },
-          children: [mode === 'day' && /*#__PURE__*/Object(jsx_runtime_["jsx"])(Link_default.a, {
-            href: lang == 'en' ? './WeianWang_Resume.pdf' : './王偉安_履歷.pdf',
-            target: "_blank",
-            rel: "noopener",
-            underline: "none",
-            className: router.pathname == '/Resume' ? classes.linkAnchor : classes.link,
-            style: {
-              fontWeight: lang == 'en' ? 'normal' : 'bold'
-            },
-            children: t('resume')
-          }), mode === 'night' && /*#__PURE__*/Object(jsx_runtime_["jsx"])(Link_default.a, {
-            href: lang == 'en' ? './WeianWang_Resume.pdf' : './王偉安_履歷.pdf',
-            target: "_blank",
-            rel: "noopener",
-            underline: "none",
-            className: router.pathname == '/Resume' ? classes.nightLinkAnchor : classes.nightLink,
-            style: {
-              fontWeight: lang == 'en' ? 'normal' : 'bold'
-            },
-            children: t('resume')
-          })]
-        })]
-      }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Hidden_default.a, {
-        lgUp: true,
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-          item: true,
-          xs: 1,
-          sm: 2
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-          item: true,
-          xs: 1,
-          children: mode === 'day' ? /*#__PURE__*/Object(jsx_runtime_["jsx"])(IconButton_default.a, {
-            style: {
-              backgroundColor: 'transparent',
-              color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'
-            },
-            disableRipple: true,
-            onClick: () => dispatch(Object(store["c" /* toNight */])()),
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Brightness2Outlined_default.a, {
-              fontSize: "inherit"
-            })
-          }) : /*#__PURE__*/Object(jsx_runtime_["jsx"])(IconButton_default.a, {
-            style: {
-              backgroundColor: 'transparent',
-              color: mode === 'day' ? '#1F1F1F' : '#FFFFFF'
-            },
-            disableRipple: true,
-            onClick: () => dispatch(Object(store["a" /* toDay */])()),
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(WbSunnyOutlined_default.a, {
-              fontSize: "inherit"
-            })
-          })
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Hidden_default.a, {
-          smUp: true,
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-            item: true,
-            xs: 1
-          })
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-          item: true,
-          xs: 1,
-          style: {
-            marginTop: '0.5rem',
-            textAlign: 'center'
-          },
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Select, {
-            name: "lang",
-            value: lang,
-            onChange: handleChange,
-            open: open,
-            onClose: handleClose,
-            onOpen: handleOpen,
-            items: [{
-              value: 'en',
-              label: "English"
-            }, {
-              value: 'zhHant',
-              label: "中文"
-            }],
-            mode: mode
-          })
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-          item: true,
-          xs: 1
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Grid_default.a, {
-          item: true,
-          xs: 1,
-          style: {
-            textAlign: 'right'
-          },
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(IconButton_default.a, {
-            style: {
-              backgroundColor: 'transparent'
-            },
-            disableRipple: true,
-            onClick: handleDrawerOpen,
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Menu_default.a, {
-              className: mode == 'day' ? classes.icon : classes.nightIcon
-            })
-          })
-        })]
-      })]
-    })
-  });
-};
-
-/* harmony default export */ var Public_Header = __webpack_exports__["a"] = (Object(i18n["withTranslation"])('header')(Header));
-
-/***/ }),
-
-/***/ "k7Sn":
-/***/ (function(module, exports, __webpack_require__) {
-
-const NextI18Next = __webpack_require__("6f9I").default;
-
-const localeSubpaths = __webpack_require__("KNus").default().publicRuntimeConfig;
-
-const path = __webpack_require__("oyvS");
-
-module.exports = new NextI18Next({
-  defaultLanguage: 'en',
-  otherLanguages: ['zhHant'],
-  localeSubpaths: {
-    zhHant: 'cn'
-  },
-  localePath: path.resolve('./public/static/locales')
-}); // export const useTranslation = nextI18Next.useTranslation;
-
-/***/ }),
-
-/***/ "m8Kb":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("F5FC");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("JQ2V");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("k7Sn");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _css_public_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("+Pat");
-/* harmony import */ var _css_public_module_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_public_module_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("MCme");
-/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("9Pu4");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__);
-
-
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-
-
-
-
-const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__["makeStyles"])({
-  link: {
-    color: 'black',
-    "&:hover": {
-      color: '#919191'
-    }
-  },
-  linkNight: {
-    color: 'white',
-    "&:hover": {
-      color: '#BDBDBD'
-    }
-  }
-});
-
-const Footer = (_ref) => {
-  let {
-    t
-  } = _ref,
-      props = _objectWithoutProperties(_ref, ["t"]);
-
-  const {
-    mode
-  } = props;
-  const classes = useStyles();
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
-    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      container: true,
-      className: mode == 'day' ? _css_public_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.footerBlock : _css_public_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.footerBlockNight,
-      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
-        item: true,
-        xs: 12,
-        sm: 7,
-        md: 4,
-        style: {
-          marginBottom: '2rem',
-          fontSize: '1.2rem'
-        },
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
-          style: {
-            fontWeight: 'bold'
-          },
-          children: t('contactTitle')
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
-          children: "+8869 12 597 109"
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
-          children: "weianofsteel@gmail.com"
-        })]
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
-        item: true,
-        xs: 12,
-        sm: 5,
-        md: 4,
-        style: {
-          marginBottom: '2rem'
-        },
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
-          style: {
-            fontWeight: 'bold'
-          },
-          children: t('followTitle')
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          href: "https://weianofsteel.medium.com/",
-          target: "_blank",
-          rel: "noopener",
-          underline: "none",
-          className: mode == 'day' ? classes.link : classes.linkNight,
-          children: "Medium"
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          href: "https://github.com/weianofsteel",
-          target: "_blank",
-          rel: "noopener",
-          underline: "none",
-          className: mode == 'day' ? classes.link : classes.linkNight,
-          children: "Github"
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_5___default.a, {
-          href: "https://www.linkedin.com/in/weian-wang/",
-          target: "_blank",
-          rel: "noopener",
-          underline: "none",
-          className: mode == 'day' ? classes.link : classes.linkNight,
-          children: "Linkedin"
-        })]
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
-        item: true,
-        xs: 12,
-        md: 4,
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
-          children: t('copyright')
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
-          children: t('copyrightDescription')
-        })]
-      })]
-    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-      children: "\xA0"
-    })]
-  });
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_3__["withTranslation"])('footer')(Footer));
-
-/***/ }),
-
-/***/ "oyvS":
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("path");
+eval("module.exports = require(\"react\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdFwiPzU4OGUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoicmVhY3QuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJyZWFjdFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///react\n");
 
 /***/ }),
 
-/***/ "rKB8":
+/***/ "react-messenger-customer-chat":
+/*!************************************************!*\
+  !*** external "react-messenger-customer-chat" ***!
+  \************************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("redux");
+eval("module.exports = require(\"react-messenger-customer-chat\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdC1tZXNzZW5nZXItY3VzdG9tZXItY2hhdFwiPzg3NGMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoicmVhY3QtbWVzc2VuZ2VyLWN1c3RvbWVyLWNoYXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJyZWFjdC1tZXNzZW5nZXItY3VzdG9tZXItY2hhdFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///react-messenger-customer-chat\n");
 
 /***/ }),
 
-/***/ "rrEN":
+/***/ "react-redux":
+/*!******************************!*\
+  !*** external "react-redux" ***!
+  \******************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("react-typewriting-animation");
+eval("module.exports = require(\"react-redux\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdC1yZWR1eFwiPzc4Y2QiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoicmVhY3QtcmVkdXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJyZWFjdC1yZWR1eFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///react-redux\n");
 
 /***/ }),
 
-/***/ "ufKq":
+/***/ "react-top-loading-bar":
+/*!****************************************!*\
+  !*** external "react-top-loading-bar" ***!
+  \****************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("redux-devtools-extension");
+eval("module.exports = require(\"react-top-loading-bar\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdC10b3AtbG9hZGluZy1iYXJcIj8wNDhhIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6InJlYWN0LXRvcC1sb2FkaW5nLWJhci5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcInJlYWN0LXRvcC1sb2FkaW5nLWJhclwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///react-top-loading-bar\n");
 
 /***/ }),
 
-/***/ "wRVT":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "react-typewriting-animation":
+/*!**********************************************!*\
+  !*** external "react-typewriting-animation" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("F5FC");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("9Pu4");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_typewriting_animation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("rrEN");
-/* harmony import */ var react_typewriting_animation__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_typewriting_animation__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("k7Sn");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_i18n__WEBPACK_IMPORTED_MODULE_4__);
+eval("module.exports = require(\"react-typewriting-animation\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdC10eXBld3JpdGluZy1hbmltYXRpb25cIj9mOWMwIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6InJlYWN0LXR5cGV3cml0aW5nLWFuaW1hdGlvbi5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcInJlYWN0LXR5cGV3cml0aW5nLWFuaW1hdGlvblwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///react-typewriting-animation\n");
 
+/***/ }),
 
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+eval("module.exports = require(\"react/jsx-dev-runtime\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdC9qc3gtZGV2LXJ1bnRpbWVcIj9jZDkwIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6InJlYWN0L2pzeC1kZXYtcnVudGltZS5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcInJlYWN0L2pzeC1kZXYtcnVudGltZVwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///react/jsx-dev-runtime\n");
 
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+/***/ }),
 
+/***/ "redux":
+/*!************************!*\
+  !*** external "redux" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
+eval("module.exports = require(\"redux\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWR1eFwiP2QzMjUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoicmVkdXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJyZWR1eFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///redux\n");
 
+/***/ }),
 
+/***/ "redux-devtools-extension":
+/*!*******************************************!*\
+  !*** external "redux-devtools-extension" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])({
-  content: {
-    fontFamily: 'Roboto',
-    fontSize: '2rem'
-  }
-});
+eval("module.exports = require(\"redux-devtools-extension\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWR1eC1kZXZ0b29scy1leHRlbnNpb25cIj81YWE5Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6InJlZHV4LWRldnRvb2xzLWV4dGVuc2lvbi5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcInJlZHV4LWRldnRvb2xzLWV4dGVuc2lvblwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///redux-devtools-extension\n");
 
-const Banner = (_ref) => {
-  let {
-    t
-  } = _ref,
-      props = _objectWithoutProperties(_ref, ["t"]);
+/***/ }),
 
-  const classes = useStyles();
-  const {
-    mode
-  } = props;
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
-    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("p", {
-        className: classes.content,
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_typewriting_animation__WEBPACK_IMPORTED_MODULE_3___default.a, {
-          rotateSpeed: 800,
-          typeSpeed: 80,
-          fontSize: '2rem',
-          fontFamily: 'Roboto',
-          color: mode == 'day' ? 'black' : 'white',
-          heading: 'Typewriter',
-          dataText: [t('context1')]
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
-          style: {
-            textDecoration: 'line-through'
-          },
-          children: t('context2')
-        })]
-      })
-    })
-  });
-};
+/***/ "redux-persist":
+/*!********************************!*\
+  !*** external "redux-persist" ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-/* harmony default export */ __webpack_exports__["a"] = (Object(_i18n__WEBPACK_IMPORTED_MODULE_4__["withTranslation"])('banner')(Banner));
+eval("module.exports = require(\"redux-persist\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWR1eC1wZXJzaXN0XCI/Njc4YSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJyZWR1eC1wZXJzaXN0LmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwicmVkdXgtcGVyc2lzdFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///redux-persist\n");
+
+/***/ }),
+
+/***/ "redux-persist/lib/storage":
+/*!********************************************!*\
+  !*** external "redux-persist/lib/storage" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"redux-persist/lib/storage\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWR1eC1wZXJzaXN0L2xpYi9zdG9yYWdlXCI/ZWIyMCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJyZWR1eC1wZXJzaXN0L2xpYi9zdG9yYWdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwicmVkdXgtcGVyc2lzdC9saWIvc3RvcmFnZVwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///redux-persist/lib/storage\n");
 
 /***/ })
 

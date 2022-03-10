@@ -21,6 +21,7 @@
     "react": "^17.0.1",
     "react-customize-carousel": "^1.7.0",
     "react-dom": "^17.0.1",
+    "react-messenger-customer-chat": "^0.8.0",
     "react-redux": "^7.2.3",
     "react-scroll-up-btn": "^1.0.4",
     "react-top-loading-bar": "^2.0.1",

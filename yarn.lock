@@ -6269,6 +6269,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prop-types@npm:^15.6.0":
+  version: 15.8.1
+  resolution: "prop-types@npm:15.8.1"
+  dependencies:
+    loose-envify: ^1.4.0
+    object-assign: ^4.1.1
+    react-is: ^16.13.1
+  checksum: c056d3f1c057cb7ff8344c645450e14f088a915d078dcda795041765047fa080d38e5d626560ccaac94a4e16e3aa15f3557c1a9a8d1174530955e992c675e459
+  languageName: node
+  linkType: hard
+
 "prr@npm:~1.0.1":
   version: 1.0.1
   resolution: "prr@npm:1.0.1"
@@ -6449,6 +6460,17 @@ __metadata:
   version: 17.0.1
   resolution: "react-is@npm:17.0.1"
   checksum: 5e6945a286367894d11b24f41a0065607ba62bdac0df0b567294b2e299c037e3641434e66f9be30536b8c47f7ad94d44e633feb2ba25959c2c42423844e6c2f1
+  languageName: node
+  linkType: hard
+
+"react-messenger-customer-chat@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "react-messenger-customer-chat@npm:0.8.0"
+  dependencies:
+    prop-types: ^15.6.0
+  peerDependencies:
+    react: ^0.14.0 || ^15.0.0-0 || ^16.0.0-0
+  checksum: 851ba1daa4dbe749df7ca28bcbaf9154dbb609835e1a1a2eb3253fbed581e0cb42ba85d95e9d621159e820b408311249570bc3ce8a2d2980366dd5e726c085ca
   languageName: node
   linkType: hard
 
@@ -8115,6 +8137,7 @@ __metadata:
     react: ^17.0.1
     react-customize-carousel: ^1.7.0
     react-dom: ^17.0.1
+    react-messenger-customer-chat: ^0.8.0
     react-redux: ^7.2.3
     react-scroll-up-btn: ^1.0.4
     react-top-loading-bar: ^2.0.1

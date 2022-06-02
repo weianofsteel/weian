@@ -35,7 +35,7 @@ const Banner = ({t,...props}) => {
                         dataText={[t('context1')]}
                     />
                     <br/>
-                    <span style={{textDecoration:'line-through'}}>{t('context2')}</span>
+                    <span>{t('context2')}</span>
                 </p>
 
             </div>
